@@ -1,0 +1,28 @@
+# Dependency review on pull requests (Composer, npm, Docker and Actions).
+# Licence policy: no GPL or AGPL code; MPL-2.0 allowed; LGPL only for
+# packages reviewed and listed below.
+fail-on-severity: high
+fail-on-scopes: [runtime, development]
+comment-summary-in-pr: never
+
+allow-licenses:
+  - 0BSD
+  - Apache-2.0
+  - BlueOak-1.0.0
+  - BSD-2-Clause
+  - BSD-3-Clause
+  - BSL-1.0
+  - CC-BY-4.0
+  - CC0-1.0
+  - ISC
+  - MIT
+  - MIT-0
+  - MPL-2.0
+  - PostgreSQL
+  - Python-2.0
+  - Unicode-3.0
+  - Unlicense
+  - Zlib
+
+# Reviewed LGPL exceptions, as package URLs (pkg:composer/vendor/name).
+allow-dependencies-licenses: []

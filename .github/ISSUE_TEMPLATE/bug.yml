@@ -1,0 +1,48 @@
+name: Bug
+description: Behaviour that is incorrect, broken or diverges from what was specified.
+title: "[Bug] "
+labels: [type/bug, status/needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security problems must not be reported here: use the private
+        vulnerability report linked from the issue chooser. Wrong answers or
+        typos in lessons belong in the Content form. Never attach voice
+        recordings, passwords or other learners' data.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happens
+      description: What you observed, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who is affected and how badly (crash, wrong grade, blocked level, data loss).
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Docker Desktop version, PHP version, Parlora Hub version or commit, and whether Parlora Tutor is enabled.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant log lines (storage/logs, browser console) with any personal data removed.
+      render: text

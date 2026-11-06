@@ -1,0 +1,55 @@
+name: CI
+
+# `ci-ok` is the single required check (.github/rulesets/main.json). The php
+# and js jobs join `needs` when the Laravel skeleton lands.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  hygiene:
+    name: hygiene
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          version: "0.13.0"
+      # Same hooks as local commits; gitleaks runs in the security workflow.
+      - run: uvx pre-commit@4.7.0 run --all-files --show-diff-on-failure
+        env:
+          SKIP: gitleaks
+
+  security:
+    name: security
+    uses: $/.github/workflows/security.yml
+    permissions:
+      contents: read
+      pull-requests: read
+
+  ci-ok:
+    name: ci-ok
+    if: always()
+    needs: [hygiene, security]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: All required jobs succeeded
+        env:
+          RESULTS: ${{ join(needs.*.result, ' ') }}
+        run: |
+          echo "job results: $RESULTS"
+          for result in $RESULTS; do
+            [ "$result" = "success" ] || exit 1
+          done

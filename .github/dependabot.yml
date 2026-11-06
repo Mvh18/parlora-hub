@@ -1,0 +1,17 @@
+# Dependabot version updates. Security updates are not delayed by the
+# cooldown; version updates wait seven days so a compromised release is
+# usually caught before it is proposed here. The composer, npm, docker and
+# docker-compose ecosystems join with the Laravel skeleton (Dependabot errors
+# on a directory without a manifest).
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]

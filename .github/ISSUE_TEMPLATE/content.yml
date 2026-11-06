@@ -1,0 +1,51 @@
+name: Content
+description: A mistake or gap in a lesson, exercise, exam question or answer key.
+title: "[Content] "
+labels: [type/content, area/content, status/needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the course. Do not paste material from
+        textbooks or exam papers you are not allowed to share.
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options: [A1, A2, B1, B2, C1, Placement exam]
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: Unit, lesson, exercise or exam question (title or id), or the content file path.
+      placeholder: e.g. A1 · Unit 3 · "Present simple" · exercise 4
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of problem
+      options:
+        - Wrong answer key or a valid answer rejected
+        - Error in the theory or an example
+        - Typo or formatting
+        - Unclear instructions
+        - Missing content
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text or behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed fix
+      description: The correct text or answer, and a source or explanation if you have one.
+    validations:
+      required: true

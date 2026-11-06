@@ -1,0 +1,73 @@
+# ─────────────────────────────────────────────────────────────
+# Private local artefacts — never commit
+# ─────────────────────────────────────────────────────────────
+.claude/
+openspec/
+ROADMAP.md
+docs/ROADMAP.md
+CLAUDE.local.md
+# Design mockups: contain personal data and vendored bundles; their values
+# live in the design tokens.
+reference/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+auth.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ─────────────────────────────────────────────────────────────
+# Personal data — learner audio is only allowed as synthetic test fixtures
+# ─────────────────────────────────────────────────────────────
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.webm
+!**/fixtures/synthetic/**/*.wav
+!**/fixtures/synthetic/**/*.mp3
+!**/fixtures/synthetic/**/*.flac
+!**/fixtures/synthetic/**/*.ogg
+!**/fixtures/synthetic/**/*.m4a
+!**/fixtures/synthetic/**/*.webm
+
+# Local databases and dumps
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+backups/
+
+# ─────────────────────────────────────────────────────────────
+# Laravel and front-end build output
+# ─────────────────────────────────────────────────────────────
+/vendor/
+/node_modules/
+/public/build/
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/bootstrap/ssr
+.phpunit.result.cache
+.phpunit.cache/
+/coverage/
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+pnpm-debug.log*
+
+# Editors and OS
+/.fleet
+/.idea
+/.nova
+/.zed
+/.vscode
+.DS_Store
+Thumbs.db
