@@ -17,6 +17,8 @@ repos:
       - id: check-added-large-files
         args: [--maxkb=500]
       - id: check-json
+        # TypeScript config files are JSONC (comments allowed)
+        exclude: ^tsconfig(\..+)?\.json$
       - id: check-yaml
         args: [--allow-multiple-documents]
       - id: detect-private-key
@@ -26,6 +28,14 @@ repos:
       - id: mixed-line-ending
         args: [--fix=no]
         exclude: \.(ps1|cmd|bat)$
+
+  - repo: local
+    hooks:
+      - id: no-foreign-lockfiles
+        name: reject npm and yarn lockfiles (pnpm only)
+        language: fail
+        entry: pnpm is the only JavaScript package manager; delete this lockfile
+        files: (^|/)(package-lock\.json|npm-shrinkwrap\.json|yarn\.lock)$
 
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: 91ab4bf57e58b32adf1a122681f6ebe164d081c8 # frozen: v4.4.0

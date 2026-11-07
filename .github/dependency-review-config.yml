@@ -24,5 +24,12 @@ allow-licenses:
   - Unlicense
   - Zlib
 
-# Reviewed LGPL exceptions, as package URLs (pkg:composer/vendor/name).
-allow-dependencies-licenses: []
+# Reviewed exceptions, as package URLs (pkg:composer/vendor/name), each with
+# the reason it is allowed.
+allow-dependencies-licenses:
+  # Offered under BSD-3-Clause OR GPL-2.0-only OR GPL-3.0-only (a Composer
+  # licence array is a choice); we use them under BSD-3-Clause. Dependency
+  # review reads the array as AND. Pulled in by laravel/framework through
+  # league/commonmark and league/config.
+  - pkg:composer/nette/schema
+  - pkg:composer/nette/utils
