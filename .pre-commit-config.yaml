@@ -17,6 +17,8 @@ repos:
       - id: check-added-large-files
         args: [--maxkb=500]
       - id: check-json
+        # TypeScript config files are JSONC (comments allowed)
+        exclude: ^tsconfig(\..+)?\.json$
       - id: check-yaml
         args: [--allow-multiple-documents]
       - id: detect-private-key
