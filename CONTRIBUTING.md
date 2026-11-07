@@ -55,6 +55,39 @@ pre-commit install --install-hooks   # secret scanning, hygiene and commit-msg c
 pre-commit run --all-files
 ```
 
+### JavaScript packages: pnpm only
+
+PHP and Node run inside the project's Docker image
+([ADR 0002](docs/adr/0002-php-environment.md)), so you do not need Node on the
+host. The JavaScript package manager is **pnpm**, pinned through the
+`packageManager` field of `package.json` and enabled with corepack. npm and
+yarn are not used, and `package-lock.json` or `yarn.lock` must never be
+committed.
+
+Two settings in `pnpm-workspace.yaml` protect the supply chain:
+
+- `minimumReleaseAge: 10080`: pnpm only installs versions that were published
+  at least seven days ago, which leaves time for a compromised release to be
+  found and pulled. A fresh resolution picks the newest version that is old
+  enough. An existing lockfile with a newer entry is rejected; do not relax
+  the setting to get around that.
+- `strictDepBuilds: true`: dependencies may not run install or build scripts
+  unless they are on the allow-list, and an unapproved script fails the
+  install. The starter kit needs no build scripts (its native Rolldown and
+  Tailwind binaries ship as prebuilt optional packages), so the allow-list is
+  empty. Adding a package to it needs a reason in the pull request.
+
+Install with the lockfile as it is, the same way CI does:
+
+```sh
+pnpm install --frozen-lockfile
+```
+
+`pnpm install` warns about unmet `vite` peer dependencies. That is expected:
+the starter kit replaces `vite` with the Vite+ core package
+(`npm:@voidzero-dev/vite-plus-core`), and the Vite plugins still declare
+`vite` 7 or 8 as their peer.
+
 ## How we work
 
 1. **Branch** from `main` as `<type>/<issue>-<slug>`, for example
