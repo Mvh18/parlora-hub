@@ -19,12 +19,12 @@ compared three options. Each figure is the median of three runs of the kit's
 and of a Vite hot update (time from saving a `.tsx` file to Vite reporting the
 update).
 
-| Option | `php artisan test` | First load | Vite hot update |
-|---|---|---|---|
-| Native PHP on Windows (Herd Lite 8.5) | 3.7 s | 166 ms | ~370 ms (noisy) |
-| Docker, repository on NTFS, everything bind-mounted | 40 s | 0.3–7.8 s | not measured |
-| Docker, repository on NTFS, `vendor/` and `node_modules/` in named volumes | 8.3 s | 625 ms | ~330 ms (polling) |
-| Docker, repository inside the WSL2 file system | 3.9 s | 10 ms | 78 ms |
+| Option                                                                     | `php artisan test` | First load | Vite hot update   |
+| -------------------------------------------------------------------------- | ------------------ | ---------- | ----------------- |
+| Native PHP on Windows (Herd Lite 8.5)                                      | 3.7 s              | 166 ms     | ~370 ms (noisy)   |
+| Docker, repository on NTFS, everything bind-mounted                        | 40 s               | 0.3–7.8 s  | not measured      |
+| Docker, repository on NTFS, `vendor/` and `node_modules/` in named volumes | 8.3 s              | 625 ms     | ~330 ms (polling) |
+| Docker, repository inside the WSL2 file system                             | 3.9 s              | 10 ms      | 78 ms             |
 
 Findings:
 
@@ -71,17 +71,17 @@ git, Explorer) does not change.
 
 Versions the starter kit produced on 2026-11-06, to pin when it is merged:
 
-| Package | Version |
-|---|---|
-| `laravel/framework` | 13.40.0 |
+| Package                                          | Version      |
+| ------------------------------------------------ | ------------ |
+| `laravel/framework`                              | 13.40.0      |
 | `inertiajs/inertia-laravel` / `@inertiajs/react` | 3.7.0 / ^3.0 |
-| `laravel/fortify` | 1.41.0 |
-| `laravel/wayfinder` | 0.1.23 |
-| `react` | ^19.2 |
-| `tailwindcss` | ^4.0 |
-| `typescript` | ^5.7 |
-| `vite` (Vite+ core) | 1.4.0 |
-| `pestphp/pest` | ^5.3 |
+| `laravel/fortify`                                | 1.41.0       |
+| `laravel/wayfinder`                              | 0.1.23       |
+| `react`                                          | ^19.2        |
+| `tailwindcss`                                    | ^4.0         |
+| `typescript`                                     | ^5.7         |
+| `vite` (Vite+ core)                              | 1.4.0        |
+| `pestphp/pest`                                   | ^5.3         |
 
 Recommended `%UserProfile%\.wslconfig` (Docker Desktop shares this VM with
 Parlora Tutor):

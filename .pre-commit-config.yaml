@@ -1,7 +1,7 @@
 # Git hooks. Install once with `pre-commit install --install-hooks` (pre-commit
 # and commit-msg stages). Hook repositories are pinned to commit SHAs; update
-# with `pre-commit autoupdate --freeze`. Pint, Prettier and ESLint hooks join
-# when the Laravel skeleton lands.
+# with `pre-commit autoupdate --freeze`. The Pint hook joins with the Compose
+# `app` service.
 default_install_hook_types: [pre-commit, commit-msg]
 default_stages: [pre-commit]
 
@@ -36,6 +36,19 @@ repos:
         language: fail
         entry: pnpm is the only JavaScript package manager; delete this lockfile
         files: (^|/)(package-lock\.json|npm-shrinkwrap\.json|yarn\.lock)$
+      # Vite+ ships Oxfmt (Prettier-compatible) and Oxlint (typescript-eslint
+      # and react-hooks rules); both read their settings from vite.config.ts,
+      # including its ignore patterns. Needs `pnpm install` first.
+      - id: oxfmt
+        name: format check (oxfmt)
+        language: system
+        entry: pnpm exec vp fmt --check --no-error-on-unmatched-pattern
+        types_or: [javascript, jsx, ts, tsx, json, yaml, markdown, css]
+      - id: oxlint
+        name: lint (oxlint)
+        language: system
+        entry: pnpm exec vp lint --no-error-on-unmatched-pattern
+        types_or: [javascript, jsx, ts, tsx]
 
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: 91ab4bf57e58b32adf1a122681f6ebe164d081c8 # frozen: v4.4.0

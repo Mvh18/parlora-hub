@@ -24,9 +24,14 @@ export default defineConfig({
             presets: [reactCompilerPreset()],
         }),
         tailwindcss(),
-        wayfinder({
-            formVariants: true,
-        }),
+        // Wayfinder shells out to `php artisan`; JS tests must not need PHP.
+        ...(process.env.VITEST
+            ? []
+            : [
+                  wayfinder({
+                      formVariants: true,
+                  }),
+              ]),
     ]),
     server: {
         watch: {
@@ -39,7 +44,20 @@ export default defineConfig({
             ],
         },
     },
+    test: {
+        environment: 'jsdom',
+        include: ['resources/js/**/*.test.{ts,tsx}'],
+        setupFiles: ['resources/js/test/setup.ts'],
+    },
     lint: {
+        // Oxlint ports of typescript-eslint and eslint-plugin-react(-hooks).
+        plugins: ['typescript', 'react', 'oxc', 'unicorn'],
+        rules: {
+            'react/rules-of-hooks': 'error',
+            'react/exhaustive-deps': 'error',
+            'typescript/no-explicit-any': 'error',
+            'typescript/no-floating-promises': 'error',
+        },
         ignorePatterns: [
             'vendor/**',
             'node_modules/**',
@@ -63,6 +81,13 @@ export default defineConfig({
         semi: true,
         singleAttributePerLine: false,
         htmlWhitespaceSensitivity: 'css',
+        // Match .editorconfig: data and prose files use two-space indents.
+        overrides: [
+            {
+                files: ['*.{json,yml,yaml,md}'],
+                options: { tabWidth: 2 },
+            },
+        ],
         ignorePatterns: [
             '.github/**',
             'composer.json',

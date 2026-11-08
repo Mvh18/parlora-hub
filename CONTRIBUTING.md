@@ -88,6 +88,26 @@ the starter kit replaces `vite` with the Vite+ core package
 (`npm:@voidzero-dev/vite-plus-core`), and the Vite plugins still declare
 `vite` 7 or 8 as their peer.
 
+### JavaScript checks
+
+The starter kit ships [Vite+](https://viteplus.dev/), which bundles the
+JavaScript quality tools: Oxfmt (Prettier-compatible formatter), Oxlint
+(typescript-eslint and React hooks rules, type-aware) and Vitest. All of them
+read their settings from `vite.config.ts`. TypeScript runs in `strict` mode.
+
+```sh
+pnpm check       # Oxfmt check, Oxlint, tsc --noEmit, Vitest
+pnpm check:fix   # apply formatting and auto-fixable lint fixes
+pnpm test        # Vitest only
+```
+
+Component tests live next to the component as `*.test.tsx` and use React
+Testing Library with jsdom; import the test API from `vite-plus/test`.
+
+The pre-commit configuration runs Oxfmt and Oxlint on staged files through
+`pnpm exec`, so run `pnpm install` before committing. Until the Compose `app`
+service lands, these hooks use pnpm on the host.
+
 ## How we work
 
 1. **Branch** from `main` as `<type>/<issue>-<slug>`, for example
