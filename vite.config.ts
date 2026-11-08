@@ -7,25 +7,33 @@ import laravel from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
 import { defineConfig, lazyPlugins } from 'vite-plus';
 
+// Under Vitest only the plugins that transform source files load: the
+// Laravel plugin refuses to serve when CI=true and Wayfinder shells out to
+// `php artisan`, and JS tests must not need either.
+const testing = Boolean(process.env.VITEST);
+
 export default defineConfig({
     plugins: lazyPlugins(() => [
-        laravel({
-            input: ['resources/css/app.css', 'resources/js/app.tsx'],
-            refresh: true,
-            fonts: [
-                bunny('Instrument Sans', {
-                    weights: [400, 500, 600],
-                }),
-            ],
-        }),
+        ...(testing
+            ? []
+            : [
+                  laravel({
+                      input: ['resources/css/app.css', 'resources/js/app.tsx'],
+                      refresh: true,
+                      fonts: [
+                          bunny('Instrument Sans', {
+                              weights: [400, 500, 600],
+                          }),
+                      ],
+                  }),
+              ]),
         inertia(),
         react(),
         babel({
             presets: [reactCompilerPreset()],
         }),
         tailwindcss(),
-        // Wayfinder shells out to `php artisan`; JS tests must not need PHP.
-        ...(process.env.VITEST
+        ...(testing
             ? []
             : [
                   wayfinder({
@@ -33,6 +41,11 @@ export default defineConfig({
                   }),
               ]),
     ]),
+    // The `@/` alias from tsconfig.json, also for tests without the Laravel
+    // plugin.
+    resolve: {
+        tsconfigPaths: true,
+    },
     server: {
         watch: {
             ignored: [
