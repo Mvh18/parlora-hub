@@ -1,8 +1,8 @@
 packages:
-    - '.'
+  - '.'
 
 publicHoistPattern:
-    - '@inertiajs/core'
+  - '@inertiajs/core'
 
 # Supply-chain policy (see CONTRIBUTING.md): only install versions published
 # at least seven days ago, and fail on any dependency build script that is

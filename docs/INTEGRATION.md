@@ -5,13 +5,13 @@ truth is `tutor/contracts/openapi.json`; this document records how Hub uses it.
 
 ## Flows
 
-| Flow | Direction | Mechanism |
-| --- | --- | --- |
-| Start a call | Hub → Tutor | `POST /sessions` with context; returns a `client_token` for the browser |
-| Conversation | Browser ↔ Tutor | Direct WebRTC with Pipecat (SmallWebRTC) and RTVI messages whose schema is published in Tutor's contract |
-| Summary on hang-up | Tutor → Hub | Signed `session.completed` webhook + `GET /sessions/{id}/summary` (includes `vocabulary_seen`) |
-| Session history | Hub → Tutor | Read-only session and turn queries by `learner_ref` |
-| Speaking and writing evaluation | Hub → Tutor | Queued `POST /evaluations/*` + `evaluation.completed` webhook |
+| Flow                            | Direction       | Mechanism                                                                                                |
+| ------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------- |
+| Start a call                    | Hub → Tutor     | `POST /sessions` with context; returns a `client_token` for the browser                                  |
+| Conversation                    | Browser ↔ Tutor | Direct WebRTC with Pipecat (SmallWebRTC) and RTVI messages whose schema is published in Tutor's contract |
+| Summary on hang-up              | Tutor → Hub     | Signed `session.completed` webhook + `GET /sessions/{id}/summary` (includes `vocabulary_seen`)           |
+| Session history                 | Hub → Tutor     | Read-only session and turn queries by `learner_ref`                                                      |
+| Speaking and writing evaluation | Hub → Tutor     | Queued `POST /evaluations/*` + `evaluation.completed` webhook                                            |
 
 ## Decisions
 
