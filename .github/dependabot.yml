@@ -1,8 +1,6 @@
 # Dependabot version updates. Security updates are not delayed by the
 # cooldown; version updates wait seven days so a compromised release is
-# usually caught before it is proposed here. The docker and docker-compose
-# ecosystems join with the Dockerfile and compose.yaml (#10): Dependabot
-# errors on a directory without a manifest.
+# usually caught before it is proposed here.
 version: 2
 
 updates:
@@ -42,3 +40,25 @@ updates:
       npm:
         dependency-type: production
         update-types: [minor, patch]
+
+  # Base images in the Dockerfile and service images in compose.yaml, all
+  # pinned to digests.
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      docker:
+        patterns: ["*"]
+
+  - package-ecosystem: docker-compose
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      docker-compose:
+        patterns: ["*"]

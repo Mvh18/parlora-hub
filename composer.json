@@ -14,6 +14,7 @@
         "laravel/chisel": "^0.1.0",
         "laravel/fortify": "^1.37.2",
         "laravel/framework": "^13.17",
+        "laravel/horizon": "^5.50",
         "laravel/tinker": "^3.0",
         "laravel/wayfinder": "^0.1.14"
     },
@@ -53,7 +54,7 @@
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
-            "@php artisan dev"
+            "pnpm exec concurrently --names=server,horizon,logs,vite -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" --restart-tries=5 --restart-after=1000 \"php artisan serve\" \"php artisan horizon\" \"php artisan pail --timeout=0\" \"pnpm run dev\""
         ],
         "lint": [
             "pint --parallel"

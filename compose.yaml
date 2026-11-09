@@ -1,0 +1,100 @@
+# Local runtime (ADR 0002). Start everything with `docker compose up -d` and
+# open http://127.0.0.1:8000. Every port is published on 127.0.0.1 only; the
+# host ports come from APP_PORT, VITE_PORT and FORWARD_* in .env. The app
+# reaches the other services by name (DB_HOST=postgres, ...), so .env holds
+# the in-network hosts and ports.
+name: parlora-hub
+
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    image: parlora-hub-dev:local
+    # `composer dev`: web server, Horizon, log tail and Vite (composer.json).
+    command: [composer, dev]
+    # Service hosts come from .env, not from here: `php artisan serve` drops
+    # process variables that also appear in .env.
+    environment:
+      HUB_DOCKER: 'true'
+      # `php artisan serve` listens on every interface of the container.
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: '8000'
+      # Read by vite.config.ts; Vite does not load .env into its own process.
+      VITE_PORT: ${VITE_PORT:-5173}
+    ports:
+      - 127.0.0.1:${APP_PORT:-8000}:8000
+      # Vite listens on the same port inside and outside the container so the
+      # URL it writes to public/hot works from the browser.
+      - 127.0.0.1:${VITE_PORT:-5173}:${VITE_PORT:-5173}
+    volumes:
+      - .:/app
+      - vendor:/app/vendor
+      - node_modules:/app/node_modules
+    depends_on:
+      postgres:
+        condition: service_healthy
+      valkey:
+        condition: service_healthy
+      mailpit:
+        condition: service_healthy
+    # Healthy once the web server answers and Vite has written public/hot.
+    healthcheck:
+      test:
+        [
+          CMD,
+          php,
+          -r,
+          "exit(is_file('public/hot') && @file_get_contents('http://127.0.0.1:8000/up') !== false ? 0 : 1);",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      # The first start installs Composer and pnpm packages.
+      start_period: 600s
+      start_interval: 5s
+
+  postgres:
+    image: postgres:17@sha256:ff87138949ad9a46f32ff23bd6852b52ce024a13dffe9b4087be98292cdd3b4f
+    environment:
+      POSTGRES_DB: ${DB_DATABASE:-hub}
+      POSTGRES_USER: ${DB_USERNAME:-hub}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-hub}
+    ports:
+      - 127.0.0.1:${FORWARD_DB_PORT:-5432}:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  valkey:
+    image: valkey/valkey:8-alpine@sha256:2602ace2be6569bc2bbb06f873776516ab9089821525be34f4305c67eb9db02a
+    ports:
+      - 127.0.0.1:${FORWARD_REDIS_PORT:-6379}:6379
+    volumes:
+      - valkey-data:/data
+    healthcheck:
+      test: [CMD, valkey-cli, ping]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  mailpit:
+    image: axllent/mailpit:v1.29@sha256:757f22b56c1da03570afdb3d259effe5091018008a81bbedc8158cee7e16fdbc
+    ports:
+      - 127.0.0.1:${FORWARD_MAILPIT_DASHBOARD_PORT:-8025}:8025
+      - 127.0.0.1:${FORWARD_MAILPIT_PORT:-1025}:1025
+    healthcheck:
+      test: [CMD, /mailpit, readyz]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  vendor:
+  node_modules:
+  postgres-data:
+  valkey-data:
