@@ -25,9 +25,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # javascript-typescript joins with the Laravel React starter kit; CodeQL
-        # fails on a language with no code and has no PHP support.
-        language: [actions]
+        # CodeQL has no PHP support; the backend relies on Larastan, the Pest
+        # `security` arch preset and `composer audit`.
+        language: [actions, javascript-typescript]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:

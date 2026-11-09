@@ -1,6 +1,7 @@
 # Dependency review on pull requests (Composer, npm, Docker and Actions).
-# Licence policy: no GPL or AGPL code; MPL-2.0 allowed; LGPL only for
-# packages reviewed and listed below.
+# Licence policy: no GPL or AGPL code; MPL-2.0 and OFL-1.1 (fonts) allowed;
+# LGPL only for packages reviewed and listed below. The same lists drive
+# scripts/check-composer-licences.php, which checks the whole composer.lock.
 fail-on-severity: high
 fail-on-scopes: [runtime, development]
 comment-summary-in-pr: never
@@ -18,6 +19,7 @@ allow-licenses:
   - MIT
   - MIT-0
   - MPL-2.0
+  - OFL-1.1
   - PostgreSQL
   - Python-2.0
   - Unicode-3.0
