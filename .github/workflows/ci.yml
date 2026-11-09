@@ -36,7 +36,7 @@ jobs:
       # Same hooks as local commits; gitleaks runs in the security workflow.
       - run: uvx pre-commit@4.7.0 run --all-files --show-diff-on-failure
         env:
-          SKIP: gitleaks
+          SKIP: gitleaks,pint
 
   php:
     name: php
@@ -56,6 +56,15 @@ jobs:
           --health-interval 5s
           --health-timeout 5s
           --health-retries 10
+      valkey:
+        image: valkey/valkey:8-alpine@sha256:2602ace2be6569bc2bbb06f873776516ab9089821525be34f4305c67eb9db02a
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "valkey-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
     # Override phpunit.xml's SQLite default: feature tests run on PostgreSQL.
     env:
       DB_CONNECTION: pgsql
@@ -64,6 +73,8 @@ jobs:
       DB_DATABASE: hub_test
       DB_USERNAME: hub
       DB_PASSWORD: hub
+      # The queue test pushes a real job to Valkey.
+      REDIS_HOST: 127.0.0.1
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -72,7 +83,7 @@ jobs:
       - uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # 2.40.0
         with:
           php-version: "8.5"
-          extensions: pdo_pgsql
+          extensions: pdo_pgsql, redis
           coverage: pcov
           tools: composer:v2
       - run: composer install --no-interaction --no-progress --prefer-dist
@@ -107,6 +118,25 @@ jobs:
       - run: pnpm check
       - run: pnpm build
 
+  # The local runtime from a fresh clone: build the project image, start
+  # every Compose service and wait until all of them report healthy.
+  compose:
+    name: compose
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: cp .env.example .env
+      - run: docker compose up -d --build --wait --wait-timeout 900
+      - run: curl --fail --silent --show-error --output /dev/null http://127.0.0.1:8000/login
+      - run: docker compose exec -T app php artisan horizon:status
+      - if: failure()
+        run: docker compose logs --no-color
+      - if: always()
+        run: docker compose down --volumes
+
   security:
     name: security
     uses: $/.github/workflows/security.yml
@@ -117,7 +147,7 @@ jobs:
   ci-ok:
     name: ci-ok
     if: always()
-    needs: [hygiene, php, js, security]
+    needs: [hygiene, php, js, compose, security]
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

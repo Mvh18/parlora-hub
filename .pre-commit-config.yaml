@@ -1,7 +1,7 @@
 # Git hooks. Install once with `pre-commit install --install-hooks` (pre-commit
 # and commit-msg stages). Hook repositories are pinned to commit SHAs; update
-# with `pre-commit autoupdate --freeze`. The Pint hook joins with the Compose
-# `app` service.
+# with `pre-commit autoupdate --freeze`. The Pint hook runs in the Compose
+# `app` service, so start it (`docker compose up -d`) before committing PHP.
 default_install_hook_types: [pre-commit, commit-msg]
 default_stages: [pre-commit]
 
@@ -49,6 +49,13 @@ repos:
         language: system
         entry: pnpm exec vp lint --no-error-on-unmatched-pattern
         types_or: [javascript, jsx, ts, tsx]
+      # PHP has no host install (ADR 0002). CI skips this hook: the php job
+      # runs Pint through `composer check`.
+      - id: pint
+        name: format check (pint, app container)
+        language: system
+        entry: docker compose exec -T app vendor/bin/pint --test
+        types: [php]
 
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: 91ab4bf57e58b32adf1a122681f6ebe164d081c8 # frozen: v4.4.0

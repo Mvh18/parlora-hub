@@ -1,0 +1,5 @@
+# Only package.json and docker/ are copied into the image; the source is
+# bind-mounted at run time. Keep the build context small.
+*
+!package.json
+!docker/

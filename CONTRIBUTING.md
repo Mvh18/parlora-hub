@@ -55,6 +55,32 @@ pre-commit install --install-hooks   # secret scanning, hygiene and commit-msg c
 pre-commit run --all-files
 ```
 
+### Local runtime
+
+PHP, Composer and Node run in the Compose `app` service; PostgreSQL, Valkey
+and Mailpit run next to it. You need Docker Desktop (or Docker Engine with
+Compose v2).
+
+```sh
+docker compose up -d --wait          # first start installs packages, creates .env and migrates
+docker compose exec app composer check
+docker compose exec app pnpm check
+```
+
+| Service                 | URL on the host               |
+| ----------------------- | ----------------------------- |
+| Parlora Hub             | http://127.0.0.1:8000         |
+| Horizon (queues)        | http://127.0.0.1:8000/horizon |
+| Mailpit (captured mail) | http://127.0.0.1:8025         |
+| Vite dev server         | http://127.0.0.1:5173         |
+
+`composer dev` (the `app` command) runs the web server, Horizon, the log tail
+and Vite together; follow them with `docker compose logs -f app`. Every port
+is published on `127.0.0.1` only. If a port is taken (a native PostgreSQL on
+5432, for example), change `APP_PORT`, `VITE_PORT` or the matching
+`FORWARD_*` variable in `.env`. `docker compose down -v` removes the database
+and the package volumes.
+
 ### JavaScript packages: pnpm only
 
 PHP and Node run inside the project's Docker image
@@ -105,8 +131,8 @@ Component tests live next to the component as `*.test.tsx` and use React
 Testing Library with jsdom; import the test API from `vite-plus/test`.
 
 The pre-commit configuration runs Oxfmt and Oxlint on staged files through
-`pnpm exec`, so run `pnpm install` before committing. Until the Compose `app`
-service lands, these hooks use pnpm on the host.
+`pnpm exec` on the host, so run `pnpm install` on the host before committing.
+The Pint hook runs in the `app` container, so keep it running.
 
 ## How we work
 

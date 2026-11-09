@@ -11,6 +11,8 @@ import { defineConfig, lazyPlugins } from 'vite-plus';
 // Laravel plugin refuses to serve when CI=true and Wayfinder shells out to
 // `php artisan`, and JS tests must not need either.
 const testing = Boolean(process.env.VITEST);
+const inDocker = process.env.HUB_DOCKER === 'true';
+const devPort = Number(process.env.VITE_PORT ?? 5173);
 
 export default defineConfig({
     plugins: lazyPlugins(() => [
@@ -46,8 +48,18 @@ export default defineConfig({
     resolve: {
         tsconfigPaths: true,
     },
+    // In the Compose `app` service (HUB_DOCKER=true) Vite listens on every
+    // interface of the container, the browser reaches it through the port
+    // published on 127.0.0.1, and file changes are polled because events do
+    // not cross the Windows bind mount (ADR 0002).
     server: {
+        host: inDocker ? '0.0.0.0' : undefined,
+        port: devPort,
+        strictPort: true,
+        hmr: inDocker ? { host: '127.0.0.1' } : undefined,
         watch: {
+            usePolling: inDocker,
+            interval: 100,
             ignored: [
                 '**/.agents/**',
                 '**/.claude/**',

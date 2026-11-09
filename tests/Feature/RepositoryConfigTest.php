@@ -18,8 +18,8 @@ function repositoryYaml(string $path): array
 test('ci-ok waits for every required job', function () {
     $jobs = repositoryYaml('.github/workflows/ci.yml')['jobs'];
 
-    expect($jobs)->toHaveKeys(['hygiene', 'security', 'php', 'js', 'ci-ok'])
-        ->and($jobs['ci-ok']['needs'])->toEqualCanonicalizing(['hygiene', 'security', 'php', 'js'])
+    expect($jobs)->toHaveKeys(['hygiene', 'security', 'php', 'js', 'compose', 'ci-ok'])
+        ->and($jobs['ci-ok']['needs'])->toEqualCanonicalizing(['hygiene', 'security', 'php', 'js', 'compose'])
         ->and($jobs['ci-ok']['if'])->toBe('always()');
 });
 
@@ -61,7 +61,7 @@ test('dependabot covers every ecosystem with a seven-day cooldown', function () 
     $updates = collect(repositoryYaml('.github/dependabot.yml')['updates']);
 
     expect($updates->pluck('package-ecosystem')->all())
-        ->toContain('github-actions', 'composer', 'npm');
+        ->toContain('github-actions', 'composer', 'npm', 'docker', 'docker-compose');
 
     $updates->each(fn (array $update) => expect($update['cooldown']['default-days'])->toBe(7));
 });
@@ -85,3 +85,17 @@ test('labels as code define the issue types and areas in use', function () {
 test('feature tests use PostgreSQL in CI', function () {
     expect(config('database.default'))->toBe('pgsql');
 })->skip(getenv('CI') !== 'true', 'Only enforced in CI, where the php job provides PostgreSQL.');
+
+test('the php job provides Valkey for the queue test', function () {
+    $job = repositoryYaml('.github/workflows/ci.yml')['jobs']['php'];
+
+    expect($job['services'])->toHaveKey('valkey')
+        ->and($job['env']['REDIS_HOST'])->toBe('127.0.0.1');
+});
+
+test('the compose job waits for every service to become healthy', function () {
+    $runs = collect(repositoryYaml('.github/workflows/ci.yml')['jobs']['compose']['steps'])
+        ->pluck('run')->filter()->implode("\n");
+
+    expect($runs)->toContain('docker compose up -d --build --wait');
+});
