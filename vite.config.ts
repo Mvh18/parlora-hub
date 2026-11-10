@@ -82,6 +82,34 @@ export default defineConfig({
             'react/exhaustive-deps': 'error',
             'typescript/no-explicit-any': 'error',
             'typescript/no-floating-promises': 'error',
+            // UI copy comes from lang/<locale>/*.php through useTrans(); only
+            // punctuation and symbols may be written in JSX.
+            'react/jsx-no-literals': [
+                'error',
+                {
+                    allowedStrings: [
+                        '/',
+                        '|',
+                        '·',
+                        '•',
+                        '—',
+                        '–',
+                        '-',
+                        ':',
+                        ',',
+                        '.',
+                        '(',
+                        ')',
+                        '+',
+                        '×',
+                        '%',
+                        '#',
+                        '&',
+                        '*',
+                        '…',
+                    ],
+                },
+            ],
         },
         ignorePatterns: [
             'vendor/**',

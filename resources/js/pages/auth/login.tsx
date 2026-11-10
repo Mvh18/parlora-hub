@@ -10,6 +10,7 @@ import { Spinner } from '@/components/ui/spinner';
 import { store } from '@/routes/login';
 import { request } from '@/routes/password';
 import PasskeyVerify from '@/components/passkey-verify';
+import { useTrans } from '@/hooks/use-trans';
 
 // A literal URL: Wayfinder does not generate the register route when
 // HUB_REGISTRATION_ENABLED is false.
@@ -22,10 +23,11 @@ type Props = {
 
 export default function Login({ status, canResetPassword }: Props) {
     const { features } = usePage().props;
+    const { t } = useTrans();
 
     return (
         <>
-            <Head title="Log in" />
+            <Head title={t('auth.login.head')} />
 
             <PasskeyVerify />
 
@@ -38,7 +40,9 @@ export default function Login({ status, canResetPassword }: Props) {
                     <>
                         <div className="grid gap-6">
                             <div className="grid gap-2">
-                                <Label htmlFor="email">Email address</Label>
+                                <Label htmlFor="email">
+                                    {t('app.fields.email_address')}
+                                </Label>
                                 <Input
                                     id="email"
                                     type="email"
@@ -47,21 +51,25 @@ export default function Login({ status, canResetPassword }: Props) {
                                     autoFocus
                                     tabIndex={1}
                                     autoComplete="email"
-                                    placeholder="email@example.com"
+                                    placeholder={t(
+                                        'app.fields.email_placeholder',
+                                    )}
                                 />
                                 <InputError message={errors.email} />
                             </div>
 
                             <div className="grid gap-2">
                                 <div className="flex items-center">
-                                    <Label htmlFor="password">Password</Label>
+                                    <Label htmlFor="password">
+                                        {t('app.fields.password')}
+                                    </Label>
                                     {canResetPassword && (
                                         <TextLink
                                             href={request()}
                                             className="ml-auto text-sm"
                                             tabIndex={5}
                                         >
-                                            Forgot your password?
+                                            {t('auth.login.forgot_password')}
                                         </TextLink>
                                     )}
                                 </div>
@@ -71,7 +79,7 @@ export default function Login({ status, canResetPassword }: Props) {
                                     required
                                     tabIndex={2}
                                     autoComplete="current-password"
-                                    placeholder="Password"
+                                    placeholder={t('app.fields.password')}
                                 />
                                 <InputError message={errors.password} />
                             </div>
@@ -82,7 +90,9 @@ export default function Login({ status, canResetPassword }: Props) {
                                     name="remember"
                                     tabIndex={3}
                                 />
-                                <Label htmlFor="remember">Remember me</Label>
+                                <Label htmlFor="remember">
+                                    {t('auth.login.remember')}
+                                </Label>
                             </div>
 
                             <Button
@@ -93,15 +103,15 @@ export default function Login({ status, canResetPassword }: Props) {
                                 data-test="login-button"
                             >
                                 {processing && <Spinner />}
-                                Log in
+                                {t('auth.login.submit')}
                             </Button>
                         </div>
 
                         {features.registration && (
                             <div className="text-center text-sm text-muted-foreground">
-                                Don't have an account?{' '}
+                                {t('auth.login.no_account')}{' '}
                                 <TextLink href={registerUrl} tabIndex={5}>
-                                    Sign up
+                                    {t('auth.login.sign_up')}
                                 </TextLink>
                             </div>
                         )}
@@ -119,6 +129,6 @@ export default function Login({ status, canResetPassword }: Props) {
 }
 
 Login.layout = {
-    title: 'Log in to your account',
-    description: 'Enter your email and password below to log in',
+    title: 'auth.login.title',
+    description: 'auth.login.description',
 };

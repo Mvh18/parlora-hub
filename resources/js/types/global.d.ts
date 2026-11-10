@@ -1,3 +1,4 @@
+import type { Translations } from '@/lib/i18n';
 import type { Auth } from '@/types/auth';
 
 declare module 'react' {
@@ -15,6 +16,8 @@ declare module '@inertiajs/core' {
                 registration: boolean;
             };
             sidebarOpen: boolean;
+            locale: string;
+            translations: Translations;
             [key: string]: unknown;
         };
     }

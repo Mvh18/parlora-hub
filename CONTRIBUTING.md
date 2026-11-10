@@ -143,6 +143,31 @@ The pre-commit configuration runs Oxfmt and Oxlint on staged files through
 `pnpm exec` on the host, so run `pnpm install` on the host before committing.
 The Pint hook runs in the `app` container, so keep it running.
 
+### Interface copy
+
+Every piece of interface text lives in `lang/en/<group>.php`; never write copy
+in JSX. Oxlint's `react/jsx-no-literals` rule fails the check on literal text
+nodes, and only punctuation is allowed. Props such as `title`, `placeholder`
+and `aria-label` are not caught by the rule, so translate them as well.
+
+```tsx
+const { t, choice } = useTrans();
+
+t('settings.profile.title'); // lang/en/settings.php → profile.title
+t('auth.throttle', { seconds: 30 }); // ":seconds" placeholder
+choice('home.streak', days); // "{0} …|{1} :count day|[2,*] :count days"
+```
+
+- The active locale's groups reach React as the shared `translations` prop,
+  sent once per visit. `validation`, `pagination` and `passwords` stay on the
+  server.
+- Static objects that live outside components (`Page.layout`, breadcrumbs,
+  `NavItem` lists) hold translation keys; the layout or navigation component
+  translates them.
+- A missing key throws in development and tests and falls back to the key in
+  a production build. `TranslationsTest` also checks that every key the front
+  end mentions exists.
+
 ## How we work
 
 1. **Branch** from `main` as `<type>/<issue>-<slug>`, for example
