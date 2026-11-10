@@ -2,8 +2,9 @@
 # cooldown; version updates wait seven days so a compromised release is
 # usually caught before it is proposed here.
 #
-# The explicit lowercase prefix makes Dependabot write "build(deps): bump ..."
-# instead of "Bump ...", which the PR title check rejects.
+# Every ecosystem uses the same conventional prefix, so release-please files
+# dependency bumps under "build". Dependabot still capitalises "Bump"; the PR
+# title check accepts that one word.
 version: 2
 
 updates:
