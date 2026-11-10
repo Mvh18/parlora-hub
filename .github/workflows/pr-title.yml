@@ -32,8 +32,10 @@ jobs:
             style
             chore
             revert
-          # Imperative, lowercase description: "add x", not "Added X".
-          subjectPattern: ^[a-z].*[^.]$
+          # Imperative, lowercase description: "add x", not "Added X". The one
+          # exception is Dependabot, which capitalises "Bump" in grouped-update
+          # titles whatever its commit-message settings say.
+          subjectPattern: ^([a-z]|Bump ).*[^.]$
           subjectPatternError: >-
             The description "{subject}" in "{title}" must start with a lowercase
             verb and must not end with a period, e.g. "docs: add spanish readme".
