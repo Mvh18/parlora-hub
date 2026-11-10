@@ -71,7 +71,7 @@ services:
       retries: 10
 
   valkey:
-    image: valkey/valkey:8-alpine@sha256:2602ace2be6569bc2bbb06f873776516ab9089821525be34f4305c67eb9db02a
+    image: valkey/valkey:9-alpine@sha256:bf09d58e96d6b4524a15396b65b242bbe18beebbcc15a04d8ee75ddac62fae0b
     ports:
       - 127.0.0.1:${FORWARD_REDIS_PORT:-6379}:6379
     volumes:
@@ -83,7 +83,7 @@ services:
       retries: 10
 
   mailpit:
-    image: axllent/mailpit:v1.29@sha256:757f22b56c1da03570afdb3d259effe5091018008a81bbedc8158cee7e16fdbc
+    image: axllent/mailpit:v1.32@sha256:0790692be935ea4420d085694f7985b1f692ca6a8771ab0e0bd8ba75ac180498
     ports:
       - 127.0.0.1:${FORWARD_MAILPIT_DASHBOARD_PORT:-8025}:8025
       - 127.0.0.1:${FORWARD_MAILPIT_PORT:-1025}:1025

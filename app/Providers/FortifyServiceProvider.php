@@ -21,7 +21,26 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->configureRegistration();
+    }
+
+    /**
+     * Drop Fortify's registration feature when HUB_REGISTRATION_ENABLED is
+     * false, before Fortify registers its routes, so /register is a 404.
+     */
+    private function configureRegistration(): void
+    {
+        if (config('hub.registration_enabled')) {
+            return;
+        }
+
+        /** @var list<string> $features */
+        $features = config('fortify.features', []);
+
+        config(['fortify.features' => array_values(array_filter(
+            $features,
+            fn (string $feature) => $feature !== Features::registration(),
+        ))]);
     }
 
     /**

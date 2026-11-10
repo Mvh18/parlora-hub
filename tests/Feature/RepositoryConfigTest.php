@@ -43,7 +43,9 @@ test('the js job runs pnpm check and pnpm build', function () {
 test('composer check enforces the coverage minimum', function () {
     $check = json_decode((string) file_get_contents(base_path('composer.json')), true)['scripts']['check'];
 
-    expect(implode("\n", $check))->toMatch('/--coverage --min=\d+/');
+    expect(implode("\n", $check))
+        ->toMatch('/--coverage --min=\d+/')
+        ->toContain('scripts/check-authorization-coverage.php');
 });
 
 test('the security workflow audits both package managers and the licence policy', function () {

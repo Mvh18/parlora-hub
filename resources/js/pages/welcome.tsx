@@ -1,9 +1,12 @@
 import { Head, Link, usePage } from '@inertiajs/react';
 import { dashboard, login } from '@/routes';
-import { register } from '@/routes';
+
+// A literal URL: Wayfinder does not generate the register route when
+// HUB_REGISTRATION_ENABLED is false.
+const registerUrl = '/register';
 
 export default function Welcome() {
-    const { auth } = usePage().props;
+    const { auth, features } = usePage().props;
 
     return (
         <>
@@ -26,12 +29,14 @@ export default function Welcome() {
                                 >
                                     Log in
                                 </Link>
-                                <Link
-                                    href={register()}
-                                    className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                                >
-                                    Register
-                                </Link>
+                                {features.registration && (
+                                    <Link
+                                        href={registerUrl}
+                                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                                    >
+                                        Register
+                                    </Link>
+                                )}
                             </>
                         )}
                     </nav>
