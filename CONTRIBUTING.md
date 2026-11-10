@@ -81,6 +81,15 @@ is published on `127.0.0.1` only. If a port is taken (a native PostgreSQL on
 `FORWARD_*` variable in `.env`. `docker compose down -v` removes the database
 and the package volumes.
 
+Horizon is admin-only. Register an account, then grant yourself the flag:
+
+```sh
+docker compose exec app php artisan hub:make-admin you@example.com  # --revoke removes it
+```
+
+Set `HUB_REGISTRATION_ENABLED=false` in `.env` once your account exists; the
+sign-up page then returns 404.
+
 ### JavaScript packages: pnpm only
 
 PHP and Node run inside the project's Docker image
