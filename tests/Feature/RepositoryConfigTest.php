@@ -43,7 +43,9 @@ test('the js job runs pnpm check and pnpm build', function () {
 test('composer check enforces the coverage minimum', function () {
     $check = json_decode((string) file_get_contents(base_path('composer.json')), true)['scripts']['check'];
 
-    expect(implode("\n", $check))->toMatch('/--coverage --min=\d+/');
+    expect(implode("\n", $check))
+        ->toMatch('/--coverage --min=\d+/')
+        ->toContain('scripts/check-authorization-coverage.php');
 });
 
 test('the security workflow audits both package managers and the licence policy', function () {
@@ -66,7 +68,7 @@ test('dependabot covers every ecosystem with a seven-day cooldown', function () 
     $updates->each(fn (array $update) => expect($update['cooldown']['default-days'])->toBe(7));
 });
 
-test('dependabot titles pass the lowercase PR title check', function () {
+test('dependabot commits use the build prefix with a scope', function () {
     collect(repositoryYaml('.github/dependabot.yml')['updates'])->each(
         fn (array $update) => expect($update['commit-message']['prefix'])->toBe('build')
             ->and($update['commit-message']['include'])->toBe('scope'),
@@ -105,4 +107,14 @@ test('the compose job waits for every service to become healthy', function () {
         ->pluck('run')->filter()->implode("\n");
 
     expect($runs)->toContain('docker compose up -d --build --wait');
+});
+
+test('the PR title check accepts lowercase subjects and Dependabot titles only', function () {
+    $pattern = repositoryYaml('.github/workflows/pr-title.yml')['jobs']['title']['steps'][0]['with']['subjectPattern'];
+    $matches = fn (string $subject) => preg_match('/'.$pattern.'/', $subject) === 1;
+
+    expect($matches('add admin flag'))->toBeTrue()
+        ->and($matches('Bump the npm group across 1 directory with 10 updates'))->toBeTrue()
+        ->and($matches('Add admin flag'))->toBeFalse()
+        ->and($matches('add admin flag.'))->toBeFalse();
 });

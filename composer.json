@@ -79,7 +79,8 @@
             "@php artisan config:clear --ansi",
             "@lint:check",
             "@types:check",
-            "@php artisan test --coverage --min=85"
+            "@php artisan test --coverage --min=85 --coverage-clover=.phpunit.cache/clover.xml",
+            "@php scripts/check-authorization-coverage.php .phpunit.cache/clover.xml 95"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
