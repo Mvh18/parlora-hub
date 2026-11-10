@@ -66,6 +66,13 @@ test('dependabot covers every ecosystem with a seven-day cooldown', function () 
     $updates->each(fn (array $update) => expect($update['cooldown']['default-days'])->toBe(7));
 });
 
+test('dependabot titles pass the lowercase PR title check', function () {
+    collect(repositoryYaml('.github/dependabot.yml')['updates'])->each(
+        fn (array $update) => expect($update['commit-message']['prefix'])->toBe('build')
+            ->and($update['commit-message']['include'])->toBe('scope'),
+    );
+});
+
 test('codeql analyses actions and javascript-typescript', function () {
     $languages = repositoryYaml('.github/workflows/codeql.yml')['jobs']['analyze']['strategy']['matrix']['language'];
 
