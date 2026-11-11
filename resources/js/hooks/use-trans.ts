@@ -8,7 +8,7 @@ import type { Translator } from '@/lib/i18n';
  *
  *     const { t, choice } = useTrans();
  *     t('home.greeting.afternoon', { name: user.name });
- *     choice('home.streak', days);
+ *     choice('lessons.count', count);
  */
 export function useTrans(): Translator & { locale: string } {
     const { locale, translations } = usePage().props;

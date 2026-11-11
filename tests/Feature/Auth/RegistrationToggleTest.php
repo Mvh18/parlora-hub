@@ -51,7 +51,7 @@ test('a visitor registers and lands on Home when registration is enabled', funct
         'email' => 'test@example.com',
         'password' => 'password',
         'password_confirmation' => 'password',
-    ])->assertRedirect(route('dashboard', absolute: false));
+    ])->assertRedirect(route('home', absolute: false));
 
     $this->assertAuthenticated();
     expect(User::where('email', 'test@example.com')->exists())->toBeTrue();
