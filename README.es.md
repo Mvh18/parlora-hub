@@ -5,9 +5,10 @@ Estudia los niveles MCER A1 a C1 con ejercicios corregidos en el servidor,
 exámenes por nivel que desbloquean el siguiente módulo y un cuaderno de errores
 que muestra dónde fallas más.
 
-> 🚧 **En construcción.** Parlora Hub está en su primera fase: se está
-> construyendo el esqueleto del proyecto. Todavía no hay nada que instalar.
-> [Read in English](README.md).
+> 🚧 **En construcción.** La fase 0 está terminada: el esqueleto corre en
+> local con inicio de sesión, la estructura de la app y una página de inicio
+> vacía. Las lecciones, la práctica y los exámenes llegan en las siguientes
+> fases. [Read in English](README.md).
 
 ## Principios
 
@@ -21,6 +22,45 @@ que muestra dónde fallas más.
   writing vienen del servicio opcional
   [Parlora Tutor](https://github.com/Mvh18/parlora-tutor). Sin él, Hub sigue
   funcionando, repaso espaciado incluido.
+
+## Inicio rápido
+
+Necesitas [Git](https://git-scm.com/) y
+[Docker Desktop](https://www.docker.com/products/docker-desktop/) (o Docker
+Engine con Compose v2). PHP, Composer y Node corren dentro del contenedor del
+proyecto, así que no hay que instalar nada más
+([ADR 0002](docs/adr/0002-php-environment.md), en inglés).
+
+```sh
+git clone https://github.com/Mvh18/parlora-hub.git
+cd parlora-hub
+docker compose up -d --wait
+```
+
+El primer arranque construye la imagen, instala los paquetes de Composer y
+pnpm, crea `.env` con su clave y migra la base de datos; tarda unos minutos.
+Después abre **http://127.0.0.1:8000**, regístrate e inicia sesión.
+
+| Servicio                   | URL                           |
+| -------------------------- | ----------------------------- |
+| Parlora Hub                | http://127.0.0.1:8000         |
+| Mailpit (correo capturado) | http://127.0.0.1:8025         |
+| Horizon (colas, admin)     | http://127.0.0.1:8000/horizon |
+
+Para abrir Horizon, da permisos de administración a tu cuenta; cuando ya
+exista, puedes cerrar el registro con `HUB_REGISTRATION_ENABLED=false` en `.env`:
+
+```sh
+docker compose exec app php artisan hub:make-admin tu@example.com
+```
+
+`docker compose stop` detiene el entorno y `docker compose up -d --wait` lo
+vuelve a levantar. Si un puerto ya está en uso en tu equipo (por ejemplo, un
+PostgreSQL local en el 5432), crea `.env` antes del primer arranque con
+`cp .env.example .env` y cambia `APP_PORT`, `VITE_PORT` o la variable
+`FORWARD_*` correspondiente. Las comprobaciones, los hooks y las
+convenciones de desarrollo están en [CONTRIBUTING.md](CONTRIBUTING.md) (en
+inglés), y la arquitectura en [docs/architecture.md](docs/architecture.md).
 
 ## Licencia
 
