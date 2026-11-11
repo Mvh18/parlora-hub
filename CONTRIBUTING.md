@@ -168,6 +168,27 @@ choice('home.streak', days); // "{0} …|{1} :count day|[2,*] :count days"
   a production build. `TranslationsTest` also checks that every key the front
   end mentions exists.
 
+### Styling and design tokens
+
+Colours, radii and type come from `resources/css/tokens.css`; components use
+only the Tailwind utilities mapped from it in `resources/css/app.css`.
+
+- Brand utilities: `bg-canvas`, `bg-surface`, `text-ink`, `text-ink-muted`,
+  `bg-inverse`, `text-success`, `rounded-card`, `text-h2`, `font-display`, …
+  shadcn/ui utilities (`bg-background`, `text-primary`, …) map to the same
+  tokens. `accent` in a class name is shadcn's hover surface; the brand blue
+  is `primary`.
+- Speech-bubble corners: `bubble-bl` (hero cards), `bubble-bl-sm` (small
+  cards), `bubble-bl-xs` (logo), `bubble-br` (learner bubble).
+- No hex values, colour functions or Tailwind palette colours (`bg-white`,
+  `text-red-600`, …) in `resources/js`: a Vitest scan fails on them.
+- Every text/background pair is listed in `resources/js/design/tokens.test.ts`
+  and must meet WCAG 2.2 AA in light and dark. A new pair goes into that list.
+- Interactive targets are at least 44 px high (`min-h-11`, buttons `h-11`,
+  primary call-to-action `h-12`) with a `focus-visible:ring-ring` focus ring.
+- Fonts (Bricolage Grotesque, Figtree) are npm packages bundled by Vite; never
+  link a font CDN. `pnpm check:build` verifies the built assets.
+
 ## How we work
 
 1. **Branch** from `main` as `<type>/<issue>-<slug>`, for example

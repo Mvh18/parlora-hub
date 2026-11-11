@@ -1,18 +1,19 @@
-import { usePage } from '@inertiajs/react';
+import BrandMark from '@/components/brand-mark';
+import { useTrans } from '@/hooks/use-trans';
 
-import AppLogoIcon from '@/components/app-logo-icon';
-
+/** The brand lockup: mark, "Parlora" and the product name below it. */
 export default function AppLogo() {
-    const { name } = usePage().props;
+    const { t } = useTrans();
 
     return (
         <>
-            <div className="flex aspect-square size-8 items-center justify-center rounded-md bg-sidebar-primary text-sidebar-primary-foreground">
-                <AppLogoIcon className="size-5 fill-current text-white dark:text-black" />
-            </div>
-            <div className="ml-1 grid flex-1 text-left text-sm">
-                <span className="mb-0.5 truncate leading-tight font-semibold">
-                    {name}
+            <BrandMark className="size-8" />
+            <div className="ml-1 flex flex-1 flex-col text-left">
+                <span className="truncate font-display text-h3 leading-none font-bold text-ink">
+                    {t('app.brand.name')}
+                </span>
+                <span className="mt-0.5 truncate text-caption text-ink-muted">
+                    {t('app.brand.product')}
                 </span>
             </div>
         </>

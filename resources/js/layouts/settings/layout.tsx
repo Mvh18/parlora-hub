@@ -1,7 +1,6 @@
 import { Link } from '@inertiajs/react';
 import type { PropsWithChildren } from 'react';
 import Heading from '@/components/heading';
-import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { useCurrentUrl } from '@/hooks/use-current-url';
 import { useTrans } from '@/hooks/use-trans';
@@ -46,24 +45,28 @@ export default function SettingsLayout({ children }: PropsWithChildren) {
                         className="flex flex-col space-y-1 space-x-0"
                         aria-label={t('settings.title')}
                     >
-                        {sidebarNavItems.map((item, index) => (
-                            <Button
-                                key={`${toUrl(item.href)}-${index}`}
-                                size="sm"
-                                variant="ghost"
-                                asChild
-                                className={cn('w-full justify-start', {
-                                    'bg-muted': isCurrentOrParentUrl(item.href),
-                                })}
-                            >
-                                <Link href={item.href}>
+                        {sidebarNavItems.map((item, index) => {
+                            const current = isCurrentOrParentUrl(item.href);
+
+                            return (
+                                <Link
+                                    key={`${toUrl(item.href)}-${index}`}
+                                    href={item.href}
+                                    aria-current={current ? 'page' : undefined}
+                                    className={cn(
+                                        'flex min-h-11 w-full items-center gap-3 rounded-control px-3 text-body-sm transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none',
+                                        current
+                                            ? 'bg-accent-soft font-semibold text-primary'
+                                            : 'font-medium text-ink-secondary hover:bg-surface hover:text-ink',
+                                    )}
+                                >
                                     {item.icon && (
-                                        <item.icon className="h-4 w-4" />
+                                        <item.icon className="size-5" />
                                     )}
                                     {t(item.title)}
                                 </Link>
-                            </Button>
-                        ))}
+                            );
+                        })}
                     </nav>
                 </aside>
 

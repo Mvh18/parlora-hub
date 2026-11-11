@@ -1,21 +1,17 @@
 <?php
 
 /*
- * The public landing page. It still carries the starter kit's content until
- * the branded Home replaces it.
+ * The public landing page.
  */
 
 return [
 
     'head' => 'Welcome',
     'register' => 'Register',
-    'title' => "Let's get started",
-    'intro' => 'Laravel has an incredibly rich ecosystem.',
-    'suggestion' => 'We suggest starting with the following.',
-    'read_the' => 'Read the',
-    'documentation' => 'Documentation',
-    'watch' => 'Watch video tutorials at',
-    'laracasts' => 'Laracasts',
-    'deploy' => 'Deploy now',
+    'title' => 'Learn English one level at a time',
+    'intro' => 'Lessons, practice and exams that unlock each level, and a notebook of your own mistakes to review.',
+    // A decorative exchange in speech bubbles; hidden from assistive technology.
+    'sample_question' => 'What did you do last weekend?',
+    'sample_answer' => 'I went to the beach with my family.',
 
 ];
