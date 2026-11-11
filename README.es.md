@@ -55,8 +55,10 @@ docker compose exec app php artisan hub:make-admin tu@example.com
 ```
 
 `docker compose stop` detiene el entorno y `docker compose up -d --wait` lo
-vuelve a levantar. Si un puerto está ocupado, cambia `APP_PORT` o la variable
-`FORWARD_*` correspondiente en `.env`. Las comprobaciones, los hooks y las
+vuelve a levantar. Si un puerto ya está en uso en tu equipo (por ejemplo, un
+PostgreSQL local en el 5432), crea `.env` antes del primer arranque con
+`cp .env.example .env` y cambia `APP_PORT`, `VITE_PORT` o la variable
+`FORWARD_*` correspondiente. Las comprobaciones, los hooks y las
 convenciones de desarrollo están en [CONTRIBUTING.md](CONTRIBUTING.md) (en
 inglés), y la arquitectura en [docs/architecture.md](docs/architecture.md).
 

@@ -55,9 +55,10 @@ docker compose exec app php artisan hub:make-admin you@example.com
 ```
 
 `docker compose stop` stops the stack and `docker compose up -d --wait`
-starts it again. If a port is taken, change `APP_PORT` or the matching
-`FORWARD_*` variable in `.env`. Development checks, hooks and conventions
-are in [CONTRIBUTING.md](CONTRIBUTING.md); the system is described in
+starts it again. If a port is already in use on your machine (for example a
+local PostgreSQL on 5432), create `.env` before the first start with
+`cp .env.example .env` and change `APP_PORT`, `VITE_PORT` or the matching
+`FORWARD_*` variable. Development checks, hooks and conventions are in [CONTRIBUTING.md](CONTRIBUTING.md); the system is described in
 [docs/architecture.md](docs/architecture.md).
 
 ## License
