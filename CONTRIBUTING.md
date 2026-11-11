@@ -45,9 +45,9 @@ existing issue is more useful than a duplicate. In a report, include:
 
 ## Development setup
 
-The Laravel skeleton is still being built; this section grows with it.
-Today you need git and [pre-commit](https://pre-commit.com/), installed for
-example with [uv](https://docs.astral.sh/uv/):
+Start with the quick start in the [README](README.md). On top of git and
+Docker, contributors need [pre-commit](https://pre-commit.com/) for the git
+hooks, installed for example with [uv](https://docs.astral.sh/uv/):
 
 ```sh
 uv tool install pre-commit

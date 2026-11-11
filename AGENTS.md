@@ -34,9 +34,25 @@ for one learner and is built so it can be published later without a rewrite.
 
 ## Stack
 
-Laravel (PHP 8.3+), Inertia.js + React + TypeScript + Tailwind, shadcn/ui,
-Filament, PostgreSQL, Valkey + Horizon, Docker Compose. Quality: Pest, Pint,
-Larastan; ESLint, Prettier, Vitest.
+Laravel 13 (PHP 8.5, in Docker), Inertia + React + TypeScript (strict) +
+Tailwind 4, shadcn/ui, PostgreSQL, Valkey + Horizon, Docker Compose; Filament
+arrives in Phase 1. Quality: Pest, Pint, Larastan; Oxlint, Oxfmt and Vitest
+through Vite+. See [docs/architecture.md](docs/architecture.md).
+
+## Commands
+
+PHP, Composer and Node run in the Compose `app` service
+([ADR 0002](docs/adr/0002-php-environment.md)); there is no PHP on the host.
+
+```sh
+docker compose up -d --wait               # start the stack (http://127.0.0.1:8000)
+docker compose exec app composer check    # Pint, Larastan, Pest with coverage gates
+docker compose exec app pnpm check        # Oxfmt, Oxlint, tsc --noEmit, Vitest
+docker compose exec app php artisan wayfinder:generate --with-form  # after route changes
+```
+
+Run both checks before every commit; CI runs the same ones under `ci-ok`.
+Use pnpm only: never npm or yarn, never `package-lock.json` or `yarn.lock`.
 
 ## Rules that must not be broken
 
@@ -51,6 +67,24 @@ Larastan; ESLint, Prettier, Vitest.
   `php artisan content:import`.
 - No secrets, personal data, voice recordings, database dumps or local
   absolute paths in committed files.
+- **UI copy comes from `lang/en/*.php`.** Components read it with
+  `useTrans()` (`t('home.greeting.morning', { name })`); JSX never contains
+  literal text (`react/jsx-no-literals`). Add the key to the right group
+  file; the front end must not use a key that does not exist.
+- **Style with design tokens only.** Colours, radii, shadows and type come
+  from `resources/css/tokens.css` through Tailwind utilities (`bg-surface`,
+  `text-ink-muted`, `rounded-card`, `bubble-bl`, …). No hex values, colour
+  functions or Tailwind palette colours (`bg-blue-500`) in `resources/js`;
+  new colours are added as tokens with a contrast test. Interactive targets
+  are at least 44 px.
+- **Admin is a flag, not a role system.** `users.is_admin` is never
+  mass-assignable and never sent to the browser; grant it only with
+  `php artisan hub:make-admin {email}` (`--revoke` removes it). Gates read
+  it (today `viewHorizon`).
+- `users.learner_ref` is immutable and is the only learner identifier ever
+  shared with Parlora Tutor.
+- The navigation lists only sections that exist: a phase adds its item to
+  `resources/js/lib/navigation.ts` when its pages ship.
 
 ## Conventions
 
