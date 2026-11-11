@@ -2,14 +2,14 @@ import { Head, Link, usePage } from '@inertiajs/react';
 import AppLogo from '@/components/app-logo';
 import { Button } from '@/components/ui/button';
 import { useTrans } from '@/hooks/use-trans';
-import { dashboard, login } from '@/routes';
+import { login } from '@/routes';
 
 // A literal URL: Wayfinder does not generate the register route when
 // HUB_REGISTRATION_ENABLED is false.
 const registerUrl = '/register';
 
 export default function Welcome() {
-    const { auth, features } = usePage().props;
+    const { features } = usePage().props;
     const { t } = useTrans();
 
     return (
@@ -20,28 +20,17 @@ export default function Welcome() {
                     <div className="flex items-center gap-2.5">
                         <AppLogo />
                     </div>
+                    {/* Signed-in learners never see this page: the guest middleware sends them to Home. */}
                     <nav className="flex items-center gap-2">
-                        {auth.user ? (
+                        <Button asChild variant="ghost">
+                            <Link href={login()}>{t('auth.login.submit')}</Link>
+                        </Button>
+                        {features.registration && (
                             <Button asChild>
-                                <Link href={dashboard()}>
-                                    {t('nav.dashboard')}
+                                <Link href={registerUrl}>
+                                    {t('welcome.register')}
                                 </Link>
                             </Button>
-                        ) : (
-                            <>
-                                <Button asChild variant="ghost">
-                                    <Link href={login()}>
-                                        {t('auth.login.submit')}
-                                    </Link>
-                                </Button>
-                                {features.registration && (
-                                    <Button asChild>
-                                        <Link href={registerUrl}>
-                                            {t('welcome.register')}
-                                        </Link>
-                                    </Button>
-                                )}
-                            </>
                         )}
                     </nav>
                 </header>

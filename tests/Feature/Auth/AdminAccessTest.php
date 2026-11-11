@@ -46,7 +46,7 @@ test('a profile update ignores is_admin and learner_ref fields', function () {
 test('Inertia props never contain is_admin or learner_ref', function () {
     $user = User::factory()->admin()->create();
 
-    $page = $this->actingAs($user)->get(route('dashboard'))->assertOk()->viewData('page');
+    $page = $this->actingAs($user)->get(route('home'))->assertOk()->viewData('page');
 
     $payload = (string) json_encode($page);
 

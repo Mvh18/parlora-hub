@@ -19,11 +19,11 @@ function sharedProps(mixed $page): array
 
 test('an authenticated page shares the locale and the shell translations', function () {
     $props = sharedProps($this->actingAs(User::factory()->create())
-        ->get(route('dashboard'))->assertOk()->viewData('page'));
+        ->get(route('home'))->assertOk()->viewData('page'));
 
     expect($props['locale'])->toBe('en')
         ->and($props['translations'])->toHaveKeys(['app', 'auth', 'nav', 'settings'])
-        ->and($props['translations']['nav']['dashboard'])->toBe(__('nav.dashboard'));
+        ->and($props['translations']['nav']['home'])->toBe(__('nav.home'));
 });
 
 test('guest pages share the translations too', function () {
