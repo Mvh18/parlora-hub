@@ -5,6 +5,7 @@
   "scripts": {
     "build": "vp build",
     "build:ssr": "vp build && vp build --ssr",
+    "check:build": "node scripts/check-build-fonts.mjs",
     "dev": "vp dev",
     "check": "vp check && tsc --noEmit && vp test",
     "check:fix": "vp check --fix",
@@ -12,6 +13,8 @@
     "test": "vp test"
   },
   "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/figtree": "^5.3.0",
     "@inertiajs/react": "^3.11.0",
     "@inertiajs/vite": "^3.11.0",
     "@laravel/passkeys": "^0.4.0",

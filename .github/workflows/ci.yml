@@ -117,6 +117,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
       - run: pnpm build
+      # Brand fonts ship in the build; no third-party font host is referenced.
+      - run: pnpm check:build
 
   # The local runtime from a fresh clone: build the project image, start
   # every Compose service and wait until all of them report healthy.

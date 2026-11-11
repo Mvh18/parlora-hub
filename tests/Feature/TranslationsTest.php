@@ -50,7 +50,9 @@ test('every translation key used by the front end exists', function () {
         ->implode('|');
 
     $keys = collect(File::allFiles(resource_path('js')))
-        ->reject(fn (SplFileInfo $file) => str_contains($file->getFilename(), '.test.'))
+        // Tests and their support code (resources/js/test) are not front-end copy.
+        ->reject(fn (SplFileInfo $file) => str_contains($file->getFilename(), '.test.')
+            || str_starts_with(str_replace('\\', '/', $file->getRelativePath()), 'test'))
         ->flatMap(function (SplFileInfo $file) use ($groups) {
             preg_match_all("/['\"`]((?:{$groups})\\.[a-z0-9_]+(?:\\.[a-z0-9_]+)*)['\"`]/", $file->getContents(), $matches);
 

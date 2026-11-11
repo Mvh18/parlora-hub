@@ -6,6 +6,12 @@
 
 return [
 
+    // The brand lockup: umbrella brand over the product name.
+    'brand' => [
+        'name' => 'Parlora',
+        'product' => 'Hub',
+    ],
+
     'actions' => [
         'back' => 'Back',
         'cancel' => 'Cancel',
