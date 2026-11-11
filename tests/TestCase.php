@@ -6,6 +6,7 @@ use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Bootstrap\LoadConfiguration;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Illuminate\Support\Facades\Http;
 use Laravel\Fortify\Features;
 
 abstract class TestCase extends BaseTestCase
@@ -30,7 +31,13 @@ abstract class TestCase extends BaseTestCase
         $this->traitsUsedByTest = class_uses_recursive(static::class);
 
         $app->afterBootstrapping(LoadConfiguration::class, function (Application $app) {
-            $app->make('config')->set($this->bootConfig);
+            $app->make('config')->set([
+                // Feature tests assert client-rendered Inertia responses. With
+                // SSR on, every page render posts to the Vite dev server
+                // (`/__inertia_ssr`) when `public/hot` exists.
+                'inertia.ssr.enabled' => false,
+                ...$this->bootConfig,
+            ]);
         });
 
         $app->make(Kernel::class)->bootstrap();
@@ -52,17 +59,21 @@ abstract class TestCase extends BaseTestCase
 
         $this->refreshApplication();
         $this->withoutVite();
+        Http::preventStrayRequests();
     }
 
     /**
      * PHP tests never need built front-end assets, so CI can run them without
-     * `pnpm build`.
+     * `pnpm build`. No test may reach the network through the HTTP client
+     * (Parlora Tutor included): a test that needs a response fakes it with
+     * Http::fake().
      */
     protected function setUp(): void
     {
         parent::setUp();
 
         $this->withoutVite();
+        Http::preventStrayRequests();
     }
 
     protected function skipUnlessFortifyHas(string $feature, ?string $message = null): void
