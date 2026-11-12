@@ -47,6 +47,17 @@ return [
             'report' => false,
         ],
 
+        // Listening and dictation audio for course content. Private on
+        // purpose: no URL and no `serve`, so files only leave through an
+        // authenticated route (Phase 3).
+        'content-audio' => [
+            'driver' => 'local',
+            'root' => storage_path('app/private/content-audio'),
+            'visibility' => 'private',
+            'throw' => false,
+            'report' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

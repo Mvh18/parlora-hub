@@ -199,4 +199,28 @@ return [
 
     'attributes' => [],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Course Content Validation
+    |--------------------------------------------------------------------------
+    |
+    | Messages for the content rules (translated text, audio paths). They reach
+    | authors through the content panel and the importer, never learners.
+    |
+    */
+
+    'content' => [
+        'translated' => [
+            'not_array' => 'The :attribute must be a set of translations keyed by locale.',
+            'english_required' => 'The English text of :attribute is required.',
+            'locale_unsupported' => 'The :attribute has a translation for ":locale", which is not a supported content locale.',
+            'not_text' => 'The ":locale" translation of :attribute must be non-empty text.',
+        ],
+        'audio_path' => [
+            'not_string' => 'The :attribute must be a path.',
+            'invalid' => 'The :attribute must be a relative path of plain file names, without "..", leading slashes or special characters.',
+            'extension' => 'The :attribute must end in one of: :extensions.',
+        ],
+    ],
+
 ];
