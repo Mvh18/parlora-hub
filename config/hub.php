@@ -14,4 +14,17 @@ return [
 
     'registration_enabled' => (bool) env('HUB_REGISTRATION_ENABLED', true),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Content locales
+    |--------------------------------------------------------------------------
+    |
+    | Locales a translatable content value (glosses, explanations, rubric
+    | descriptions) may carry. English is always required; the interface
+    | itself stays English-only.
+    |
+    */
+
+    'content_locales' => ['en', 'es'],
+
 ];
