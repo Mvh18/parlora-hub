@@ -11,11 +11,3 @@ parameters:
         - routes/
 
     level: 8
-
-    ignoreErrors:
-        # Remove when the first content model uses them (add-content-model, S02).
-        -
-            identifier: trait.unused
-            paths:
-                - app/Models/Concerns/Archivable.php
-                - app/Models/Concerns/HasStableKey.php
