@@ -1,5 +1,8 @@
 <?php
 
+use App\Data\Exercises\ExercisePayloads;
+use App\Enums\ExerciseType;
+use App\Exceptions\InvalidExercisePayload;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -17,6 +20,10 @@ use Tests\TestCase;
 pest()->extend(TestCase::class)
     ->use(RefreshDatabase::class)
     ->in('Feature');
+
+// Payload tests need the container for validation messages and config, not the database.
+pest()->extend(TestCase::class)
+    ->in('Unit/Exercises');
 
 /*
 |--------------------------------------------------------------------------
@@ -47,4 +54,22 @@ expect()->extend('toBeOne', function () {
 function something()
 {
     // ..
+}
+
+/**
+ * The error paths an exercise payload produces, or [] when it is valid.
+ *
+ * @param  array<string, mixed>  $content
+ * @param  array<string, mixed>  $solution
+ * @return list<string>
+ */
+function payloadErrors(ExerciseType $type, array $content, array $solution): array
+{
+    try {
+        ExercisePayloads::validate($type, $content, $solution);
+    } catch (InvalidExercisePayload $exception) {
+        return array_keys($exception->errors());
+    }
+
+    return [];
 }

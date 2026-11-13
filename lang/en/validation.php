@@ -221,6 +221,18 @@ return [
             'invalid' => 'The :attribute must be a relative path of plain file names, without "..", leading slashes or special characters.',
             'extension' => 'The :attribute must end in one of: :extensions.',
         ],
+        'payload' => [
+            'answer_unknown' => 'The answer ":id" is not one of the options.',
+            'single_answer' => 'Only one correct answer is allowed unless multiple answers are enabled.',
+            'no_gaps' => 'The text needs at least one {{gap}} marker.',
+            'gap_without_answers' => 'The gap ":id" has no accepted answers.',
+            'answers_without_gap' => 'The answers refer to ":id", which is not a gap in the text.',
+            'order_not_permutation' => 'Each accepted order must use every token exactly once.',
+            'tokens_reveal_order' => 'The tokens are stored in an accepted order, which reveals the answer; store them shuffled.',
+            'pair_unknown_id' => 'The pair refers to an id that does not exist.',
+            'pair_left_repeated' => 'The left item ":id" is paired more than once.',
+            'left_unpaired' => 'The left item ":id" has no pair.',
+            'word_limits' => 'The minimum words cannot be greater than the maximum words.',        ],
     ],
 
 ];
