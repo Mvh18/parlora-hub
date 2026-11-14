@@ -212,8 +212,9 @@ describe('archival and restricted deletes', function () {
         $passage = Passage::factory()->reading()->create();
         Exercise::factory()->create(['passage_id' => $passage->id]);
 
-        expect(fn () => $passage->delete())->toThrow(QueryException::class);
+        // Query before the delete: on PostgreSQL the failed statement aborts the test transaction.
         expect($passage->exercises)->toHaveCount(1);
+        expect(fn () => $passage->delete())->toThrow(QueryException::class);
     });
 
     test('an exercise can exist without a passage', function () {
