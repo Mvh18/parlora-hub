@@ -68,6 +68,12 @@ test('dependabot covers every ecosystem with a seven-day cooldown', function () 
     $updates->each(fn (array $update) => expect($update['cooldown']['default-days'])->toBe(7));
 });
 
+test('dependabot checks version updates monthly', function () {
+    collect(repositoryYaml('.github/dependabot.yml')['updates'])->each(
+        fn (array $update) => expect($update['schedule']['interval'])->toBe('monthly'),
+    );
+});
+
 test('dependabot commits use the build prefix with a scope', function () {
     collect(repositoryYaml('.github/dependabot.yml')['updates'])->each(
         fn (array $update) => expect($update['commit-message']['prefix'])->toBe('build')

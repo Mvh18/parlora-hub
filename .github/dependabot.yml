@@ -1,6 +1,8 @@
-# Dependabot version updates. Security updates are not delayed by the
-# cooldown; version updates wait seven days so a compromised release is
-# usually caught before it is proposed here.
+# Dependabot version updates, checked once a month (on the 1st) so they
+# arrive as one batch instead of a weekly stream. Security updates do not
+# follow this schedule or the cooldown: they are proposed as soon as an
+# advisory is published. Version updates wait seven days so a compromised
+# release is usually caught before it is proposed here.
 #
 # Every ecosystem uses the same conventional prefix, so release-please files
 # dependency bumps under "build". Dependabot still capitalises "Bump"; the PR
@@ -11,7 +13,7 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
     cooldown:
       default-days: 7
     commit-message:
@@ -24,7 +26,7 @@ updates:
   - package-ecosystem: composer
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
     cooldown:
       default-days: 7
     commit-message:
@@ -41,7 +43,7 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
     cooldown:
       default-days: 7
     commit-message:
@@ -59,7 +61,7 @@ updates:
   - package-ecosystem: docker
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
     cooldown:
       default-days: 7
     commit-message:
@@ -72,7 +74,7 @@ updates:
   - package-ecosystem: docker-compose
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
     cooldown:
       default-days: 7
     commit-message:
