@@ -64,4 +64,10 @@ class Lesson extends Model
     {
         return $this->hasMany(VocabularyItem::class)->orderBy('position');
     }
+
+    /** @return HasMany<Exercise, $this> */
+    public function exercises(): HasMany
+    {
+        return $this->hasMany(Exercise::class)->orderBy('position');
+    }
 }
