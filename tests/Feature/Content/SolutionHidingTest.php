@@ -120,7 +120,11 @@ describe('architecture', function () {
             }
         }
 
-        // The rule must actually cover something: exercises and passages today.
-        expect($checked)->toContain('App\\Models\\Exercise::solution', 'App\\Models\\Passage::transcript');
+        // The rule must actually cover something: exercises, exam questions and passages.
+        expect($checked)->toContain(
+            'App\\Models\\Exercise::solution',
+            'App\\Models\\ExamQuestion::solution',
+            'App\\Models\\Passage::transcript',
+        );
     });
 });
