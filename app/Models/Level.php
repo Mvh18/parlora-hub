@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Carbon;
 use Illuminate\Validation\ValidationException;
 
@@ -57,6 +58,12 @@ class Level extends Model
             'position' => 'integer',
             'pass_threshold' => 'integer',
         ];
+    }
+
+    /** @return HasOne<Exam, $this> */
+    public function exam(): HasOne
+    {
+        return $this->hasOne(Exam::class);
     }
 
     /** @return HasMany<Unit, $this> */

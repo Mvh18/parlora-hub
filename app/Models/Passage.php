@@ -39,6 +39,12 @@ class Passage extends Model
         return $this->hasMany(Exercise::class);
     }
 
+    /** @return HasMany<ExamQuestion, $this> */
+    public function examQuestions(): HasMany
+    {
+        return $this->hasMany(ExamQuestion::class);
+    }
+
     protected static function booted(): void
     {
         static::saving(function (self $passage): void {
