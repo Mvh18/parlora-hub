@@ -8,6 +8,7 @@ use Illuminate\Foundation\Bootstrap\LoadConfiguration;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\Http;
 use Laravel\Fortify\Features;
+use Tests\Support\TestDatabaseGuard;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -71,6 +72,9 @@ abstract class TestCase extends BaseTestCase
     protected function setUp(): void
     {
         parent::setUp();
+
+        $connection = config('database.default');
+        TestDatabaseGuard::assertSafe($connection, config("database.connections.{$connection}.database"));
 
         $this->withoutVite();
         Http::preventStrayRequests();

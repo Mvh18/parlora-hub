@@ -90,6 +90,21 @@ docker compose exec app php artisan hub:make-admin you@example.com  # --revoke r
 Set `HUB_REGISTRATION_ENABLED=false` in `.env` once your account exists; the
 sign-up page then returns 404.
 
+#### Test database
+
+The suite runs on PostgreSQL, never on SQLite: `phpunit.xml` selects the
+`hub_test` database, and `composer check` needs no overrides. Compose creates
+`hub_test` when it builds a fresh volume. On a volume that already exists,
+create it once:
+
+```sh
+docker compose exec postgres createdb -U hub hub_test
+```
+
+A guard in `tests/TestCase.php` stops the run unless the connection is
+PostgreSQL and the database name ends in `_test`, so the tests can never wipe
+your development database.
+
 ### JavaScript packages: pnpm only
 
 PHP and Node run inside the project's Docker image
