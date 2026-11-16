@@ -35,8 +35,9 @@ for one learner and is built so it can be published later without a rewrite.
 ## Stack
 
 Laravel 13 (PHP 8.5, in Docker), Inertia + React + TypeScript (strict) +
-Tailwind 4, shadcn/ui, PostgreSQL, Valkey + Horizon, Docker Compose; Filament
-arrives in Phase 1. Quality: Pest, Pint, Larastan; Oxlint, Oxfmt and Vitest
+Tailwind 4, shadcn/ui, PostgreSQL, Valkey + Horizon, Docker Compose;
+`spatie/laravel-data` (exercise payloads) and `spatie/laravel-translatable`
+(content translations); Filament arrives in Phase 1. Quality: Pest, Pint, Larastan; Oxlint, Oxfmt and Vitest
 through Vite+. See [docs/architecture.md](docs/architecture.md).
 
 ## Commands

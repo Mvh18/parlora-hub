@@ -3,12 +3,12 @@
 namespace App\Models;
 
 use App\Casts\ExercisePayloadCast;
-use App\Data\Exercises\ExercisePayloads;
 use App\Enums\ExerciseType;
 use App\Enums\Skill;
 use App\Models\Concerns\Archivable;
 use App\Models\Concerns\HasContentTranslations;
 use App\Models\Concerns\HasStableKey;
+use App\Models\Concerns\ValidatesExercisePayloads;
 use App\Rules\AudioPath;
 use Database\Factories\ExerciseFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
@@ -46,7 +46,7 @@ use Spatie\LaravelData\Data;
 class Exercise extends Model
 {
     /** @use HasFactory<ExerciseFactory> */
-    use Archivable, HasContentTranslations, HasFactory, HasStableKey;
+    use Archivable, HasContentTranslations, HasFactory, HasStableKey, ValidatesExercisePayloads;
 
     /** @var list<string> */
     public array $translatable = ['explanation'];
@@ -55,30 +55,7 @@ class Exercise extends Model
     {
         static::saving(function (self $exercise): void {
             AudioPath::assert('audio_path', $exercise->audio_path);
-
-            // Validates the stored JSON for the current type, so changing the
-            // type without a matching payload fails before anything is written.
-            ExercisePayloads::validate(
-                $exercise->type,
-                self::storedPayload($exercise, 'content'),
-                self::storedPayload($exercise, 'solution'),
-            );
         });
-    }
-
-    /** @return array<string, mixed> */
-    private static function storedPayload(self $exercise, string $column): array
-    {
-        $raw = $exercise->getAttributes()[$column] ?? null;
-
-        if (! is_string($raw)) {
-            return [];
-        }
-
-        /** @var array<string, mixed>|null $payload */
-        $payload = json_decode($raw, true);
-
-        return is_array($payload) ? $payload : [];
     }
 
     /** @return array<string, mixed> */

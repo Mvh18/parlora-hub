@@ -8,15 +8,15 @@ with their trade-offs live in [`docs/adr/`](adr/).
 
 ## Components
 
-| Component        | Technology                                      | Role                                                               |
-| ---------------- | ----------------------------------------------- | ------------------------------------------------------------------ |
-| Web application  | Laravel 13 on PHP 8.5, Fortify                  | Routing, authentication, authorisation, server-side grading        |
-| Front end        | Inertia 3, React 19, TypeScript, Tailwind 4     | Pages rendered in the browser from props sent by Laravel           |
-| UI primitives    | shadcn/ui on Radix, themed by the design tokens | Buttons, inputs, dialogs, the sidebar                              |
-| Database         | PostgreSQL 17                                   | Accounts and, from Phase 1, content, progress and attempts         |
-| Queues and cache | Valkey 9, Laravel Horizon                       | Background jobs (the `redis` connection), with an admin-only board |
-| Mail             | Mailpit (development)                           | Captures every email sent locally                                  |
-| Runtime          | Docker Compose project `parlora-hub`            | The `app` service plus the three services above                    |
+| Component        | Technology                                      | Role                                                                 |
+| ---------------- | ----------------------------------------------- | -------------------------------------------------------------------- |
+| Web application  | Laravel 13 on PHP 8.5, Fortify                  | Routing, authentication, authorisation, server-side grading          |
+| Front end        | Inertia 3, React 19, TypeScript, Tailwind 4     | Pages rendered in the browser from props sent by Laravel             |
+| UI primitives    | shadcn/ui on Radix, themed by the design tokens | Buttons, inputs, dialogs, the sidebar                                |
+| Database         | PostgreSQL 17                                   | Accounts, the content model and, from Phase 2, progress and attempts |
+| Queues and cache | Valkey 9, Laravel Horizon                       | Background jobs (the `redis` connection), with an admin-only board   |
+| Mail             | Mailpit (development)                           | Captures every email sent locally                                    |
+| Runtime          | Docker Compose project `parlora-hub`            | The `app` service plus the three services above                      |
 
 The `app` service is built from the project's `Dockerfile` and runs
 `composer dev`: `php artisan serve`, Horizon, the log tail and Vite, together
@@ -52,6 +52,57 @@ props never carry solutions before the learner answers.
   Horizon board (`viewHorizon` gate).
 - `users.learner_ref` is an opaque UUID created at sign-up and never changed.
   It is the only identifier Hub will share with Parlora Tutor.
+
+## Content model
+
+The syllabus (CEFR A1–C1) is data. Nine tables hold it; every one has a
+stable `key`, an `archived_at` and timestamps.
+
+```text
+levels ─┬─< units ─< lessons ─┬─< vocabulary_items
+        │                     └─< exercises >─┐
+        └─< exams (kind=level)                ├── passages
+            exams (kind=placement, no level)  │
+              └─< exam_sections ─< exam_questions >─┘
+```
+
+- **Hierarchy and order:** each child has an explicit `position`, unique
+  within its parent, and relationships return children ordered by it. Foreign
+  keys are `ON DELETE RESTRICT`, so a parent with children cannot be deleted.
+- **Stable keys:** lowercase dot-separated segments (`a1.u03.l02.ex05`), unique
+  per table, at most 120 characters and immutable (a model hook throws
+  `LogicException` on change). The importer upserts by key; ids never appear in
+  `content/` files.
+- **Enums:** `CefrLevel`, `LessonType`, `VocabularyKind`, `Skill`,
+  `ExerciseType`, `ExamKind`, `ExamSkill` and `GradingMode` are PHP backed enums
+  stored as strings with a database `CHECK`.
+- **Translations:** `lessons.theory`, `vocabulary_items.meaning`,
+  `exercises.explanation`, `exam_questions.explanation` and rubric descriptions
+  are jsonb per locale. English is required, other locales must be listed in
+  `hub.content_locales`, and a missing locale falls back to English. Titles,
+  prompts and passages stay English.
+- **Payloads:** an exercise or exam question stores `content` (what the learner
+  sees) and `solution` (server only) as jsonb. `ExercisePayloadCast` reads the
+  row's `type` and hydrates the matching `spatie/laravel-data` classes under
+  `App\Data\Exercises`, so no PHP class name reaches the database. A `saving`
+  hook calls `ExercisePayloads::validate()`, which also checks cross-field
+  rules (option ids, gap markers, permutations) and reports `content.*` /
+  `solution.*` paths. Exams reuse the same catalogue as lessons.
+- **Exams:** a level exam references exactly one level (`CHECK` plus a unique
+  `level_id`); the placement exam has no level and only one can be active (a
+  partial unique index). Sections carry `grading_mode` (`auto`, `ai`,
+  `self_assessment`) and an optional `questions_per_attempt` for the random
+  subset drawn from their bank.
+- **Passages and audio:** reading and listening material lives in `passages`,
+  shared by exercises and exam questions and impossible to delete while used.
+  Audio is a relative path on the private `content-audio` disk, validated
+  against traversal; nothing is publicly served.
+- **Archival:** rows are archived (`archive()`, `restore()`, `active()` scope),
+  never deleted and never hidden by a global scope, so attempts and mistakes
+  keep resolving them.
+- **Solutions never serialise:** `solution` (exercises, exam questions) and
+  `transcript` (passages) are in `$hidden`; tests serialise every model, nested,
+  and an arch test requires any model with such a column to hide it.
 
 ## Parlora Tutor boundary
 
