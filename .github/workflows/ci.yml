@@ -65,7 +65,7 @@ jobs:
           --health-interval 5s
           --health-timeout 5s
           --health-retries 10
-    # Override phpunit.xml's SQLite default: feature tests run on PostgreSQL.
+    # Same values as phpunit.xml, plus the service host and credentials.
     env:
       DB_CONNECTION: pgsql
       DB_HOST: 127.0.0.1
