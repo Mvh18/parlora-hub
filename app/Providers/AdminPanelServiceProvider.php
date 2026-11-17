@@ -43,6 +43,8 @@ class AdminPanelServiceProvider extends PanelProvider
             ->colors(['primary' => Color::hex('#3550E6')])
             ->font('Figtree Variable', url: fn (): string => asset('fonts/figtree/figtree.css'), provider: LocalFontProvider::class)
             ->pages([Dashboard::class])
+            // A missing policy method throws instead of allowing the action.
+            ->strictAuthorization()
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,

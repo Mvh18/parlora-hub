@@ -12,9 +12,10 @@ class HandleInertiaRequests extends Middleware
 {
     /**
      * Lang groups that only the server reads: validation messages reach the
-     * browser already translated, as form errors.
+     * browser already translated, as form errors, and the admin panel's copy
+     * is rendered by Filament.
      */
-    private const SERVER_ONLY_GROUPS = ['pagination', 'passwords', 'validation'];
+    private const SERVER_ONLY_GROUPS = ['admin', 'pagination', 'passwords', 'validation'];
 
     /**
      * The root template that's loaded on the first page visit.

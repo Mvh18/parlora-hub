@@ -35,7 +35,7 @@ test('guest pages share the translations too', function () {
 test('server-only groups are not shared', function () {
     $props = sharedProps($this->get(route('login'))->viewData('page'));
 
-    expect($props['translations'])->not->toHaveKeys(['validation', 'pagination', 'passwords']);
+    expect($props['translations'])->not->toHaveKeys(['admin', 'validation', 'pagination', 'passwords']);
 });
 
 test('the translations prop is resolved once per locale', function () {
