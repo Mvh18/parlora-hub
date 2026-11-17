@@ -10,8 +10,8 @@ FROM php:8.5-cli-trixie@sha256:50956f094e90a716d43bea28087d447555ad80510e386ab8c
 COPY --from=mlocati/php-extension-installer:2@sha256:4fd45396c16685266d32bf147a24ecd5e81029d3820295895bf4a90131190ac9 \
     /usr/bin/install-php-extensions /usr/local/bin/
 
-# pcntl and posix let Horizon supervise its workers.
-RUN install-php-extensions pdo_pgsql redis pcntl zip
+# pcntl and posix let Horizon supervise its workers; intl is required by Filament.
+RUN install-php-extensions pdo_pgsql redis pcntl zip intl
 
 WORKDIR /app
 
