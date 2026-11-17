@@ -222,6 +222,9 @@ return [
             'extension' => 'The :attribute must end in one of: :extensions.',
         ],
         'payload' => [
+            'json_invalid' => 'The :attribute is not valid JSON: :error.',
+            'json_object' => 'The :attribute must be a JSON object.',
+            'at_path' => ':path: :message',
             'answer_unknown' => 'The answer ":id" is not one of the options.',
             'single_answer' => 'Only one correct answer is allowed unless multiple answers are enabled.',
             'no_gaps' => 'The text needs at least one {{gap}} marker.',

@@ -64,3 +64,11 @@ test('theory keeps markdown per locale', function () {
     expect($lesson->getTranslation('theory', 'en'))->toContain('**habits**')
         ->and($lesson->getTranslation('theory', 'es'))->toBe('## Presente simple');
 });
+
+test('assigning translations replaces them and drops empty locales', function () {
+    $item = VocabularyItem::factory()->create(['meaning' => ['en' => 'to look for', 'es' => 'buscar']]);
+
+    $item->update(['meaning' => ['en' => 'to search', 'es' => null]]);
+
+    expect(json_decode($item->fresh()->getRawOriginal('meaning'), true))->toBe(['en' => 'to search']);
+});

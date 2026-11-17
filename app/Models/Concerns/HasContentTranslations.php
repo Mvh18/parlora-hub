@@ -16,7 +16,29 @@ use Spatie\Translatable\HasTranslations;
  */
 trait HasContentTranslations
 {
-    use HasTranslations;
+    use HasTranslations {
+        HasTranslations::setAttribute as setTranslatableAttribute;
+    }
+
+    /**
+     * Assigning a per-locale array (`['en' => '…', 'es' => '…']`) to a
+     * translatable attribute replaces its translations instead of merging into
+     * them, and drops locales whose text is empty or null. A form or an import
+     * that leaves a locale out therefore removes it rather than keeping a stale
+     * text or storing "".
+     *
+     * @param  string  $key
+     */
+    public function setAttribute($key, $value): mixed
+    {
+        if ($this->isTranslatableAttribute($key) && is_array($value) && ! array_is_list($value)) {
+            $filled = array_filter($value, fn (mixed $text): bool => $text !== null && $text !== '');
+
+            return $this->replaceTranslations($key, $filled);
+        }
+
+        return $this->setTranslatableAttribute($key, $value);
+    }
 
     protected static function bootHasContentTranslations(): void
     {
