@@ -15,6 +15,7 @@
  */
 
 const GATE_FILES = [
+    'app/Providers/AdminPanelServiceProvider.php',
     'app/Providers/HorizonServiceProvider.php',
 ];
 
