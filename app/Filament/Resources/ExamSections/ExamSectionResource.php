@@ -6,6 +6,7 @@ use App\Enums\ExamSkill;
 use App\Enums\GradingMode;
 use App\Filament\Resources\Exams\ExamResource;
 use App\Filament\Resources\ExamSections\Pages\EditExamSection;
+use App\Filament\Resources\ExamSections\RelationManagers\QuestionsRelationManager;
 use App\Filament\Support\EnumOptions;
 use App\Filament\Support\FormFields;
 use App\Filament\Support\ReachedFromParent;
@@ -49,6 +50,11 @@ class ExamSectionResource extends Resource
                 ->helperText('Size of the random subset drawn per attempt. Leave empty to use every question.'),
             FormFields::position('exam_sections', 'exam_id'),
         ])->columns(2);
+    }
+
+    public static function getRelations(): array
+    {
+        return [QuestionsRelationManager::class];
     }
 
     public static function getPages(): array

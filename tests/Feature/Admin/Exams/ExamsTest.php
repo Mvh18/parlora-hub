@@ -11,9 +11,11 @@ use App\Filament\Resources\Exams\Pages\ListExams;
 use App\Filament\Resources\Exams\RelationManagers\SectionsRelationManager;
 use App\Filament\Resources\ExamSections\ExamSectionResource;
 use App\Filament\Resources\ExamSections\Pages\EditExamSection;
+use App\Filament\Resources\ExamSections\RelationManagers\QuestionsRelationManager;
 use App\Filament\Resources\Levels\LevelResource;
 use App\Filament\Resources\Passages\PassageResource;
 use App\Models\Exam;
+use App\Models\ExamQuestion;
 use App\Models\ExamSection;
 use App\Models\Level;
 use App\Models\User;
@@ -299,12 +301,21 @@ test('a section moves to another exam at a free position', function () {
     expect($section->fresh()->exam_id)->toBe($target->id);
 });
 
-test('an exam and one of its sections open for an admin', function () {
+test('an exam, then one of its sections, leads to the section\'s questions', function () {
     $exam = levelExam();
     $section = ExamSection::factory()->for($exam)->create();
+    $question = ExamQuestion::factory()->for($section, 'section')->create();
+    $archived = ExamQuestion::factory()->for($section, 'section')->create();
+    $archived->archive();
 
     $this->get(ExamResource::getUrl('edit', ['record' => $exam]))->assertOk();
     $this->get(ExamSectionResource::getUrl('edit', ['record' => $section]))->assertOk();
+
+    Livewire::test(QuestionsRelationManager::class, ['ownerRecord' => $section, 'pageClass' => EditExamSection::class])
+        ->assertCanSeeTableRecords([$question])
+        ->assertCanNotSeeTableRecords([$archived])
+        ->removeTableFilter('archived')
+        ->assertCanSeeTableRecords([$question, $archived]);
 });
 
 test('a section is archived and restored from its page', function () {

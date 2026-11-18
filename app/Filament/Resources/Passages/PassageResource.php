@@ -6,6 +6,7 @@ use App\Filament\Actions\ArchiveAction;
 use App\Filament\Actions\RestoreArchivedAction;
 use App\Filament\Resources\Passages\Pages\EditPassage;
 use App\Filament\Resources\Passages\Pages\ListPassages;
+use App\Filament\Resources\Passages\RelationManagers\ExamQuestionsRelationManager;
 use App\Filament\Resources\Passages\RelationManagers\ExercisesRelationManager;
 use App\Filament\Support\ArchivedState;
 use App\Filament\Support\FormFields;
@@ -76,7 +77,10 @@ class PassageResource extends Resource
 
     public static function getRelations(): array
     {
-        return [ExercisesRelationManager::class];
+        return [
+            ExercisesRelationManager::class,
+            ExamQuestionsRelationManager::class,
+        ];
     }
 
     public static function getPages(): array
