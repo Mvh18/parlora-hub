@@ -9,3 +9,14 @@ publicHoistPattern:
 # not on the allow-list. The starter kit needs none.
 minimumReleaseAge: 10080
 strictDepBuilds: true
+
+# Advisories accepted on purpose. Each entry says why and when to drop it;
+# `pnpm audit --audit-level=high` (CI) skips only these.
+auditConfig:
+  ignoreGhsas:
+    # picomatch ReDoS through repeated extglobs (high, no patched release as of
+    # 2026-11-18). Reached only through build tooling (laravel-vite-plugin,
+    # @inertiajs/vite, tinyglobby); the glob patterns come from our own config,
+    # never from user input, and nothing here ships to production. Drop this
+    # entry once a patched picomatch is released and the lockfile picks it up.
+    - GHSA-fc5q-39xc-vjpf
