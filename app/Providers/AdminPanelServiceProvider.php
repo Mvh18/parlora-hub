@@ -2,13 +2,13 @@
 
 namespace App\Providers;
 
+use App\Filament\Pages\Dashboard;
 use App\Http\Middleware\AuthenticateContentPanel;
 use App\Models\User;
 use Filament\FontProviders\LocalFontProvider;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
@@ -42,6 +42,7 @@ class AdminPanelServiceProvider extends PanelProvider
             ->path('admin')
             ->colors(['primary' => Color::hex('#3550E6')])
             ->font('Figtree Variable', url: fn (): string => asset('fonts/figtree/figtree.css'), provider: LocalFontProvider::class)
+            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->pages([Dashboard::class])
             // A missing policy method throws instead of allowing the action.
             ->strictAuthorization()
