@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Lessons;
 
 use App\Enums\LessonType;
 use App\Filament\Resources\Lessons\Pages\EditLesson;
+use App\Filament\Resources\Lessons\RelationManagers\ExercisesRelationManager;
 use App\Filament\Resources\Lessons\RelationManagers\VocabularyItemsRelationManager;
 use App\Filament\Support\EnumOptions;
 use App\Filament\Support\FormFields;
@@ -42,7 +43,10 @@ class LessonResource extends Resource
 
     public static function getRelations(): array
     {
-        return [VocabularyItemsRelationManager::class];
+        return [
+            VocabularyItemsRelationManager::class,
+            ExercisesRelationManager::class,
+        ];
     }
 
     public static function getPages(): array
