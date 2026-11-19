@@ -7,6 +7,9 @@ return [
         'heading' => 'Panel edits are temporary',
         'body' => 'The next content import overwrites changes made here. Copy the row as JSON and update the matching file under content/ to keep them.',
     ],
+    'exams' => [
+        'placement_taken' => 'There is already an active placement exam. Archive it first or keep this exam a level exam.',
+    ],
     'archived' => [
         'column' => 'State',
         'badge' => 'Archived',

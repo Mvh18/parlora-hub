@@ -5,6 +5,7 @@ namespace App\Filament\Support;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Utilities\Get;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Validation\Rules\Unique;
 
 /**
@@ -21,13 +22,19 @@ final class FormFields
     /**
      * A select for the row's parent (or passage), listed by key and title.
      * Changing it moves the row; the position rule then checks the new parent.
+     * Pass `$searchColumns` for a parent without a title column (exam sections).
+     *
+     * @param  list<string>  $searchColumns
      */
-    public static function parent(string $column, string $relationship, bool $required = true): Select
+    public static function parent(string $column, string $relationship, bool $required = true, array $searchColumns = ['key', 'title']): Select
     {
         return Select::make($column)
             ->relationship($relationship, 'key')
-            ->getOptionLabelFromRecordUsing(fn ($record): string => trim("{$record->key} - {$record->title}"))
-            ->searchable(['key', 'title'])
+            ->getOptionLabelFromRecordUsing(fn (Model $record): string => implode(' - ', array_filter([
+                $record->getAttribute('key'),
+                $record->getAttribute('title'),
+            ])))
+            ->searchable($searchColumns)
             ->preload()
             ->required($required);
     }
