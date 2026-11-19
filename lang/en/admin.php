@@ -7,7 +7,16 @@ return [
         'heading' => 'Panel edits are temporary',
         'body' => 'The next content import overwrites changes made here. Copy the row as JSON and update the matching file under content/ to keep them.',
     ],
+    'archived' => [
+        'column' => 'State',
+        'badge' => 'Archived',
+        'filter' => 'Archived',
+        'all' => 'All rows',
+        'only' => 'Archived only',
+        'active' => 'Active only',
+    ],
     'actions' => [
+        'back' => 'Back',
         'archive' => [
             'label' => 'Archive',
             'heading' => 'Archive this row?',
