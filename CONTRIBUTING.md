@@ -90,6 +90,23 @@ docker compose exec app php artisan hub:make-admin you@example.com  # --revoke r
 Set `HUB_REGISTRATION_ENABLED=false` in `.env` once your account exists; the
 sign-up page then returns 404.
 
+#### Content panel
+
+The content panel at http://127.0.0.1:8000/admin edits the imported content.
+It opens only for an admin with a verified email and confirmed two-factor
+authentication; anyone else gets a 403. To open it locally:
+
+1. Register an account and grant it the flag with
+   `docker compose exec app php artisan hub:make-admin you@example.com`.
+2. Verify the email: open the message in Mailpit (http://127.0.0.1:8025) and
+   follow its link.
+3. Enable two-factor authentication in your account settings and confirm it
+   with an authenticator app.
+4. Open `/admin`. Hub's login handles the sign-in and returns you there.
+
+Panel edits are overwritten by the next `content:import`; use _Copy as JSON_
+to move a change into `content/`.
+
 #### Test database
 
 The suite runs on PostgreSQL, never on SQLite: `phpunit.xml` selects the

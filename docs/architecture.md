@@ -10,7 +10,7 @@ with their trade-offs live in [`docs/adr/`](adr/).
 
 | Component        | Technology                                      | Role                                                                 |
 | ---------------- | ----------------------------------------------- | -------------------------------------------------------------------- |
-| Web application  | Laravel 13 on PHP 8.5, Fortify                  | Routing, authentication, authorisation, server-side grading          |
+| Web application  | Laravel 13 on PHP 8.5, Fortify, Filament 5      | Routing, authentication, authorisation, grading, the content panel   |
 | Front end        | Inertia 3, React 19, TypeScript, Tailwind 4     | Pages rendered in the browser from props sent by Laravel             |
 | UI primitives    | shadcn/ui on Radix, themed by the design tokens | Buttons, inputs, dialogs, the sidebar                                |
 | Database         | PostgreSQL 17                                   | Accounts, the content model and, from Phase 2, progress and attempts |
@@ -48,8 +48,9 @@ props never carry solutions before the learner answers.
   routes, so the sign-up page returns 404 and its links disappear.
 - `users.is_admin` marks administrators. It is never mass-assignable and
   never sent to the browser; it is granted or revoked with
-  `php artisan hub:make-admin {email} {--revoke}`. Today it only opens the
-  Horizon board (`viewHorizon` gate).
+  `php artisan hub:make-admin {email} {--revoke}`. It opens the Horizon
+  board (`viewHorizon` gate) and, with a verified email and confirmed
+  two-factor authentication, the content panel.
 - `users.learner_ref` is an opaque UUID created at sign-up and never changed.
   It is the only identifier Hub will share with Parlora Tutor.
 
@@ -103,6 +104,44 @@ levels ─┬─< units ─< lessons ─┬─< vocabulary_items
 - **Solutions never serialise:** `solution` (exercises, exam questions) and
   `transcript` (passages) are in `$hidden`; tests serialise every model, nested,
   and an arch test requires any model with such a column to hide it.
+
+## Content panel
+
+A Filament 5 panel at `/admin` lets an administrator touch up the content
+tables. JSON under `content/` stays the source of truth: the panel retouches
+rows and never authors new ones.
+
+- **Access.** The `accessContentPanel` gate (in `AdminPanelServiceProvider`)
+  requires `is_admin`, a verified email and confirmed two-factor
+  authentication. `User::canAccessPanel()` delegates to it, so the rule lives
+  in one place and is checked on every request, Livewire updates included. A
+  user who fails it gets a 403, not a redirect. The panel shows solutions and
+  transcripts, so this gate is the security boundary.
+- **Hub's login.** The panel has no login page of its own. A guest is sent to
+  Fortify's `/login` and returns to `/admin` afterwards; a passkey sign-in
+  counts the same as a password plus TOTP.
+- **Touch-ups only.** There are no create, delete or replicate actions in the
+  UI, and the content policies (one abstract `ContentPolicy`, nine thin
+  subclasses) deny them too. Filament's strict authorization is on, so a
+  missing policy method throws. Editing, reordering, moving a row to another
+  parent, archiving and restoring are allowed; `key` is read-only.
+- **Navigation.** Levels, Passages and Exams. Units, lessons, vocabulary,
+  exercises, exam sections and questions are reached by drilling down through
+  relation managers.
+- **Validation.** Payload editors (`content`, `solution`) go through
+  `ExercisePayloads::validate()` and report errors on the field with their
+  path; translations are one field per locale in `hub.content_locales`, with
+  English required when the attribute is.
+- **Re-import notice and Copy as JSON.** Every edit page warns that the next
+  `content:import` overwrites panel edits. _Copy as JSON_ exports the row
+  (parents and passage by key, no ids or timestamps) so the change can be moved
+  into `content/`.
+- **Look.** Brand accent `#3550E6` and Figtree served from `public/fonts/`;
+  no font comes from a third-party host.
+
+The test suite runs on PostgreSQL, never SQLite: `phpunit.xml` selects the
+`hub_test` database and a guard in `tests/TestCase.php` refuses any other
+connection or a database name that does not end in `_test`.
 
 ## Parlora Tutor boundary
 
