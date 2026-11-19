@@ -37,8 +37,8 @@ for one learner and is built so it can be published later without a rewrite.
 Laravel 13 (PHP 8.5, in Docker), Inertia + React + TypeScript (strict) +
 Tailwind 4, shadcn/ui, PostgreSQL, Valkey + Horizon, Docker Compose;
 `spatie/laravel-data` (exercise payloads) and `spatie/laravel-translatable`
-(content translations); Filament arrives in Phase 1. Quality: Pest, Pint, Larastan; Oxlint, Oxfmt and Vitest
-through Vite+. See [docs/architecture.md](docs/architecture.md).
+(content translations); Filament 5 (the admin content panel). Quality: Pest,
+Pint, Larastan; Oxlint, Oxfmt and Vitest through Vite+. See [docs/architecture.md](docs/architecture.md).
 
 ## Commands
 
@@ -81,7 +81,7 @@ Use pnpm only: never npm or yarn, never `package-lock.json` or `yarn.lock`.
 - **Admin is a flag, not a role system.** `users.is_admin` is never
   mass-assignable and never sent to the browser; grant it only with
   `php artisan hub:make-admin {email}` (`--revoke` removes it). Gates read
-  it (today `viewHorizon`).
+  it (`viewHorizon`, `accessContentPanel`).
 - `users.learner_ref` is immutable and is the only learner identifier ever
   shared with Parlora Tutor.
 - The navigation lists only sections that exist: a phase adds its item to
