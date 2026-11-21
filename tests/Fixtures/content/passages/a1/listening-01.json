@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.listening-01",
+  "title": "A phone call",
+  "transcript": "Hello, Tom. It's Anna. Are you free on Saturday? Let's go to the park.",
+  "audio_path": "a1/listening-01.mp3"
+}

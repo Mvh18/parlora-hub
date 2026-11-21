@@ -1,0 +1,110 @@
+{
+  "$schema": "../../../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u02",
+  "title": "My family",
+  "lessons": [
+    {
+      "key": "a1.u02.l01",
+      "type": "reading",
+      "title": "Anna's family",
+      "exercises": [
+        {
+          "key": "a1.u02.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Where does Anna's father work?",
+          "passage": "a1.reading-01",
+          "content": {
+            "options": [
+              { "id": "a", "text": "In a bank" },
+              { "id": "b", "text": "In a school" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] }
+        }
+      ]
+    },
+    {
+      "key": "a1.u02.l02",
+      "type": "listening",
+      "title": "A phone call",
+      "exercises": [
+        {
+          "key": "a1.u02.l02.ex01",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write what you hear.",
+          "audio_path": "a1/phone-call.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "Are you free on Saturday?",
+            "accepted": ["Are you free on Saturday"]
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u02.l03",
+      "type": "writing",
+      "title": "An email to a friend",
+      "exercises": [
+        {
+          "key": "a1.u02.l03.ex01",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Write about your family.",
+          "content": {
+            "task": "Write an email to a friend about your family.",
+            "min_words": 40,
+            "max_words": 80,
+            "rubric": [
+              {
+                "key": "task",
+                "description": {
+                  "en": "Answers the task",
+                  "es": "Responde a la tarea"
+                },
+                "max_points": 5
+              },
+              {
+                "key": "grammar",
+                "description": { "en": "Grammar and vocabulary" },
+                "max_points": 5
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi Tom, I live with my parents and my brother..."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u02.l04",
+      "type": "speaking",
+      "title": "Talking about your day",
+      "exercises": [
+        {
+          "key": "a1.u02.l04.ex01",
+          "type": "speaking",
+          "skill": "speaking",
+          "prompt": "Describe your day.",
+          "content": {
+            "task": "Describe your daily routine.",
+            "prep_seconds": 30,
+            "max_seconds": 60,
+            "rubric": [
+              {
+                "key": "fluency",
+                "description": { "en": "Speaks without long pauses" },
+                "max_points": 5
+              }
+            ]
+          },
+          "solution": { "model_answer": null }
+        }
+      ]
+    }
+  ]
+}

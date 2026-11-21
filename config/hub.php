@@ -27,4 +27,30 @@ return [
 
     'content_locales' => ['en', 'es'],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Content files
+    |--------------------------------------------------------------------------
+    |
+    | Root folder of the versioned course files read by content:validate and
+    | content:import. A relative value is resolved against base_path(). The
+    | files carry every solution, so the real course can live outside this
+    | repository by pointing HUB_CONTENT_PATH somewhere else.
+    |
+    */
+
+    'content_path' => (static function (): string {
+        $path = (string) env('HUB_CONTENT_PATH', '');
+
+        if ($path === '') {
+            return base_path('content');
+        }
+
+        $absolute = str_starts_with($path, '/')
+            || str_starts_with($path, '\\')
+            || preg_match('~^[A-Za-z]:[\\\\/]~', $path) === 1;
+
+        return $absolute ? $path : base_path($path);
+    })(),
+
 ];

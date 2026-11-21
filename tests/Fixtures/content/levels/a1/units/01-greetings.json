@@ -1,0 +1,136 @@
+{
+  "$schema": "../../../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u01",
+  "title": "Greetings",
+  "lessons": [
+    {
+      "key": "a1.u01.l01",
+      "type": "grammar",
+      "title": "The verb to be",
+      "theory": {
+        "en": "Use **am**, **is** and **are** to say who you are.",
+        "es": "Usa **am**, **is** y **are** para decir quién eres."
+      },
+      "exercises": [
+        {
+          "key": "a1.u01.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct form.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "am" },
+              { "id": "b", "text": "is" },
+              { "id": "c", "text": "are" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "She is a third-person singular subject.",
+            "es": "She es un sujeto de tercera persona del singular."
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex02",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete the sentence.",
+          "content": {
+            "text": "I {{g1}} a student and my brother {{g2}} a teacher."
+          },
+          "solution": { "answers": { "g1": ["am"], "g2": ["is"] } }
+        },
+        {
+          "key": "a1.u01.l01.ex03",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order.",
+          "content": {
+            "tokens": [
+              { "id": "t2", "text": "is" },
+              { "id": "t3", "text": "my friend" },
+              { "id": "t1", "text": "Maria" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3"]] }
+        }
+      ]
+    },
+    {
+      "key": "a1.u01.l02",
+      "type": "vocabulary",
+      "title": "Saying hello",
+      "vocabulary": [
+        {
+          "key": "a1.u01.l02.v01",
+          "term": "hello",
+          "kind": "word",
+          "meaning": { "en": "a greeting", "es": "un saludo" },
+          "example": "Hello, my name is Anna."
+        },
+        {
+          "key": "a1.u01.l02.v02",
+          "term": "nice to meet you",
+          "kind": "expression",
+          "meaning": { "en": "said when you meet someone for the first time" }
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u01.l02.ex01",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match the English word with its Spanish meaning.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "hello" },
+              { "id": "l2", "text": "goodbye" }
+            ],
+            "right": [
+              { "id": "r1", "text": "hola" },
+              { "id": "r2", "text": "adiós" },
+              { "id": "r3", "text": "gracias" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r1"],
+              ["l2", "r2"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u01.l03",
+      "type": "phrasal_verbs",
+      "title": "Getting started",
+      "theory": {
+        "en": "A phrasal verb is a verb plus a small word, such as **get up**."
+      },
+      "vocabulary": [
+        {
+          "key": "a1.u01.l03.v01",
+          "term": "get up",
+          "kind": "phrasal_verb",
+          "meaning": { "en": "to leave your bed", "es": "levantarse" }
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u01.l03.ex01",
+          "type": "transformation",
+          "skill": "vocabulary",
+          "prompt": "Rewrite the sentence using the keyword.",
+          "content": {
+            "sentence": "I leave my bed at seven.",
+            "keyword": "UP",
+            "max_words": 6
+          },
+          "solution": { "accepted": ["I get up at seven."] }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.parlora.invalid/content/level.schema.json",
+  "title": "Parlora Hub level file (levels/<code>/level.json)",
+  "type": "object",
+  "required": ["key", "code", "title", "pass_threshold"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "key": { "$ref": "defs.schema.json#/$defs/key" },
+    "code": { "enum": ["A1", "A2", "B1", "B2", "C1"] },
+    "title": { "$ref": "defs.schema.json#/$defs/title" },
+    "pass_threshold": { "type": "integer", "minimum": 0, "maximum": 100 }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../resources/schemas/content/exam.schema.json",
+  "key": "placement",
+  "title": "Placement test",
+  "time_limit_minutes": 30,
+  "pass_score": 0,
+  "max_attempts": null,
+  "cooldown_hours": 0,
+  "sections": [
+    {
+      "key": "placement.uoe",
+      "skill": "use_of_english",
+      "points": 10,
+      "grading_mode": "auto",
+      "questions": [
+        {
+          "key": "placement.q1",
+          "type": "multiple_choice",
+          "points": 1,
+          "content": {
+            "options": [
+              { "id": "a", "text": "go" },
+              { "id": "b", "text": "goes" }
+            ]
+          },
+          "solution": { "correct": ["b"] }
+        },
+        {
+          "key": "placement.q2",
+          "type": "transformation",
+          "points": 2,
+          "content": {
+            "sentence": "I started learning English three years ago.",
+            "keyword": "FOR",
+            "max_words": 6
+          },
+          "solution": {
+            "accepted": ["I have been learning English for three years."]
+          }
+        }
+      ]
+    }
+  ]
+}

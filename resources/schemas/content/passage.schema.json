@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.parlora.invalid/content/passage.schema.json",
+  "title": "Parlora Hub passage file (passages/**/*.json)",
+  "type": "object",
+  "required": ["key", "title"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "key": { "$ref": "defs.schema.json#/$defs/key" },
+    "title": { "$ref": "defs.schema.json#/$defs/title" },
+    "body": { "type": ["string", "null"] },
+    "transcript": { "type": ["string", "null"] },
+    "audio_path": { "$ref": "defs.schema.json#/$defs/audioPath" }
+  },
+  "additionalProperties": false
+}
