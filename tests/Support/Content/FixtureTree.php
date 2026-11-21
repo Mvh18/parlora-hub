@@ -2,7 +2,10 @@
 
 namespace Tests\Support\Content;
 
+use App\Content\ContentTree;
+use App\Content\ContentValidator;
 use Illuminate\Support\Facades\File;
+use RuntimeException;
 
 /**
  * A scratch copy of `tests/Fixtures/content` that a test can mutate to cover
@@ -65,6 +68,26 @@ final class FixtureTree
     public static function read(string $directory, string $relative): mixed
     {
         return json_decode((string) file_get_contents("{$directory}/{$relative}"), true, 512, JSON_THROW_ON_ERROR);
+    }
+
+    /**
+     * The normalised rows of a tree that must be valid.
+     */
+    public static function tree(string $directory): ContentTree
+    {
+        $report = app(ContentValidator::class)->validate($directory);
+
+        if ($report->hasErrors() || $report->tree === null) {
+            throw new RuntimeException('The content tree is invalid: '.implode(' | ', array_map(strval(...), $report->errors())));
+        }
+
+        return $report->tree;
+    }
+
+    /** The path of the fixture tree itself, for tests that only read it. */
+    public static function fixtures(): string
+    {
+        return dirname(__DIR__, 2).'/Fixtures/content';
     }
 
     /** Remove every scratch directory created so far. */
