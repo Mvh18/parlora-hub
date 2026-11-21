@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.parlora.invalid/content/unit.schema.json",
+  "title": "Parlora Hub unit file (levels/<code>/units/*.json)",
+  "type": "object",
+  "required": ["key", "title"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "key": { "$ref": "defs.schema.json#/$defs/key" },
+    "title": { "$ref": "defs.schema.json#/$defs/title" },
+    "lessons": {
+      "type": "array",
+      "maxItems": 999,
+      "items": { "$ref": "defs.schema.json#/$defs/lesson" }
+    }
+  },
+  "additionalProperties": false
+}

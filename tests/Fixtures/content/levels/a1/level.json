@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../../../resources/schemas/content/level.schema.json",
+  "key": "a1",
+  "code": "A1",
+  "title": "A1 Beginner",
+  "pass_threshold": 70
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.parlora.invalid/content/exam.schema.json",
+  "title": "Parlora Hub exam file (levels/<code>/exam.json and exams/placement.json)",
+  "$ref": "defs.schema.json#/$defs/examBody"
+}

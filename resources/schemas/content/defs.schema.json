@@ -1,0 +1,516 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.parlora.invalid/content/defs.schema.json",
+  "title": "Shared definitions for Parlora Hub content files",
+  "$defs": {
+    "key": {
+      "type": "string",
+      "maxLength": 120,
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "translation": {
+      "type": "object",
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "pattern": "\\S" }
+      },
+      "additionalProperties": { "type": "string", "pattern": "\\S" }
+    },
+    "audioPath": {
+      "type": "string",
+      "maxLength": 255,
+      "pattern": "^(?:[A-Za-z0-9][A-Za-z0-9._-]*/)*[A-Za-z0-9][A-Za-z0-9._-]*\\.(?:[Mm][Pp]3|[Oo][Gg][Gg]|[Oo][Pp][Uu][Ss]|[Mm]4[Aa]|[Ww][Aa][Vv])$"
+    },
+    "itemId": {
+      "type": "string",
+      "maxLength": 40,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+    },
+    "item": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": { "$ref": "#/$defs/itemId" },
+        "text": { "type": "string", "minLength": 1, "maxLength": 500 }
+      },
+      "additionalProperties": false
+    },
+    "rubric": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["key", "description", "max_points"],
+        "properties": {
+          "key": {
+            "type": "string",
+            "maxLength": 60,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+          },
+          "description": { "$ref": "#/$defs/translation" },
+          "max_points": { "type": "integer", "minimum": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "multipleChoiceContent": {
+      "type": "object",
+      "required": ["options"],
+      "properties": {
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": { "$ref": "#/$defs/item" }
+        },
+        "multiple": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "multipleChoiceSolution": {
+      "type": "object",
+      "required": ["correct"],
+      "properties": {
+        "correct": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "fillGapContent": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1, "maxLength": 2000 }
+      },
+      "additionalProperties": false
+    },
+    "fillGapSolution": {
+      "type": "object",
+      "required": ["answers"],
+      "properties": {
+        "answers": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "reorderContent": {
+      "type": "object",
+      "required": ["tokens"],
+      "properties": {
+        "tokens": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 30,
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "reorderSolution": {
+      "type": "object",
+      "required": ["orders"],
+      "properties": {
+        "orders": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "matchingContent": {
+      "type": "object",
+      "required": ["left", "right"],
+      "properties": {
+        "left": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 12,
+          "items": { "$ref": "#/$defs/item" }
+        },
+        "right": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 12,
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "matchingSolution": {
+      "type": "object",
+      "required": ["pairs"],
+      "properties": {
+        "pairs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "transformationContent": {
+      "type": "object",
+      "required": ["sentence", "keyword", "max_words"],
+      "properties": {
+        "sentence": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "keyword": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "max_words": { "type": "integer", "minimum": 1, "maximum": 20 }
+      },
+      "additionalProperties": false
+    },
+    "transformationSolution": {
+      "type": "object",
+      "required": ["accepted"],
+      "properties": {
+        "accepted": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1, "maxLength": 500 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "dictationContent": {
+      "type": "object",
+      "properties": {
+        "max_plays": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 20
+        }
+      },
+      "additionalProperties": false
+    },
+    "dictationSolution": {
+      "type": "object",
+      "required": ["transcript"],
+      "properties": {
+        "transcript": { "type": "string", "minLength": 1, "maxLength": 1000 },
+        "accepted": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 1000 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "writingContent": {
+      "type": "object",
+      "required": ["task", "min_words", "max_words", "rubric"],
+      "properties": {
+        "task": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "min_words": { "type": "integer", "minimum": 1 },
+        "max_words": { "type": "integer", "minimum": 1, "maximum": 2000 },
+        "rubric": { "$ref": "#/$defs/rubric" }
+      },
+      "additionalProperties": false
+    },
+    "writingSolution": {
+      "type": "object",
+      "properties": {
+        "model_answer": { "type": ["string", "null"], "maxLength": 5000 }
+      },
+      "additionalProperties": false
+    },
+    "speakingContent": {
+      "type": "object",
+      "required": ["task", "prep_seconds", "max_seconds", "rubric"],
+      "properties": {
+        "task": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "prep_seconds": { "type": "integer", "minimum": 0, "maximum": 600 },
+        "max_seconds": { "type": "integer", "minimum": 5, "maximum": 900 },
+        "rubric": { "$ref": "#/$defs/rubric" }
+      },
+      "additionalProperties": false
+    },
+    "speakingSolution": {
+      "type": "object",
+      "properties": {
+        "model_answer": { "type": ["string", "null"], "maxLength": 5000 }
+      },
+      "additionalProperties": false
+    },
+    "exerciseType": {
+      "enum": [
+        "multiple_choice",
+        "fill_gap",
+        "reorder",
+        "matching",
+        "transformation",
+        "dictation",
+        "writing",
+        "speaking"
+      ]
+    },
+    "payloadByType": {
+      "allOf": [
+        {
+          "if": {
+            "properties": { "type": { "const": "multiple_choice" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "content": { "$ref": "#/$defs/multipleChoiceContent" },
+              "solution": { "$ref": "#/$defs/multipleChoiceSolution" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "fill_gap" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "content": { "$ref": "#/$defs/fillGapContent" },
+              "solution": { "$ref": "#/$defs/fillGapSolution" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "reorder" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "content": { "$ref": "#/$defs/reorderContent" },
+              "solution": { "$ref": "#/$defs/reorderSolution" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "matching" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "content": { "$ref": "#/$defs/matchingContent" },
+              "solution": { "$ref": "#/$defs/matchingSolution" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "transformation" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "content": { "$ref": "#/$defs/transformationContent" },
+              "solution": { "$ref": "#/$defs/transformationSolution" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "dictation" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "content": { "$ref": "#/$defs/dictationContent" },
+              "solution": { "$ref": "#/$defs/dictationSolution" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "writing" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "content": { "$ref": "#/$defs/writingContent" },
+              "solution": { "$ref": "#/$defs/writingSolution" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "speaking" } },
+            "required": ["type"]
+          },
+          "then": {
+            "properties": {
+              "content": { "$ref": "#/$defs/speakingContent" },
+              "solution": { "$ref": "#/$defs/speakingSolution" }
+            }
+          }
+        }
+      ]
+    },
+    "exercise": {
+      "type": "object",
+      "required": ["key", "type", "skill", "prompt", "content", "solution"],
+      "properties": {
+        "key": { "$ref": "#/$defs/key" },
+        "type": { "$ref": "#/$defs/exerciseType" },
+        "skill": {
+          "enum": [
+            "grammar",
+            "vocabulary",
+            "reading",
+            "listening",
+            "writing",
+            "speaking"
+          ]
+        },
+        "prompt": { "type": "string", "minLength": 1 },
+        "passage": { "$ref": "#/$defs/key" },
+        "content": { "type": "object" },
+        "solution": { "type": "object" },
+        "explanation": { "$ref": "#/$defs/translation" },
+        "audio_path": { "$ref": "#/$defs/audioPath" }
+      },
+      "$ref": "#/$defs/payloadByType",
+      "unevaluatedProperties": false
+    },
+    "vocabularyItem": {
+      "type": "object",
+      "required": ["key", "term", "kind", "meaning"],
+      "properties": {
+        "key": { "$ref": "#/$defs/key" },
+        "term": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "kind": { "enum": ["word", "phrasal_verb", "expression"] },
+        "meaning": { "$ref": "#/$defs/translation" },
+        "example": { "type": ["string", "null"], "maxLength": 255 }
+      },
+      "additionalProperties": false
+    },
+    "lesson": {
+      "type": "object",
+      "required": ["key", "type", "title"],
+      "properties": {
+        "key": { "$ref": "#/$defs/key" },
+        "type": {
+          "enum": [
+            "grammar",
+            "vocabulary",
+            "phrasal_verbs",
+            "reading",
+            "listening",
+            "writing",
+            "speaking"
+          ]
+        },
+        "title": { "$ref": "#/$defs/title" },
+        "theory": { "$ref": "#/$defs/translation" },
+        "vocabulary": {
+          "type": "array",
+          "maxItems": 999,
+          "items": { "$ref": "#/$defs/vocabularyItem" }
+        },
+        "exercises": {
+          "type": "array",
+          "maxItems": 999,
+          "items": { "$ref": "#/$defs/exercise" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "examQuestion": {
+      "type": "object",
+      "required": ["key", "type", "content", "solution", "points"],
+      "properties": {
+        "key": { "$ref": "#/$defs/key" },
+        "type": { "$ref": "#/$defs/exerciseType" },
+        "passage": { "$ref": "#/$defs/key" },
+        "content": { "type": "object" },
+        "solution": { "type": "object" },
+        "explanation": { "$ref": "#/$defs/translation" },
+        "points": { "type": "integer", "minimum": 0, "maximum": 65535 }
+      },
+      "$ref": "#/$defs/payloadByType",
+      "unevaluatedProperties": false
+    },
+    "examSection": {
+      "type": "object",
+      "required": ["key", "skill", "points", "grading_mode"],
+      "properties": {
+        "key": { "$ref": "#/$defs/key" },
+        "skill": {
+          "enum": [
+            "use_of_english",
+            "reading",
+            "listening",
+            "writing",
+            "speaking"
+          ]
+        },
+        "points": { "type": "integer", "minimum": 0, "maximum": 65535 },
+        "grading_mode": { "enum": ["auto", "ai", "self_assessment"] },
+        "questions_per_attempt": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 65535
+        },
+        "questions": {
+          "type": "array",
+          "maxItems": 999,
+          "items": { "$ref": "#/$defs/examQuestion" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "examBody": {
+      "type": "object",
+      "required": [
+        "key",
+        "title",
+        "time_limit_minutes",
+        "pass_score",
+        "cooldown_hours"
+      ],
+      "properties": {
+        "$schema": { "type": "string" },
+        "key": { "$ref": "#/$defs/key" },
+        "title": { "$ref": "#/$defs/title" },
+        "time_limit_minutes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 65535
+        },
+        "pass_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "max_attempts": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 65535
+        },
+        "cooldown_hours": { "type": "integer", "minimum": 0, "maximum": 65535 },
+        "sections": {
+          "type": "array",
+          "maxItems": 999,
+          "items": { "$ref": "#/$defs/examSection" }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

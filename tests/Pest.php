@@ -23,7 +23,7 @@ pest()->extend(TestCase::class)
 
 // Payload tests need the container for validation messages and config, not the database.
 pest()->extend(TestCase::class)
-    ->in('Unit/Exercises');
+    ->in('Unit/Exercises', 'Unit/Content');
 
 /*
 |--------------------------------------------------------------------------

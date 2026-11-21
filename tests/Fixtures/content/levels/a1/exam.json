@@ -1,0 +1,151 @@
+{
+  "$schema": "../../../../../resources/schemas/content/exam.schema.json",
+  "key": "a1.exam",
+  "title": "A1 level exam",
+  "time_limit_minutes": 60,
+  "pass_score": 70,
+  "max_attempts": 3,
+  "cooldown_hours": 24,
+  "sections": [
+    {
+      "key": "a1.exam.uoe",
+      "skill": "use_of_english",
+      "points": 20,
+      "grading_mode": "auto",
+      "questions_per_attempt": 2,
+      "questions": [
+        {
+          "key": "a1.exam.uoe.q01",
+          "type": "multiple_choice",
+          "points": 2,
+          "content": {
+            "options": [
+              { "id": "a", "text": "am" },
+              { "id": "b", "text": "are" }
+            ]
+          },
+          "solution": { "correct": ["b"] }
+        },
+        {
+          "key": "a1.exam.uoe.q02",
+          "type": "fill_gap",
+          "points": 2,
+          "content": { "text": "They {{g1}} at home." },
+          "solution": { "answers": { "g1": ["are"] } }
+        },
+        {
+          "key": "a1.exam.uoe.q03",
+          "type": "reorder",
+          "points": 2,
+          "content": {
+            "tokens": [
+              { "id": "t2", "text": "is" },
+              { "id": "t1", "text": "He" },
+              { "id": "t3", "text": "tall" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3"]] }
+        }
+      ]
+    },
+    {
+      "key": "a1.exam.reading",
+      "skill": "reading",
+      "points": 20,
+      "grading_mode": "auto",
+      "questions": [
+        {
+          "key": "a1.exam.reading.q01",
+          "type": "multiple_choice",
+          "points": 2,
+          "passage": "a1.reading-01",
+          "content": {
+            "options": [
+              { "id": "a", "text": "A teacher" },
+              { "id": "b", "text": "A doctor" }
+            ]
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": { "en": "The text says her mother is a teacher." }
+        }
+      ]
+    },
+    {
+      "key": "a1.exam.listening",
+      "skill": "listening",
+      "points": 20,
+      "grading_mode": "auto",
+      "questions": [
+        {
+          "key": "a1.exam.listening.q01",
+          "type": "dictation",
+          "points": 4,
+          "passage": "a1.listening-01",
+          "content": { "max_plays": 2 },
+          "solution": { "transcript": "Let's go to the park." }
+        }
+      ]
+    },
+    {
+      "key": "a1.exam.writing",
+      "skill": "writing",
+      "points": 20,
+      "grading_mode": "ai",
+      "questions": [
+        {
+          "key": "a1.exam.writing.q01",
+          "type": "writing",
+          "points": 20,
+          "content": {
+            "task": "Write a short message to a friend.",
+            "min_words": 30,
+            "max_words": 60,
+            "rubric": [
+              {
+                "key": "task",
+                "description": { "en": "Answers the task" },
+                "max_points": 10
+              },
+              {
+                "key": "grammar",
+                "description": { "en": "Grammar and vocabulary" },
+                "max_points": 10
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi Anna, are you free on Saturday? Let's go to the park."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.exam.speaking",
+      "skill": "speaking",
+      "points": 20,
+      "grading_mode": "self_assessment",
+      "questions": [
+        {
+          "key": "a1.exam.speak.q1",
+          "type": "speaking",
+          "points": 20,
+          "content": {
+            "task": "Introduce yourself.",
+            "prep_seconds": 15,
+            "max_seconds": 45,
+            "rubric": [
+              {
+                "key": "fluency",
+                "description": { "en": "Speaks without long pauses" },
+                "max_points": 20
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hello, my name is Maria and I am a student."
+          }
+        }
+      ]
+    }
+  ]
+}
