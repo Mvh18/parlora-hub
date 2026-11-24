@@ -102,6 +102,19 @@ test('the architecture overview covers the boundaries later phases rely on', fun
         ->toContain('lang/en');
 });
 
+test('the content files and their commands are documented', function () {
+    expect((string) file_get_contents(base_path('docs/architecture.md')))
+        ->toContain('## Content files')
+        ->toContain('HUB_CONTENT_PATH')
+        ->toContain('resources/schemas/content/')
+        ->toContain('--dry-run');
+
+    expect((string) file_get_contents(base_path('CONTRIBUTING.md')))
+        ->toContain('### Validate and import content')
+        ->toContain('content:validate')
+        ->toContain('content:import --dry-run');
+});
+
 test('relative links in the public docs point to files that exist', function () {
     $broken = [];
 
