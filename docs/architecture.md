@@ -105,6 +105,65 @@ levels ─┬─< units ─< lessons ─┬─< vocabulary_items
   `transcript` (passages) are in `$hidden`; tests serialise every model, nested,
   and an arch test requires any model with such a column to hide it.
 
+## Content files
+
+The course is authored as JSON files and written to the content tables by
+`php artisan content:import`. The files win: the database follows them.
+
+```text
+<HUB_CONTENT_PATH>/              default: content/ (relative paths resolve against the project root)
+  levels/
+    a1/
+      level.json                 the level row
+      units/
+        01-greetings.json        one unit, its lessons, their vocabulary and exercises
+        02-family.json
+      exam.json                  the A1 level exam, its sections and questions (optional)
+  passages/
+    a1/reading-01.json           one passage per file, any sub-folders
+  exams/
+    placement.json               the placement exam (optional)
+```
+
+- **Layout.** A level folder is named after its CEFR code in lowercase and its
+  `level.json` states the same `code`; levels are ordered by CEFR, units by
+  file name (use a zero-padded prefix such as `01-`). The level exam's level
+  and the placement exam's kind come from where the file is. Renaming a file
+  never renames a row.
+- **Row shape.** Every row has a `key`. Parents come from nesting
+  (`lessons[] → vocabulary[], exercises[]`, `sections[] → questions[]`) and
+  order from array order, so there is no parent key, `position`, id, timestamp
+  or `archived_at`. Exercises and exam questions name a passage by key.
+  Translations are always `{locale: text}` objects, enums use their stored
+  values and payloads are exactly what the model stores. An optional `$schema`
+  member points editors at the schema and is ignored.
+- **Validation.** `php artisan content:validate` reads only `*.json` under the
+  root (no symlinks out of it, at most 1 MiB per file) and reports every
+  problem at once as `<file> <pointer>: <message>`. The first layer is JSON
+  Schema 2020-12 (`resources/schemas/content/`); the second checks keys
+  (format, unique per table across files), passage references, folder and
+  code, payloads through `ExercisePayloads::validate()`, translation locales
+  and audio path format. Missing audio files and unit files without a numeric
+  prefix are warnings. The command needs no database, and CI runs it whenever
+  the repository has a `content/` folder.
+- **Import.** `content:import` validates first and writes nothing on an error.
+  Then it plans per table what to create, update, leave unchanged, archive and
+  restore, and writes it in one transaction under an advisory lock, parents
+  before children, through Eloquent so the model hooks still guard every row.
+  A row that moved to another parent keeps its id; positions are rewritten in
+  three steps so `unique(parent, position)` never breaks. An unchanged row is
+  not written, so re-importing the same tree changes nothing. Panel edits to a
+  row that is still in the files are overwritten.
+- **Archival on absence.** A row whose key appears in no file is archived,
+  never deleted, and moves after its active siblings; an archived row whose
+  key returns is restored and updated. Archivals happen before creations, so
+  a new placement exam can replace the old one.
+- **Dry run and summary.** `--dry-run` prints the same per-table summary
+  (created, updated, unchanged, archived, restored) and rolls back. Audio paths
+  missing from the `content-audio` disk are warnings and never fail an import.
+- **Location.** `HUB_CONTENT_PATH` sets the root (`hub.content_path`) and
+  `--path` overrides it for one run of either command.
+
 ## Content panel
 
 A Filament 5 panel at `/admin` lets an administrator touch up the content

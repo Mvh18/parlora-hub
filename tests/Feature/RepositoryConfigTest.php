@@ -33,6 +33,16 @@ test('the php job runs composer check against PostgreSQL with coverage', functio
         ->and($steps->pluck('run')->filter()->implode("\n"))->toContain('composer check');
 });
 
+test('the php job validates the content files only when there are some', function () {
+    $step = collect(repositoryYaml('.github/workflows/ci.yml')['jobs']['php']['steps'])
+        ->firstWhere('name', 'Validate content files');
+
+    expect($step)->not->toBeNull()
+        ->and($step['run'])->toBe('php artisan content:validate')
+        ->and($step['if'])->toBe("hashFiles('content/**/*.json') != ''")
+        ->and($step)->not->toHaveKey('continue-on-error');
+});
+
 test('the js job runs pnpm check and pnpm build', function () {
     $runs = collect(repositoryYaml('.github/workflows/ci.yml')['jobs']['js']['steps'])
         ->pluck('run')->filter()->implode("\n");

@@ -88,6 +88,11 @@ jobs:
           tools: composer:v2
       - run: composer install --no-interaction --no-progress --prefer-dist
       - run: cp .env.example .env && php artisan key:generate
+      # The course content files, once the repository has them. Validation
+      # needs no database; any error fails the job.
+      - name: Validate content files
+        if: hashFiles('content/**/*.json') != ''
+        run: php artisan content:validate
       # Pint, Larastan and Pest with the coverage minimum.
       - run: composer check
 

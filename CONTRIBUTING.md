@@ -259,6 +259,26 @@ Lessons, exercises and exams live as JSON under `content/`. When you fix or
 add content, cite your source if it is not your own work, and never paste
 copyrighted material (textbooks, exam papers) you are not allowed to share.
 
+### Validate and import content
+
+The layout and row shape are described in
+[docs/architecture.md](docs/architecture.md#content-files). Each file may start
+with a `$schema` member pointing at `resources/schemas/content/`, so your
+editor checks it as you type.
+
+```sh
+docker compose exec app php artisan content:validate            # every error at once, no database needed
+docker compose exec app php artisan content:import --dry-run    # what would change, nothing written
+docker compose exec app php artisan content:import              # write it
+```
+
+Both commands take `--path=<folder>` to work on another tree (for example
+`tests/Fixtures/content`). An import archives every row whose key is no longer
+in any file and restores archived rows whose key comes back; nothing is ever
+deleted. Edits made in the admin panel are overwritten by the next import, so
+carry them into the files with _Copy as JSON_ first. CI runs
+`content:validate` on every pull request that has a `content/` folder.
+
 ## Contributor licence agreement
 
 Before your first pull request can be merged you must accept the
