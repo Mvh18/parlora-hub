@@ -85,17 +85,17 @@ test('an admin without two-factor cannot archive', function () {
     expect($exercise->fresh()->isArchived())->toBeFalse();
 });
 
-test('copy as JSON shows the key-based export', function () {
+test('copy as JSON shows the content-file fragment', function () {
     $exercise = Exercise::factory()->create();
 
     Livewire::actingAs(qualified())
         ->test(RecordActions::class, ['record' => $exercise])
         ->mountAction('copyAsJson')
         ->assertActionMounted('copyAsJson')
-        ->assertMountedActionModalSee([$exercise->key, $exercise->lesson->key])
-        ->assertMountedActionModalDontSee('lesson_id');
+        ->assertMountedActionModalSee([$exercise->key, $exercise->prompt])
+        ->assertMountedActionModalDontSee(['lesson_id', $exercise->lesson->key, '"position"']);
 
-    expect(ContentJson::for($exercise->fresh()))->toHaveKey('lesson', $exercise->lesson->key);
+    expect(ContentJson::for($exercise->fresh()))->toHaveKey('key', $exercise->key)->not->toHaveKey('lesson');
 });
 
 test('the re-import notice is shown on a form', function () {

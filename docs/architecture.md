@@ -133,9 +133,10 @@ rows and never authors new ones.
   path; translations are one field per locale in `hub.content_locales`, with
   English required when the attribute is.
 - **Re-import notice and Copy as JSON.** Every edit page warns that the next
-  `content:import` overwrites panel edits. _Copy as JSON_ exports the row
-  (parents and passage by key, no ids or timestamps) so the change can be moved
-  into `content/`.
+  `content:import` overwrites panel edits. _Copy as JSON_ exports the row as a
+  content-file fragment (passage by key, active children nested in order, no
+  ids, parent keys, positions or timestamps) that pastes straight into
+  `content/`.
 - **Look.** Brand accent `#3550E6` and Figtree served from `public/fonts/`;
   no font comes from a third-party host.
 

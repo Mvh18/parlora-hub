@@ -155,14 +155,14 @@ test('a question is archived and restored and shows the notice', function () {
     expect($question->fresh()->isArchived())->toBeFalse();
 });
 
-test('Copy as JSON on a question has the section and passage keys and no ids', function () {
+test('Copy as JSON on a question has the passage key and no parent, ids or timestamps', function () {
     $passage = Passage::factory()->create();
     $question = ExamQuestion::factory()->create(['passage_id' => $passage->id]);
 
     questionPage($question)
         ->mountAction('copyAsJson')
-        ->assertMountedActionModalSee([$question->key, $question->section->key, $passage->key, 'solution'])
-        ->assertMountedActionModalDontSee(['exam_section_id', 'passage_id', 'created_at']);
+        ->assertMountedActionModalSee([$question->key, $passage->key, 'solution'])
+        ->assertMountedActionModalDontSee([$question->section->key, 'exam_section_id', 'passage_id', 'created_at']);
 });
 
 test('a question page offers no delete and its resource no creation', function () {

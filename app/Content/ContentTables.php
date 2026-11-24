@@ -95,17 +95,27 @@ final class ContentTables
     private static function build(): array
     {
         $tables = [
-            new ContentTable(self::LEVELS, Level::class, null, null, null, null, positioned: true),
-            new ContentTable(self::PASSAGES, Passage::class, null, null, null, null, positioned: false),
-            new ContentTable(self::UNITS, Unit::class, self::LEVELS, 'level_id', 'level', 'units', positioned: true),
-            new ContentTable(self::LESSONS, Lesson::class, self::UNITS, 'unit_id', 'unit', 'lessons', positioned: true),
-            new ContentTable(self::VOCABULARY_ITEMS, VocabularyItem::class, self::LESSONS, 'lesson_id', 'lesson', 'vocabulary', positioned: true),
-            new ContentTable(self::EXERCISES, Exercise::class, self::LESSONS, 'lesson_id', 'lesson', 'exercises', positioned: true, hasPassage: true),
+            new ContentTable(self::LEVELS, Level::class, null, null, null, null, positioned: true,
+                members: ['code', 'title', 'pass_threshold']),
+            new ContentTable(self::PASSAGES, Passage::class, null, null, null, null, positioned: false,
+                members: ['title', 'body', 'transcript', 'audio_path']),
+            new ContentTable(self::UNITS, Unit::class, self::LEVELS, 'level_id', 'level', 'units', positioned: true,
+                members: ['title']),
+            new ContentTable(self::LESSONS, Lesson::class, self::UNITS, 'unit_id', 'unit', 'lessons', positioned: true,
+                members: ['type', 'title', 'theory']),
+            new ContentTable(self::VOCABULARY_ITEMS, VocabularyItem::class, self::LESSONS, 'lesson_id', 'lesson', 'vocabulary', positioned: true,
+                members: ['term', 'kind', 'meaning', 'example']),
+            new ContentTable(self::EXERCISES, Exercise::class, self::LESSONS, 'lesson_id', 'lesson', 'exercises', positioned: true, hasPassage: true,
+                members: ['type', 'skill', 'prompt', 'content', 'solution', 'explanation', 'audio_path']),
             // Exams hang from a level only when they are level exams; the placement exam has no parent.
-            new ContentTable(self::EXAMS, Exam::class, self::LEVELS, 'level_id', 'level', null, positioned: false),
-            new ContentTable(self::EXAM_SECTIONS, ExamSection::class, self::EXAMS, 'exam_id', 'exam', 'sections', positioned: true),
+            // `kind` is not a member: the file's location decides it.
+            new ContentTable(self::EXAMS, Exam::class, self::LEVELS, 'level_id', 'level', null, positioned: false,
+                members: ['title', 'time_limit_minutes', 'pass_score', 'max_attempts', 'cooldown_hours']),
+            new ContentTable(self::EXAM_SECTIONS, ExamSection::class, self::EXAMS, 'exam_id', 'exam', 'sections', positioned: true,
+                members: ['skill', 'points', 'grading_mode', 'questions_per_attempt']),
             // Exam questions form a bank: no position column.
-            new ContentTable(self::EXAM_QUESTIONS, ExamQuestion::class, self::EXAM_SECTIONS, 'exam_section_id', 'section', 'questions', positioned: false, hasPassage: true),
+            new ContentTable(self::EXAM_QUESTIONS, ExamQuestion::class, self::EXAM_SECTIONS, 'exam_section_id', 'section', 'questions', positioned: false, hasPassage: true,
+                members: ['type', 'content', 'solution', 'explanation', 'points']),
         ];
 
         $byName = [];

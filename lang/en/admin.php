@@ -35,7 +35,7 @@ return [
         'copy_as_json' => [
             'label' => 'Copy as JSON',
             'heading' => 'Copy as JSON',
-            'description' => 'The row by key, without database ids or timestamps. Paste it into the matching file under content/.',
+            'description' => 'The row as it appears in its content file, with its active children. Paste it into the matching file under content/.',
             'close' => 'Close',
         ],
     ],

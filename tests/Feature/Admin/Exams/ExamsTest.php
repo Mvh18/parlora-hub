@@ -194,13 +194,13 @@ test('an exam is archived and restored from its page and shows the notice', func
     expect($exam->fresh()->isArchived())->toBeFalse();
 });
 
-test('Copy as JSON on an exam uses the level key', function () {
+test('Copy as JSON on an exam leaves out its level and kind', function () {
     $exam = levelExam(CefrLevel::A1);
 
     examPage($exam)
         ->mountAction('copyAsJson')
-        ->assertMountedActionModalSee([$exam->key, 'a1'])
-        ->assertMountedActionModalDontSee(['level_id', 'created_at']);
+        ->assertMountedActionModalSee([$exam->key, $exam->title])
+        ->assertMountedActionModalDontSee(['"level"', '"kind"', 'level_id', 'created_at']);
 });
 
 test('the sections relation lists an exam\'s sections ordered by position and shows their kind', function () {

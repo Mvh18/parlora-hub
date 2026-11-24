@@ -10,7 +10,7 @@ use Filament\Support\Icons\Heroicon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Shows the row as key-based JSON (ContentJson) in a read-only, copyable
+ * Shows the row as a content-file fragment (ContentJson) in a read-only, copyable
  * monospace block, so a panel touch-up can be carried into `content/`.
  * Filament's CodeEntry would add highlighting but needs the optional
  * phiki/phiki package. The export holds solutions and transcripts, so the

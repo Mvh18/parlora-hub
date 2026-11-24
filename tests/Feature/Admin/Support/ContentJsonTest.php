@@ -1,5 +1,6 @@
 <?php
 
+use App\Content\ContentTables;
 use App\Filament\Support\ContentJson;
 use App\Models\Exam;
 use App\Models\ExamQuestion;
@@ -24,7 +25,7 @@ dataset('content models', [
     'exam question' => ExamQuestion::class,
 ]);
 
-test('a row is exported by key with no ids or timestamps', function (string $model) {
+test('a row is exported by key with no ids, parents, positions or timestamps', function (string $model) {
     /** @var Model $record */
     $record = $model::factory()->create();
     $record->archive();
@@ -33,17 +34,26 @@ test('a row is exported by key with no ids or timestamps', function (string $mod
 
     expect($json)->toHaveKey('key', $record->getAttribute('key'))
         ->and(array_key_first($json))->toBe('key')
-        ->and($json)->not->toHaveKeys(['id', 'created_at', 'updated_at', 'archived_at'])
+        ->and($json)->not->toHaveKeys(['id', 'position', 'created_at', 'updated_at', 'archived_at', 'level', 'unit', 'lesson', 'exam', 'section'])
         ->and(collect($json)->keys()->filter(fn (string $key) => str_ends_with($key, '_id'))->all())->toBe([]);
 })->with('content models');
 
-test('an exercise carries its lesson key, type and payloads', function () {
+test('the members follow the file order of their table', function (string $model) {
+    /** @var Model $record */
+    $record = $model::factory()->create();
+    $table = ContentTables::forModel($model);
+
+    $members = array_values(array_intersect(array_keys(ContentJson::for($record->fresh())), $table->members));
+
+    expect($members)->toBe(array_values(array_intersect($table->members, $members)));
+})->with('content models');
+
+test('an exercise carries its type, payloads and translations', function () {
     $exercise = Exercise::factory()->multipleChoice()->create(['explanation' => ['en' => 'Third person.', 'es' => 'Tercera persona.']]);
 
     $json = ContentJson::for($exercise->fresh());
 
-    expect($json['lesson'])->toBe($exercise->lesson->key)
-        ->and($json['passage'])->toBeNull()
+    expect($json)->not->toHaveKey('passage')
         ->and($json['type'])->toBe('multiple_choice')
         ->and($json['solution'])->toBe(['correct' => ['b']])
         ->and($json['content'])->toHaveKey('options')
@@ -57,18 +67,49 @@ test('the passage is referenced by key', function () {
     expect(ContentJson::for($exercise->fresh())['passage'])->toBe($passage->key);
 });
 
-test('each child names its parent by key', function () {
-    $question = ExamQuestion::factory()->create();
-    $section = $question->section;
+test('members without a value are left out', function () {
+    $lesson = Lesson::factory()->create(['theory' => null]);
+
+    expect(ContentJson::for($lesson->fresh()))->not->toHaveKey('theory');
+});
+
+test('a lesson nests its vocabulary and active exercises in order', function () {
+    $lesson = Lesson::factory()->create();
+    $item = VocabularyItem::factory()->create(['lesson_id' => $lesson->id]);
+    $second = Exercise::factory()->create(['lesson_id' => $lesson->id, 'position' => 2]);
+    $first = Exercise::factory()->create(['lesson_id' => $lesson->id, 'position' => 1]);
+    Exercise::factory()->create(['lesson_id' => $lesson->id, 'position' => 3])->archive();
+
+    $json = ContentJson::for($lesson->fresh());
+
+    expect(array_keys($json))->toContain('vocabulary', 'exercises')
+        ->and(array_search('vocabulary', array_keys($json), true))->toBeLessThan(array_search('exercises', array_keys($json), true))
+        ->and(array_column($json['vocabulary'], 'key'))->toBe([$item->key])
+        ->and(array_column($json['exercises'], 'key'))->toBe([$first->key, $second->key])
+        ->and($json['exercises'][0])->not->toHaveKey('position');
+});
+
+test('a unit nests its lessons', function () {
     $unit = Unit::factory()->create();
     $lesson = Lesson::factory()->create(['unit_id' => $unit->id]);
-    $item = VocabularyItem::factory()->create(['lesson_id' => $lesson->id]);
 
-    expect(ContentJson::for($question->fresh())['section'])->toBe($section->key)
-        ->and(ContentJson::for($section->fresh())['exam'])->toBe($section->exam->key)
-        ->and(ContentJson::for($unit->fresh())['level'])->toBe($unit->level->key)
-        ->and(ContentJson::for($lesson->fresh())['unit'])->toBe($unit->key)
-        ->and(ContentJson::for($item->fresh())['lesson'])->toBe($lesson->key);
+    expect(array_column(ContentJson::for($unit->fresh())['lessons'], 'key'))->toBe([$lesson->key]);
+});
+
+test('an exam nests its sections and their questions', function () {
+    $question = ExamQuestion::factory()->create();
+    $section = $question->section;
+
+    $json = ContentJson::for($section->exam->fresh());
+
+    expect(array_column($json['sections'], 'key'))->toBe([$section->key])
+        ->and(array_column($json['sections'][0]['questions'], 'key'))->toBe([$question->key]);
+});
+
+test('a level leaves its units to their own files', function () {
+    $unit = Unit::factory()->create();
+
+    expect(ContentJson::for($unit->level->fresh()))->not->toHaveKey('units');
 });
 
 test('hidden attributes are exported', function () {
