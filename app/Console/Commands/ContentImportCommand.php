@@ -15,12 +15,19 @@ use Illuminate\Console\Command;
 /**
  * Builds or updates the course from the content files. Validation runs first
  * and nothing is written when it fails; otherwise the whole tree is written
- * in one transaction and a summary per table is printed.
+ * in one transaction and a summary per table is printed. Missing audio files
+ * are warnings and never fail the import. With `--dry-run` the same summary
+ * is printed and the transaction is rolled back.
  */
-#[Signature('content:import {--path= : Content folder to import instead of HUB_CONTENT_PATH}')]
+#[Signature('content:import
+    {--path= : Content folder to import instead of HUB_CONTENT_PATH}
+    {--dry-run : Validate and plan, print the summary and write nothing}')]
 #[Description('Import the course content files into the database')]
 class ContentImportCommand extends Command
 {
+    /** One column per plan action, in the order of `ImportPlan::ACTIONS`. */
+    public const SUMMARY_HEADERS = ['Table', 'Created', 'Updated', 'Unchanged', 'Archived', 'Restored'];
+
     public function handle(ContentValidator $validator, ContentImporter $importer): int
     {
         $path = $this->option('path');
@@ -39,7 +46,8 @@ class ContentImportCommand extends Command
             return self::FAILURE;
         }
 
-        $plan = $importer->import($report->tree);
+        $dryRun = (bool) $this->option('dry-run');
+        $plan = $importer->import($report->tree, $dryRun);
 
         if ($plan->hasErrors()) {
             foreach ($plan->errors() as $issue) {
@@ -58,7 +66,11 @@ class ContentImportCommand extends Command
             $this->line('warning '.$issue);
         }
 
-        $this->components->info(sprintf('Content imported from %d %s.', $report->files, $report->files === 1 ? 'file' : 'files'));
+        $files = sprintf('%d %s', $report->files, $report->files === 1 ? 'file' : 'files');
+
+        $this->components->info($dryRun
+            ? "Dry run of {$files}: nothing was written."
+            : "Content imported from {$files}.");
 
         return self::SUCCESS;
     }
@@ -70,12 +82,10 @@ class ContentImportCommand extends Command
         foreach (ContentTables::order() as $table) {
             $rows[] = [
                 $table,
-                $plan->count($table, ImportPlan::CREATE),
-                $plan->count($table, ImportPlan::UPDATE),
-                $plan->count($table, ImportPlan::UNCHANGED),
+                ...array_map(fn (string $action): int => $plan->count($table, $action), ImportPlan::ACTIONS),
             ];
         }
 
-        $this->table(['Table', 'Created', 'Updated', 'Unchanged'], $rows);
+        $this->table(self::SUMMARY_HEADERS, $rows);
     }
 }

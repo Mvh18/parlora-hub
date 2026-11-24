@@ -1,5 +1,6 @@
 <?php
 
+use App\Console\Commands\ContentImportCommand;
 use App\Content\ContentTables;
 use App\Models\Exam;
 use App\Models\Exercise;
@@ -84,16 +85,16 @@ test('a second import of the same tree changes nothing', function () {
     Date::setTestNow(now()->addHour());
 
     $this->artisan('content:import', ['--path' => 'tests/Fixtures/content'])
-        ->expectsTable(['Table', 'Created', 'Updated', 'Unchanged'], [
-            ['levels', 0, 0, 1],
-            ['passages', 0, 0, 2],
-            ['units', 0, 0, 2],
-            ['lessons', 0, 0, 7],
-            ['vocabulary_items', 0, 0, 3],
-            ['exercises', 0, 0, 9],
-            ['exams', 0, 0, 2],
-            ['exam_sections', 0, 0, 6],
-            ['exam_questions', 0, 0, 9],
+        ->expectsTable(ContentImportCommand::SUMMARY_HEADERS, [
+            ['levels', 0, 0, 1, 0, 0],
+            ['passages', 0, 0, 2, 0, 0],
+            ['units', 0, 0, 2, 0, 0],
+            ['lessons', 0, 0, 7, 0, 0],
+            ['vocabulary_items', 0, 0, 3, 0, 0],
+            ['exercises', 0, 0, 9, 0, 0],
+            ['exams', 0, 0, 2, 0, 0],
+            ['exam_sections', 0, 0, 6, 0, 0],
+            ['exam_questions', 0, 0, 9, 0, 0],
         ])
         ->assertExitCode(0);
 
@@ -114,16 +115,16 @@ test('a changed lesson title is updated and counted', function () {
 
     $this->artisan('content:import', ['--path' => $directory])
         ->expectsOutputToContain('lessons')
-        ->expectsTable(['Table', 'Created', 'Updated', 'Unchanged'], [
-            ['levels', 0, 0, 1],
-            ['passages', 0, 0, 2],
-            ['units', 0, 0, 2],
-            ['lessons', 0, 1, 6],
-            ['vocabulary_items', 0, 0, 3],
-            ['exercises', 0, 0, 9],
-            ['exams', 0, 0, 2],
-            ['exam_sections', 0, 0, 6],
-            ['exam_questions', 0, 0, 9],
+        ->expectsTable(ContentImportCommand::SUMMARY_HEADERS, [
+            ['levels', 0, 0, 1, 0, 0],
+            ['passages', 0, 0, 2, 0, 0],
+            ['units', 0, 0, 2, 0, 0],
+            ['lessons', 0, 1, 6, 0, 0],
+            ['vocabulary_items', 0, 0, 3, 0, 0],
+            ['exercises', 0, 0, 9, 0, 0],
+            ['exams', 0, 0, 2, 0, 0],
+            ['exam_sections', 0, 0, 6, 0, 0],
+            ['exam_questions', 0, 0, 9, 0, 0],
         ])
         ->assertExitCode(0);
 

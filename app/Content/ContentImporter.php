@@ -5,13 +5,17 @@ namespace App\Content;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\DB;
+use Throwable;
 
 /**
  * Writes a validated content tree to the database in one transaction.
  *
  * Imports are serialised with a transaction-scoped advisory lock, rows are
  * matched by key and written through Eloquent (so the model hooks still guard
- * them), parents before children, and a row that moved keeps its id. Positions
+ * them), parents before children, and a row that moved keeps its id. Rows
+ * whose keys appear in no file are archived before anything is created, so an
+ * outgoing row frees its unique slots (the one active placement exam) for the
+ * incoming one; archived rows whose keys return are restored. Positions
  * are rewritten in three steps so that no state in between breaks
  * `unique(parent, position)`:
  *
@@ -36,27 +40,66 @@ final class ContentImporter
 
     /**
      * Plan the import and, when the plan has no errors, write it. On any
-     * failure the whole import rolls back.
+     * failure the whole import rolls back. A dry run writes too, so the
+     * database constraints still check the plan, and then rolls back.
      */
-    public function import(ContentTree $tree): ImportPlan
+    public function import(ContentTree $tree, bool $dryRun = false): ImportPlan
     {
-        return DB::transaction(function () use ($tree): ImportPlan {
+        DB::beginTransaction();
+
+        try {
             DB::select('select pg_advisory_xact_lock(?)', [self::LOCK_ID]);
 
             $plan = ImportPlan::build($tree);
 
-            if ($plan->hasErrors()) {
-                return $plan;
+            if (! $plan->hasErrors()) {
+                $this->write($tree, $plan);
             }
+        } catch (Throwable $exception) {
+            DB::rollBack();
 
-            $this->ids = [];
+            throw $exception;
+        }
 
-            foreach (ContentTables::all() as $name => $table) {
-                $this->writeTable($table, $tree, $plan);
-            }
+        if ($dryRun || $plan->hasErrors()) {
+            DB::rollBack();
+        } else {
+            DB::commit();
+        }
 
-            return $plan;
-        });
+        return $plan;
+    }
+
+    private function write(ContentTree $tree, ImportPlan $plan): void
+    {
+        $this->ids = [];
+
+        // Archivals first, in every table, before anything is created.
+        foreach (ContentTables::all() as $table) {
+            $this->archive($table, $plan);
+        }
+
+        foreach (ContentTables::all() as $table) {
+            $this->writeTable($table, $tree, $plan);
+        }
+    }
+
+    /**
+     * Archive the rows of a table whose keys appear in no file. They keep
+     * their parent; step C moves them after their active siblings.
+     */
+    private function archive(ContentTable $table, ImportPlan $plan): void
+    {
+        $keys = $plan->keys($table->name, ImportPlan::ARCHIVE);
+
+        if ($keys === []) {
+            return;
+        }
+
+        foreach ($table->model::query()->whereIn('key', $keys)->get() as $model) {
+            // Every content model uses the Archivable concern.
+            $model->archive(); // @phpstan-ignore method.notFound
+        }
     }
 
     private function writeTable(ContentTable $table, ContentTree $tree, ImportPlan $plan): void
@@ -76,6 +119,10 @@ final class ContentImporter
             }
 
             $model = $existing[$row->key] ?? new $table->model;
+
+            if ($plan->action($table->name, $row->key) === ImportPlan::RESTORE) {
+                $model->forceFill(['archived_at' => null]);
+            }
 
             // Step B.
             RowFiller::fill(
