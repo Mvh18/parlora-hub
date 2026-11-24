@@ -61,14 +61,14 @@ test('the Spanish theory is edited per locale', function () {
         ->and($lesson->fresh()->getTranslation('theory', 'en'))->toBe('Use be.');
 });
 
-test('the re-import notice and Copy as JSON are on the lesson page and use keys', function () {
+test('the re-import notice and Copy as JSON are on the lesson page as a file fragment', function () {
     $lesson = Lesson::factory()->create();
 
     Livewire::test(EditLesson::class, ['record' => $lesson->getRouteKey()])
         ->assertSee(__('admin.reimport_notice.heading'))
         ->mountAction('copyAsJson')
-        ->assertMountedActionModalSee([$lesson->key, $lesson->unit->key])
-        ->assertMountedActionModalDontSee(['unit_id', 'created_at']);
+        ->assertMountedActionModalSee([$lesson->key, $lesson->title])
+        ->assertMountedActionModalDontSee([$lesson->unit->key, 'unit_id', 'created_at']);
 });
 
 test('a lesson is archived and restored from its page', function () {

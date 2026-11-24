@@ -187,15 +187,15 @@ test('an exercise key is not editable', function () {
     expect($exercise->fresh()->key)->toBe('a1.u01.l01.e01');
 });
 
-test('Copy as JSON on an exercise uses keys and the notice is shown', function () {
+test('Copy as JSON on an exercise is a file fragment and the notice is shown', function () {
     $passage = Passage::factory()->create();
     $exercise = Exercise::factory()->create(['passage_id' => $passage->id]);
 
     exercisePage($exercise)
         ->assertSee(__('admin.reimport_notice.heading'))
         ->mountAction('copyAsJson')
-        ->assertMountedActionModalSee([$exercise->key, $exercise->lesson->key, $passage->key, 'solution'])
-        ->assertMountedActionModalDontSee(['lesson_id', 'passage_id', 'created_at']);
+        ->assertMountedActionModalSee([$exercise->key, $passage->key, 'solution'])
+        ->assertMountedActionModalDontSee([$exercise->lesson->key, 'lesson_id', 'passage_id', 'created_at']);
 });
 
 test('an exercise page offers no delete and its resource no creation', function () {
