@@ -279,6 +279,11 @@ deleted. Edits made in the admin panel are overwritten by the next import, so
 carry them into the files with _Copy as JSON_ first. CI runs
 `content:validate` on every pull request that has a `content/` folder.
 
+A1 content also follows the course rules in
+[docs/architecture.md](docs/architecture.md#a1-course) (unit template,
+minimum exercises per lesson, English and Spanish); run
+`docker compose exec app php artisan test --filter=A1` before you push.
+
 ## Contributor licence agreement
 
 Before your first pull request can be merged you must accept the

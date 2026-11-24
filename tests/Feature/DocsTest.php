@@ -115,6 +115,15 @@ test('the content files and their commands are documented', function () {
         ->toContain('content:import --dry-run');
 });
 
+test('the A1 course rules are documented', function () {
+    expect((string) file_get_contents(base_path('docs/architecture.md')))
+        ->toContain('### A1 course')
+        ->toContain('A1CourseTest');
+
+    expect((string) file_get_contents(base_path('CONTRIBUTING.md')))
+        ->toContain('docs/architecture.md#a1-course');
+});
+
 test('relative links in the public docs point to files that exist', function () {
     $broken = [];
 

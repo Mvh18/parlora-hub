@@ -164,6 +164,32 @@ The course is authored as JSON files and written to the content tables by
 - **Location.** `HUB_CONTENT_PATH` sets the root (`hub.content_path`) and
   `--path` overrides it for one run of either command.
 
+### A1 course
+
+`content/levels/a1/` holds the A1 course: an original syllabus written from
+the public CEFR A1 descriptors, in eight themed units (`01-hello.json` …
+`08-now-and-then.json`) and the A1 exam.
+
+- **Unit template.** Four lessons in a fixed order: grammar, vocabulary, then
+  reading and speaking in odd units or listening and writing in even ones. The
+  last lesson reviews the unit before its production task. Keys follow
+  `a1.u01`, `a1.u01.l01`, `a1.u01.l01.ex01` and `a1.u01.l02.v01`.
+- **Minimums.** Every lesson has theory and at least 10 exercises of at least
+  4 types, from recognition to free production; a vocabulary lesson has at
+  least 12 items. Writing and speaking tasks (at most two, with a rubric) only
+  appear in the last lesson, dictations only in listening lessons, and every
+  auto-graded exercise has an explanation.
+- **Languages.** Theory, meanings, explanations and rubric descriptions carry
+  English and Spanish; titles, prompts, examples and passages are American
+  English.
+- **Audio later.** Listening passages and dictations carry an `audio_path`
+  under `a1/`; the files are produced separately, and until then the import
+  lists them as warnings.
+
+`tests/Feature/Content/A1CourseTest.php` checks these rules over the shipped
+tree (failures name the file, pointer or key), and `A1ImportTest` imports it
+into an empty database.
+
 ## Content panel
 
 A Filament 5 panel at `/admin` lets an administrator touch up the content
