@@ -1,0 +1,1291 @@
+{
+  "$schema": "../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u01",
+  "title": "Hello!",
+  "lessons": [
+    {
+      "key": "a1.u01.l01",
+      "type": "grammar",
+      "title": "I am, you are: the verb be",
+      "theory": {
+        "en": "## The verb *be*\n\nUse **be** to say who you are, where you are from and how old you are.\n\n| Subject pronoun | Full form | Short form |\n|---|---|---|\n| I | I **am** | I**'m** |\n| you | you **are** | you**'re** |\n| he | he **is** | he**'s** |\n| she | she **is** | she**'s** |\n| it | it **is** | it**'s** |\n| we | we **are** | we**'re** |\n| they | they **are** | they**'re** |\n\n- *I'm Tom. I'm from Canada.*\n- *She's a student.*\n- *They're my friends.*\n\n### Subject pronouns\n\nEnglish sentences always need a subject. Use **he** for a man or a boy, **she** for a woman or a girl, **it** for a thing or an animal, and **they** for two or more people or things.\n\n- *Anna is from Spain.* → ***She** is from Spain.*\n- *The book is new.* → ***It** is new.*\n\n### Negatives\n\nAdd **not** after *be*: *I'm **not** from Spain.* With *is* and *are* you can also say **isn't** and **aren't**: *She **isn't** a teacher. They **aren't** here.*\n\n### Questions and short answers\n\nPut *be* before the subject: ***Are** you from Brazil?* — *Yes, I **am**.* / *No, I'**m not**.*\n\nIn short answers with *yes*, use the full form: *Yes, I am* (not *Yes, I'm*).",
+        "es": "## El verbo *be*\n\nUsa **be** (ser/estar) para decir quién eres, de dónde eres y cuántos años tienes.\n\n| Pronombre sujeto | Forma completa | Forma corta |\n|---|---|---|\n| I (yo) | I **am** | I**'m** |\n| you (tú/usted) | you **are** | you**'re** |\n| he (él) | he **is** | he**'s** |\n| she (ella) | she **is** | she**'s** |\n| it (cosa o animal) | it **is** | it**'s** |\n| we (nosotros) | we **are** | we**'re** |\n| they (ellos/ellas) | they **are** | they**'re** |\n\n- *I'm Tom. I'm from Canada.* (Soy Tom. Soy de Canadá.)\n- *She's a student.* (Ella es estudiante.)\n- *They're my friends.* (Son mis amigos.)\n\n### Pronombres sujeto\n\nEn inglés la oración siempre necesita un sujeto: no se puede omitir como en español. Usa **he** para un hombre o un niño, **she** para una mujer o una niña, **it** para una cosa o un animal, y **they** para dos o más personas o cosas.\n\n- *Anna is from Spain.* → ***She** is from Spain.*\n- *The book is new.* → ***It** is new.*\n\n### Negación\n\nAgrega **not** después de *be*: *I'm **not** from Spain.* Con *is* y *are* también puedes decir **isn't** y **aren't**: *She **isn't** a teacher. They **aren't** here.*\n\n### Preguntas y respuestas cortas\n\nPon *be* antes del sujeto: ***Are** you from Brazil?* — *Yes, I **am**.* / *No, I'**m not**.*\n\nEn las respuestas cortas con *yes* usa la forma completa: *Yes, I am* (no *Yes, I'm*)."
+      },
+      "exercises": [
+        {
+          "key": "a1.u01.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"I ___ from Brazil.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "am" },
+              { "id": "b", "text": "is" },
+              { "id": "c", "text": "are" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "With **I** we always use **am**: *I am from Brazil.*",
+            "es": "Con **I** siempre usamos **am**: *I am from Brazil.*"
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"Tom and Lisa ___ students.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "am" },
+              { "id": "b", "text": "is" },
+              { "id": "c", "text": "are" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "*Tom and Lisa* are two people (**they**), so we use **are**.",
+            "es": "*Tom and Lisa* son dos personas (**they**), así que usamos **are**."
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each full form with its short form.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "I am" },
+              { "id": "l2", "text": "you are" },
+              { "id": "l3", "text": "he is" },
+              { "id": "l4", "text": "it is" },
+              { "id": "l5", "text": "we are" },
+              { "id": "l6", "text": "they are" }
+            ],
+            "right": [
+              { "id": "r1", "text": "they're" },
+              { "id": "r2", "text": "it's" },
+              { "id": "r3", "text": "I'm" },
+              { "id": "r4", "text": "we're" },
+              { "id": "r5", "text": "he's" },
+              { "id": "r6", "text": "you're" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r6"],
+              ["l3", "r5"],
+              ["l4", "r2"],
+              ["l5", "r4"],
+              ["l6", "r1"]
+            ]
+          },
+          "explanation": {
+            "en": "In the short form, an apostrophe (') replaces the first letter of the verb: *am* → *'m*, *is* → *'s*, *are* → *'re*.",
+            "es": "En la forma corta, un apóstrofo (') reemplaza la primera letra del verbo: *am* → *'m*, *is* → *'s*, *are* → *'re*."
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex04",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each subject with the right pronoun.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Anna" },
+              { "id": "l2", "text": "Mr. Brown" },
+              { "id": "l3", "text": "Anna and I" },
+              { "id": "l4", "text": "the phone" },
+              { "id": "l5", "text": "Tom and Lisa" }
+            ],
+            "right": [
+              { "id": "r1", "text": "it" },
+              { "id": "r2", "text": "they" },
+              { "id": "r3", "text": "she" },
+              { "id": "r4", "text": "we" },
+              { "id": "r5", "text": "he" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "**She** is a woman, **he** is a man, **it** is a thing, **we** includes you (*I*), and **they** is two or more other people.",
+            "es": "**She** es una mujer, **he** es un hombre, **it** es una cosa, **we** te incluye a ti (*I*) y **they** son dos o más personas."
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex05",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with am, is or are.",
+          "content": {
+            "text": "Hi! My name {{g1}} Sam. I {{g2}} from Canada. My friends {{g3}} from Mexico."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["is"],
+              "g2": ["am"],
+              "g3": ["are"]
+            }
+          },
+          "explanation": {
+            "en": "*My name* is one thing (**is**), *I* takes **am**, and *my friends* are many people (**are**).",
+            "es": "*My name* es una sola cosa (**is**), *I* lleva **am** y *my friends* son varias personas (**are**)."
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex06",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with am, is or are.",
+          "content": {
+            "text": "We {{g1}} in class 3. Our teacher {{g2}} Ms. Lee. You {{g3}} in class 4."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["are"],
+              "g2": ["is"],
+              "g3": ["are"]
+            }
+          },
+          "explanation": {
+            "en": "**We** and **you** take **are**; *our teacher* is one person (**she**), so **is**.",
+            "es": "**We** y **you** llevan **are**; *our teacher* es una persona (**she**), así que **is**."
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex07",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the negative form of be.",
+          "content": {
+            "text": "She {{g1}} a teacher. She's a student. They {{g2}} from Japan. They're from China."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["is not", "isn't"],
+              "g2": ["are not", "aren't"]
+            }
+          },
+          "explanation": {
+            "en": "Add **not** after the verb: *is not* (*isn't*), *are not* (*aren't*).",
+            "es": "Agrega **not** después del verbo: *is not* (*isn't*), *are not* (*aren't*)."
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex08",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "from" },
+              { "id": "t1", "text": "Are" },
+              { "id": "t4", "text": "Brazil?" },
+              { "id": "t2", "text": "you" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "In questions, the verb *be* comes before the subject: ***Are** you from Brazil?*",
+            "es": "En las preguntas, el verbo *be* va antes del sujeto: ***Are** you from Brazil?*"
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex09",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "not" },
+              { "id": "t1", "text": "He" },
+              { "id": "t4", "text": "a teacher." },
+              { "id": "t2", "text": "is" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "**Not** goes after the verb *be*: *He is **not** a teacher.*",
+            "es": "**Not** va después del verbo *be*: *He is **not** a teacher.*"
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex10",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make the sentence negative. Use the word in capitals.",
+          "content": {
+            "sentence": "She is from Italy.",
+            "keyword": "NOT",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": ["She is not from Italy.", "She's not from Italy."]
+          },
+          "explanation": {
+            "en": "Put **not** after *is*: *She is not from Italy.*",
+            "es": "Pon **not** después de *is*: *She is not from Italy.*"
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex11",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make a question. Use the word in capitals.",
+          "content": {
+            "sentence": "You are a student.",
+            "keyword": "ARE",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["Are you a student?"] },
+          "explanation": {
+            "en": "Move **are** before the subject and end with a question mark: *Are you a student?*",
+            "es": "Mueve **are** antes del sujeto y termina con signo de interrogación: *Are you a student?*"
+          }
+        },
+        {
+          "key": "a1.u01.l01.ex12",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "\"Are you from Canada?\" Choose the correct short answer.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Yes, I'm." },
+              { "id": "b", "text": "Yes, I am." },
+              { "id": "c", "text": "Yes, I is." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "Short answers with *yes* use the full form: *Yes, I am.* We never end a sentence with *I'm*.",
+            "es": "Las respuestas cortas con *yes* usan la forma completa: *Yes, I am.* Nunca terminamos una oración con *I'm*."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u01.l02",
+      "type": "vocabulary",
+      "title": "Greetings, numbers and countries",
+      "theory": {
+        "en": "## Saying hello and goodbye\n\n| Time | Hello | Goodbye |\n|---|---|---|\n| morning (until 12 p.m.) | *Good morning* | *Goodbye* / *Bye* |\n| afternoon (12–6 p.m.) | *Good afternoon* | *See you later* |\n| evening (after 6 p.m.) | *Good evening* | *Good night* (when you go home or to bed) |\n\n**Hi** and **hello** are good at any time. *Hi* is informal.\n\nWhen you meet someone for the first time, say ***Nice to meet you.*** The other person answers ***Nice to meet you, too.***\n\n*How are you?* — *I'm fine, thanks. And you?*\n\n## Numbers 0–20\n\n| | | | |\n|---|---|---|---|\n| 0 zero | 1 one | 2 two | 3 three |\n| 4 four | 5 five | 6 six | 7 seven |\n| 8 eight | 9 nine | 10 ten | 11 eleven |\n| 12 twelve | 13 thirteen | 14 fourteen | 15 fifteen |\n| 16 sixteen | 17 seventeen | 18 eighteen | 19 nineteen |\n| 20 twenty | | | |\n\nNumbers 13–19 end in **-teen**, with the stress at the end: *four**teen***.\n\n## The alphabet\n\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z\n\nTo ask for spelling: *How do you spell your name?* — *T-O-M.* Watch the vowels: **A** sounds like *ay*, **E** like *ee*, **I** like *eye*.\n\n## Countries\n\nCountries start with a capital letter: *Mexico, Brazil, Spain, Japan, Canada, Egypt, **the** United States.* Say *I'm from + country*: *I'm from Brazil.*",
+        "es": "## Saludar y despedirse\n\n| Momento | Hola | Adiós |\n|---|---|---|\n| mañana (hasta las 12 p.m.) | *Good morning* (buenos días) | *Goodbye* / *Bye* (adiós) |\n| tarde (12–6 p.m.) | *Good afternoon* (buenas tardes) | *See you later* (hasta luego) |\n| noche (después de las 6 p.m.) | *Good evening* (buenas noches, al llegar) | *Good night* (buenas noches, al irse o al dormir) |\n\n**Hi** y **hello** sirven a cualquier hora. *Hi* es informal.\n\nCuando conoces a alguien por primera vez, di ***Nice to meet you.*** (Mucho gusto.) La otra persona responde ***Nice to meet you, too.*** (Igualmente.)\n\n*How are you?* (¿Cómo estás?) — *I'm fine, thanks. And you?* (Bien, gracias. ¿Y tú?)\n\n## Números del 0 al 20\n\n| | | | |\n|---|---|---|---|\n| 0 zero | 1 one | 2 two | 3 three |\n| 4 four | 5 five | 6 six | 7 seven |\n| 8 eight | 9 nine | 10 ten | 11 eleven |\n| 12 twelve | 13 thirteen | 14 fourteen | 15 fifteen |\n| 16 sixteen | 17 seventeen | 18 eighteen | 19 nineteen |\n| 20 twenty | | | |\n\nLos números del 13 al 19 terminan en **-teen**, con el acento al final: *four**teen***.\n\n## El alfabeto\n\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z\n\nPara pedir que deletreen: *How do you spell your name?* (¿Cómo se escribe tu nombre?) — *T-O-M.* Cuidado con las vocales: la **A** suena como *ei*, la **E** como *i*, la **I** como *ai*.\n\n## Países\n\nLos países se escriben con mayúscula: *Mexico, Brazil, Spain, Japan, Canada, Egypt, **the** United States.* Di *I'm from + país*: *I'm from Brazil.* (Soy de Brasil.)"
+      },
+      "vocabulary": [
+        {
+          "key": "a1.u01.l02.v01",
+          "term": "hello",
+          "kind": "word",
+          "meaning": {
+            "en": "a word you say when you meet someone",
+            "es": "hola"
+          },
+          "example": "Hello, I'm Anna."
+        },
+        {
+          "key": "a1.u01.l02.v02",
+          "term": "hi",
+          "kind": "word",
+          "meaning": {
+            "en": "an informal way to say hello",
+            "es": "hola (informal)"
+          },
+          "example": "Hi, Tom! How are you?"
+        },
+        {
+          "key": "a1.u01.l02.v03",
+          "term": "good morning",
+          "kind": "expression",
+          "meaning": { "en": "hello, in the morning", "es": "buenos días" },
+          "example": "Good morning, Ms. Lee."
+        },
+        {
+          "key": "a1.u01.l02.v04",
+          "term": "good afternoon",
+          "kind": "expression",
+          "meaning": { "en": "hello, in the afternoon", "es": "buenas tardes" },
+          "example": "Good afternoon, everyone."
+        },
+        {
+          "key": "a1.u01.l02.v05",
+          "term": "good evening",
+          "kind": "expression",
+          "meaning": {
+            "en": "hello, in the evening",
+            "es": "buenas noches (al saludar)"
+          },
+          "example": "Good evening. Welcome to the class."
+        },
+        {
+          "key": "a1.u01.l02.v06",
+          "term": "good night",
+          "kind": "expression",
+          "meaning": {
+            "en": "goodbye, at night or before bed",
+            "es": "buenas noches (al despedirse)"
+          },
+          "example": "Good night, Mom!"
+        },
+        {
+          "key": "a1.u01.l02.v07",
+          "term": "goodbye",
+          "kind": "word",
+          "meaning": { "en": "a word you say when you leave", "es": "adiós" },
+          "example": "Goodbye, see you on Monday."
+        },
+        {
+          "key": "a1.u01.l02.v08",
+          "term": "see you later",
+          "kind": "expression",
+          "meaning": {
+            "en": "goodbye, when you will see the person again soon",
+            "es": "hasta luego"
+          },
+          "example": "Bye, Lisa! See you later."
+        },
+        {
+          "key": "a1.u01.l02.v09",
+          "term": "nice to meet you",
+          "kind": "expression",
+          "meaning": {
+            "en": "said when you meet someone for the first time",
+            "es": "mucho gusto"
+          },
+          "example": "Hi, I'm Ken. Nice to meet you."
+        },
+        {
+          "key": "a1.u01.l02.v10",
+          "term": "How are you?",
+          "kind": "expression",
+          "meaning": {
+            "en": "a question to ask if someone is OK",
+            "es": "¿Cómo estás?"
+          },
+          "example": "Hi, Sara. How are you?"
+        },
+        {
+          "key": "a1.u01.l02.v11",
+          "term": "fine",
+          "kind": "word",
+          "meaning": { "en": "well, OK", "es": "bien" },
+          "example": "I'm fine, thanks."
+        },
+        {
+          "key": "a1.u01.l02.v12",
+          "term": "thank you",
+          "kind": "expression",
+          "meaning": {
+            "en": "words to show you are happy someone helped you; also *thanks*",
+            "es": "gracias"
+          },
+          "example": "Thank you, Mr. Brown."
+        },
+        {
+          "key": "a1.u01.l02.v13",
+          "term": "name",
+          "kind": "word",
+          "meaning": { "en": "the word people call you", "es": "nombre" },
+          "example": "My name is Lucía."
+        },
+        {
+          "key": "a1.u01.l02.v14",
+          "term": "number",
+          "kind": "word",
+          "meaning": { "en": "a word or sign like 1, 2 or 3", "es": "número" },
+          "example": "My phone number is 555-0147."
+        },
+        {
+          "key": "a1.u01.l02.v15",
+          "term": "spell",
+          "kind": "word",
+          "meaning": {
+            "en": "to say or write the letters of a word in order",
+            "es": "deletrear"
+          },
+          "example": "How do you spell your name?"
+        },
+        {
+          "key": "a1.u01.l02.v16",
+          "term": "country",
+          "kind": "word",
+          "meaning": { "en": "a nation, like Mexico or Japan", "es": "país" },
+          "example": "What country are you from?"
+        },
+        {
+          "key": "a1.u01.l02.v17",
+          "term": "be from",
+          "kind": "expression",
+          "meaning": {
+            "en": "to have your home country or city in a place",
+            "es": "ser de (un lugar)"
+          },
+          "example": "I'm from Brazil."
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u01.l02.ex01",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each greeting with the right time.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Good morning" },
+              { "id": "l2", "text": "Good afternoon" },
+              { "id": "l3", "text": "Good evening" },
+              { "id": "l4", "text": "Good night" }
+            ],
+            "right": [
+              { "id": "r1", "text": "at 3 p.m." },
+              { "id": "r2", "text": "when you go to bed" },
+              { "id": "r3", "text": "at 9 a.m." },
+              { "id": "r4", "text": "at 7 p.m., when you arrive" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r1"],
+              ["l3", "r4"],
+              ["l4", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*Good morning* is before 12 p.m., *good afternoon* is from 12 to 6 p.m., *good evening* is a greeting after 6 p.m., and *good night* is a way to say goodbye at night.",
+            "es": "*Good morning* es antes de las 12 p.m., *good afternoon* de 12 a 6 p.m., *good evening* es un saludo después de las 6 p.m. y *good night* es una despedida por la noche."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex02",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "It's 8 p.m. You arrive at a friend's party. What do you say?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Good morning!" },
+              { "id": "b", "text": "Good evening!" },
+              { "id": "c", "text": "Good night!" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "You are arriving, so you need a greeting: *Good evening!* *Good night* is only for saying goodbye.",
+            "es": "Estás llegando, así que necesitas un saludo: *Good evening!* *Good night* solo se usa para despedirse."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex03",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Your friend asks: \"How are you?\" Choose the best answer.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "I'm fine, thanks." },
+              { "id": "b", "text": "I'm Tom." },
+              { "id": "c", "text": "Nice to meet you." },
+              { "id": "d", "text": "I'm from Spain." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*How are you?* asks how you feel. *I'm fine, thanks.* answers that question.",
+            "es": "*How are you?* pregunta cómo te sientes. *I'm fine, thanks.* responde esa pregunta."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex04",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each word with its number.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "three" },
+              { "id": "l2", "text": "eight" },
+              { "id": "l3", "text": "eleven" },
+              { "id": "l4", "text": "thirteen" },
+              { "id": "l5", "text": "fifteen" },
+              { "id": "l6", "text": "twenty" }
+            ],
+            "right": [
+              { "id": "r1", "text": "15" },
+              { "id": "r2", "text": "3" },
+              { "id": "r3", "text": "20" },
+              { "id": "r4", "text": "11" },
+              { "id": "r5", "text": "8" },
+              { "id": "r6", "text": "13" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r2"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r6"],
+              ["l5", "r1"],
+              ["l6", "r3"]
+            ]
+          },
+          "explanation": {
+            "en": "Remember the irregular ones: *eleven* (11), *twelve* (12), *thirteen* (13), *fifteen* (15) and *twenty* (20).",
+            "es": "Recuerda los irregulares: *eleven* (11), *twelve* (12), *thirteen* (13), *fifteen* (15) y *twenty* (20)."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex05",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Write the answer as a word.",
+          "content": {
+            "text": "Seven plus five is {{g1}}. Ten plus six is {{g2}}. Twenty minus one is {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["twelve", "12"],
+              "g2": ["sixteen", "16"],
+              "g3": ["nineteen", "19"]
+            }
+          },
+          "explanation": {
+            "en": "7 + 5 = *twelve*, 10 + 6 = *sixteen*, 20 − 1 = *nineteen*.",
+            "es": "7 + 5 = *twelve*, 10 + 6 = *sixteen*, 20 − 1 = *nineteen*."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex06",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Which word is 14?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "four" },
+              { "id": "b", "text": "forty" },
+              { "id": "c", "text": "fourteen" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "Numbers from 13 to 19 end in **-teen**: 14 is *fourteen*. *Four* is 4 and *forty* is 40.",
+            "es": "Los números del 13 al 19 terminan en **-teen**: 14 es *fourteen*. *Four* es 4 y *forty* es 40."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex07",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each country with its Spanish name.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "the United States" },
+              { "id": "l2", "text": "Brazil" },
+              { "id": "l3", "text": "Japan" },
+              { "id": "l4", "text": "Spain" },
+              { "id": "l5", "text": "Egypt" }
+            ],
+            "right": [
+              { "id": "r1", "text": "España" },
+              { "id": "r2", "text": "Egipto" },
+              { "id": "r3", "text": "Estados Unidos" },
+              { "id": "r4", "text": "Japón" },
+              { "id": "r5", "text": "Brasil" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Many countries look similar in English and Spanish, but check the spelling: *Brazil* with **z**, *Japan* with no accent.",
+            "es": "Muchos países se parecen en inglés y en español, pero revisa la ortografía: *Brazil* con **z**, *Japan* sin tilde."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex08",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete the conversation.",
+          "content": {
+            "text": "A: Hi, I'm Leo. B: Hello, Leo. I'm Mia. Nice to {{g1}} you. A: Nice to meet you, {{g2}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["meet"],
+              "g2": ["too"]
+            }
+          },
+          "explanation": {
+            "en": "The expression is *Nice to **meet** you.* The answer adds *too*: *Nice to meet you, **too**.*",
+            "es": "La expresión es *Nice to **meet** you.* La respuesta agrega *too* (también): *Nice to meet you, **too**.*"
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex09",
+          "type": "reorder",
+          "skill": "vocabulary",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t4", "text": "your name?" },
+              { "id": "t2", "text": "do" },
+              { "id": "t5", "text": "spell" },
+              { "id": "t1", "text": "How" },
+              { "id": "t3", "text": "you" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t5", "t4"]] },
+          "explanation": {
+            "en": "We ask for spelling with *How do you spell ...?*: *How do you spell your name?*",
+            "es": "Para pedir que deletreen preguntamos *How do you spell ...?*: *How do you spell your name?*"
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex10",
+          "type": "transformation",
+          "skill": "vocabulary",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "Hello, I'm Ana.",
+            "keyword": "NAME",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": ["Hello, my name is Ana.", "Hello, my name's Ana."]
+          },
+          "explanation": {
+            "en": "*I'm Ana* and *my name is Ana* mean the same.",
+            "es": "*I'm Ana* y *my name is Ana* significan lo mismo."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex11",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "You leave class at 4 p.m. You will see your friend tomorrow. What do you say?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Hello!" },
+              { "id": "b", "text": "Good morning!" },
+              { "id": "c", "text": "See you later!" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "You are leaving, so you say goodbye: *See you later!* *Hello* and *good morning* are greetings.",
+            "es": "Te estás yendo, así que te despides: *See you later!* *Hello* y *good morning* son saludos."
+          }
+        },
+        {
+          "key": "a1.u01.l02.ex12",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with a country.",
+          "content": {
+            "text": "Tokyo is in {{g1}}. Cairo is in {{g2}}. Madrid is in {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["Japan"],
+              "g2": ["Egypt"],
+              "g3": ["Spain"]
+            }
+          },
+          "explanation": {
+            "en": "Tokyo is the capital of *Japan*, Cairo of *Egypt* and Madrid of *Spain*. Countries start with a capital letter.",
+            "es": "Tokio es la capital de *Japan*, El Cairo de *Egypt* y Madrid de *Spain*. Los países empiezan con mayúscula."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u01.l03",
+      "type": "reading",
+      "title": "Meet the new class",
+      "theory": {
+        "en": "## Reading introductions\n\nWhen people introduce themselves, they usually give the same information in a short, simple way:\n\n| Information | Example |\n|---|---|\n| name | *My name is Lucía.* / *I'm Ken.* |\n| country or city | *I'm from Mexico.* / *We're from Cairo.* |\n| age | *I'm nineteen (years old).* |\n| job | *I'm a student.* / *I'm a nurse.* |\n\n### Tips\n\n- Read the text once quickly to find **who** is writing.\n- Then look for the information you need: names start with a capital letter, and numbers and countries are easy to find.\n- *I'm from Japan, **but** I live in Canada* — **but** shows a difference between two ideas.\n- *Too* at the end of a sentence means \"also\": *My sister is in the class **too**.*",
+        "es": "## Leer presentaciones\n\nCuando las personas se presentan, normalmente dan la misma información de forma corta y sencilla:\n\n| Información | Ejemplo |\n|---|---|\n| nombre | *My name is Lucía.* / *I'm Ken.* |\n| país o ciudad | *I'm from Mexico.* / *We're from Cairo.* |\n| edad | *I'm nineteen (years old).* |\n| trabajo | *I'm a student.* / *I'm a nurse.* |\n\nFíjate: en inglés la edad se dice con *be* (*I'm nineteen*), no con *have*.\n\n### Consejos\n\n- Lee el texto una vez rápidamente para saber **quién** escribe.\n- Luego busca la información que necesitas: los nombres empiezan con mayúscula, y los números y los países son fáciles de encontrar.\n- *I'm from Japan, **but** I live in Canada* — **but** (pero) muestra una diferencia entre dos ideas.\n- *Too* al final de una oración significa \"también\": *My sister is in the class **too**.*"
+      },
+      "exercises": [
+        {
+          "key": "a1.u01.l03.ex01",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Read the text. Where is Lucía from?",
+          "passage": "a1.u01.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Mexico" },
+              { "id": "b", "text": "Japan" },
+              { "id": "c", "text": "Egypt" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Lucía writes: *I'm from Mexico.*",
+            "es": "Lucía escribe: *I'm from Mexico.*"
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex02",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "How old is Ken?",
+          "passage": "a1.u01.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "19" },
+              { "id": "b", "text": "25" },
+              { "id": "c", "text": "31" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "Ken writes: *I'm twenty-five.* Nineteen is Lucía and thirty-one is Amira.",
+            "es": "Ken escribe: *I'm twenty-five.* Diecinueve es Lucía y treinta y uno es Amira."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex03",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Where does Ken live now?",
+          "passage": "a1.u01.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "in Japan" },
+              { "id": "b", "text": "in Mexico" },
+              { "id": "c", "text": "in Canada" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "*I'm from Japan, but I live in Canada now.* His country is Japan, but his home now is in Canada.",
+            "es": "*I'm from Japan, but I live in Canada now.* Su país es Japón, pero ahora vive en Canadá."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex04",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Which two sentences are true? Choose two.",
+          "passage": "a1.u01.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Amira is a teacher." },
+              { "id": "b", "text": "Nadia is Amira's sister." },
+              { "id": "c", "text": "Lucía is a nurse." },
+              { "id": "d", "text": "Amira and Nadia are from Mexico." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "b"] },
+          "explanation": {
+            "en": "Amira writes *I'm a teacher* and *My sister Nadia is in the class too.* Lucía is a student, and the sisters are from Cairo, in Egypt.",
+            "es": "Amira escribe *I'm a teacher* y *My sister Nadia is in the class too.* Lucía es estudiante, y las hermanas son de El Cairo, en Egipto."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex05",
+          "type": "matching",
+          "skill": "reading",
+          "prompt": "Match each person with their age.",
+          "passage": "a1.u01.reading",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Lucía" },
+              { "id": "l2", "text": "Ken" },
+              { "id": "l3", "text": "Amira" },
+              { "id": "l4", "text": "Nadia" }
+            ],
+            "right": [
+              { "id": "r1", "text": "31" },
+              { "id": "r2", "text": "17" },
+              { "id": "r3", "text": "20" },
+              { "id": "r4", "text": "19" },
+              { "id": "r5", "text": "25" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r4"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Lucía is *nineteen*, Ken is *twenty-five*, Amira is *thirty-one* and Nadia is *seventeen*. Nobody is twenty.",
+            "es": "Lucía tiene *nineteen*, Ken *twenty-five*, Amira *thirty-one* y Nadia *seventeen*. Nadie tiene veinte."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex06",
+          "type": "matching",
+          "skill": "reading",
+          "prompt": "Match each person with their job.",
+          "passage": "a1.u01.reading",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Lucía" },
+              { "id": "l2", "text": "Ken" },
+              { "id": "l3", "text": "Amira" }
+            ],
+            "right": [
+              { "id": "r1", "text": "teacher" },
+              { "id": "r2", "text": "doctor" },
+              { "id": "r3", "text": "student" },
+              { "id": "r4", "text": "nurse" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r4"],
+              ["l3", "r1"]
+            ]
+          },
+          "explanation": {
+            "en": "*I'm a student* (Lucía), *I'm a nurse* (Ken), *I'm a teacher* (Amira). Nobody in the text is a doctor.",
+            "es": "*I'm a student* (Lucía), *I'm a nurse* (Ken), *I'm a teacher* (Amira). Nadie en el texto es médico."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex07",
+          "type": "fill_gap",
+          "skill": "reading",
+          "prompt": "Complete the summary with a country.",
+          "passage": "a1.u01.reading",
+          "content": {
+            "text": "Ken is from {{g1}}, but he lives in {{g2}} now."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["Japan"],
+              "g2": ["Canada"]
+            }
+          },
+          "explanation": {
+            "en": "Ken's country is *Japan*; he lives in *Canada* now.",
+            "es": "El país de Ken es *Japan*; ahora vive en *Canada*."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex08",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete the summary with am, is or are.",
+          "passage": "a1.u01.reading",
+          "content": {
+            "text": "Amira and Nadia {{g1}} sisters. They {{g2}} from Cairo. Nadia {{g3}} seventeen."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["are"],
+              "g2": ["are"],
+              "g3": ["is"]
+            }
+          },
+          "explanation": {
+            "en": "Two people (*Amira and Nadia*, *they*) take **are**; one person (*Nadia*) takes **is**.",
+            "es": "Dos personas (*Amira and Nadia*, *they*) llevan **are**; una persona (*Nadia*) lleva **is**."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex09",
+          "type": "reorder",
+          "skill": "reading",
+          "prompt": "Put the words in order to make a true sentence about the text.",
+          "passage": "a1.u01.reading",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "a student" },
+              { "id": "t5", "text": "Mexico." },
+              { "id": "t1", "text": "Lucía" },
+              { "id": "t4", "text": "from" },
+              { "id": "t2", "text": "is" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "Subject + *be* + the rest: *Lucía is a student from Mexico.*",
+            "es": "Sujeto + *be* + el resto: *Lucía is a student from Mexico.*"
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex10",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing in a shorter way. Use the word in capitals.",
+          "passage": "a1.u01.reading",
+          "content": {
+            "sentence": "My name is Ken Sato.",
+            "keyword": "I'M",
+            "max_words": 3
+          },
+          "solution": { "accepted": ["I'm Ken Sato."] },
+          "explanation": {
+            "en": "Ken uses both forms in the text: *I'm Ken Sato* means *my name is Ken Sato*.",
+            "es": "En el texto se usan las dos formas: *I'm Ken Sato* significa *my name is Ken Sato*."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex11",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "What is Lucía's favorite word in English?",
+          "passage": "a1.u01.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "hi" },
+              { "id": "b", "text": "hello" },
+              { "id": "c", "text": "nice" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "Lucía writes: *My favorite word in English is \"hello\"!*",
+            "es": "Lucía escribe: *My favorite word in English is \"hello\"!* (Mi palabra favorita en inglés es \"hello\")."
+          }
+        },
+        {
+          "key": "a1.u01.l03.ex12",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Is Nadia in the class?",
+          "passage": "a1.u01.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Yes, she is." },
+              { "id": "b", "text": "No, she isn't." },
+              { "id": "c", "text": "The text doesn't say." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Amira writes: *My sister Nadia is in the class too.* The short answer is *Yes, she is.*",
+            "es": "Amira escribe: *My sister Nadia is in the class too.* La respuesta corta es *Yes, she is.*"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u01.l04",
+      "type": "speaking",
+      "title": "Introduce yourself",
+      "theory": {
+        "en": "## Introducing yourself\n\nA short introduction answers four questions:\n\n| Question | Answer |\n|---|---|\n| *What's your name?* | *I'm Sara.* / *My name's Sara.* |\n| *Where are you from?* | *I'm from Peru.* |\n| *How old are you?* | *I'm twenty (years old).* |\n| *What do you do?* | *I'm a student.* |\n\nStart with a greeting (*Hi!* / *Hello!*) and end with *Nice to meet you!*\n\n### Meeting someone new\n\n1. Greet: *Hi! I'm Sara.*\n2. Ask: *What's your name?* / *Where are you from?*\n3. React: *Nice to meet you.*\n4. Say goodbye: *See you later!*\n\n### Sounding natural\n\n- Use short forms when you speak: ***I'm*** from Peru, ***she's*** my sister, ***we're*** students.\n- Use the full form at the end of a short answer: *Yes, I **am**.*\n- If you don't understand, say: *Sorry, can you repeat that?* or *How do you spell that?*",
+        "es": "## Presentarte\n\nUna presentación corta responde cuatro preguntas:\n\n| Pregunta | Respuesta |\n|---|---|\n| *What's your name?* (¿Cómo te llamas?) | *I'm Sara.* / *My name's Sara.* |\n| *Where are you from?* (¿De dónde eres?) | *I'm from Peru.* |\n| *How old are you?* (¿Cuántos años tienes?) | *I'm twenty (years old).* |\n| *What do you do?* (¿A qué te dedicas?) | *I'm a student.* |\n\nEmpieza con un saludo (*Hi!* / *Hello!*) y termina con *Nice to meet you!*\n\n### Conocer a alguien\n\n1. Saluda: *Hi! I'm Sara.*\n2. Pregunta: *What's your name?* / *Where are you from?*\n3. Reacciona: *Nice to meet you.*\n4. Despídete: *See you later!*\n\n### Sonar natural\n\n- Usa formas cortas al hablar: ***I'm*** from Peru, ***she's*** my sister, ***we're*** students.\n- Usa la forma completa al final de una respuesta corta: *Yes, I **am**.*\n- Si no entiendes, di: *Sorry, can you repeat that?* (Perdón, ¿puedes repetirlo?) o *How do you spell that?* (¿Cómo se escribe?)"
+      },
+      "exercises": [
+        {
+          "key": "a1.u01.l04.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct sentence.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Hi, I Paulo." },
+              { "id": "b", "text": "Hi, I'm Paulo." },
+              { "id": "c", "text": "Hi, am Paulo." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "English needs both the subject and the verb: *I'm* = *I am*.",
+            "es": "El inglés necesita el sujeto y el verbo: *I'm* = *I am*. No se puede decir solo *am Paulo*."
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "\"Where are you from?\" Choose the correct answer.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "I'm from Brazil." },
+              { "id": "b", "text": "I'm Brazil from." },
+              { "id": "c", "text": "I from Brazil." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "The pattern is *I'm from* + country: *I'm from Brazil.*",
+            "es": "La estructura es *I'm from* + país: *I'm from Brazil.*"
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex03",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each question with its answer.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "What's your name?" },
+              { "id": "l2", "text": "Where are you from?" },
+              { "id": "l3", "text": "How old are you?" },
+              { "id": "l4", "text": "How are you?" },
+              { "id": "l5", "text": "How do you spell that?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "I'm twenty." },
+              { "id": "r2", "text": "S-A-R-A." },
+              { "id": "r3", "text": "I'm Sara." },
+              { "id": "r4", "text": "Fine, thanks." },
+              { "id": "r5", "text": "I'm from Spain." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*Name* → your name, *from* → your country, *how old* → your age, *how are you* → how you feel, *spell* → the letters.",
+            "es": "*Name* → tu nombre, *from* → tu país, *how old* → tu edad, *how are you* → cómo te sientes, *spell* → las letras."
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete the introduction.",
+          "content": {
+            "text": "Hello! My name {{g1}} Omar. I'm {{g2}} Spain. I'm eighteen years {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["is"],
+              "g2": ["from"],
+              "g3": ["old"]
+            }
+          },
+          "explanation": {
+            "en": "*My name **is** ...*, *I'm **from** + country*, *I'm + number + years **old***.",
+            "es": "*My name **is** ...*, *I'm **from** + país*, *I'm + número + years **old***."
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex05",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete the short answers.",
+          "content": {
+            "text": "A: Are you a student? B: Yes, I {{g1}}. A: Is your friend a student too? B: No, he {{g2}}. He's a nurse."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["am"],
+              "g2": ["isn't", "is not"]
+            }
+          },
+          "explanation": {
+            "en": "Short answers repeat the verb: *Yes, I **am**.* / *No, he **isn't**.*",
+            "es": "Las respuestas cortas repiten el verbo: *Yes, I **am**.* / *No, he **isn't**.*"
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex06",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t4", "text": "from?" },
+              { "id": "t2", "text": "are" },
+              { "id": "t1", "text": "Where" },
+              { "id": "t3", "text": "you" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "Question word + *be* + subject + *from*: *Where are you from?* The word *from* goes at the end.",
+            "es": "Palabra interrogativa + *be* + sujeto + *from*: *Where are you from?* La palabra *from* va al final."
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex07",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "twenty" },
+              { "id": "t5", "text": "old." },
+              { "id": "t1", "text": "I" },
+              { "id": "t4", "text": "years" },
+              { "id": "t2", "text": "am" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "In English, age uses *be*: *I am twenty years old.*",
+            "es": "En inglés la edad se dice con *be*, no con *have*: *I am twenty years old.*"
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex08",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "My age is twenty.",
+            "keyword": "OLD",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": ["I am twenty years old.", "I'm twenty years old."]
+          },
+          "explanation": {
+            "en": "We usually talk about age with *I'm + number + years old*.",
+            "es": "Normalmente hablamos de la edad con *I'm + número + years old*."
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex09",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make a question. Use the word in capitals.",
+          "content": {
+            "sentence": "He's from Italy.",
+            "keyword": "IS",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["Is he from Italy?"] },
+          "explanation": {
+            "en": "*He's* = *he is*. Put **is** before *he*: *Is he from Italy?*",
+            "es": "*He's* = *he is*. Pon **is** antes de *he*: *Is he from Italy?*"
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex10",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "You are 15. Someone asks: \"How old are you?\" What do you say?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "I'm five." },
+              { "id": "b", "text": "I'm fifty." },
+              { "id": "c", "text": "I'm fifteen." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "15 is *fifteen*, with **-teen** at the end. *Five* is 5 and *fifty* is 50.",
+            "es": "15 es *fifteen*, con **-teen** al final. *Five* es 5 y *fifty* es 50."
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex11",
+          "type": "speaking",
+          "skill": "speaking",
+          "prompt": "Introduce yourself to your new class.",
+          "content": {
+            "task": "Record a short introduction (about 30 seconds). Say hello, then say your name and spell it, where you are from, how old you are and what you do. End with \"Nice to meet you!\"",
+            "prep_seconds": 30,
+            "max_seconds": 60,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I said hello, my name (and spelled it), my country, my age and my job or studies.",
+                  "es": "Saludé y dije mi nombre (y lo deletreé), mi país, mi edad y mi trabajo o estudios."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used am, is and are correctly, with short forms like I'm.",
+                  "es": "Usé am, is y are correctamente, con formas cortas como I'm."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "pronunciation",
+                "description": {
+                  "en": "I spoke clearly, with the letters of the alphabet and the numbers easy to understand.",
+                  "es": "Hablé con claridad, con las letras del alfabeto y los números fáciles de entender."
+                },
+                "max_points": 3
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi, everyone! My name's Sara Gómez. That's S-A-R-A, Sara. I'm from Peru, from Lima. I'm twenty years old and I'm a student. Nice to meet you!"
+          }
+        },
+        {
+          "key": "a1.u01.l04.ex12",
+          "type": "speaking",
+          "skill": "speaking",
+          "prompt": "Meet a new classmate.",
+          "content": {
+            "task": "Imagine you meet a new classmate before class. Record what you say: greet them, say your name, ask two questions (for example, their name and their country), answer with \"Nice to meet you\" and say goodbye.",
+            "prep_seconds": 30,
+            "max_seconds": 60,
+            "rubric": [
+              {
+                "key": "conversation",
+                "description": {
+                  "en": "I greeted, introduced myself, asked two questions and said goodbye.",
+                  "es": "Saludé, me presenté, hice dos preguntas y me despedí."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "questions",
+                "description": {
+                  "en": "My questions had the right word order, like \"Where are you from?\"",
+                  "es": "Mis preguntas tenían el orden correcto, como \"Where are you from?\""
+                },
+                "max_points": 3
+              },
+              {
+                "key": "phrases",
+                "description": {
+                  "en": "I used the right greeting for the time of day and a polite goodbye.",
+                  "es": "Usé el saludo adecuado para la hora del día y una despedida amable."
+                },
+                "max_points": 3
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Good morning! I'm Leo. What's your name? ... Nice to meet you, Mia. Where are you from? ... Oh, Brazil! I'm from Mexico. ... OK, see you later!"
+          }
+        }
+      ]
+    }
+  ]
+}
