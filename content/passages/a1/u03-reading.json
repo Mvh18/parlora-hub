@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.u03.reading",
+  "title": "Apartment for rent",
+  "body": "## Apartment for rent — Maple Street\n\nAre you a student? This is the apartment for you! It's a small, bright apartment near the university.\n\nThere are two bedrooms. Each bedroom has a bed, a desk and a big closet. There's one bathroom with a shower.\n\nThe kitchen is new. There's a fridge, a stove and a microwave, but there isn't a dishwasher. The living room has a gray sofa, an armchair and a TV. There are two big windows, so the apartment is very sunny.\n\nThere isn't a yard, but there's a small balcony with plants.\n\nThe rent is $850 a month. No pets, please.\n\nCall Mr. Ortiz: 555-0182 (afternoons only)."
+}
