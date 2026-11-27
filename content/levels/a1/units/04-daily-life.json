@@ -1,0 +1,1322 @@
+{
+  "$schema": "../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u04",
+  "title": "Daily life",
+  "lessons": [
+    {
+      "key": "a1.u04.l01",
+      "type": "grammar",
+      "title": "I work, she works: the present simple",
+      "theory": {
+        "en": "## The present simple\n\nUse the **present simple** for routines, habits and things that are always true:\n\n- *I **get up** at seven.* (every day)\n- *My sister **works** in a hospital.* (her job)\n\n| Subject | Verb |\n|---|---|\n| I / you / we / they | **work** |\n| he / she / it | work**s** |\n\nWith **he, she, it** (and one person or thing: *my dad*, *Ana*, *the bakery*) add **-s** to the verb.\n\n### Spelling of the *-s* form\n\n| Rule | Examples |\n|---|---|\n| most verbs: + **-s** | *work → works, play → plays, eat → eats* |\n| -s, -sh, -ch, -x, -o: + **-es** | *watch → watches, finish → finishes, go → goes, do → does* |\n| consonant + -y: **-y → -ies** | *study → studies* |\n| irregular | *have → **has*** |\n\n## Adverbs of frequency\n\nThey say **how often** you do something.\n\n| 100 % | | | | 0 % |\n|---|---|---|---|---|\n| **always** | **usually** | **often** | **sometimes** | **never** |\n\n### Position\n\n- **Before** the main verb: *I **always** have breakfast. She **never** drinks coffee.*\n- **After** *be*: *I'm **always** tired in the morning. He **is often** late.*\n\n*Never* is already negative: *I never eat meat* (not *I never don't eat*).\n\nYou will learn negatives (*I don't work*) and questions (*Do you work?*) in unit 5.",
+        "es": "## El presente simple\n\nUsa el **presente simple** para rutinas, hábitos y cosas que siempre son verdad:\n\n- *I **get up** at seven.* (Me levanto a las siete; todos los días.)\n- *My sister **works** in a hospital.* (Mi hermana trabaja en un hospital; es su trabajo.)\n\n| Sujeto | Verbo |\n|---|---|\n| I / you / we / they | **work** |\n| he / she / it | work**s** |\n\nCon **he, she, it** (y con una persona o cosa: *my dad*, *Ana*, *the bakery*) agrega **-s** al verbo. Es el error más común: no olvides la *-s*.\n\n### Ortografía de la forma con *-s*\n\n| Regla | Ejemplos |\n|---|---|\n| la mayoría: + **-s** | *work → works, play → plays, eat → eats* |\n| -s, -sh, -ch, -x, -o: + **-es** | *watch → watches, finish → finishes, go → goes, do → does* |\n| consonante + -y: **-y → -ies** | *study → studies* |\n| irregular | *have → **has*** |\n\n## Adverbios de frecuencia\n\nDicen **con qué frecuencia** haces algo.\n\n| 100 % | | | | 0 % |\n|---|---|---|---|---|\n| **always** (siempre) | **usually** (normalmente) | **often** (a menudo) | **sometimes** (a veces) | **never** (nunca) |\n\n### Posición\n\n- **Antes** del verbo principal: *I **always** have breakfast.* (Siempre desayuno.) *She **never** drinks coffee.* (Nunca toma café.)\n- **Después** de *be*: *I'm **always** tired in the morning.* (Siempre estoy cansado por la mañana.) *He **is often** late.* (A menudo llega tarde.)\n\n*Never* ya es negativo: *I never eat meat* (nunca como carne), no *I never don't eat*. En inglés no se usa doble negación.\n\nAprenderás la negación (*I don't work*) y las preguntas (*Do you work?*) en la unidad 5."
+      },
+      "exercises": [
+        {
+          "key": "a1.u04.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"My mom ___ in a hospital.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "work" },
+              { "id": "b", "text": "works" },
+              { "id": "c", "text": "is work" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*My mom* is *she*, so the verb takes **-s**: *works*. Don't use *is* with another verb in the present simple.",
+            "es": "*My mom* es *she*, así que el verbo lleva **-s**: *works*. No uses *is* con otro verbo en presente simple."
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"My parents ___ dinner at seven.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "has" },
+              { "id": "b", "text": "have" },
+              { "id": "c", "text": "haves" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*My parents* is *they*, so no **-s**: *have*. *Has* is only for *he, she, it*.",
+            "es": "*My parents* es *they*, así que sin **-s**: *have*. *Has* es solo para *he, she, it*."
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each verb with its he/she/it form.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "go" },
+              { "id": "l2", "text": "watch" },
+              { "id": "l3", "text": "study" },
+              { "id": "l4", "text": "have" },
+              { "id": "l5", "text": "play" },
+              { "id": "l6", "text": "do" }
+            ],
+            "right": [
+              { "id": "r1", "text": "has" },
+              { "id": "r2", "text": "plays" },
+              { "id": "r3", "text": "goes" },
+              { "id": "r4", "text": "does" },
+              { "id": "r5", "text": "studies" },
+              { "id": "r6", "text": "watches" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r6"],
+              ["l3", "r5"],
+              ["l4", "r1"],
+              ["l5", "r2"],
+              ["l6", "r4"]
+            ]
+          },
+          "explanation": {
+            "en": "*go → goes*, *do → does*, *watch → watches* (+ -es); *study → studies* (consonant + y); *play → plays* (vowel + y, just + s); *have → has* is irregular.",
+            "es": "*go → goes*, *do → does*, *watch → watches* (+ -es); *study → studies* (consonante + y); *play → plays* (vocal + y, solo + s); *have → has* es irregular."
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the verb in brackets in the present simple.",
+          "content": {
+            "text": "I {{g1}} (live) in Lima. My brother {{g2}} (live) in Quito. We {{g3}} (speak) Spanish at home."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["live"],
+              "g2": ["lives"],
+              "g3": ["speak"]
+            }
+          },
+          "explanation": {
+            "en": "*I* and *we* use the base verb; *my brother* (*he*) adds **-s**: *lives*.",
+            "es": "*I* y *we* usan el verbo base; *my brother* (*he*) agrega **-s**: *lives*."
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex05",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the verb in brackets. Check the spelling.",
+          "content": {
+            "text": "Ana {{g1}} (finish) work at five. Then she {{g2}} (go) to the gym, and at night she {{g3}} (study) English."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["finishes"],
+              "g2": ["goes"],
+              "g3": ["studies"]
+            }
+          },
+          "explanation": {
+            "en": "*finish* ends in -sh → *finishes*; *go* → *goes*; *study* ends in consonant + y → *studies*.",
+            "es": "*finish* termina en -sh → *finishes*; *go* → *goes*; *study* termina en consonante + y → *studies*."
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex06",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each adverb with how often it means.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "always" },
+              { "id": "l2", "text": "usually" },
+              { "id": "l3", "text": "often" },
+              { "id": "l4", "text": "sometimes" },
+              { "id": "l5", "text": "never" }
+            ],
+            "right": [
+              { "id": "r1", "text": "0 %" },
+              { "id": "r2", "text": "about 60 %" },
+              { "id": "r3", "text": "100 %" },
+              { "id": "r4", "text": "about 40 %" },
+              { "id": "r5", "text": "about 80 %" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r2"],
+              ["l4", "r4"],
+              ["l5", "r1"]
+            ]
+          },
+          "explanation": {
+            "en": "From most to least: *always* (100 %), *usually*, *often*, *sometimes*, *never* (0 %).",
+            "es": "De más a menos: *always* (100 %), *usually*, *often*, *sometimes*, *never* (0 %)."
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex07",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct sentence.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "I am never late." },
+              { "id": "b", "text": "I never am late." },
+              { "id": "c", "text": "Never I am late." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "With *be*, the adverb goes **after** the verb: *I am never late.*",
+            "es": "Con *be*, el adverbio va **después** del verbo: *I am never late.* (Nunca llego tarde.)"
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex08",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct sentence.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "She drinks always coffee." },
+              { "id": "b", "text": "She always drinks coffee." },
+              { "id": "c", "text": "She always drink coffee." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The adverb goes **before** the main verb, and *she* needs **-s**: *She always drinks coffee.*",
+            "es": "El adverbio va **antes** del verbo principal, y *she* necesita **-s**: *She always drinks coffee.*"
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex09",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "have" },
+              { "id": "t1", "text": "We" },
+              { "id": "t4", "text": "lunch" },
+              { "id": "t2", "text": "usually" },
+              { "id": "t5", "text": "at one." }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "Subject + adverb + verb: *We usually have lunch at one.*",
+            "es": "Sujeto + adverbio + verbo: *We usually have lunch at one.* (Normalmente almorzamos a la una.)"
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex10",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "often" },
+              { "id": "t1", "text": "He" },
+              { "id": "t4", "text": "tired" },
+              { "id": "t2", "text": "is" },
+              { "id": "t5", "text": "at night." }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "With *be*, the adverb goes after it: *He is often tired at night.*",
+            "es": "Con *be*, el adverbio va después: *He is often tired at night.* (A menudo está cansado por la noche.)"
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex11",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Write the sentence about your brother. Use the word in capitals.",
+          "content": {
+            "sentence": "I get up at seven.",
+            "keyword": "BROTHER",
+            "max_words": 6
+          },
+          "solution": { "accepted": ["My brother gets up at seven."] },
+          "explanation": {
+            "en": "*My brother* is *he*, so *get* becomes *gets*: *My brother gets up at seven.*",
+            "es": "*My brother* es *he*, así que *get* pasa a *gets*: *My brother gets up at seven.*"
+          }
+        },
+        {
+          "key": "a1.u04.l01.ex12",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "I drink tea every morning.",
+            "keyword": "ALWAYS",
+            "max_words": 7
+          },
+          "solution": {
+            "accepted": [
+              "I always drink tea in the morning.",
+              "In the morning, I always drink tea.",
+              "In the morning I always drink tea."
+            ]
+          },
+          "explanation": {
+            "en": "*Every morning* = *always* in the morning. *Always* goes before the verb: *I always drink tea in the morning.*",
+            "es": "*Every morning* (todas las mañanas) = *always* por la mañana. *Always* va antes del verbo: *I always drink tea in the morning.*"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u04.l02",
+      "type": "vocabulary",
+      "title": "Daily routines and the time",
+      "theory": {
+        "en": "## A day in your life\n\nMany routine verbs are **verb + word** together. Learn them as one unit:\n\n| Morning | Day | Evening |\n|---|---|---|\n| *wake up* | *go to work / school* | *get home* |\n| *get up* | *start work* | *make dinner* |\n| *take a shower* | *have lunch* | *do homework* |\n| *get dressed* | *finish work* | *watch TV* |\n| *have breakfast* | | *go to bed* |\n\n- **wake up** = open your eyes; **get up** = leave your bed.\n- We **have** meals: *have breakfast, have lunch, have dinner*.\n- **go home** / **get home** — no *to*: *I get home at six* (not *to home*).\n\n## Telling the time\n\n*What time is it?* — *It's…*\n\n| Clock | Say | Also |\n|---|---|---|\n| 7:00 | *seven o'clock* | *seven* |\n| 7:15 | *seven fifteen* | *a quarter after seven* / *a quarter past seven* |\n| 7:30 | *seven thirty* | *half past seven* |\n| 7:45 | *seven forty-five* | *a quarter to eight* |\n\nThe easiest way is to say the numbers: *seven fifteen*, *eight forty-five*. Use *o'clock* only for exact hours.\n\n- **a.m.** = from midnight to 12 noon; **p.m.** = from 12 noon to midnight.\n- Use **at** with times: *I start work **at** nine.*\n- **in** the morning, **in** the afternoon, **in** the evening, but **at** night.",
+        "es": "## Un día en tu vida\n\nMuchos verbos de rutina son **verbo + palabra** juntos. Apréndelos como una unidad:\n\n| Mañana | Día | Tarde-noche |\n|---|---|---|\n| *wake up* (despertarse) | *go to work / school* (ir al trabajo / a la escuela) | *get home* (llegar a casa) |\n| *get up* (levantarse) | *start work* (empezar a trabajar) | *make dinner* (preparar la cena) |\n| *take a shower* (bañarse, ducharse) | *have lunch* (almorzar) | *do homework* (hacer la tarea) |\n| *get dressed* (vestirse) | *finish work* (terminar de trabajar) | *watch TV* (ver televisión) |\n| *have breakfast* (desayunar) | | *go to bed* (acostarse) |\n\n- **wake up** = abrir los ojos; **get up** = salir de la cama.\n- Las comidas se dicen con **have**: *have breakfast* (desayunar), *have lunch* (almorzar), *have dinner* (cenar).\n- **go home** / **get home** van sin *to*: *I get home at six* (no *to home*).\n\n## Decir la hora\n\n*What time is it?* (¿Qué hora es?) — *It's…* (Son las…)\n\n| Reloj | Se dice | También |\n|---|---|---|\n| 7:00 | *seven o'clock* | *seven* |\n| 7:15 | *seven fifteen* | *a quarter after seven* / *a quarter past seven* (y cuarto) |\n| 7:30 | *seven thirty* | *half past seven* (y media) |\n| 7:45 | *seven forty-five* | *a quarter to eight* (cuarto para las ocho) |\n\nLo más fácil es decir los números: *seven fifteen*, *eight forty-five*. Usa *o'clock* solo para las horas en punto.\n\n- **a.m.** = de medianoche a mediodía; **p.m.** = de mediodía a medianoche.\n- Con las horas usa **at**: *I start work **at** nine.* (Empiezo a trabajar a las nueve.)\n- **in** the morning (por la mañana), **in** the afternoon (por la tarde), **in** the evening (al anochecer), pero **at** night (por la noche)."
+      },
+      "vocabulary": [
+        {
+          "key": "a1.u04.l02.v01",
+          "term": "wake up",
+          "kind": "phrasal_verb",
+          "meaning": { "en": "to stop sleeping", "es": "despertarse" },
+          "example": "I wake up at six thirty."
+        },
+        {
+          "key": "a1.u04.l02.v02",
+          "term": "get up",
+          "kind": "phrasal_verb",
+          "meaning": { "en": "to get out of bed", "es": "levantarse" },
+          "example": "She gets up at seven."
+        },
+        {
+          "key": "a1.u04.l02.v03",
+          "term": "take a shower",
+          "kind": "expression",
+          "meaning": {
+            "en": "to wash your body under running water",
+            "es": "bañarse, ducharse"
+          },
+          "example": "I take a shower in the morning."
+        },
+        {
+          "key": "a1.u04.l02.v04",
+          "term": "get dressed",
+          "kind": "expression",
+          "meaning": { "en": "to put on your clothes", "es": "vestirse" },
+          "example": "He gets dressed after breakfast."
+        },
+        {
+          "key": "a1.u04.l02.v05",
+          "term": "have breakfast",
+          "kind": "expression",
+          "meaning": {
+            "en": "to eat the first meal of the day",
+            "es": "desayunar"
+          },
+          "example": "We have breakfast at eight."
+        },
+        {
+          "key": "a1.u04.l02.v06",
+          "term": "go to work",
+          "kind": "expression",
+          "meaning": {
+            "en": "to travel to the place where you work",
+            "es": "ir al trabajo"
+          },
+          "example": "My dad goes to work by bus."
+        },
+        {
+          "key": "a1.u04.l02.v07",
+          "term": "start",
+          "kind": "word",
+          "meaning": {
+            "en": "to begin; the opposite of *finish*",
+            "es": "empezar, comenzar"
+          },
+          "example": "Class starts at nine."
+        },
+        {
+          "key": "a1.u04.l02.v08",
+          "term": "finish",
+          "kind": "word",
+          "meaning": {
+            "en": "to end; the opposite of *start*",
+            "es": "terminar"
+          },
+          "example": "I finish work at five."
+        },
+        {
+          "key": "a1.u04.l02.v09",
+          "term": "have lunch",
+          "kind": "expression",
+          "meaning": {
+            "en": "to eat the meal in the middle of the day",
+            "es": "almorzar"
+          },
+          "example": "They have lunch at one o'clock."
+        },
+        {
+          "key": "a1.u04.l02.v10",
+          "term": "get home",
+          "kind": "expression",
+          "meaning": { "en": "to arrive at your home", "es": "llegar a casa" },
+          "example": "I get home at six."
+        },
+        {
+          "key": "a1.u04.l02.v11",
+          "term": "make dinner",
+          "kind": "expression",
+          "meaning": {
+            "en": "to cook the evening meal",
+            "es": "preparar la cena"
+          },
+          "example": "My husband makes dinner every day."
+        },
+        {
+          "key": "a1.u04.l02.v12",
+          "term": "do homework",
+          "kind": "expression",
+          "meaning": {
+            "en": "to do the work your teacher gives you for home",
+            "es": "hacer la tarea"
+          },
+          "example": "The children do homework after school."
+        },
+        {
+          "key": "a1.u04.l02.v13",
+          "term": "watch TV",
+          "kind": "expression",
+          "meaning": {
+            "en": "to look at programs on TV",
+            "es": "ver televisión"
+          },
+          "example": "We often watch TV in the evening."
+        },
+        {
+          "key": "a1.u04.l02.v14",
+          "term": "go to bed",
+          "kind": "expression",
+          "meaning": {
+            "en": "to get into bed to sleep",
+            "es": "acostarse"
+          },
+          "example": "I go to bed at eleven."
+        },
+        {
+          "key": "a1.u04.l02.v15",
+          "term": "What time is it?",
+          "kind": "expression",
+          "meaning": {
+            "en": "a question to ask the time",
+            "es": "¿Qué hora es?"
+          },
+          "example": "Excuse me, what time is it?"
+        },
+        {
+          "key": "a1.u04.l02.v16",
+          "term": "o'clock",
+          "kind": "word",
+          "meaning": {
+            "en": "used after a number for an exact hour",
+            "es": "en punto"
+          },
+          "example": "It's three o'clock."
+        },
+        {
+          "key": "a1.u04.l02.v17",
+          "term": "half past",
+          "kind": "expression",
+          "meaning": {
+            "en": "30 minutes after the hour",
+            "es": "y media"
+          },
+          "example": "It's half past six."
+        },
+        {
+          "key": "a1.u04.l02.v18",
+          "term": "a quarter after",
+          "kind": "expression",
+          "meaning": {
+            "en": "15 minutes after the hour; also *a quarter past*",
+            "es": "y cuarto"
+          },
+          "example": "The bus comes at a quarter after eight."
+        },
+        {
+          "key": "a1.u04.l02.v19",
+          "term": "a quarter to",
+          "kind": "expression",
+          "meaning": {
+            "en": "15 minutes before the hour",
+            "es": "cuarto para (la hora)"
+          },
+          "example": "It's a quarter to nine."
+        },
+        {
+          "key": "a1.u04.l02.v20",
+          "term": "at night",
+          "kind": "expression",
+          "meaning": {
+            "en": "in the dark part of the day",
+            "es": "por la noche, de noche"
+          },
+          "example": "I read at night."
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u04.l02.ex01",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each verb with the words that go with it.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "take" },
+              { "id": "l2", "text": "have" },
+              { "id": "l3", "text": "get" },
+              { "id": "l4", "text": "go" },
+              { "id": "l5", "text": "watch" },
+              { "id": "l6", "text": "do" }
+            ],
+            "right": [
+              { "id": "r1", "text": "to bed" },
+              { "id": "r2", "text": "homework" },
+              { "id": "r3", "text": "a shower" },
+              { "id": "r4", "text": "TV" },
+              { "id": "r5", "text": "breakfast" },
+              { "id": "r6", "text": "dressed" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r6"],
+              ["l4", "r1"],
+              ["l5", "r4"],
+              ["l6", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*take a shower*, *have breakfast*, *get dressed*, *go to bed*, *watch TV*, *do homework*.",
+            "es": "*take a shower* (bañarse), *have breakfast* (desayunar), *get dressed* (vestirse), *go to bed* (acostarse), *watch TV* (ver televisión), *do homework* (hacer la tarea)."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex02",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "You open your eyes, but you are still in bed. You ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "wake up" },
+              { "id": "b", "text": "get up" },
+              { "id": "c", "text": "go to bed" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "**Wake up** = stop sleeping. **Get up** = leave your bed.",
+            "es": "**Wake up** = despertarse. **Get up** = levantarse, salir de la cama."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex03",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each clock time with how we say it.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "7:00" },
+              { "id": "l2", "text": "7:15" },
+              { "id": "l3", "text": "7:30" },
+              { "id": "l4", "text": "7:45" }
+            ],
+            "right": [
+              { "id": "r1", "text": "half past seven" },
+              { "id": "r2", "text": "a quarter to eight" },
+              { "id": "r3", "text": "seven o'clock" },
+              { "id": "r4", "text": "a quarter after seven" },
+              { "id": "r5", "text": "a quarter to seven" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r4"],
+              ["l3", "r1"],
+              ["l4", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "7:00 *seven o'clock*, 7:15 *a quarter after seven*, 7:30 *half past seven*, 7:45 *a quarter to eight*. *A quarter to seven* is 6:45.",
+            "es": "7:00 *seven o'clock*, 7:15 *a quarter after seven*, 7:30 *half past seven*, 7:45 *a quarter to eight*. *A quarter to seven* es 6:45."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex04",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "It's 8:45. What time is it?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "It's a quarter to nine." },
+              { "id": "b", "text": "It's a quarter after eight." },
+              { "id": "c", "text": "It's a quarter to eight." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "8:45 is 15 minutes before nine: *a quarter to nine* (or *eight forty-five*).",
+            "es": "8:45 son 15 minutos antes de las nueve: *a quarter to nine* (o *eight forty-five*)."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex05",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Write the time in words.",
+          "content": {
+            "text": "6:30 — It's six {{g1}}. 10:00 — It's ten {{g2}}. 4:15 — It's four {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["thirty"],
+              "g2": ["o'clock"],
+              "g3": ["fifteen"]
+            }
+          },
+          "explanation": {
+            "en": "Say the numbers: *six thirty*, *four fifteen*. For exact hours, add *o'clock*: *ten o'clock*.",
+            "es": "Di los números: *six thirty*, *four fifteen*. Para las horas en punto agrega *o'clock*: *ten o'clock*."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex06",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Which comes LAST in a normal day?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "have breakfast" },
+              { "id": "b", "text": "get home" },
+              { "id": "c", "text": "go to bed" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "You *have breakfast* in the morning, *get home* in the evening and *go to bed* at night.",
+            "es": "*Have breakfast* es por la mañana, *get home* al final de la tarde y *go to bed* por la noche."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex07",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with take, have or watch.",
+          "content": {
+            "text": "In the morning I {{g1}} a shower and {{g2}} breakfast. At night I {{g3}} TV."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["take"],
+              "g2": ["have"],
+              "g3": ["watch"]
+            }
+          },
+          "explanation": {
+            "en": "*take a shower*, *have breakfast*, *watch TV*.",
+            "es": "*take a shower* (bañarse), *have breakfast* (desayunar), *watch TV* (ver televisión)."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex08",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Choose the correct words: \"I read ___ the evening and sleep ___ night.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "at … in" },
+              { "id": "b", "text": "in … at" },
+              { "id": "c", "text": "in … in" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "**in** the morning / afternoon / evening, but **at** night.",
+            "es": "**in** the morning / afternoon / evening, pero **at** night."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex09",
+          "type": "reorder",
+          "skill": "vocabulary",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "home" },
+              { "id": "t1", "text": "I" },
+              { "id": "t4", "text": "at six thirty." },
+              { "id": "t2", "text": "get" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*get home* has no *to*: *I get home at six thirty.*",
+            "es": "*get home* va sin *to*: *I get home at six thirty.* (Llego a casa a las seis y media.)"
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex10",
+          "type": "transformation",
+          "skill": "vocabulary",
+          "prompt": "Write the time another way. Use the word in capitals.",
+          "content": {
+            "sentence": "It's 5:00.",
+            "keyword": "O'CLOCK",
+            "max_words": 3
+          },
+          "solution": { "accepted": ["It's five o'clock."] },
+          "explanation": {
+            "en": "For an exact hour: number + *o'clock*: *It's five o'clock.*",
+            "es": "Para una hora en punto: número + *o'clock*: *It's five o'clock.*"
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex11",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each expression with its Spanish meaning.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "get dressed" },
+              { "id": "l2", "text": "get home" },
+              { "id": "l3", "text": "finish" },
+              { "id": "l4", "text": "make dinner" },
+              { "id": "l5", "text": "go to bed" }
+            ],
+            "right": [
+              { "id": "r1", "text": "terminar" },
+              { "id": "r2", "text": "acostarse" },
+              { "id": "r3", "text": "vestirse" },
+              { "id": "r4", "text": "preparar la cena" },
+              { "id": "r5", "text": "llegar a casa" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Notice how *get* changes meaning: *get dressed* (put on clothes), *get home* (arrive home), *get up* (leave your bed).",
+            "es": "Fíjate cómo cambia *get*: *get dressed* (vestirse), *get home* (llegar a casa), *get up* (levantarse)."
+          }
+        },
+        {
+          "key": "a1.u04.l02.ex12",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with start, finish or get.",
+          "content": {
+            "text": "I {{g1}} work at 9:00 a.m. and I {{g2}} at 5:00 p.m. I {{g3}} home at 6:00."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["start"],
+              "g2": ["finish"],
+              "g3": ["get"]
+            }
+          },
+          "explanation": {
+            "en": "You **start** work in the morning, **finish** in the afternoon and **get** home after work.",
+            "es": "**Start** (empiezas) a trabajar por la mañana, **finish** (terminas) por la tarde y **get** home (llegas a casa) después del trabajo."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u04.l03",
+      "type": "listening",
+      "title": "A day in the life of a baker",
+      "theory": {
+        "en": "## Listening: a daily routine\n\nWhen people describe their day, they go in time order and use **times** and **sequence words**:\n\n| Times | Sequence | How often |\n|---|---|---|\n| *at half past three* | *first* | *always* |\n| *at four o'clock* | *then* | *usually* |\n| *in the afternoon* | *after that* | *sometimes* |\n| *at nine* | *finally* | *never* |\n\n### Tips\n\n- Before you listen, look at the questions: do you need a **time**, an **activity** or **how often**?\n- Times are easy to miss. Listen for *o'clock*, *thirty*, *half past* and the number before them.\n- Listen for the **-s** at the end of verbs: *Rosa **works** with me* means one other person.\n\n### Dictation\n\nWrite the numbers in times as words (*four o'clock*) when you hear them as words. Check the *-s* on verbs after *he/she*.",
+        "es": "## Comprensión auditiva: una rutina diaria\n\nCuando las personas describen su día, siguen el orden del tiempo y usan **horas** y **palabras de secuencia**:\n\n| Horas | Secuencia | Frecuencia |\n|---|---|---|\n| *at half past three* (a las tres y media) | *first* (primero) | *always* |\n| *at four o'clock* (a las cuatro en punto) | *then* (luego) | *usually* |\n| *in the afternoon* (por la tarde) | *after that* (después) | *sometimes* |\n| *at nine* (a las nueve) | *finally* (por último) | *never* |\n\n### Consejos\n\n- Antes de escuchar, mira las preguntas: ¿necesitas una **hora**, una **actividad** o **con qué frecuencia**?\n- Las horas se escapan fácilmente. Escucha *o'clock*, *thirty*, *half past* y el número que va antes.\n- Escucha la **-s** al final de los verbos: *Rosa **works** with me* habla de otra persona.\n\n### Dictado\n\nEscribe los números de las horas con letras (*four o'clock*) cuando los oigas como palabras. Revisa la *-s* de los verbos después de *he/she*."
+      },
+      "exercises": [
+        {
+          "key": "a1.u04.l03.ex01",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Listen. What is Sam's job?",
+          "passage": "a1.u04.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a cook in a restaurant" },
+              { "id": "b", "text": "a baker" },
+              { "id": "c", "text": "a soccer player" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "Sam says: *I'm Sam Rivera and I'm a baker.* He makes bread in a bakery.",
+            "es": "Sam dice: *I'm Sam Rivera and I'm a baker.* (Soy panadero.) Hace pan en una panadería."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex02",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Sam gets up at ___.",
+          "passage": "a1.u04.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "3:30 a.m." },
+              { "id": "b", "text": "4:00 a.m." },
+              { "id": "c", "text": "3:30 p.m." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*I get up at half past three. Yes, three thirty in the morning!* In the morning = a.m.",
+            "es": "*I get up at half past three. Yes, three thirty in the morning!* Por la mañana = a.m."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex03",
+          "type": "matching",
+          "skill": "listening",
+          "prompt": "Match each time with what happens.",
+          "passage": "a1.u04.listening",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "4:00" },
+              { "id": "l2", "text": "7:00" },
+              { "id": "l3", "text": "11:30" },
+              { "id": "l4", "text": "1:00" },
+              { "id": "l5", "text": "9:00" }
+            ],
+            "right": [
+              { "id": "r1", "text": "Sam has lunch." },
+              { "id": "r2", "text": "Sam goes to bed." },
+              { "id": "r3", "text": "Sam starts work." },
+              { "id": "r4", "text": "Sam finishes work." },
+              { "id": "r5", "text": "The bakery opens." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Sam *starts work at four o'clock*, *the bakery opens at seven*, he *has lunch at eleven thirty*, *finishes work at one o'clock* and *goes to bed at nine*.",
+            "es": "Sam *starts work at four o'clock*, *the bakery opens at seven*, *has lunch at eleven thirty*, *finishes work at one o'clock* y *goes to bed at nine*."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex04",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Which two sentences are true? Choose two.",
+          "passage": "a1.u04.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Sam never has breakfast at home." },
+              { "id": "b", "text": "Sam drives to the bakery." },
+              { "id": "c", "text": "Rosa serves the customers." },
+              { "id": "d", "text": "Sam has dinner alone." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "c"] },
+          "explanation": {
+            "en": "*I never have breakfast at home* and Rosa *serves the customers*. Sam **walks** to the bakery and has dinner **with his wife**.",
+            "es": "*I never have breakfast at home* y Rosa *serves the customers* (atiende a los clientes). Sam **camina** a la panadería y cena **con su esposa**."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex05",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u04/l03/ex05.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "I start work at four o'clock.",
+            "accepted": ["I start work at 4 o'clock.", "I start work at 4:00."]
+          },
+          "explanation": {
+            "en": "*I start work at four o'clock.* Use **at** before a time, and remember the apostrophe in *o'clock*.",
+            "es": "*I start work at four o'clock.* Usa **at** antes de una hora, y recuerda el apóstrofo de *o'clock*."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex06",
+          "type": "fill_gap",
+          "skill": "listening",
+          "prompt": "Complete with always, often or never.",
+          "passage": "a1.u04.listening",
+          "content": {
+            "text": "Sam {{g1}} has breakfast at home. People {{g2}} want coffee and warm bread. Sam and his wife {{g3}} watch a movie."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["never"],
+              "g2": ["always"],
+              "g3": ["often"]
+            }
+          },
+          "explanation": {
+            "en": "*I **never** have breakfast at home.* — *people **always** want coffee* — *we **often** watch a movie.*",
+            "es": "*I **never** have breakfast at home.* — *people **always** want coffee* — *we **often** watch a movie.*"
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex07",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u04/l03/ex07.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "My sister works with me."
+          },
+          "explanation": {
+            "en": "*My sister works with me.* *My sister* is *she*, so the verb ends in **-s**.",
+            "es": "*My sister works with me.* (Mi hermana trabaja conmigo.) *My sister* es *she*, así que el verbo termina en **-s**."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex08",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "What does Sam do in the afternoon?",
+          "passage": "a1.u04.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "He always works at the bakery." },
+              { "id": "b", "text": "He sometimes plays soccer or sleeps." },
+              { "id": "c", "text": "He usually makes dinner." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*In the afternoon, I sometimes play soccer with my friends, or I sleep for an hour.* He finishes work at one.",
+            "es": "*In the afternoon, I sometimes play soccer with my friends, or I sleep for an hour.* Termina de trabajar a la una."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex09",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the verb in brackets in the present simple.",
+          "passage": "a1.u04.listening",
+          "content": {
+            "text": "Sam {{g1}} (walk) to the bakery. Rosa {{g2}} (serve) the customers. The bakery {{g3}} (open) at seven."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["walks"],
+              "g2": ["serves"],
+              "g3": ["opens"]
+            }
+          },
+          "explanation": {
+            "en": "*Sam* (he), *Rosa* (she) and *the bakery* (it) all take **-s**: *walks*, *serves*, *opens*.",
+            "es": "*Sam* (he), *Rosa* (she) y *the bakery* (it) llevan **-s**: *walks*, *serves*, *opens*."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex10",
+          "type": "reorder",
+          "skill": "listening",
+          "prompt": "Put the words in order to make a true sentence about Sam.",
+          "passage": "a1.u04.listening",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "stays" },
+              { "id": "t1", "text": "Sam" },
+              { "id": "t4", "text": "in the kitchen." },
+              { "id": "t2", "text": "usually" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*Usually* goes before the verb: *Sam usually stays in the kitchen.*",
+            "es": "*Usually* va antes del verbo: *Sam usually stays in the kitchen.* (Sam normalmente se queda en la cocina.)"
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex11",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u04/l03/ex11.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "We often watch a movie."
+          },
+          "explanation": {
+            "en": "*We often watch a movie.* *Often* goes before the verb, and *we* takes no *-s*.",
+            "es": "*We often watch a movie.* (A menudo vemos una película.) *Often* va antes del verbo, y *we* no lleva *-s*."
+          }
+        },
+        {
+          "key": "a1.u04.l03.ex12",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "passage": "a1.u04.listening",
+          "content": {
+            "sentence": "Sam goes to bed at nine every day.",
+            "keyword": "ALWAYS",
+            "max_words": 7
+          },
+          "solution": { "accepted": ["Sam always goes to bed at nine."] },
+          "explanation": {
+            "en": "*Every day* = *always*. Put it before the verb: *Sam always goes to bed at nine.*",
+            "es": "*Every day* (todos los días) = *always*. Ponlo antes del verbo: *Sam always goes to bed at nine.*"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u04.l04",
+      "type": "writing",
+      "title": "Your routine",
+      "theory": {
+        "en": "## Writing about your routine\n\nDescribe your day **in time order**, from morning to night.\n\n1. **Start:** who you are and what you do. *I'm Luis and I'm a student.*\n2. **Your day:** what you do and when. Use times and sequence words.\n3. **End:** your favorite part of the day, or something you never do.\n\n### Sequence words\n\n| Word | Example |\n|---|---|\n| **first** | ***First,** I take a shower.* |\n| **then** | ***Then** I have breakfast.* |\n| **after that** | ***After that,** I go to work.* |\n| **finally** | ***Finally,** I go to bed at eleven.* |\n\nPut a comma after *first*, *after that* and *finally*.\n\n### Check your writing\n\n- **at** + time (*at 7:30*), **in** the morning/afternoon/evening, **at** night.\n- *he / she* + verb **-s** (*my mom works*).\n- Adverbs of frequency before the verb (*I usually walk*), after *be* (*I'm always hungry*).\n- Don't repeat *and then* in every sentence: mix *then*, *after that* and times.\n\n### Model\n\n*I'm Luis and I'm a student. I usually get up at seven. First, I take a shower and get dressed. Then I have breakfast with my mom. I go to school by bus. Classes start at eight thirty and finish at two. In the afternoon, I do homework. After that, I sometimes play video games. Finally, I go to bed at eleven.*",
+        "es": "## Escribir sobre tu rutina\n\nDescribe tu día **en orden**, de la mañana a la noche.\n\n1. **Inicio:** quién eres y a qué te dedicas. *I'm Luis and I'm a student.*\n2. **Tu día:** qué haces y cuándo. Usa horas y palabras de secuencia.\n3. **Final:** tu parte favorita del día, o algo que nunca haces.\n\n### Palabras de secuencia\n\n| Palabra | Ejemplo |\n|---|---|\n| **first** (primero) | ***First,** I take a shower.* |\n| **then** (luego) | ***Then** I have breakfast.* |\n| **after that** (después) | ***After that,** I go to work.* |\n| **finally** (por último) | ***Finally,** I go to bed at eleven.* |\n\nPon una coma después de *first*, *after that* y *finally*.\n\n### Revisa tu texto\n\n- **at** + hora (*at 7:30*), **in** the morning/afternoon/evening, **at** night.\n- *he / she* + verbo con **-s** (*my mom works*).\n- Los adverbios de frecuencia van antes del verbo (*I usually walk*) y después de *be* (*I'm always hungry*).\n- No repitas *and then* en cada oración: combina *then*, *after that* y las horas.\n\n### Modelo\n\n*I'm Luis and I'm a student. I usually get up at seven. First, I take a shower and get dressed. Then I have breakfast with my mom. I go to school by bus. Classes start at eight thirty and finish at two. In the afternoon, I do homework. After that, I sometimes play video games. Finally, I go to bed at eleven.*"
+      },
+      "exercises": [
+        {
+          "key": "a1.u04.l04.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"My dad ___ up at six.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "get" },
+              { "id": "b", "text": "gets" },
+              { "id": "c", "text": "is get" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*My dad* is *he*: add **-s** → *gets up*.",
+            "es": "*My dad* es *he*: agrega **-s** → *gets up*."
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct words: \"My sister ___ a nurse. She ___ at night.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "is … works" },
+              { "id": "b", "text": "works … is" },
+              { "id": "c", "text": "is … is work" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Jobs use *be*: *She **is** a nurse.* Routines use the present simple: *She **works** at night.*",
+            "es": "Los trabajos se dicen con *be*: *She **is** a nurse.* Las rutinas, con el presente simple: *She **works** at night.*"
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex03",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each question with its answer.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "What time is it?" },
+              { "id": "l2", "text": "When do you have lunch?" },
+              { "id": "l3", "text": "Where does your mom work?" },
+              { "id": "l4", "text": "How often do you cook?" },
+              { "id": "l5", "text": "Who do you live with?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "Sometimes." },
+              { "id": "r2", "text": "In a bank." },
+              { "id": "r3", "text": "It's half past two." },
+              { "id": "r4", "text": "My parents." },
+              { "id": "r5", "text": "At one o'clock." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r2"],
+              ["l4", "r1"],
+              ["l5", "r4"]
+            ]
+          },
+          "explanation": {
+            "en": "*What time* → the time now; *when* → a time; *where* → a place; *how often* → a frequency adverb; *who* → people.",
+            "es": "*What time* → la hora; *when* (cuándo) → un momento; *where* (dónde) → un lugar; *how often* (con qué frecuencia) → un adverbio de frecuencia; *who* (quién) → personas."
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the verb in brackets in the present simple.",
+          "content": {
+            "text": "I {{g1}} (get) up at seven. My sister {{g2}} (have) breakfast at eight, and my parents {{g3}} (go) to work by bus."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["get"],
+              "g2": ["has"],
+              "g3": ["go"]
+            }
+          },
+          "explanation": {
+            "en": "*I* → *get*; *my sister* (she) → *has* (irregular); *my parents* (they) → *go*.",
+            "es": "*I* → *get*; *my sister* (she) → *has* (irregular); *my parents* (they) → *go*."
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex05",
+          "type": "fill_gap",
+          "skill": "writing",
+          "prompt": "Complete the routine with first, then or finally.",
+          "content": {
+            "text": "My morning is simple. {{g1}}, I get up and take a shower. {{g2}} I have breakfast. {{g3}}, I go to work."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["First", "first"],
+              "g2": ["Then", "then"],
+              "g3": ["Finally", "finally"]
+            }
+          },
+          "explanation": {
+            "en": "*First* for the first action, *then* for the next one, and *finally* for the last one.",
+            "es": "*First* (primero) para la primera acción, *then* (luego) para la siguiente y *finally* (por último) para la última."
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex06",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "watch TV" },
+              { "id": "t1", "text": "I" },
+              { "id": "t4", "text": "in the morning." },
+              { "id": "t2", "text": "never" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*Never* goes before the verb: *I never watch TV in the morning.*",
+            "es": "*Never* va antes del verbo: *I never watch TV in the morning.* (Nunca veo televisión por la mañana.)"
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex07",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "always" },
+              { "id": "t1", "text": "She" },
+              { "id": "t4", "text": "hungry" },
+              { "id": "t2", "text": "is" },
+              { "id": "t5", "text": "after work." }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "With *be*, the adverb goes after it: *She is always hungry after work.*",
+            "es": "Con *be*, el adverbio va después: *She is always hungry after work.* (Siempre tiene hambre después del trabajo.)"
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex08",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "My brother plays soccer two or three times a month.",
+            "keyword": "SOMETIMES",
+            "max_words": 6
+          },
+          "solution": {
+            "accepted": ["My brother sometimes plays soccer."]
+          },
+          "explanation": {
+            "en": "Two or three times a month is not very often: *sometimes*. Put it before the verb: *My brother sometimes plays soccer.*",
+            "es": "Dos o tres veces al mes no es muy a menudo: *sometimes* (a veces). Ponlo antes del verbo: *My brother sometimes plays soccer.*"
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex09",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Write the sentence about Lisa. Use the word in capitals.",
+          "content": {
+            "sentence": "I work in a bank and I finish at five.",
+            "keyword": "SHE",
+            "max_words": 9
+          },
+          "solution": {
+            "accepted": ["She works in a bank and she finishes at five."]
+          },
+          "explanation": {
+            "en": "With *she*, both verbs change: *work → works*, *finish → finishes*.",
+            "es": "Con *she* cambian los dos verbos: *work → works*, *finish → finishes*."
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex10",
+          "type": "multiple_choice",
+          "skill": "writing",
+          "prompt": "Choose the correct words: \"Classes start ___ 8:30 ___ the morning.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "in … at" },
+              { "id": "b", "text": "at … in" },
+              { "id": "c", "text": "on … in" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "**at** + a time (*at 8:30*), **in** + part of the day (*in the morning*).",
+            "es": "**at** + una hora (*at 8:30*), **in** + parte del día (*in the morning*)."
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex11",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Write about your routine.",
+          "content": {
+            "task": "Write about a normal day in your life for a class blog. Say who you are, then describe your day from morning to night with times. Use sequence words (first, then, after that, finally) and at least two adverbs of frequency.",
+            "min_words": 50,
+            "max_words": 90,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I described my day from morning to night, with at least four times.",
+                  "es": "Describí mi día de la mañana a la noche, con al menos cuatro horas."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used the present simple and put the adverbs of frequency in the right place.",
+                  "es": "Usé el presente simple y puse los adverbios de frecuencia en el lugar correcto."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "organization",
+                "description": {
+                  "en": "My text is in time order, with sequence words like first, then and finally.",
+                  "es": "Mi texto sigue el orden del día, con palabras como first, then y finally."
+                },
+                "max_points": 2
+              },
+              {
+                "key": "accuracy",
+                "description": {
+                  "en": "I used at, in and on with times correctly, and my punctuation is correct.",
+                  "es": "Usé bien at e in con las horas, y la puntuación es correcta."
+                },
+                "max_points": 1
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "I'm Luis and I'm a student. I usually get up at seven. First, I take a shower and get dressed. Then I have breakfast with my mom. I go to school by bus. Classes start at eight thirty and finish at two. In the afternoon, I do homework. After that, I sometimes play video games or meet my friends. I always have dinner with my family at seven thirty. Finally, I go to bed at eleven."
+          }
+        },
+        {
+          "key": "a1.u04.l04.ex12",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Write about a family member's day.",
+          "content": {
+            "task": "Write about a day in the life of a person in your family (or a friend). Say who they are and what their job is, then describe their day with times. Remember the -s on the verbs.",
+            "min_words": 35,
+            "max_words": 70,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I said who the person is, their job and at least four things they do in the day.",
+                  "es": "Dije quién es la persona, su trabajo y al menos cuatro cosas que hace en el día."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "third-person",
+                "description": {
+                  "en": "I used the -s form of the verbs with he or she (works, goes, has).",
+                  "es": "Usé la forma con -s de los verbos con he o she (works, goes, has)."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "I used capital letters, periods and commas after sequence words.",
+                  "es": "Usé mayúsculas, puntos y comas después de las palabras de secuencia."
+                },
+                "max_points": 2
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "My aunt Elena is a doctor. She gets up at six o'clock and she always has coffee and toast for breakfast. She starts work at seven thirty. She has lunch at the hospital at one. She usually finishes at five, but sometimes she works at night. In the evening, she makes dinner and watches TV with my uncle. She goes to bed at ten."
+          }
+        }
+      ]
+    }
+  ]
+}
