@@ -89,9 +89,13 @@ jobs:
       - run: composer install --no-interaction --no-progress --prefer-dist
       - run: cp .env.example .env && php artisan key:generate
       # The course content files, once the repository has them. Validation
-      # needs no database; any error fails the job.
+      # needs no database (it runs before any migration), so the cache that
+      # laravel-data reads while checking exercise payloads stays in memory;
+      # any error fails the job.
       - name: Validate content files
         if: hashFiles('content/**/*.json') != ''
+        env:
+          CACHE_STORE: array
         run: php artisan content:validate
       # Pint, Larastan and Pest with the coverage minimum.
       - run: composer check
