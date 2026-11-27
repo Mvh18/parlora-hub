@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.u01.reading",
+  "title": "Meet the new class",
+  "body": "**Lucía**\n\nHi, everyone! My name is Lucía Torres. I'm from Mexico. I'm nineteen years old and I'm a student. My favorite word in English is \"hello\"!\n\n**Ken**\n\nHello! I'm Ken Sato. I'm from Japan, but I live in Canada now. I'm twenty-five. I'm a nurse. Nice to meet you all!\n\n**Amira**\n\nHi! My name's Amira Haddad. I'm from Egypt. I'm thirty-one and I'm a teacher. My sister Nadia is in the class too. She's seventeen. We're from Cairo."
+}
