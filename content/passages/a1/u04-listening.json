@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.u04.listening",
+  "title": "A day in the life of a baker",
+  "transcript": "Hi! I'm Sam Rivera and I'm a baker. My day starts very early! I get up at half past three. Yes, three thirty in the morning!\n\nI never have breakfast at home. I take a shower, get dressed and walk to the bakery. I start work at four o'clock. First, I make the bread. The bakery opens at seven, and people always want coffee and warm bread.\n\nMy sister Rosa works with me. She serves the customers, and I usually stay in the kitchen. I have lunch at eleven thirty. That's early, I know! I finish work at one o'clock.\n\nIn the afternoon, I sometimes play soccer with my friends, or I sleep for an hour. I have dinner with my wife at six, and we often watch a movie. I go to bed at nine o'clock. Always at nine!",
+  "audio_path": "a1/u04/listening.mp3"
+}
