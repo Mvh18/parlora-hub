@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.u08.listening",
+  "title": "The weekend weather report",
+  "transcript": "Good morning! This is Ana Reyes with the weather for Saturday, March fourteenth.\n\nYesterday was a cold day in the city. It was cloudy all day, and the temperature was only forty-one degrees. In the mountains, it was very windy and there was snow on the roads.\n\nBut today is different! Right now the sun is shining, and people are walking in the park. It's fifty degrees at the moment, and it's getting warmer.\n\nIn the north, it's raining right now, and it's very windy. Drivers, please be careful!\n\nIn the south, it's sunny and warm: sixty-five degrees. Kids are playing on the beach, and people are wearing T-shirts!\n\nHere in the city, it's cool, so wear a sweater or a light jacket.\n\nThat's the weather. Have a great weekend!",
+  "audio_path": "a1/u08/listening.mp3"
+}

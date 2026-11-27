@@ -55,6 +55,10 @@ test('every shipped unit follows the A1 template and minimums', function () {
     expect($violations)->toBe([]);
 });
 
+test('the A1 course has eight units of four lessons and its grammar spiral', function () {
+    expect(A1CourseRules::course(a1Files('levels/a1/units/*.json')))->toBe([]);
+});
+
 test('every shipped A1 passage has its transcript and audio path', function () {
     $violations = [];
 

@@ -1,0 +1,1364 @@
+{
+  "$schema": "../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u08",
+  "title": "Now and then",
+  "lessons": [
+    {
+      "key": "a1.u08.l01",
+      "type": "grammar",
+      "title": "I'm working now; I was at home: present continuous and was/were",
+      "theory": {
+        "en": "## The present continuous\n\nUse the **present continuous** for actions happening **now**, at the moment of speaking.\n\n**be** (*am / is / are*) + verb **-ing**\n\n| | Example |\n|---|---|\n| + | *I**'m** work**ing**. She**'s** read**ing**. They**'re** play**ing**.* |\n| − | *I**'m not** sleep**ing**. He **isn't** listen**ing**. We **aren't** watch**ing** TV.* |\n| ? | ***Are** you study**ing**?* — *Yes, I am.* / *No, I'm not.* |\n\n- *What **are** you **doing**?* — *I**'m** cook**ing** dinner.*\n- Words that go with it: *now, right now, at the moment, Look!, Listen!*\n- Spelling of *-ing*: *make → making*, *sit → sitting*, *study → studying* (like in unit 5).\n\n### Present simple or present continuous?\n\n| Present simple: routines | Present continuous: now |\n|---|---|\n| *I usually **walk** to work.* | *Today I**'m taking** the bus.* |\n| *She **works** in a bank.* | *She**'s working** at home this week.* |\n\n## *Was* and *were*: the past of *be*\n\n| | I / he / she / it | you / we / they |\n|---|---|---|\n| + | **was** | **were** |\n| − | **wasn't** (was not) | **weren't** (were not) |\n| ? | ***Was** he at home?* | ***Were** you at school?* |\n\n- *I **was** at home yesterday. The weather **was** great.*\n- *We **weren't** at the party. **Were** you tired?* — *Yes, I **was**.* / *No, I **wasn't**.*\n- Past time words: *yesterday, last night, last week, last weekend, in 2020*.\n- *There was / there were*: *There **was** a lot of snow. There **were** many people.*",
+        "es": "## El presente continuo\n\nUsa el **presente continuo** para acciones que están pasando **ahora**, en el momento en que hablas.\n\n**be** (*am / is / are*) + verbo con **-ing**\n\n| | Ejemplo |\n|---|---|\n| + | *I**'m** work**ing**.* (Estoy trabajando.) *She**'s** read**ing**.* (Está leyendo.) *They**'re** play**ing**.* (Están jugando.) |\n| − | *I**'m not** sleep**ing**.* (No estoy durmiendo.) *He **isn't** listen**ing**.* *We **aren't** watch**ing** TV.* |\n| ? | ***Are** you study**ing**?* (¿Estás estudiando?) — *Yes, I am.* / *No, I'm not.* |\n\n- *What **are** you **doing**?* (¿Qué estás haciendo?) — *I**'m** cook**ing** dinner.* (Estoy preparando la cena.)\n- Palabras que lo acompañan: *now, right now, at the moment* (ahora, en este momento), *Look!* (¡Mira!), *Listen!* (¡Escucha!)\n- Ortografía de *-ing*: *make → making*, *sit → sitting*, *study → studying* (como en la unidad 5).\n\n### ¿Presente simple o presente continuo?\n\n| Presente simple: rutinas | Presente continuo: ahora |\n|---|---|\n| *I usually **walk** to work.* (Normalmente camino al trabajo.) | *Today I**'m taking** the bus.* (Hoy estoy tomando el autobús.) |\n| *She **works** in a bank.* (Trabaja en un banco.) | *She**'s working** at home this week.* (Esta semana está trabajando desde casa.) |\n\n## *Was* y *were*: el pasado de *be*\n\n| | I / he / she / it | you / we / they |\n|---|---|---|\n| + | **was** | **were** |\n| − | **wasn't** (was not) | **weren't** (were not) |\n| ? | ***Was** he at home?* (¿Estaba en casa?) | ***Were** you at school?* (¿Estabas en la escuela?) |\n\n- *I **was** at home yesterday.* (Ayer estuve en casa.) *The weather **was** great.* (El tiempo estuvo genial.)\n- *We **weren't** at the party.* (No estuvimos en la fiesta.) ***Were** you tired?* — *Yes, I **was**.* / *No, I **wasn't**.*\n- Palabras de pasado: *yesterday* (ayer), *last night* (anoche), *last week* (la semana pasada), *last weekend* (el fin de semana pasado), *in 2020*.\n- *There was / there were* (había, hubo): *There **was** a lot of snow.* *There **were** many people.*\n\n*Was/were* equivalen a *era/eran*, *estaba/estaban*, *fue/fueron* o *estuvo/estuvieron*, según el contexto."
+      },
+      "exercises": [
+        {
+          "key": "a1.u08.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct words: \"Look outside! It ___.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "rains" },
+              { "id": "b", "text": "is raining" },
+              { "id": "c", "text": "raining" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Look!* shows it's happening now → present continuous: *is raining* (*be* + -ing).",
+            "es": "*Look!* muestra que está pasando ahora → presente continuo: *is raining* (*be* + -ing)."
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"I ___ at home yesterday.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "was" },
+              { "id": "b", "text": "were" },
+              { "id": "c", "text": "am" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*Yesterday* is in the past, and *I* takes **was**.",
+            "es": "*Yesterday* es pasado, y *I* lleva **was**."
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each present form with its past form.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "I am" },
+              { "id": "l2", "text": "you are" },
+              { "id": "l3", "text": "she is" },
+              { "id": "l4", "text": "we are" },
+              { "id": "l5", "text": "it isn't" },
+              { "id": "l6", "text": "they aren't" }
+            ],
+            "right": [
+              { "id": "r1", "text": "we were" },
+              { "id": "r2", "text": "they weren't" },
+              { "id": "r3", "text": "I was" },
+              { "id": "r4", "text": "it wasn't" },
+              { "id": "r5", "text": "you were" },
+              { "id": "r6", "text": "she was" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r6"],
+              ["l4", "r1"],
+              ["l5", "r4"],
+              ["l6", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*am* and *is* → **was**; *are* → **were**. Negatives: *wasn't*, *weren't*.",
+            "es": "*am* e *is* → **was**; *are* → **were**. Negativos: *wasn't*, *weren't*."
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the present continuous of the verb in brackets.",
+          "content": {
+            "text": "Shh! The baby {{g1}} (sleep). My parents {{g2}} (watch) TV, and I {{g3}} (read) a book."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["is sleeping", "'s sleeping"],
+              "g2": ["are watching", "'re watching"],
+              "g3": ["am reading", "'m reading"]
+            }
+          },
+          "explanation": {
+            "en": "*be* + -ing: *the baby* → **is sleeping**, *my parents* → **are watching**, *I* → **am reading**.",
+            "es": "*be* + -ing: *the baby* → **is sleeping**, *my parents* → **are watching**, *I* → **am reading**."
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex05",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct words: \"Ana usually ___ to work, but today she ___ the bus.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "walks … is taking" },
+              { "id": "b", "text": "is walking … takes" },
+              { "id": "c", "text": "walk … taking" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*Usually* = routine → present simple (*walks*); *today* = now, different from the routine → present continuous (*is taking*).",
+            "es": "*Usually* = rutina → presente simple (*walks*); *today* = ahora, distinto de la rutina → presente continuo (*is taking*)."
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex06",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with was or were.",
+          "content": {
+            "text": "Last weekend we {{g1}} in Chicago. The weather {{g2}} great, but the museums {{g3}} closed."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["were"],
+              "g2": ["was"],
+              "g3": ["were"]
+            }
+          },
+          "explanation": {
+            "en": "*We* and *the museums* (they) → **were**; *the weather* (it) → **was**.",
+            "es": "*We* y *the museums* (they) → **were**; *the weather* (it) → **was**."
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex07",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"My cousins ___ at the party last night.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "wasn't" },
+              { "id": "b", "text": "weren't" },
+              { "id": "c", "text": "aren't" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Last night* is past, and *my cousins* (they) takes **weren't**.",
+            "es": "*Last night* (anoche) es pasado, y *my cousins* (they) lleva **weren't**."
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex08",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "\"___ you at home yesterday?\" — \"Yes, I was.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Was" },
+              { "id": "b", "text": "Were" },
+              { "id": "c", "text": "Are" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*You* takes **were**, and *yesterday* is past: *Were you at home yesterday?*",
+            "es": "*You* lleva **were**, y *yesterday* es pasado: *Were you at home yesterday?* (¿Estuviste en casa ayer?)"
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex09",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "you" },
+              { "id": "t1", "text": "What" },
+              { "id": "t5", "text": "now?" },
+              { "id": "t2", "text": "are" },
+              { "id": "t4", "text": "doing" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "Question word + *be* + subject + -ing: *What are you doing now?*",
+            "es": "Palabra interrogativa + *be* + sujeto + -ing: *What are you doing now?* (¿Qué estás haciendo ahora?)"
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex10",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "friends" },
+              { "id": "t1", "text": "Were" },
+              { "id": "t4", "text": "at the beach?" },
+              { "id": "t2", "text": "your" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*Were* + subject + the rest: *Were your friends at the beach?*",
+            "es": "*Were* + sujeto + el resto: *Were your friends at the beach?* (¿Tus amigos estaban en la playa?)"
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex11",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Write about now. Use the word in capitals.",
+          "content": {
+            "sentence": "She reads a book every evening.",
+            "keyword": "NOW",
+            "max_words": 6
+          },
+          "solution": {
+            "accepted": [
+              "She is reading a book now.",
+              "She's reading a book now."
+            ]
+          },
+          "explanation": {
+            "en": "*Now* → present continuous: *She is reading a book now.*",
+            "es": "*Now* → presente continuo: *She is reading a book now.* (Ahora está leyendo un libro.)"
+          }
+        },
+        {
+          "key": "a1.u08.l01.ex12",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Write about yesterday. Use the word in capitals.",
+          "content": {
+            "sentence": "I am tired today.",
+            "keyword": "YESTERDAY",
+            "max_words": 4
+          },
+          "solution": {
+            "accepted": [
+              "I was tired yesterday.",
+              "Yesterday I was tired.",
+              "Yesterday, I was tired."
+            ]
+          },
+          "explanation": {
+            "en": "Past of *I am* → *I was*: *I was tired yesterday.*",
+            "es": "Pasado de *I am* → *I was*: *I was tired yesterday.* (Ayer estaba cansado.)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u08.l02",
+      "type": "vocabulary",
+      "title": "Weather, clothes, months and dates",
+      "theory": {
+        "en": "## The weather\n\n*What's the weather like?* — *It's…*\n\n| | | |\n|---|---|---|\n| ☀️ *sunny* | 🌧️ *rainy* / *It's raining.* | ☁️ *cloudy* |\n| 💨 *windy* | ❄️ *snowy* / *It's snowing.* | |\n\nTemperature: *hot* → *warm* → *cool* → *cold*. In the U.S., temperatures are in **degrees Fahrenheit**: 32 °F is very cold (water freezes), 70 °F is warm, 95 °F is very hot.\n\n## Clothes\n\n| Hot weather | Cold weather | Every day |\n|---|---|---|\n| *T-shirt, shorts, sunglasses* | *coat, sweater, jacket, hat* | *jeans, shoes, shirt, dress* |\n\n- *Wear* = have clothes on your body: *I**'m wearing** a jacket.*\n- *Jeans* and *shorts* are plural: *My jeans **are** blue.*\n\n## Months and dates\n\n**January, February, March, April, May, June, July, August, September, October, November, December**\n\nMonths start with a **capital letter**. Use **in** with months (*in May*) and **on** with dates (*on May 5th*).\n\nFor dates, use **ordinal numbers**:\n\n| | | | |\n|---|---|---|---|\n| 1st first | 2nd second | 3rd third | 4th fourth |\n| 5th fifth | 9th ninth | 12th twelfth | 20th twentieth |\n| 21st twenty-first | 22nd twenty-second | 23rd twenty-third | 31st thirty-first |\n\n- Say *March fourteenth* or *the fourteenth of March*; write *March 14* or *March 14th*.\n- In the U.S., short dates go **month/day/year**: *7/4/2026* = **July 4th**, 2026.",
+        "es": "## El tiempo (clima)\n\n*What's the weather like?* (¿Cómo está el tiempo?) — *It's…*\n\n| | | |\n|---|---|---|\n| ☀️ *sunny* (soleado) | 🌧️ *rainy* (lluvioso) / *It's raining.* (Está lloviendo.) | ☁️ *cloudy* (nublado) |\n| 💨 *windy* (hace viento) | ❄️ *snowy* (nevado) / *It's snowing.* (Está nevando.) | |\n\nTemperatura: *hot* (caluroso) → *warm* (templado, cálido) → *cool* (fresco) → *cold* (frío). En Estados Unidos las temperaturas se dan en **grados Fahrenheit**: 32 °F es muy frío (el agua se congela, 0 °C), 70 °F es agradable (unos 21 °C), 95 °F es mucho calor (35 °C).\n\nOjo: en inglés el tiempo se describe con *be*: *It's cold* (hace frío), no *It makes cold*.\n\n## La ropa\n\n| Para el calor | Para el frío | Para todos los días |\n|---|---|---|\n| *T-shirt* (camiseta), *shorts* (pantalones cortos), *sunglasses* (lentes de sol) | *coat* (abrigo), *sweater* (suéter), *jacket* (chaqueta), *hat* (gorro, sombrero) | *jeans*, *shoes* (zapatos), *shirt* (camisa), *dress* (vestido) |\n\n- *Wear* = llevar puesto: *I**'m wearing** a jacket.* (Llevo puesta una chaqueta.)\n- *Jeans* y *shorts* son plurales: *My jeans **are** blue.*\n\n## Meses y fechas\n\n**January** (enero), **February** (febrero), **March** (marzo), **April** (abril), **May** (mayo), **June** (junio), **July** (julio), **August** (agosto), **September** (septiembre), **October** (octubre), **November** (noviembre), **December** (diciembre)\n\nEn inglés los meses empiezan con **mayúscula**. Usa **in** con los meses (*in May*, en mayo) y **on** con las fechas (*on May 5th*, el 5 de mayo).\n\nPara las fechas se usan **números ordinales**:\n\n| | | | |\n|---|---|---|---|\n| 1st first | 2nd second | 3rd third | 4th fourth |\n| 5th fifth | 9th ninth | 12th twelfth | 20th twentieth |\n| 21st twenty-first | 22nd twenty-second | 23rd twenty-third | 31st thirty-first |\n\n- Se dice *March fourteenth* o *the fourteenth of March*; se escribe *March 14* o *March 14th*.\n- En Estados Unidos las fechas cortas van **mes/día/año**: *7/4/2026* = **4 de julio** de 2026 (no el 7 de abril)."
+      },
+      "vocabulary": [
+        {
+          "key": "a1.u08.l02.v01",
+          "term": "weather",
+          "kind": "word",
+          "meaning": {
+            "en": "how hot, cold, sunny or rainy it is outside",
+            "es": "tiempo, clima"
+          },
+          "example": "What's the weather like today?"
+        },
+        {
+          "key": "a1.u08.l02.v02",
+          "term": "sunny",
+          "kind": "word",
+          "meaning": { "en": "with a lot of sun", "es": "soleado" },
+          "example": "It's sunny and warm."
+        },
+        {
+          "key": "a1.u08.l02.v03",
+          "term": "rainy",
+          "kind": "word",
+          "meaning": {
+            "en": "with a lot of rain; also *It's raining*",
+            "es": "lluvioso"
+          },
+          "example": "It was a rainy day."
+        },
+        {
+          "key": "a1.u08.l02.v04",
+          "term": "cloudy",
+          "kind": "word",
+          "meaning": {
+            "en": "with a lot of clouds; the sky is gray",
+            "es": "nublado"
+          },
+          "example": "It's cloudy, but it isn't raining."
+        },
+        {
+          "key": "a1.u08.l02.v05",
+          "term": "windy",
+          "kind": "word",
+          "meaning": {
+            "en": "with a lot of wind",
+            "es": "con viento, ventoso"
+          },
+          "example": "It's very windy at the beach."
+        },
+        {
+          "key": "a1.u08.l02.v06",
+          "term": "snow",
+          "kind": "word",
+          "meaning": {
+            "en": "white, cold flakes that fall from the sky; also *It's snowing*",
+            "es": "nieve; nevar"
+          },
+          "example": "There was snow on the roads."
+        },
+        {
+          "key": "a1.u08.l02.v07",
+          "term": "hot",
+          "kind": "word",
+          "meaning": {
+            "en": "very warm; the opposite of *cold*",
+            "es": "caluroso, caliente"
+          },
+          "example": "It's hot in July."
+        },
+        {
+          "key": "a1.u08.l02.v08",
+          "term": "cold",
+          "kind": "word",
+          "meaning": {
+            "en": "with a low temperature; the opposite of *hot*",
+            "es": "frío"
+          },
+          "example": "It's cold. Wear a coat!"
+        },
+        {
+          "key": "a1.u08.l02.v09",
+          "term": "warm",
+          "kind": "word",
+          "meaning": {
+            "en": "nice and a little hot",
+            "es": "templado, cálido"
+          },
+          "example": "It's warm and sunny today."
+        },
+        {
+          "key": "a1.u08.l02.v10",
+          "term": "T-shirt",
+          "kind": "word",
+          "meaning": {
+            "en": "a simple shirt with short sleeves",
+            "es": "camiseta"
+          },
+          "example": "People are wearing T-shirts."
+        },
+        {
+          "key": "a1.u08.l02.v11",
+          "term": "sweater",
+          "kind": "word",
+          "meaning": {
+            "en": "a warm piece of clothing for the top of your body",
+            "es": "suéter"
+          },
+          "example": "Wear a sweater. It's cool outside."
+        },
+        {
+          "key": "a1.u08.l02.v12",
+          "term": "jacket",
+          "kind": "word",
+          "meaning": { "en": "a short coat", "es": "chaqueta" },
+          "example": "I'm wearing my black jacket."
+        },
+        {
+          "key": "a1.u08.l02.v13",
+          "term": "coat",
+          "kind": "word",
+          "meaning": {
+            "en": "a long, warm piece of clothing you wear outside",
+            "es": "abrigo"
+          },
+          "example": "It's snowing. Take your coat."
+        },
+        {
+          "key": "a1.u08.l02.v14",
+          "term": "jeans",
+          "kind": "word",
+          "meaning": {
+            "en": "pants made of blue cotton (plural)",
+            "es": "jeans, pantalones vaqueros"
+          },
+          "example": "My jeans are new."
+        },
+        {
+          "key": "a1.u08.l02.v15",
+          "term": "shoes",
+          "kind": "word",
+          "meaning": {
+            "en": "what you wear on your feet (one *shoe*)",
+            "es": "zapatos"
+          },
+          "example": "These shoes are very comfortable."
+        },
+        {
+          "key": "a1.u08.l02.v16",
+          "term": "hat",
+          "kind": "word",
+          "meaning": {
+            "en": "something you wear on your head",
+            "es": "sombrero, gorro"
+          },
+          "example": "Wear a hat in the sun."
+        },
+        {
+          "key": "a1.u08.l02.v17",
+          "term": "wear",
+          "kind": "word",
+          "meaning": {
+            "en": "to have clothes on your body",
+            "es": "llevar puesto, usar (ropa)"
+          },
+          "example": "What are you wearing today?"
+        },
+        {
+          "key": "a1.u08.l02.v18",
+          "term": "month",
+          "kind": "word",
+          "meaning": {
+            "en": "one of the twelve parts of the year, like May or June",
+            "es": "mes"
+          },
+          "example": "December is my favorite month."
+        },
+        {
+          "key": "a1.u08.l02.v19",
+          "term": "date",
+          "kind": "word",
+          "meaning": {
+            "en": "the day and month (and year), like March 14th",
+            "es": "fecha"
+          },
+          "example": "What's the date today?"
+        },
+        {
+          "key": "a1.u08.l02.v20",
+          "term": "first",
+          "kind": "word",
+          "meaning": { "en": "number one in order (1st)", "es": "primero" },
+          "example": "January first is a holiday."
+        },
+        {
+          "key": "a1.u08.l02.v21",
+          "term": "third",
+          "kind": "word",
+          "meaning": { "en": "number three in order (3rd)", "es": "tercero" },
+          "example": "My birthday is on May third."
+        },
+        {
+          "key": "a1.u08.l02.v22",
+          "term": "birthday",
+          "kind": "word",
+          "meaning": {
+            "en": "the date when you were born",
+            "es": "cumpleaños"
+          },
+          "example": "When is your birthday?"
+        },
+        {
+          "key": "a1.u08.l02.v23",
+          "term": "yesterday",
+          "kind": "word",
+          "meaning": { "en": "the day before today", "es": "ayer" },
+          "example": "Yesterday was cold and cloudy."
+        },
+        {
+          "key": "a1.u08.l02.v24",
+          "term": "last weekend",
+          "kind": "expression",
+          "meaning": {
+            "en": "the weekend before this one",
+            "es": "el fin de semana pasado"
+          },
+          "example": "Where were you last weekend?"
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u08.l02.ex01",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each weather word with its description.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "sunny" },
+              { "id": "l2", "text": "rainy" },
+              { "id": "l3", "text": "cloudy" },
+              { "id": "l4", "text": "windy" },
+              { "id": "l5", "text": "snowy" }
+            ],
+            "right": [
+              { "id": "r1", "text": "The trees are moving a lot." },
+              { "id": "r2", "text": "Everything is white." },
+              { "id": "r3", "text": "The sun is shining." },
+              { "id": "r4", "text": "The sky is gray, but it's dry." },
+              { "id": "r5", "text": "You need an umbrella." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "sunny → sun, rainy → umbrella, cloudy → gray sky, windy → moving trees, snowy → white.",
+            "es": "sunny → sol, rainy → paraguas, cloudy → cielo gris, windy → árboles que se mueven, snowy → todo blanco."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex02",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "It's 95 °F in Miami. It's very ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "cold" },
+              { "id": "b", "text": "cool" },
+              { "id": "c", "text": "hot" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "95 °F (about 35 °C) is very **hot**.",
+            "es": "95 °F (unos 35 °C) es mucho calor: **hot**."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex03",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each piece of clothing with its Spanish meaning.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "jacket" },
+              { "id": "l2", "text": "sweater" },
+              { "id": "l3", "text": "shoes" },
+              { "id": "l4", "text": "coat" },
+              { "id": "l5", "text": "T-shirt" }
+            ],
+            "right": [
+              { "id": "r1", "text": "abrigo" },
+              { "id": "r2", "text": "camiseta" },
+              { "id": "r3", "text": "chaqueta" },
+              { "id": "r4", "text": "zapatos" },
+              { "id": "r5", "text": "suéter" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "A *jacket* is short; a *coat* is long and very warm.",
+            "es": "Una *jacket* (chaqueta) es corta; un *coat* (abrigo) es largo y muy abrigador."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex04",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "It's cold and snowy. What do you wear?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a T-shirt and shorts" },
+              { "id": "b", "text": "a coat and a hat" },
+              { "id": "c", "text": "sunglasses" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "For cold, snowy weather you need warm clothes: a **coat** and a **hat**.",
+            "es": "Con frío y nieve necesitas ropa abrigadora: un **coat** (abrigo) y un **hat** (gorro)."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex05",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Write the month. Start with a capital letter.",
+          "content": {
+            "text": "The first month of the year is {{g1}}. The last month is {{g2}}. The month after September is {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["January"],
+              "g2": ["December"],
+              "g3": ["October"]
+            }
+          },
+          "explanation": {
+            "en": "*January* is first, *December* is last, and *October* comes after September. Months always have a capital letter.",
+            "es": "*January* (enero) es el primero, *December* (diciembre) el último y *October* (octubre) va después de septiembre. Los meses siempre llevan mayúscula en inglés."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex06",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "How do you say \"3rd\"?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "three" },
+              { "id": "b", "text": "third" },
+              { "id": "c", "text": "thirty" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*3rd* is the ordinal number **third**. *Three* is 3 and *thirty* is 30.",
+            "es": "*3rd* es el ordinal **third** (tercero). *Three* es 3 y *thirty* es 30."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex07",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each number with its ordinal word.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "1st" },
+              { "id": "l2", "text": "2nd" },
+              { "id": "l3", "text": "5th" },
+              { "id": "l4", "text": "12th" },
+              { "id": "l5", "text": "20th" },
+              { "id": "l6", "text": "31st" }
+            ],
+            "right": [
+              { "id": "r1", "text": "twelfth" },
+              { "id": "r2", "text": "thirty-first" },
+              { "id": "r3", "text": "first" },
+              { "id": "r4", "text": "twentieth" },
+              { "id": "r5", "text": "second" },
+              { "id": "r6", "text": "fifth" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r6"],
+              ["l4", "r1"],
+              ["l5", "r4"],
+              ["l6", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Most ordinals add *-th*; *first*, *second*, *third* are irregular, and *fifth*, *twelfth* and *twentieth* change their spelling.",
+            "es": "La mayoría de los ordinales agregan *-th*; *first*, *second* y *third* son irregulares, y *fifth*, *twelfth* y *twentieth* cambian la ortografía."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex08",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Choose the correct words: \"My birthday is ___ May. It's ___ May 5th.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "on … in" },
+              { "id": "b", "text": "in … on" },
+              { "id": "c", "text": "at … on" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "**in** + month (*in May*), **on** + date (*on May 5th*).",
+            "es": "**in** + mes (*in May*), **on** + fecha (*on May 5th*)."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex09",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with a piece of clothing.",
+          "content": {
+            "text": "I wear {{g1}} on my feet and a {{g2}} on my head. On hot days, I wear a {{g3}} and shorts."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["shoes"],
+              "g2": ["hat"],
+              "g3": ["T-shirt", "t-shirt"]
+            }
+          },
+          "explanation": {
+            "en": "Feet → **shoes**; head → **hat**; hot days → **T-shirt** and shorts.",
+            "es": "Pies → **shoes** (zapatos); cabeza → **hat** (sombrero, gorro); días de calor → **T-shirt** (camiseta) y shorts."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex10",
+          "type": "reorder",
+          "skill": "vocabulary",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "weather" },
+              { "id": "t1", "text": "What's" },
+              { "id": "t5", "text": "today?" },
+              { "id": "t2", "text": "the" },
+              { "id": "t4", "text": "like" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*What's the weather like?* asks how the weather is.",
+            "es": "*What's the weather like?* pregunta cómo está el tiempo."
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex11",
+          "type": "transformation",
+          "skill": "vocabulary",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "There is a lot of rain today.",
+            "keyword": "RAINY",
+            "max_words": 4
+          },
+          "solution": {
+            "accepted": ["It's rainy today.", "It is rainy today."]
+          },
+          "explanation": {
+            "en": "Describe the weather with *It's* + adjective: *It's rainy today.*",
+            "es": "El tiempo se describe con *It's* + adjetivo: *It's rainy today.* (Hoy está lluvioso.)"
+          }
+        },
+        {
+          "key": "a1.u08.l02.ex12",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "In the U.S., a calendar says 7/4. What's the date?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "July fourth" },
+              { "id": "b", "text": "April seventh" },
+              { "id": "c", "text": "July fourteenth" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "U.S. short dates are month/day: 7/4 = month 7 (July), day 4 → *July fourth*.",
+            "es": "En EE. UU. las fechas cortas son mes/día: 7/4 = mes 7 (julio), día 4 → *July fourth* (4 de julio)."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u08.l03",
+      "type": "listening",
+      "title": "The weekend weather report",
+      "theory": {
+        "en": "## Listening: a weather report\n\nWeather reports talk about **yesterday**, **now** and different **places**. Listen for the tense:\n\n| Time | Grammar | Example |\n|---|---|---|\n| yesterday | *was / were* | *Yesterday **was** a cold day. There **was** snow.* |\n| now | present continuous | *Right now the sun **is shining**. It**'s raining** in the north.* |\n| now (states) | *It's* + adjective | *It**'s** sunny and warm.* |\n\n### Tips\n\n- Before you listen, check the questions: do you need a **place**, a **temperature** or the **weather**?\n- Temperatures are numbers + *degrees*: *fifty degrees* (50 °F).\n- Reports often give advice with imperatives: *Wear a sweater. Be careful!*\n\n### Dictation\n\nWrite *was/were* and *-ing* forms carefully: *is shining*, *are walking*.",
+        "es": "## Comprensión auditiva: el pronóstico del tiempo\n\nLos pronósticos hablan de **ayer**, de **ahora** y de distintos **lugares**. Fíjate en el tiempo verbal:\n\n| Momento | Gramática | Ejemplo |\n|---|---|---|\n| ayer | *was / were* | *Yesterday **was** a cold day.* (Ayer fue un día frío.) *There **was** snow.* (Había nieve.) |\n| ahora | presente continuo | *Right now the sun **is shining**.* (Ahora mismo está brillando el sol.) *It**'s raining** in the north.* |\n| ahora (estados) | *It's* + adjetivo | *It**'s** sunny and warm.* |\n\n### Consejos\n\n- Antes de escuchar, revisa las preguntas: ¿necesitas un **lugar**, una **temperatura** o el **tiempo**?\n- Las temperaturas son números + *degrees* (grados): *fifty degrees* (50 °F, unos 10 °C).\n- Los pronósticos suelen dar consejos con imperativos: *Wear a sweater.* (Usa un suéter.) *Be careful!* (¡Tengan cuidado!)\n\n### Dictado\n\nEscribe con cuidado *was/were* y las formas con *-ing*: *is shining*, *are walking*."
+      },
+      "exercises": [
+        {
+          "key": "a1.u08.l03.ex01",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Listen. What day is the weather report for?",
+          "passage": "a1.u08.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Friday, March 4th" },
+              { "id": "b", "text": "Saturday, March 14th" },
+              { "id": "c", "text": "Sunday, May 14th" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "Ana says: *the weather for Saturday, March fourteenth.*",
+            "es": "Ana dice: *the weather for Saturday, March fourteenth.* (el tiempo para el sábado 14 de marzo)."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex02",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "What was the weather like in the city yesterday?",
+          "passage": "a1.u08.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "sunny and warm" },
+              { "id": "b", "text": "cloudy and cold" },
+              { "id": "c", "text": "rainy and hot" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Yesterday was a cold day in the city. It was cloudy all day.*",
+            "es": "*Yesterday was a cold day in the city. It was cloudy all day.* (Ayer fue un día frío en la ciudad. Estuvo nublado todo el día.)"
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex03",
+          "type": "matching",
+          "skill": "listening",
+          "prompt": "Match each place with its weather.",
+          "passage": "a1.u08.listening",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "the city today" },
+              { "id": "l2", "text": "the north today" },
+              { "id": "l3", "text": "the south today" },
+              { "id": "l4", "text": "the mountains yesterday" }
+            ],
+            "right": [
+              { "id": "r1", "text": "raining and very windy" },
+              { "id": "r2", "text": "windy, with snow" },
+              { "id": "r3", "text": "sunny and warm, 65 °F" },
+              { "id": "r4", "text": "sunny but cool, 50 °F" },
+              { "id": "r5", "text": "hot and cloudy" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r4"],
+              ["l2", "r1"],
+              ["l3", "r3"],
+              ["l4", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "City: *the sun is shining… fifty degrees… it's cool*; north: *it's raining… very windy*; south: *sunny and warm: sixty-five degrees*; mountains: *very windy and there was snow*.",
+            "es": "Ciudad: *the sun is shining… fifty degrees… it's cool*; norte: *it's raining… very windy*; sur: *sunny and warm: sixty-five degrees*; montañas: *very windy and there was snow*."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex04",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Which two sentences are true? Choose two.",
+          "passage": "a1.u08.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Yesterday was cold in the city." },
+              { "id": "b", "text": "It's raining in the city right now." },
+              {
+                "id": "c",
+                "text": "Kids are playing on the beach in the south."
+              },
+              { "id": "d", "text": "There wasn't any snow yesterday." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "c"] },
+          "explanation": {
+            "en": "*Yesterday was a cold day* and *kids are playing on the beach*. It's raining in the **north**, and *there was snow* in the mountains.",
+            "es": "*Yesterday was a cold day* y *kids are playing on the beach*. Está lloviendo en el **norte**, y *there was snow* (había nieve) en las montañas."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex05",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u08/l03/ex05.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "Yesterday was a cold day."
+          },
+          "explanation": {
+            "en": "*Yesterday was a cold day.* The past of *is* is **was**.",
+            "es": "*Yesterday was a cold day.* (Ayer fue un día frío.) El pasado de *is* es **was**."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex06",
+          "type": "fill_gap",
+          "skill": "listening",
+          "prompt": "Complete with the temperatures.",
+          "passage": "a1.u08.listening",
+          "content": {
+            "text": "Yesterday it was {{g1}} degrees in the city. Right now in the south, it's {{g2}} degrees."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["forty-one", "forty one", "41"],
+              "g2": ["sixty-five", "sixty five", "65"]
+            }
+          },
+          "explanation": {
+            "en": "*The temperature was only forty-one degrees* yesterday; the south is *sixty-five degrees* now.",
+            "es": "Ayer *the temperature was only forty-one degrees* (41 °F, unos 5 °C); en el sur ahora hay *sixty-five degrees* (65 °F, unos 18 °C)."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex07",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u08/l03/ex07.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "The sun is shining.",
+            "accepted": ["The sun's shining."]
+          },
+          "explanation": {
+            "en": "*The sun is shining.* Present continuous: *is* + *shining* (*shine* drops the *e*).",
+            "es": "*The sun is shining.* (Está brillando el sol.) Presente continuo: *is* + *shining* (*shine* pierde la *e*)."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex08",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "What does Ana say to wear in the city?",
+          "passage": "a1.u08.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a T-shirt" },
+              { "id": "b", "text": "a sweater or a light jacket" },
+              { "id": "c", "text": "a coat and a hat" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Here in the city, it's cool, so wear a sweater or a light jacket.*",
+            "es": "*Here in the city, it's cool, so wear a sweater or a light jacket.* (Aquí en la ciudad está fresco, así que usen un suéter o una chaqueta ligera.)"
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex09",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the present continuous of the verb in brackets.",
+          "passage": "a1.u08.listening",
+          "content": {
+            "text": "In the north, it {{g1}} (rain). In the south, people {{g2}} (wear) T-shirts."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["is raining", "'s raining"],
+              "g2": ["are wearing", "'re wearing"]
+            }
+          },
+          "explanation": {
+            "en": "*It* → **is raining**; *people* (they) → **are wearing**.",
+            "es": "*It* → **is raining**; *people* (they) → **are wearing**."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex10",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u08/l03/ex10.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "People are walking in the park."
+          },
+          "explanation": {
+            "en": "*People are walking in the park.* *People* is plural, so **are**.",
+            "es": "*People are walking in the park.* (La gente está caminando en el parque.) *People* es plural, así que **are**."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex11",
+          "type": "reorder",
+          "skill": "listening",
+          "prompt": "Put the words in order to make a sentence from the report.",
+          "passage": "a1.u08.listening",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "getting" },
+              { "id": "t1", "text": "It" },
+              { "id": "t4", "text": "warmer." },
+              { "id": "t2", "text": "is" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*It is getting warmer* = the temperature is going up now.",
+            "es": "*It is getting warmer* = la temperatura está subiendo ahora (está haciendo más calor)."
+          }
+        },
+        {
+          "key": "a1.u08.l03.ex12",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Write about yesterday. Use the word in capitals.",
+          "passage": "a1.u08.listening",
+          "content": {
+            "sentence": "It is cold and cloudy today.",
+            "keyword": "YESTERDAY",
+            "max_words": 6
+          },
+          "solution": {
+            "accepted": [
+              "It was cold and cloudy yesterday.",
+              "Yesterday it was cold and cloudy.",
+              "Yesterday, it was cold and cloudy."
+            ]
+          },
+          "explanation": {
+            "en": "Past of *it is* → *it was*: *It was cold and cloudy yesterday.*",
+            "es": "Pasado de *it is* → *it was*: *It was cold and cloudy yesterday.*"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u08.l04",
+      "type": "writing",
+      "title": "A postcard (review of A1)",
+      "theory": {
+        "en": "## Writing a postcard\n\nA postcard (or a short travel message) is friendly and short. It uses everything you know from A1:\n\n1. **Greeting:** *Hi Mom,* / *Dear Leo,*\n2. **Where you are and who with:** *I'm in Cancún with my sister. Our hotel is next to the beach.*\n3. **The weather now and before:** *Today it's sunny and hot. Yesterday was rainy.*\n4. **What you're doing now:** *Right now I'm sitting in a café and my sister is swimming.*\n5. **What there is and what you can do:** *There's a great market. You can swim with turtles!*\n6. **Your routine there:** *We get up late and we have breakfast on the beach.*\n7. **Ending:** *Wish you were here! See you soon. Love, Ana*\n\n### A1 checklist\n\n| Unit | Check |\n|---|---|\n| 1–2 | *be*, possessives (*my, our, her*) |\n| 3 | *there is / there are*, *a / an*, plurals |\n| 4–5 | present simple (*-s* with *he/she*, *don't/doesn't*) |\n| 6 | *some / any*, countable and uncountable |\n| 7 | *can / can't*, prepositions of place |\n| 8 | present continuous for now, *was / were* for the past |\n\nCapital letters for names, places, days and months. A period at the end of each sentence.",
+        "es": "## Escribir una postal\n\nUna postal (o un mensaje corto de viaje) es amigable y breve. Usa todo lo que sabes de A1:\n\n1. **Saludo:** *Hi Mom,* / *Dear Leo,* (Querido Leo:)\n2. **Dónde estás y con quién:** *I'm in Cancún with my sister. Our hotel is next to the beach.* (Estoy en Cancún con mi hermana. Nuestro hotel está al lado de la playa.)\n3. **El tiempo ahora y antes:** *Today it's sunny and hot. Yesterday was rainy.*\n4. **Qué estás haciendo ahora:** *Right now I'm sitting in a café and my sister is swimming.*\n5. **Qué hay y qué se puede hacer:** *There's a great market. You can swim with turtles!* (¡Puedes nadar con tortugas!)\n6. **Tu rutina allí:** *We get up late and we have breakfast on the beach.*\n7. **Despedida:** *Wish you were here!* (¡Ojalá estuvieras aquí!) *See you soon.* (Nos vemos pronto.) *Love, Ana* (Con cariño, Ana)\n\n### Lista de control de A1\n\n| Unidad | Revisa |\n|---|---|\n| 1–2 | *be*, posesivos (*my, our, her*) |\n| 3 | *there is / there are*, *a / an*, plurales |\n| 4–5 | presente simple (*-s* con *he/she*, *don't/doesn't*) |\n| 6 | *some / any*, contables e incontables |\n| 7 | *can / can't*, preposiciones de lugar |\n| 8 | presente continuo para ahora, *was / were* para el pasado |\n\nMayúsculas en nombres, lugares, días y meses. Un punto al final de cada oración."
+      },
+      "exercises": [
+        {
+          "key": "a1.u08.l04.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"My friends and I ___ in Miami this week.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "am" },
+              { "id": "b", "text": "is" },
+              { "id": "c", "text": "are" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "*My friends and I* = **we** → **are**.",
+            "es": "*My friends and I* = **we** → **are**."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"This is my sister and ___ husband, Tom.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "his" },
+              { "id": "b", "text": "her" },
+              { "id": "c", "text": "their" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The husband belongs to *my sister* (she) → **her** husband.",
+            "es": "El esposo es de *my sister* (she) → **her** husband."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each question with its answer.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "How old is your brother?" },
+              { "id": "l2", "text": "Is there a pool at the hotel?" },
+              { "id": "l3", "text": "Can you swim?" },
+              { "id": "l4", "text": "What are you doing?" },
+              { "id": "l5", "text": "What was the weather like yesterday?" },
+              { "id": "l6", "text": "Does your sister like the beach?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "It was sunny." },
+              { "id": "r2", "text": "Yes, I can." },
+              { "id": "r3", "text": "He's twelve." },
+              { "id": "r4", "text": "No, she doesn't." },
+              { "id": "r5", "text": "I'm writing a postcard." },
+              { "id": "r6", "text": "Yes, there is." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r6"],
+              ["l3", "r2"],
+              ["l4", "r5"],
+              ["l5", "r1"],
+              ["l6", "r4"]
+            ]
+          },
+          "explanation": {
+            "en": "Each answer uses the verb of the question: *is → he's*, *is there → there is*, *can → can*, *are doing → I'm writing*, *was → was*, *does → doesn't*.",
+            "es": "Cada respuesta usa el verbo de la pregunta: *is → he's*, *is there → there is*, *can → can*, *are doing → I'm writing*, *was → was*, *does → doesn't*."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the verb in brackets in the present simple.",
+          "content": {
+            "text": "Every morning we {{g1}} (have) breakfast at the hotel. My dad {{g2}} (not like) the coffee here, but he {{g3}} (love) the fruit!"
+          },
+          "solution": {
+            "answers": {
+              "g1": ["have"],
+              "g2": ["doesn't like", "does not like"],
+              "g3": ["loves"]
+            }
+          },
+          "explanation": {
+            "en": "Routine → present simple: *we have*; *my dad* (he) → *doesn't like* (no *-s* after *doesn't*) and *loves*.",
+            "es": "Rutina → presente simple: *we have*; *my dad* (he) → *doesn't like* (sin *-s* después de *doesn't*) y *loves*."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex05",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with some, any or an.",
+          "content": {
+            "text": "There are {{g1}} great cafés here, but there aren't {{g2}} museums. We have {{g3}} amazing view from our room."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["some"],
+              "g2": ["any"],
+              "g3": ["an"]
+            }
+          },
+          "explanation": {
+            "en": "Affirmative plural → **some**; negative → **any**; *amazing* starts with a vowel sound → **an**.",
+            "es": "Afirmativa en plural → **some**; negativa → **any**; *amazing* empieza con sonido de vocal → **an**."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex06",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the correct form of the verb in brackets.",
+          "content": {
+            "text": "Right now I {{g1}} (sit) on the beach. Yesterday it {{g2}} (be) rainy, but today it's sunny."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["am sitting", "'m sitting"],
+              "g2": ["was"]
+            }
+          },
+          "explanation": {
+            "en": "*Right now* → present continuous (*am sitting*, double *t*); *yesterday* → past of *be* (*was*).",
+            "es": "*Right now* → presente continuo (*am sitting*, con doble *t*); *yesterday* → pasado de *be* (*was*)."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex07",
+          "type": "reorder",
+          "skill": "writing",
+          "prompt": "Put the words in order to make a sentence for a postcard.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "having" },
+              { "id": "t1", "text": "We" },
+              { "id": "t4", "text": "a great time!" },
+              { "id": "t2", "text": "are" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*We are having a great time!* is a common sentence in postcards: present continuous for now.",
+            "es": "*We are having a great time!* (¡La estamos pasando genial!) es una frase típica de las postales: presente continuo para ahora."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex08",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Write about yesterday. Use the word in capitals.",
+          "content": {
+            "sentence": "The beaches are beautiful today.",
+            "keyword": "WERE",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": [
+              "The beaches were beautiful yesterday.",
+              "Yesterday the beaches were beautiful."
+            ]
+          },
+          "explanation": {
+            "en": "*The beaches* is plural: past of *are* → **were**.",
+            "es": "*The beaches* está en plural: pasado de *are* → **were**."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex09",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "Swimming in the lake is possible here.",
+            "keyword": "CAN",
+            "max_words": 7
+          },
+          "solution": {
+            "accepted": [
+              "You can swim in the lake here.",
+              "Here you can swim in the lake."
+            ]
+          },
+          "explanation": {
+            "en": "Possible → *can*: *You can swim in the lake here.*",
+            "es": "Posible → *can*: *You can swim in the lake here.* (Aquí se puede nadar en el lago.)"
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex10",
+          "type": "multiple_choice",
+          "skill": "writing",
+          "prompt": "Which is the best ending for a postcard to a friend?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Wish you were here! Love, Ana" },
+              { "id": "b", "text": "Nice to meet you. Ana" },
+              { "id": "c", "text": "Good morning. Ana" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Postcards often end with *Wish you were here!* and *Love,* + your name.",
+            "es": "Las postales suelen terminar con *Wish you were here!* (¡Ojalá estuvieras aquí!) y *Love,* + tu nombre."
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex11",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Write a postcard from a trip.",
+          "content": {
+            "task": "You're on a trip (real or imaginary). Write a postcard to a friend or family member. Say where you are and who with, what the weather is like today and what it was like yesterday, what you and other people are doing right now, and one thing there is or that you can do there. End the postcard in a friendly way.",
+            "min_words": 50,
+            "max_words": 90,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I said where I am and who with, the weather today and yesterday, what people are doing now, and something there is or that you can do.",
+                  "es": "Dije dónde estoy y con quién, el tiempo hoy y ayer, qué están haciendo las personas ahora y algo que hay o que se puede hacer."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used the present continuous for now and was/were for the past correctly.",
+                  "es": "Usé bien el presente continuo para ahora y was/were para el pasado."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "format",
+                "description": {
+                  "en": "My postcard has a greeting, a friendly ending and my name.",
+                  "es": "Mi postal tiene saludo, una despedida amigable y mi nombre."
+                },
+                "max_points": 2
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "Names, places and months have capital letters, and sentences end with a period.",
+                  "es": "Los nombres, lugares y meses llevan mayúscula, y las oraciones terminan con punto."
+                },
+                "max_points": 1
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi Mom,\n\nI'm in Cancún with Paula! Our hotel is next to the beach, and the food is great. Yesterday was cloudy and a little cold, but today it's sunny and hot. Right now I'm sitting in a café and I'm writing to you. Paula is swimming in the ocean. There's a big market in the town center, and you can swim with turtles here! We're having a great time.\n\nWish you were here!\nLove, Ana"
+          }
+        },
+        {
+          "key": "a1.u08.l04.ex12",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Write about you: your A1 review.",
+          "content": {
+            "task": "Write a short text about yourself for a new English class. Introduce yourself (name, age, country), say something about your family and your home, describe a normal day and what you do in your free time, and say what you are doing right now.",
+            "min_words": 60,
+            "max_words": 110,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I wrote about me, my family, my home, my routine, my free time and what I'm doing now.",
+                  "es": "Escribí sobre mí, mi familia, mi casa, mi rutina, mi tiempo libre y lo que estoy haciendo ahora."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "range",
+                "description": {
+                  "en": "I used grammar from different A1 units: be, have, there is/are, the present simple, can and the present continuous.",
+                  "es": "Usé gramática de varias unidades de A1: be, have, there is/are, el presente simple, can y el presente continuo."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "accuracy",
+                "description": {
+                  "en": "My verbs and word order are correct, and I used capital letters and periods.",
+                  "es": "Mis verbos y el orden de las palabras son correctos, y usé mayúsculas y puntos."
+                },
+                "max_points": 2
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi! My name is Diego and I'm twenty-three. I'm from Colombia, but I live in Miami now. I have a small family: my mom, my dad and one sister, Laura. We live in an apartment with two bedrooms. There's a small balcony with plants. I work in a hotel. I usually get up at six thirty and I start work at eight. In my free time I play soccer and I love cooking. I can make great arepas! Right now I'm sitting at my desk and I'm writing this text."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -21,6 +21,21 @@ final class A1CourseRules
 
     public const MAX_PRODUCTION_TASKS = 2;
 
+    public const UNITS = 8;
+
+    /**
+     * The D1 grammar spiral: each point comes back in later units. A unit
+     * covers a point when one of its exercises uses it in its content or
+     * solution (the text the learner reads or must produce).
+     *
+     * @var array<string, array{units: list<int>, pattern: string}>
+     */
+    public const SPIRAL = [
+        'be' => ['units' => [2, 3, 8], 'pattern' => '/\b(am|is|are|was|were|isn\'t|aren\'t|wasn\'t|weren\'t)\b/'],
+        'present simple' => ['units' => [5, 6], 'pattern' => '/\b(do|does|don\'t|doesn\'t)\b/'],
+        'there is/are' => ['units' => [7], 'pattern' => '/\bthere (is|are|isn\'t|aren\'t|\{\{g\d+\}\})|\bthere\'s\b/'],
+    ];
+
     private const PRODUCTION_TYPES = ['writing', 'speaking'];
 
     /**
@@ -81,6 +96,53 @@ final class A1CourseRules
 
         foreach ($lessons as $index => $lesson) {
             $violations = [...$violations, ...self::lesson($file, "/lessons/{$index}", sprintf('%s.l%02d', $unitKey, $index + 1), $types[$index] ?? null, $lesson)];
+        }
+
+        return $violations;
+    }
+
+    /**
+     * The whole course: exactly eight units of four lessons, and the grammar
+     * spiral covered in the units D1 names.
+     *
+     * @param  array<string, array<string, mixed>>  $units  unit files in order, relative path → decoded file
+     * @return list<string>
+     */
+    public static function course(array $units): array
+    {
+        $violations = [];
+        $lessons = array_sum(array_map(fn (array $unit): int => count(self::list($unit['lessons'] ?? null)), $units));
+
+        if (count($units) !== self::UNITS) {
+            $violations[] = self::issue('levels/a1/units', '', sprintf('expected %d units, found %d', self::UNITS, count($units)));
+        }
+
+        if ($lessons !== self::UNITS * 4) {
+            $violations[] = self::issue('levels/a1/units', '', sprintf('expected %d lessons, found %d', self::UNITS * 4, $lessons));
+        }
+
+        $files = array_keys($units);
+
+        foreach (self::SPIRAL as $point => ['units' => $numbers, 'pattern' => $pattern]) {
+            foreach ($numbers as $number) {
+                $file = $files[$number - 1] ?? null;
+
+                if ($file === null) {
+                    continue;
+                }
+
+                $text = '';
+
+                foreach (self::list($units[$file]['lessons'] ?? null) as $lesson) {
+                    foreach (self::list($lesson['exercises'] ?? null) as $exercise) {
+                        $text .= ' '.json_encode([$exercise['content'] ?? null, $exercise['solution'] ?? null], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+                    }
+                }
+
+                if (preg_match($pattern, mb_strtolower($text)) !== 1) {
+                    $violations[] = self::issue($file, '/lessons', sprintf('unit %d should bring back %s (grammar spiral)', $number, $point));
+                }
+            }
         }
 
         return $violations;

@@ -208,3 +208,39 @@ test('the level must be A1 with an 80 % threshold', function () {
         ->and(A1CourseRules::level($file, ['key' => 'a1', 'code' => 'A1', 'title' => 'Beginner', 'pass_threshold' => 70]))
         ->toBe(["{$file} /pass_threshold: expected 80, found 70"]);
 });
+
+/** Eight rule-abiding units whose exercises carry the D1 grammar spiral. */
+function rulesCourse(): array
+{
+    $spiral = [2 => 'She is my sister.', 3 => 'There are two rooms.', 5 => "He doesn't swim.", 6 => 'Do we have any eggs?', 7 => 'There is a bank.', 8 => 'It was cold.'];
+    $course = [];
+
+    foreach (range(1, 8) as $number) {
+        $unit = rulesUnit($number);
+        $unit['lessons'][0]['exercises'][0]['solution'] = ['accepted' => [$spiral[$number] ?? 'Hello.']];
+        $course[sprintf('levels/a1/units/%02d-unit.json', $number)] = $unit;
+    }
+
+    return $course;
+}
+
+test('a complete course with its grammar spiral has no violations', function () {
+    expect(A1CourseRules::course(rulesCourse()))->toBe([]);
+});
+
+test('a course without eight units of four lessons is reported', function () {
+    $course = rulesCourse();
+    array_pop($course);
+
+    expect(A1CourseRules::course($course))
+        ->toContain('levels/a1/units : expected 8 units, found 7')
+        ->toContain('levels/a1/units : expected 32 lessons, found 28');
+});
+
+test('a unit that drops its spiral grammar point names the unit file', function () {
+    $course = rulesCourse();
+    $course['levels/a1/units/07-unit.json']['lessons'][0]['exercises'][0]['solution'] = ['accepted' => ['Turn left.']];
+
+    expect(A1CourseRules::course($course))
+        ->toBe(['levels/a1/units/07-unit.json /lessons: unit 7 should bring back there is/are (grammar spiral)']);
+});
