@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.u02.listening",
+  "title": "A family photo",
+  "transcript": "**Emma:** Is that a photo of your family, Daniel?\n\n**Daniel:** Yes, it is. It's from my grandmother's birthday. She's eighty in the photo!\n\n**Emma:** Wow! Who's the tall man with the beard?\n\n**Daniel:** That's my dad. His name is Robert. He's a doctor. And the woman with him is my mom, Carmen. She's from Chile.\n\n**Emma:** Your mom has beautiful long hair.\n\n**Daniel:** Thanks! And these are my sisters, Sofia and Lily. Sofia is twenty-two and Lily is fifteen. Lily has short blond hair and blue eyes, like my dad.\n\n**Emma:** And who's the little boy with the dog?\n\n**Daniel:** That's my cousin Max. He's six. He's my uncle Tom's son. The dog is Max's dog. Its name is Toby.\n\n**Emma:** Is your uncle in the photo?\n\n**Daniel:** No, he isn't. He's the photographer!\n\n**Emma:** And where are you?\n\n**Daniel:** I'm here, with my grandfather. We have the same green eyes.",
+  "audio_path": "a1/u02/listening.mp3"
+}
