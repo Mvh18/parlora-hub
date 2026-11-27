@@ -1,0 +1,1304 @@
+{
+  "$schema": "../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u06",
+  "title": "Food and shopping",
+  "lessons": [
+    {
+      "key": "a1.u06.l01",
+      "type": "grammar",
+      "title": "Some, any, how much and how many",
+      "theory": {
+        "en": "## Countable and uncountable nouns\n\n**Countable** nouns are things you can count: *one apple, two apples*. They have a plural and take *a/an* in the singular.\n\n**Uncountable** nouns are things you can't count one by one: *water, milk, rice, bread, cheese, sugar, money*. They have **no plural** and **no *a/an***: *I need **water*** (not *a water* or *waters*).\n\nTo count uncountable things, use a container or a measure:\n\n| | |\n|---|---|\n| *a **bottle** of water* | *a **cup** of coffee* |\n| *a **loaf** of bread* | *a **piece** of cake* |\n| *a **bowl** of soup* | *a **bag** of rice* |\n\n## *Some* and *any*\n\n| | Countable plural | Uncountable |\n|---|---|---|\n| + | *There are **some** eggs.* | *There's **some** milk.* |\n| − | *There aren't **any** eggs.* | *There isn't **any** milk.* |\n| ? | *Are there **any** eggs?* | *Is there **any** milk?* |\n\n- **some** in affirmative sentences; **any** in negatives and questions.\n- In offers and requests, use *some* in questions too: *Would you like **some** coffee?*\n\n## *How much* and *how many*\n\n- **How many** + countable plural: *How many **eggs** do we need?*\n- **How much** + uncountable: *How much **milk** is there?*\n- **How much** for prices: *How much **is** the sandwich?* — *It's six dollars.* / *How much **are** the cookies?* — *They're two dollars.*",
+        "es": "## Sustantivos contables e incontables\n\nLos sustantivos **contables** son cosas que se pueden contar: *one apple, two apples* (una manzana, dos manzanas). Tienen plural y llevan *a/an* en singular.\n\nLos **incontables** son cosas que no se cuentan una por una: *water* (agua), *milk* (leche), *rice* (arroz), *bread* (pan), *cheese* (queso), *sugar* (azúcar), *money* (dinero). **No tienen plural** y **no llevan *a/an***: *I need **water*** (no *a water* ni *waters*).\n\nOjo: algunos son contables en español pero incontables en inglés: *bread* (no *breads*), *money* (no *moneys*).\n\nPara contar cosas incontables, usa un recipiente o una medida:\n\n| | |\n|---|---|\n| *a **bottle** of water* (una botella de agua) | *a **cup** of coffee* (una taza de café) |\n| *a **loaf** of bread* (un pan entero, una barra de pan) | *a **piece** of cake* (un pedazo de pastel) |\n| *a **bowl** of soup* (un plato hondo de sopa) | *a **bag** of rice* (una bolsa de arroz) |\n\n## *Some* y *any*\n\n| | Contable en plural | Incontable |\n|---|---|---|\n| + | *There are **some** eggs.* (Hay algunos huevos.) | *There's **some** milk.* (Hay leche.) |\n| − | *There aren't **any** eggs.* (No hay huevos.) | *There isn't **any** milk.* (No hay leche.) |\n| ? | *Are there **any** eggs?* (¿Hay huevos?) | *Is there **any** milk?* (¿Hay leche?) |\n\n- **some** en oraciones afirmativas; **any** en negativas y preguntas.\n- En ofrecimientos y peticiones, usa *some* también en preguntas: *Would you like **some** coffee?* (¿Quieres café?)\n- Muchas veces *some* y *any* no se traducen al español.\n\n## *How much* y *how many*\n\n- **How many** + contable en plural: *How many **eggs** do we need?* (¿Cuántos huevos necesitamos?)\n- **How much** + incontable: *How much **milk** is there?* (¿Cuánta leche hay?)\n- **How much** para precios: *How much **is** the sandwich?* (¿Cuánto cuesta el sándwich?) — *It's six dollars.* / *How much **are** the cookies?* — *They're two dollars.*"
+      },
+      "exercises": [
+        {
+          "key": "a1.u06.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Which noun is uncountable?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "apple" },
+              { "id": "b", "text": "egg" },
+              { "id": "c", "text": "rice" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "You can count apples and eggs (*two apples, three eggs*), but not rice: *rice* is uncountable.",
+            "es": "Las manzanas y los huevos se cuentan (*two apples, three eggs*), pero el arroz no: *rice* es incontable."
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"There isn't ___ milk in the fridge.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "some" },
+              { "id": "b", "text": "any" },
+              { "id": "c", "text": "a" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The sentence is negative (*isn't*), so we use **any**. *Milk* is uncountable, so no *a*.",
+            "es": "La oración es negativa (*isn't*), así que usamos **any**. *Milk* es incontable, así que no lleva *a*."
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each container with the food or drink.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "a bottle of" },
+              { "id": "l2", "text": "a cup of" },
+              { "id": "l3", "text": "a loaf of" },
+              { "id": "l4", "text": "a bowl of" },
+              { "id": "l5", "text": "a piece of" }
+            ],
+            "right": [
+              { "id": "r1", "text": "soup" },
+              { "id": "r2", "text": "cake" },
+              { "id": "r3", "text": "water" },
+              { "id": "r4", "text": "bread" },
+              { "id": "r5", "text": "coffee" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*a bottle of water*, *a cup of coffee*, *a loaf of bread*, *a bowl of soup*, *a piece of cake*.",
+            "es": "*a bottle of water* (una botella de agua), *a cup of coffee* (una taza de café), *a loaf of bread* (un pan), *a bowl of soup* (un plato de sopa), *a piece of cake* (un pedazo de pastel)."
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with some or any.",
+          "content": {
+            "text": "We have {{g1}} eggs, but we don't have {{g2}} bread. Do we have {{g3}} cheese?"
+          },
+          "solution": {
+            "answers": {
+              "g1": ["some"],
+              "g2": ["any"],
+              "g3": ["any"]
+            }
+          },
+          "explanation": {
+            "en": "Affirmative → **some**; negative (*don't have*) and question (*Do we have…?*) → **any**.",
+            "es": "Afirmativa → **some**; negativa (*don't have*) y pregunta (*Do we have…?*) → **any**."
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex05",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"How ___ water do you drink every day?\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "much" },
+              { "id": "b", "text": "many" },
+              { "id": "c", "text": "any" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*Water* is uncountable → **How much** water…?",
+            "es": "*Water* es incontable → **How much** water…? (¿Cuánta agua…?)"
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex06",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"How ___ apples are there in the bag?\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "much" },
+              { "id": "b", "text": "many" },
+              { "id": "c", "text": "some" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Apples* is countable and plural → **How many** apples…?",
+            "es": "*Apples* es contable y está en plural → **How many** apples…? (¿Cuántas manzanas…?)"
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex07",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with much or many.",
+          "content": {
+            "text": "How {{g1}} money do you have? How {{g2}} bananas do you want? How {{g3}} sugar is there?"
+          },
+          "solution": {
+            "answers": {
+              "g1": ["much"],
+              "g2": ["many"],
+              "g3": ["much"]
+            }
+          },
+          "explanation": {
+            "en": "*Money* and *sugar* are uncountable → **much**; *bananas* is countable plural → **many**.",
+            "es": "*Money* y *sugar* son incontables → **much**; *bananas* es contable en plural → **many**."
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex08",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct sentence.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "There is a rice in the kitchen." },
+              { "id": "b", "text": "There is some rice in the kitchen." },
+              { "id": "c", "text": "There are some rices in the kitchen." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Rice* is uncountable: no *a*, no plural. Use *there is some rice*.",
+            "es": "*Rice* es incontable: sin *a* y sin plural. Se dice *there is some rice*."
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex09",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "any" },
+              { "id": "t1", "text": "Is" },
+              { "id": "t5", "text": "in the fridge?" },
+              { "id": "t2", "text": "there" },
+              { "id": "t4", "text": "milk" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*Is there any* + uncountable noun + place: *Is there any milk in the fridge?*",
+            "es": "*Is there any* + sustantivo incontable + lugar: *Is there any milk in the fridge?* (¿Hay leche en el refrigerador?)"
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex10",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "cheese" },
+              { "id": "t1", "text": "How" },
+              { "id": "t5", "text": "we need?" },
+              { "id": "t2", "text": "much" },
+              { "id": "t4", "text": "do" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*How much* + uncountable noun + *do* + subject + verb: *How much cheese do we need?*",
+            "es": "*How much* + sustantivo incontable + *do* + sujeto + verbo: *How much cheese do we need?* (¿Cuánto queso necesitamos?)"
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex11",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "We have no tomatoes.",
+            "keyword": "ANY",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": [
+              "We don't have any tomatoes.",
+              "We do not have any tomatoes."
+            ]
+          },
+          "explanation": {
+            "en": "*No* = *not any*: *We don't have any tomatoes.*",
+            "es": "*No* = *not any*: *We don't have any tomatoes.* (No tenemos tomates.)"
+          }
+        },
+        {
+          "key": "a1.u06.l01.ex12",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Ask about the number. Use the word in capitals.",
+          "content": {
+            "sentence": "There are six eggs.",
+            "keyword": "MANY",
+            "max_words": 5
+          },
+          "solution": { "accepted": ["How many eggs are there?"] },
+          "explanation": {
+            "en": "*Eggs* is countable plural → *How many eggs are there?*",
+            "es": "*Eggs* es contable en plural → *How many eggs are there?* (¿Cuántos huevos hay?)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u06.l02",
+      "type": "vocabulary",
+      "title": "Food, drinks, prices and numbers to 100",
+      "theory": {
+        "en": "## Food and drinks\n\n| Fruit and vegetables | Meat, fish and eggs | Other food | Drinks |\n|---|---|---|---|\n| *apple, banana, orange, tomato, potato, vegetables* | *chicken, fish, eggs* | *bread, rice, pasta, cheese, sugar, sandwich, cookie* | *water, milk, coffee, tea, juice* |\n\nMeals: *breakfast*, *lunch*, *dinner*. A **snack** is a little food between meals.\n\n## Numbers 20–100\n\n| | | | |\n|---|---|---|---|\n| 20 twenty | 30 thirty | 40 **forty** | 50 fifty |\n| 60 sixty | 70 seventy | 80 eighty | 90 ninety |\n| 100 one hundred / a hundred | | | |\n\n- Tens end in **-ty**, with the stress at the start: ***thir**ty*. Teens end in *-teen*, with the stress at the end: *thir**teen***.\n- Between tens and ones, write a hyphen: *twenty-one, forty-five, ninety-nine*.\n- *Forty* has no *u* (not *fourty*).\n\n## Prices\n\n- *$1* = one dollar; *$5* = five dollars; *50¢* = fifty cents. There are 100 cents in a dollar.\n- *$3.25* — say *three twenty-five* or *three dollars and twenty-five cents*.\n- Ask: *How much is it?* / *How much are they?* — *It's six dollars.*\n- The verb **cost**: *The sandwich **costs** $6. The cookies **cost** $2.*",
+        "es": "## Comida y bebidas\n\n| Frutas y verduras | Carne, pescado y huevos | Otros alimentos | Bebidas |\n|---|---|---|---|\n| *apple* (manzana), *banana* (plátano, banana), *orange* (naranja), *tomato* (tomate), *potato* (papa), *vegetables* (verduras) | *chicken* (pollo), *fish* (pescado), *eggs* (huevos) | *bread* (pan), *rice* (arroz), *pasta*, *cheese* (queso), *sugar* (azúcar), *sandwich* (sándwich), *cookie* (galleta) | *water* (agua), *milk* (leche), *coffee* (café), *tea* (té), *juice* (jugo) |\n\nComidas: *breakfast* (desayuno), *lunch* (almuerzo), *dinner* (cena). Un **snack** es un refrigerio, algo ligero entre comidas.\n\n## Números del 20 al 100\n\n| | | | |\n|---|---|---|---|\n| 20 twenty | 30 thirty | 40 **forty** | 50 fifty |\n| 60 sixty | 70 seventy | 80 eighty | 90 ninety |\n| 100 one hundred / a hundred | | | |\n\n- Las decenas terminan en **-ty**, con el acento al principio: ***thir**ty* (30). Los números del 13 al 19 terminan en *-teen*, con el acento al final: *thir**teen*** (13). Escucha con atención: suenan parecido.\n- Entre las decenas y las unidades se escribe un guion: *twenty-one, forty-five, ninety-nine*.\n- *Forty* (40) no lleva *u* (no *fourty*).\n\n## Precios\n\n- *$1* = one dollar (un dólar); *$5* = five dollars; *50¢* = fifty cents (centavos). Un dólar tiene 100 centavos.\n- *$3.25* — se dice *three twenty-five* o *three dollars and twenty-five cents*. Ojo: en inglés se usa punto, no coma, para los centavos.\n- Para preguntar: *How much is it?* / *How much are they?* (¿Cuánto cuesta? / ¿Cuánto cuestan?) — *It's six dollars.*\n- El verbo **cost** (costar): *The sandwich **costs** $6. The cookies **cost** $2.*"
+      },
+      "vocabulary": [
+        {
+          "key": "a1.u06.l02.v01",
+          "term": "bread",
+          "kind": "word",
+          "meaning": {
+            "en": "a basic food made from flour and baked (uncountable)",
+            "es": "pan"
+          },
+          "example": "We need some bread for breakfast."
+        },
+        {
+          "key": "a1.u06.l02.v02",
+          "term": "rice",
+          "kind": "word",
+          "meaning": {
+            "en": "small white or brown grains you cook (uncountable)",
+            "es": "arroz"
+          },
+          "example": "I eat rice and beans for lunch."
+        },
+        {
+          "key": "a1.u06.l02.v03",
+          "term": "cheese",
+          "kind": "word",
+          "meaning": {
+            "en": "a yellow or white food made from milk",
+            "es": "queso"
+          },
+          "example": "A cheese sandwich, please."
+        },
+        {
+          "key": "a1.u06.l02.v04",
+          "term": "milk",
+          "kind": "word",
+          "meaning": {
+            "en": "the white drink that comes from cows",
+            "es": "leche"
+          },
+          "example": "Is there any milk in the fridge?"
+        },
+        {
+          "key": "a1.u06.l02.v05",
+          "term": "coffee",
+          "kind": "word",
+          "meaning": { "en": "a hot brown drink", "es": "café" },
+          "example": "I have a cup of coffee every morning."
+        },
+        {
+          "key": "a1.u06.l02.v06",
+          "term": "water",
+          "kind": "word",
+          "meaning": {
+            "en": "the clear drink with no color or taste",
+            "es": "agua"
+          },
+          "example": "A bottle of water, please."
+        },
+        {
+          "key": "a1.u06.l02.v07",
+          "term": "juice",
+          "kind": "word",
+          "meaning": { "en": "a drink made from fruit", "es": "jugo" },
+          "example": "My son likes apple juice."
+        },
+        {
+          "key": "a1.u06.l02.v08",
+          "term": "apple",
+          "kind": "word",
+          "meaning": { "en": "a round red or green fruit", "es": "manzana" },
+          "example": "An apple a day is good for you."
+        },
+        {
+          "key": "a1.u06.l02.v09",
+          "term": "banana",
+          "kind": "word",
+          "meaning": { "en": "a long yellow fruit", "es": "plátano, banana" },
+          "example": "There are three bananas on the table."
+        },
+        {
+          "key": "a1.u06.l02.v10",
+          "term": "egg",
+          "kind": "word",
+          "meaning": {
+            "en": "the round food that chickens lay",
+            "es": "huevo"
+          },
+          "example": "I have two eggs for breakfast."
+        },
+        {
+          "key": "a1.u06.l02.v11",
+          "term": "chicken",
+          "kind": "word",
+          "meaning": { "en": "a bird; also its meat as food", "es": "pollo" },
+          "example": "We have chicken and rice for dinner."
+        },
+        {
+          "key": "a1.u06.l02.v12",
+          "term": "fish",
+          "kind": "word",
+          "meaning": {
+            "en": "an animal that lives in water; also its meat as food",
+            "es": "pescado, pez"
+          },
+          "example": "Do you like fish?"
+        },
+        {
+          "key": "a1.u06.l02.v13",
+          "term": "vegetables",
+          "kind": "word",
+          "meaning": {
+            "en": "plants you eat, like potatoes, tomatoes and carrots",
+            "es": "verduras"
+          },
+          "example": "Eat your vegetables!"
+        },
+        {
+          "key": "a1.u06.l02.v14",
+          "term": "sugar",
+          "kind": "word",
+          "meaning": {
+            "en": "a sweet white food you put in coffee or cakes",
+            "es": "azúcar"
+          },
+          "example": "Do you take sugar in your tea?"
+        },
+        {
+          "key": "a1.u06.l02.v15",
+          "term": "sandwich",
+          "kind": "word",
+          "meaning": {
+            "en": "two pieces of bread with food between them",
+            "es": "sándwich"
+          },
+          "example": "A chicken sandwich costs $7.50."
+        },
+        {
+          "key": "a1.u06.l02.v16",
+          "term": "cookie",
+          "kind": "word",
+          "meaning": { "en": "a small, flat, sweet cake", "es": "galleta" },
+          "example": "The kids want some cookies."
+        },
+        {
+          "key": "a1.u06.l02.v17",
+          "term": "How much is it?",
+          "kind": "expression",
+          "meaning": {
+            "en": "a question to ask the price",
+            "es": "¿Cuánto cuesta?"
+          },
+          "example": "I like this bag. How much is it?"
+        },
+        {
+          "key": "a1.u06.l02.v18",
+          "term": "cost",
+          "kind": "word",
+          "meaning": { "en": "to have a price of", "es": "costar" },
+          "example": "The coffee costs three dollars."
+        },
+        {
+          "key": "a1.u06.l02.v19",
+          "term": "dollar",
+          "kind": "word",
+          "meaning": {
+            "en": "money in the U.S. and other countries ($)",
+            "es": "dólar"
+          },
+          "example": "It's ten dollars."
+        },
+        {
+          "key": "a1.u06.l02.v20",
+          "term": "cent",
+          "kind": "word",
+          "meaning": { "en": "1/100 of a dollar (¢)", "es": "centavo" },
+          "example": "The banana costs fifty cents."
+        },
+        {
+          "key": "a1.u06.l02.v21",
+          "term": "forty",
+          "kind": "word",
+          "meaning": { "en": "the number 40 (no *u*)", "es": "cuarenta" },
+          "example": "My mom is forty."
+        },
+        {
+          "key": "a1.u06.l02.v22",
+          "term": "one hundred",
+          "kind": "word",
+          "meaning": { "en": "the number 100; also *a hundred*", "es": "cien" },
+          "example": "There are one hundred cents in a dollar."
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u06.l02.ex01",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each word with its Spanish meaning.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "bread" },
+              { "id": "l2", "text": "cheese" },
+              { "id": "l3", "text": "egg" },
+              { "id": "l4", "text": "chicken" },
+              { "id": "l5", "text": "cookie" }
+            ],
+            "right": [
+              { "id": "r1", "text": "huevo" },
+              { "id": "r2", "text": "galleta" },
+              { "id": "r3", "text": "pan" },
+              { "id": "r4", "text": "pollo" },
+              { "id": "r5", "text": "queso" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "bread – pan, cheese – queso, egg – huevo, chicken – pollo, cookie – galleta.",
+            "es": "bread – pan, cheese – queso, egg – huevo, chicken – pollo, cookie – galleta."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex02",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Which word is NOT a drink?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "milk" },
+              { "id": "b", "text": "juice" },
+              { "id": "c", "text": "bread" },
+              { "id": "d", "text": "water" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "You eat **bread**. You drink milk, juice and water.",
+            "es": "El **bread** (pan) se come. La leche, el jugo y el agua se beben."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex03",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each number with its word.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "13" },
+              { "id": "l2", "text": "30" },
+              { "id": "l3", "text": "14" },
+              { "id": "l4", "text": "40" },
+              { "id": "l5", "text": "90" },
+              { "id": "l6", "text": "100" }
+            ],
+            "right": [
+              { "id": "r1", "text": "forty" },
+              { "id": "r2", "text": "one hundred" },
+              { "id": "r3", "text": "thirteen" },
+              { "id": "r4", "text": "ninety" },
+              { "id": "r5", "text": "fourteen" },
+              { "id": "r6", "text": "thirty" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r6"],
+              ["l3", "r5"],
+              ["l4", "r1"],
+              ["l5", "r4"],
+              ["l6", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*-teen* = 13–19 (*thirteen, fourteen*); *-ty* = tens (*thirty, forty, ninety*). Note: *fourteen* has a *u*, *forty* doesn't.",
+            "es": "*-teen* = 13–19 (*thirteen, fourteen*); *-ty* = decenas (*thirty, forty, ninety*). Ojo: *fourteen* lleva *u*, *forty* no."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex04",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "The price is $4.50. How do you say it?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "four fifty" },
+              { "id": "b", "text": "forty-five" },
+              { "id": "c", "text": "four fifteen" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Say the dollars, then the cents: $4.50 = *four fifty* (four dollars and fifty cents).",
+            "es": "Di los dólares y luego los centavos: $4.50 = *four fifty* (cuatro dólares con cincuenta centavos)."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex05",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Write the answer as a word.",
+          "content": {
+            "text": "Twenty plus twenty is {{g1}}. Fifty plus fifty is {{g2}}. Sixty plus seven is {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["forty", "40"],
+              "g2": ["one hundred", "a hundred", "100"],
+              "g3": ["sixty-seven", "sixty seven", "67"]
+            }
+          },
+          "explanation": {
+            "en": "20 + 20 = *forty* (no *u*), 50 + 50 = *one hundred*, 60 + 7 = *sixty-seven* (with a hyphen).",
+            "es": "20 + 20 = *forty* (sin *u*), 50 + 50 = *one hundred*, 60 + 7 = *sixty-seven* (con guion)."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex06",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Which spelling is correct for 40?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "fourty" },
+              { "id": "b", "text": "forty" },
+              { "id": "c", "text": "fourteen" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "40 is *forty*, without *u*. *Fourteen* is 14.",
+            "es": "40 es *forty*, sin *u*. *Fourteen* es 14."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex07",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete the conversation.",
+          "content": {
+            "text": "A: How {{g1}} is the coffee? B: It's three {{g2}} and fifty cents."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["much"],
+              "g2": ["dollars"]
+            }
+          },
+          "explanation": {
+            "en": "Ask the price with *How **much** is…?*; *three* needs the plural: *dollars*.",
+            "es": "El precio se pregunta con *How **much** is…?*; *three* necesita el plural: *dollars*."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex08",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "There are one hundred ___ in a dollar.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "cents" },
+              { "id": "b", "text": "dollars" },
+              { "id": "c", "text": "prices" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "1 dollar = 100 **cents**.",
+            "es": "1 dólar = 100 **cents** (centavos)."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex09",
+          "type": "reorder",
+          "skill": "vocabulary",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "is" },
+              { "id": "t1", "text": "How" },
+              { "id": "t4", "text": "the orange juice?" },
+              { "id": "t2", "text": "much" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*How much is* + thing?: *How much is the orange juice?*",
+            "es": "*How much is* + cosa?: *How much is the orange juice?* (¿Cuánto cuesta el jugo de naranja?)"
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex10",
+          "type": "transformation",
+          "skill": "vocabulary",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "The price of the sandwich is $6.",
+            "keyword": "COSTS",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": [
+              "The sandwich costs six dollars.",
+              "The sandwich costs $6."
+            ]
+          },
+          "explanation": {
+            "en": "*The price is…* = *it costs…*: *The sandwich costs six dollars.* *The sandwich* is *it*, so *costs* has *-s*.",
+            "es": "*The price is…* = *it costs…*: *The sandwich costs six dollars.* *The sandwich* es *it*, así que *costs* lleva *-s*."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex11",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "It's white or brown, you buy it at a bakery, and you make sandwiches with it. What is it?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "cheese" },
+              { "id": "b", "text": "bread" },
+              { "id": "c", "text": "rice" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "A sandwich is two pieces of **bread** with food between them.",
+            "es": "Un sándwich son dos pedazos de **bread** (pan) con comida en medio."
+          }
+        },
+        {
+          "key": "a1.u06.l02.ex12",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with a food or drink.",
+          "content": {
+            "text": "Chickens give us {{g1}}. Cows give us {{g2}}. Bees make honey, and from plants we get {{g3}} to make things sweet."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["eggs"],
+              "g2": ["milk"],
+              "g3": ["sugar"]
+            }
+          },
+          "explanation": {
+            "en": "Chickens → **eggs**; cows → **milk**; something sweet from plants → **sugar**.",
+            "es": "Las gallinas → **eggs** (huevos); las vacas → **milk** (leche); algo dulce de las plantas → **sugar** (azúcar)."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u06.l03",
+      "type": "listening",
+      "title": "At the café",
+      "theory": {
+        "en": "## Listening: ordering at a café\n\nConversations at a café follow a simple pattern:\n\n| Server | Customer |\n|---|---|\n| *Hi there! What would you like?* | *A large coffee, please.* |\n| *Anything to eat?* | *Yes, a cheese sandwich, please.* |\n| *Sorry, we don't have any…* | *OK, (a/an) … then.* |\n| *That's … dollars.* | *Here you are.* |\n| *Have a nice day!* | *Thanks, you too!* |\n\n- *What would you like?* is a polite way to ask *What do you want?* Answer with the thing + ***please***.\n- *Here you are* = you give the money or the thing to someone.\n\n### Tips\n\n- For prices, listen for two numbers together: *three twenty-five* = $3.25.\n- Listen for **some** and **any**: *we don't have **any** orange juice* means there is none.\n- Write the prices as numbers while you listen.\n\n### Dictation\n\nYou can write prices with numbers (*$13.75*) or words. Check question marks at the end of questions.",
+        "es": "## Comprensión auditiva: pedir en una cafetería\n\nLas conversaciones en una cafetería siguen un patrón sencillo:\n\n| Mesero | Cliente |\n|---|---|\n| *Hi there! What would you like?* (¡Hola! ¿Qué te gustaría?) | *A large coffee, please.* (Un café grande, por favor.) |\n| *Anything to eat?* (¿Algo de comer?) | *Yes, a cheese sandwich, please.* |\n| *Sorry, we don't have any…* (Lo siento, no tenemos…) | *OK, (a/an) … then.* (Bueno, entonces…) |\n| *That's … dollars.* (Son … dólares.) | *Here you are.* (Aquí tiene.) |\n| *Have a nice day!* (¡Que tenga un buen día!) | *Thanks, you too!* (¡Gracias, igualmente!) |\n\n- *What would you like?* es una forma amable de preguntar *What do you want?* Responde con la cosa + ***please***.\n- *Here you are* = le das el dinero o la cosa a alguien.\n\n### Consejos\n\n- En los precios, escucha dos números juntos: *three twenty-five* = $3.25.\n- Escucha **some** y **any**: *we don't have **any** orange juice* significa que no hay nada.\n- Escribe los precios en números mientras escuchas.\n\n### Dictado\n\nPuedes escribir los precios con números (*$13.75*) o con letras. Revisa el signo de interrogación al final de las preguntas (en inglés solo va al final)."
+      },
+      "exercises": [
+        {
+          "key": "a1.u06.l03.ex01",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Listen. Where are Nora and her son?",
+          "passage": "a1.u06.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "at a supermarket" },
+              { "id": "b", "text": "at a café" },
+              { "id": "c", "text": "at home" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "A server asks *What would you like?* and Nora orders coffee and a sandwich: they're at a café.",
+            "es": "Un mesero pregunta *What would you like?* y Nora pide café y un sándwich: están en una cafetería."
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex02",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "What drink does Nora order for herself?",
+          "passage": "a1.u06.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a large coffee with milk" },
+              { "id": "b", "text": "an orange juice" },
+              { "id": "c", "text": "a tea with sugar" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Nora says: *A large coffee with milk, please.* The juice is for her son.",
+            "es": "Nora dice: *A large coffee with milk, please.* El jugo es para su hijo."
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex03",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Why does Nora's son get apple juice?",
+          "passage": "a1.u06.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "He doesn't like orange juice." },
+              {
+                "id": "b",
+                "text": "The café doesn't have any orange juice today."
+              },
+              { "id": "c", "text": "Apple juice is cheap." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The server says: *Sorry, we don't have any orange juice today. We have apple juice.*",
+            "es": "El mesero dice: *Sorry, we don't have any orange juice today. We have apple juice.* (Lo siento, hoy no tenemos jugo de naranja. Tenemos jugo de manzana.)"
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex04",
+          "type": "matching",
+          "skill": "listening",
+          "prompt": "Match each item with its price.",
+          "passage": "a1.u06.listening",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "a large coffee" },
+              { "id": "l2", "text": "an apple juice" },
+              { "id": "l3", "text": "a cheese sandwich" },
+              { "id": "l4", "text": "a chicken sandwich" },
+              { "id": "l5", "text": "a bag of cookies" }
+            ],
+            "right": [
+              { "id": "r1", "text": "$6.00" },
+              { "id": "r2", "text": "$2.00" },
+              { "id": "r3", "text": "$3.25" },
+              { "id": "r4", "text": "$7.50" },
+              { "id": "r5", "text": "$2.50" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Coffee *three twenty-five*, apple juice *two fifty*, cheese sandwich *six dollars*, chicken sandwich *seven fifty*, cookies *two dollars a bag*.",
+            "es": "Café *three twenty-five* ($3.25), jugo de manzana *two fifty* ($2.50), sándwich de queso *six dollars* ($6), sándwich de pollo *seven fifty* ($7.50), galletas *two dollars a bag* ($2 la bolsa)."
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex05",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the question.",
+          "audio_path": "a1/u06/l03/ex05.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "Do you have any orange juice?"
+          },
+          "explanation": {
+            "en": "*Do you have any orange juice?* Questions use **any**, and end with a question mark.",
+            "es": "*Do you have any orange juice?* (¿Tienen jugo de naranja?) Las preguntas usan **any** y terminan con signo de interrogación."
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex06",
+          "type": "fill_gap",
+          "skill": "listening",
+          "prompt": "Complete with numbers.",
+          "passage": "a1.u06.listening",
+          "content": {
+            "text": "There are {{g1}} cookies in a bag. The total is {{g2}} dollars and seventy-five cents."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["four", "4"],
+              "g2": ["thirteen", "13"]
+            }
+          },
+          "explanation": {
+            "en": "*There are four* cookies in a bag, and the total is *thirteen seventy-five* ($13.75).",
+            "es": "*There are four* galletas en una bolsa, y el total es *thirteen seventy-five* ($13.75)."
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex07",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the question.",
+          "audio_path": "a1/u06/l03/ex07.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "How much is the chicken sandwich?"
+          },
+          "explanation": {
+            "en": "*How much is the chicken sandwich?* We ask prices with *How much is…?*",
+            "es": "*How much is the chicken sandwich?* (¿Cuánto cuesta el sándwich de pollo?) Los precios se preguntan con *How much is…?*"
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex08",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Which two sentences are true? Choose two.",
+          "passage": "a1.u06.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Nora orders a cheese sandwich." },
+              { "id": "b", "text": "Nora orders the chicken sandwich." },
+              { "id": "c", "text": "The cookies are for Nora's son." },
+              { "id": "d", "text": "There isn't any sugar." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "c"] },
+          "explanation": {
+            "en": "*One cheese sandwich, please. And some cookies for my son.* She only asks the price of the chicken sandwich, and *there's some* sugar on the table.",
+            "es": "*One cheese sandwich, please. And some cookies for my son.* Solo pregunta el precio del sándwich de pollo, y *there's some* azúcar en la mesa."
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex09",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with some or any.",
+          "passage": "a1.u06.listening",
+          "content": {
+            "text": "The café doesn't have {{g1}} orange juice today. Nora wants {{g2}} cookies for her son. There's {{g3}} sugar on the table."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["any"],
+              "g2": ["some"],
+              "g3": ["some"]
+            }
+          },
+          "explanation": {
+            "en": "Negative (*doesn't have*) → **any**; affirmative → **some**.",
+            "es": "Negativa (*doesn't have*) → **any**; afirmativa → **some**."
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex10",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u06/l03/ex10.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "That's thirteen seventy-five.",
+            "accepted": [
+              "That's $13.75.",
+              "That's 13.75.",
+              "That is thirteen seventy-five."
+            ]
+          },
+          "explanation": {
+            "en": "*That's thirteen seventy-five* = $13.75. You can write the price in words or in numbers.",
+            "es": "*That's thirteen seventy-five* = $13.75. Puedes escribir el precio con letras o con números."
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex11",
+          "type": "reorder",
+          "skill": "listening",
+          "prompt": "Put the words in order to make Nora's question.",
+          "passage": "a1.u06.listening",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "are" },
+              { "id": "t1", "text": "How many" },
+              { "id": "t5", "text": "in a bag?" },
+              { "id": "t2", "text": "cookies" },
+              { "id": "t4", "text": "there" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*How many* + plural noun + *are there*: *How many cookies are there in a bag?*",
+            "es": "*How many* + sustantivo en plural + *are there*: *How many cookies are there in a bag?* (¿Cuántas galletas hay en una bolsa?)"
+          }
+        },
+        {
+          "key": "a1.u06.l03.ex12",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "passage": "a1.u06.listening",
+          "content": {
+            "sentence": "The café has no orange juice today.",
+            "keyword": "ANY",
+            "max_words": 8
+          },
+          "solution": {
+            "accepted": [
+              "The café doesn't have any orange juice today.",
+              "The cafe doesn't have any orange juice today."
+            ]
+          },
+          "explanation": {
+            "en": "*has no* = *doesn't have any*. *The café* is *it*, so *doesn't*.",
+            "es": "*has no* = *doesn't have any*. *The café* es *it*, así que *doesn't*."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u06.l04",
+      "type": "writing",
+      "title": "A shopping list and a message",
+      "theory": {
+        "en": "## Shopping lists\n\nA shopping list is a list of things to buy, often with the **quantity**:\n\n- *2 bottles of water*\n- *a loaf of bread*\n- *6 eggs*\n- *some cheese*\n\nNo full sentences: just the number or container + the food.\n\n## Short messages\n\nA message to a roommate or family member is short and friendly:\n\n1. **Greeting:** *Hi Tom,* / *Hey Mom,*\n2. **The situation:** *We don't have any milk, and there isn't any bread.*\n3. **The request:** *Please buy some milk and a loaf of bread on your way home.*\n4. **Thanks and name:** *Thanks! See you later, Ana*\n\n### Useful phrases\n\n| To say | Example |\n|---|---|\n| what's missing | *There isn't any coffee. We don't have any eggs.* |\n| what you have | *There's some rice. We have some tomatoes.* |\n| a request | *Please buy… / Can you get…?* |\n| a question | *How much money do you need? How many eggs do we need?* |\n\n### Check your writing\n\n- *some* in affirmative sentences, *any* in negatives and questions.\n- No *a/an* or plural with uncountable nouns: *some bread* (not *a bread*, *breads*).\n- *How much* + uncountable, *How many* + plural.",
+        "es": "## Listas de compras\n\nUna lista de compras es una lista de cosas para comprar, muchas veces con la **cantidad**:\n\n- *2 bottles of water* (2 botellas de agua)\n- *a loaf of bread* (un pan)\n- *6 eggs* (6 huevos)\n- *some cheese* (queso)\n\nSin oraciones completas: solo el número o el recipiente + el alimento.\n\n## Mensajes cortos\n\nUn mensaje para alguien con quien vives es corto y amigable:\n\n1. **Saludo:** *Hi Tom,* / *Hey Mom,*\n2. **La situación:** *We don't have any milk, and there isn't any bread.* (No tenemos leche y no hay pan.)\n3. **La petición:** *Please buy some milk and a loaf of bread on your way home.* (Por favor compra leche y un pan de camino a casa.)\n4. **Gracias y nombre:** *Thanks! See you later, Ana*\n\n### Frases útiles\n\n| Para decir | Ejemplo |\n|---|---|\n| lo que falta | *There isn't any coffee. We don't have any eggs.* |\n| lo que hay | *There's some rice. We have some tomatoes.* |\n| una petición | *Please buy… / Can you get…?* (Por favor compra… / ¿Puedes traer…?) |\n| una pregunta | *How much money do you need? How many eggs do we need?* |\n\n### Revisa tu texto\n\n- *some* en oraciones afirmativas, *any* en negativas y preguntas.\n- Sin *a/an* ni plural con sustantivos incontables: *some bread* (no *a bread* ni *breads*).\n- *How much* + incontable, *How many* + plural."
+      },
+      "exercises": [
+        {
+          "key": "a1.u06.l04.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"We need ___ potatoes for dinner.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "some" },
+              { "id": "b", "text": "any" },
+              { "id": "c", "text": "a" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Affirmative sentence + plural noun → **some** potatoes.",
+            "es": "Oración afirmativa + sustantivo en plural → **some** potatoes."
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"My mom ___ the shopping on Saturdays.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "do" },
+              { "id": "b", "text": "does" },
+              { "id": "c", "text": "is" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Do the shopping* = buy food for the house. *My mom* is *she* → **does**.",
+            "es": "*Do the shopping* = hacer las compras. *My mom* es *she* → **does**."
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each question with its answer.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "How much is the bread?" },
+              { "id": "l2", "text": "How many eggs do we need?" },
+              { "id": "l3", "text": "Is there any coffee?" },
+              { "id": "l4", "text": "Do we have any apples?" },
+              { "id": "l5", "text": "What do you need from the store?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "No, there isn't." },
+              { "id": "r2", "text": "Some rice and cheese." },
+              { "id": "r3", "text": "It's $2.40." },
+              { "id": "r4", "text": "Yes, we have some." },
+              { "id": "r5", "text": "Twelve." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*How much is* → a price; *how many* → a number; *Is there…?* → *there is/isn't*; *Do we have…?* → *we have some*; *what* → things.",
+            "es": "*How much is* → un precio; *how many* → un número; *Is there…?* → *there is/isn't*; *Do we have…?* → *we have some*; *what* → cosas."
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex04",
+          "type": "fill_gap",
+          "skill": "writing",
+          "prompt": "Complete the message.",
+          "content": {
+            "text": "Hi Tom, please buy {{g1}} bread and a {{g2}} of water, because we don't have {{g3}} eggs or water at home. Thanks! Ana"
+          },
+          "solution": {
+            "answers": {
+              "g1": ["some"],
+              "g2": ["bottle"],
+              "g3": ["any"]
+            }
+          },
+          "explanation": {
+            "en": "Request (affirmative) → **some** bread; water comes in a **bottle**; negative → **any** eggs.",
+            "es": "Petición (afirmativa) → **some** bread; el agua viene en una **bottle** (botella); negativa → **any** eggs."
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex05",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with much or many.",
+          "content": {
+            "text": "How {{g1}} tomatoes do we need? And how {{g2}} rice? How {{g3}} money do you have?"
+          },
+          "solution": {
+            "answers": {
+              "g1": ["many"],
+              "g2": ["much"],
+              "g3": ["much"]
+            }
+          },
+          "explanation": {
+            "en": "*Tomatoes* is countable plural → **many**; *rice* and *money* are uncountable → **much**.",
+            "es": "*Tomatoes* es contable en plural → **many**; *rice* y *money* son incontables → **much**."
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex06",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "have" },
+              { "id": "t1", "text": "We" },
+              { "id": "t4", "text": "any coffee." },
+              { "id": "t2", "text": "don't" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "Subject + *don't have* + *any*: *We don't have any coffee.*",
+            "es": "Sujeto + *don't have* + *any*: *We don't have any coffee.* (No tenemos café.)"
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex07",
+          "type": "reorder",
+          "skill": "writing",
+          "prompt": "Put the words in order to make a request.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "some apples" },
+              { "id": "t1", "text": "Please" },
+              { "id": "t4", "text": "for the kids." },
+              { "id": "t2", "text": "buy" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*Please* + verb + thing: *Please buy some apples for the kids.*",
+            "es": "*Please* + verbo + cosa: *Please buy some apples for the kids.* (Por favor compra manzanas para los niños.)"
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex08",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "There's no sugar at home.",
+            "keyword": "ANY",
+            "max_words": 6
+          },
+          "solution": {
+            "accepted": [
+              "There isn't any sugar at home.",
+              "There is not any sugar at home."
+            ]
+          },
+          "explanation": {
+            "en": "*There's no* = *there isn't any*: *There isn't any sugar at home.*",
+            "es": "*There's no* = *there isn't any*: *There isn't any sugar at home.* (No hay azúcar en casa.)"
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex09",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make the sentence negative. Use the word in capitals.",
+          "content": {
+            "sentence": "My brother cooks on Sundays.",
+            "keyword": "DOESN'T",
+            "max_words": 6
+          },
+          "solution": {
+            "accepted": [
+              "My brother doesn't cook on Sundays.",
+              "My brother does not cook on Sundays."
+            ]
+          },
+          "explanation": {
+            "en": "*doesn't* + base verb: *cooks* → *doesn't cook*.",
+            "es": "*doesn't* + verbo base: *cooks* → *doesn't cook*."
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex10",
+          "type": "multiple_choice",
+          "skill": "writing",
+          "prompt": "Which is the best end for a short message to your roommate?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Thanks! See you later, Ana" },
+              { "id": "b", "text": "Nice to meet you, Ana" },
+              { "id": "c", "text": "Good morning, Ana" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "A friendly message ends with thanks and a goodbye: *Thanks! See you later.* *Nice to meet you* is for the first meeting, and *good morning* is a greeting.",
+            "es": "Un mensaje amigable termina con un agradecimiento y una despedida: *Thanks! See you later.* *Nice to meet you* es para cuando conoces a alguien, y *good morning* es un saludo."
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex11",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Write a shopping list and a message.",
+          "content": {
+            "task": "You live with a roommate. Look in your (imaginary) kitchen. First, write a shopping list with six things and their quantities (for example, \"2 bottles of water\"). Then write a short message to your roommate: say what there is and what there isn't at home, and ask them to buy the things on the list.",
+            "min_words": 30,
+            "max_words": 70,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "My list has six things with quantities, and my message says what there is, what there isn't, and what to buy.",
+                  "es": "Mi lista tiene seis cosas con cantidades, y mi mensaje dice qué hay, qué no hay y qué comprar."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used some/any and countable/uncountable nouns correctly.",
+                  "es": "Usé bien some/any y los sustantivos contables e incontables."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "format",
+                "description": {
+                  "en": "My message has a greeting, a request with please, thanks and my name.",
+                  "es": "Mi mensaje tiene saludo, una petición con please, un agradecimiento y mi nombre."
+                },
+                "max_points": 3
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Shopping list: 2 bottles of milk, a loaf of bread, 12 eggs, some cheese, a bag of rice, 6 bananas.\n\nHi Tom, there isn't any milk and we don't have any bread. There are some tomatoes, but there aren't any eggs. Please buy the things on the list on your way home. The money is on the table. Thanks! See you later, Ana"
+          }
+        },
+        {
+          "key": "a1.u06.l04.ex12",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Write a message about a dinner.",
+          "content": {
+            "task": "You want to make dinner for some friends on Saturday. Write a message to one friend. Say what food you want to make, what food there is at home, and what you don't have. Ask your friend to bring two things.",
+            "min_words": 35,
+            "max_words": 70,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I said what I want to make, what there is, what I don't have and what my friend can bring.",
+                  "es": "Dije qué quiero preparar, qué hay, qué no tengo y qué puede traer mi amigo."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "language",
+                "description": {
+                  "en": "I used there is/are, some/any and food words correctly.",
+                  "es": "Usé bien there is/are, some/any y las palabras de comida."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "I used a greeting, a goodbye, capital letters and periods.",
+                  "es": "Usé saludo, despedida, mayúsculas y puntos."
+                },
+                "max_points": 2
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi Leo! Dinner is at my place on Saturday at seven. I want to make chicken with rice and a big salad. There's some chicken in the fridge and I have some rice, but I don't have any tomatoes. And there isn't any juice. Please bring some tomatoes and a bottle of juice. Thanks! See you on Saturday, Mia"
+          }
+        }
+      ]
+    }
+  ]
+}

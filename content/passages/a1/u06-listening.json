@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.u06.listening",
+  "title": "At the café",
+  "transcript": "**Server:** Hi there! What would you like?\n\n**Nora:** Hi! A large coffee with milk, please. And do you have any orange juice?\n\n**Server:** Sorry, we don't have any orange juice today. We have apple juice.\n\n**Nora:** OK, an apple juice for my son, please.\n\n**Server:** Sure. Anything to eat?\n\n**Nora:** Yes. How much is the chicken sandwich?\n\n**Server:** It's seven fifty.\n\n**Nora:** And the cheese sandwich?\n\n**Server:** Six dollars.\n\n**Nora:** OK, one cheese sandwich, please. And some cookies for my son. How many cookies are there in a bag?\n\n**Server:** There are four. They're two dollars a bag.\n\n**Nora:** Great. Oh, is there any sugar?\n\n**Server:** Yes, there's some on the table.\n\n**Nora:** Thanks. How much is that?\n\n**Server:** That's a large coffee, three twenty-five; an apple juice, two fifty; a cheese sandwich, six dollars; and the cookies, two. That's thirteen seventy-five.\n\n**Nora:** Here you are.\n\n**Server:** Thank you. Have a nice day!",
+  "audio_path": "a1/u06/listening.mp3"
+}
