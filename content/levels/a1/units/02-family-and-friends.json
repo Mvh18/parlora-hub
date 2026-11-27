@@ -1,0 +1,1322 @@
+{
+  "$schema": "../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u02",
+  "title": "Family and friends",
+  "lessons": [
+    {
+      "key": "a1.u02.l01",
+      "type": "grammar",
+      "title": "My, your, his, her: possessives and have",
+      "theory": {
+        "en": "## Possessive adjectives\n\nPossessive adjectives say who something belongs to. They go **before a noun** and never change: *my brother*, *my brothers*.\n\n| Subject pronoun | Possessive adjective | Example |\n|---|---|---|\n| I | **my** | *This is **my** sister.* |\n| you | **your** | *Is that **your** dad?* |\n| he | **his** | *Tom is here with **his** son.* |\n| she | **her** | *Anna and **her** husband are from Peru.* |\n| it | **its** | *The dog is happy. **Its** name is Toby.* |\n| we | **our** | *We love **our** grandparents.* |\n| they | **their** | *My cousins live with **their** mom.* |\n\nUse **his** for a man or a boy and **her** for a woman or a girl. It depends on the person who has the thing, not on the thing.\n\n### Watch out\n\n- **its** (possessive) ≠ **it's** (*it is*): *It's a dog. Its name is Toby.*\n- **their** (possessive) ≠ **they're** (*they are*) ≠ **there** (a place).\n\n## Possessive *'s*\n\nWith names and nouns, add **'s** to show who has something:\n\n- *Sara**'s** brother* (the brother of Sara)\n- *my dad**'s** car* (the car of my dad)\n\nWith plural nouns that end in *-s*, add only the apostrophe: *my parents**'** house*.\n\n## The verb *have*\n\nUse **have** to talk about family, things and how people look.\n\n| Subject | *have* |\n|---|---|\n| I / you / we / they | **have** |\n| he / she / it | **has** |\n\n- *I **have** two brothers.*\n- *My sister **has** long hair.*\n- *We **have** a dog.*\n\nTo ask about family, learn this question as a chunk: *Do you have any brothers or sisters?* — *Yes, I have one sister.* / *No, I don't.* (You will study questions like this in unit 5.)",
+        "es": "## Adjetivos posesivos\n\nLos adjetivos posesivos dicen de quién es algo. Van **antes del sustantivo** y nunca cambian: *my brother* (mi hermano), *my brothers* (mis hermanos).\n\n| Pronombre sujeto | Adjetivo posesivo | Ejemplo |\n|---|---|---|\n| I | **my** (mi, mis) | *This is **my** sister.* (Ella es mi hermana.) |\n| you | **your** (tu, tus, su, sus) | *Is that **your** dad?* (¿Ese es tu papá?) |\n| he | **his** (su, de él) | *Tom is here with **his** son.* (Tom está aquí con su hijo.) |\n| she | **her** (su, de ella) | *Anna and **her** husband are from Peru.* (Anna y su esposo son de Perú.) |\n| it | **its** (su, de una cosa o animal) | *The dog is happy. **Its** name is Toby.* (El perro está feliz. Se llama Toby.) |\n| we | **our** (nuestro, nuestra) | *We love **our** grandparents.* (Queremos a nuestros abuelos.) |\n| they | **their** (su, de ellos) | *My cousins live with **their** mom.* (Mis primos viven con su mamá.) |\n\nEn español *su* sirve para todo; en inglés tienes que elegir. Usa **his** si el dueño es un hombre o un niño y **her** si es una mujer o una niña. Depende de la persona que tiene la cosa, no de la cosa.\n\n### Cuidado\n\n- **its** (posesivo) ≠ **it's** (*it is*): *It's a dog. Its name is Toby.*\n- **their** (posesivo) ≠ **they're** (*they are*) ≠ **there** (allí).\n\n## El posesivo *'s*\n\nCon nombres y sustantivos, agrega **'s** para decir de quién es algo. El orden es el contrario al español:\n\n- *Sara**'s** brother* (el hermano de Sara)\n- *my dad**'s** car* (el carro de mi papá)\n\nCon sustantivos en plural que terminan en *-s*, agrega solo el apóstrofo: *my parents**'** house* (la casa de mis padres).\n\n## El verbo *have*\n\nUsa **have** (tener) para hablar de la familia, de las cosas y de cómo es una persona.\n\n| Sujeto | *have* |\n|---|---|\n| I / you / we / they | **have** |\n| he / she / it | **has** |\n\n- *I **have** two brothers.* (Tengo dos hermanos.)\n- *My sister **has** long hair.* (Mi hermana tiene el pelo largo.)\n- *We **have** a dog.* (Tenemos un perro.)\n\nRecuerda: la edad no se dice con *have* sino con *be*: *I'm twenty* (tengo veinte años).\n\nPara preguntar por la familia, aprende esta pregunta como un bloque: *Do you have any brothers or sisters?* (¿Tienes hermanos?) — *Yes, I have one sister.* / *No, I don't.* (Estudiarás este tipo de preguntas en la unidad 5.)"
+      },
+      "exercises": [
+        {
+          "key": "a1.u02.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"This is my brother. ___ name is Leo.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "His" },
+              { "id": "b", "text": "Her" },
+              { "id": "c", "text": "Its" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*My brother* is a man (**he**), so we use **his**: *His name is Leo.*",
+            "es": "*My brother* es un hombre (**he**), así que usamos **his**: *His name is Leo.*"
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"Anna and Ben are married. ___ house is in Toronto.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "There" },
+              { "id": "b", "text": "Their" },
+              { "id": "c", "text": "They're" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The house belongs to Anna and Ben (**they**), so we use the possessive **their**. *There* is a place and *they're* means *they are*.",
+            "es": "La casa es de Anna y Ben (**they**), así que usamos el posesivo **their**. *There* es un lugar y *they're* significa *they are*."
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each subject pronoun with its possessive adjective.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "I" },
+              { "id": "l2", "text": "you" },
+              { "id": "l3", "text": "he" },
+              { "id": "l4", "text": "she" },
+              { "id": "l5", "text": "it" },
+              { "id": "l6", "text": "we" },
+              { "id": "l7", "text": "they" }
+            ],
+            "right": [
+              { "id": "r1", "text": "our" },
+              { "id": "r2", "text": "her" },
+              { "id": "r3", "text": "my" },
+              { "id": "r4", "text": "their" },
+              { "id": "r5", "text": "its" },
+              { "id": "r6", "text": "your" },
+              { "id": "r7", "text": "his" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r6"],
+              ["l3", "r7"],
+              ["l4", "r2"],
+              ["l5", "r5"],
+              ["l6", "r1"],
+              ["l7", "r4"]
+            ]
+          },
+          "explanation": {
+            "en": "I → *my*, you → *your*, he → *his*, she → *her*, it → *its*, we → *our*, they → *their*.",
+            "es": "I → *my*, you → *your*, he → *his*, she → *her*, it → *its*, we → *our*, they → *their*."
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with a possessive adjective: my, your, his, her, its, our or their.",
+          "content": {
+            "text": "We are brothers, and {{g1}} parents are from Peru. Our sister is a nurse, and {{g2}} hospital is in Lima. Our cousins live with {{g3}} grandmother."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["our"],
+              "g2": ["her"],
+              "g3": ["their"]
+            }
+          },
+          "explanation": {
+            "en": "*We* → **our**; *our sister* is a woman → **her**; *our cousins* are many people (*they*) → **their**.",
+            "es": "*We* → **our**; *our sister* es una mujer → **her**; *our cousins* son varias personas (*they*) → **their**."
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex05",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "\"The car of my father\" — choose the natural English.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "my father's car" },
+              { "id": "b", "text": "the car my father" },
+              { "id": "c", "text": "my fathers car" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Put the person first and add **'s**: *my father's car*. Don't forget the apostrophe (').",
+            "es": "Pon primero a la persona y agrega **'s**: *my father's car*. No olvides el apóstrofo (')."
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex06",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with have or has.",
+          "content": {
+            "text": "I {{g1}} two sisters. My brother {{g2}} a dog. We {{g3}} a big family."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["have"],
+              "g2": ["has"],
+              "g3": ["have"]
+            }
+          },
+          "explanation": {
+            "en": "*I* and *we* take **have**; *my brother* (*he*) takes **has**.",
+            "es": "*I* y *we* llevan **have**; *my brother* (*he*) lleva **has**."
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex07",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "has" },
+              { "id": "t1", "text": "Sara's" },
+              { "id": "t4", "text": "blue eyes." },
+              { "id": "t2", "text": "brother" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "Owner + **'s** + noun, then the verb: *Sara's brother has blue eyes.*",
+            "es": "Dueño + **'s** + sustantivo, luego el verbo: *Sara's brother has blue eyes.*"
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex08",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t4", "text": "a small house." },
+              { "id": "t2", "text": "grandparents" },
+              { "id": "t3", "text": "have" },
+              { "id": "t1", "text": "Our" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "The possessive goes before the noun: *Our grandparents* (*they*) take **have**.",
+            "es": "El posesivo va antes del sustantivo: *Our grandparents* (*they*) lleva **have**."
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex09",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "This is the bike of Paul.",
+            "keyword": "PAUL'S",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["This is Paul's bike."] },
+          "explanation": {
+            "en": "*The bike of Paul* sounds unnatural in English. Say *Paul's bike*.",
+            "es": "*The bike of Paul* no suena natural en inglés. Se dice *Paul's bike*."
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex10",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make one sentence. Use the word in capitals.",
+          "content": {
+            "sentence": "She has a brother. He is Tom.",
+            "keyword": "HER",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": ["Her brother is Tom.", "Her brother's name is Tom."]
+          },
+          "explanation": {
+            "en": "The brother belongs to *she*, so we say **her** brother: *Her brother is Tom.*",
+            "es": "El hermano es de *she* (ella), así que decimos **her** brother: *Her brother is Tom.*"
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex11",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with its or it's.",
+          "content": {
+            "text": "We have a dog, and {{g1}} name is Max. I think {{g2}} a very nice dog."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["its"],
+              "g2": ["it's", "it is"]
+            }
+          },
+          "explanation": {
+            "en": "**its** + noun is possessive (*its name*); **it's** means *it is* (*it's a nice dog*).",
+            "es": "**its** + sustantivo es posesivo (*its name*); **it's** significa *it is* (*it's a nice dog*)."
+          }
+        },
+        {
+          "key": "a1.u02.l01.ex12",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"Mark ___ two brothers.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "have" },
+              { "id": "b", "text": "has" },
+              { "id": "c", "text": "is" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Mark* is one person (**he**), so we use **has**. *Is* doesn't mean *tener*.",
+            "es": "*Mark* es una persona (**he**), así que usamos **has**. *Is* no significa tener."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u02.l02",
+      "type": "vocabulary",
+      "title": "Family and describing people",
+      "theory": {
+        "en": "## Family\n\n| Man / boy | Woman / girl | Both |\n|---|---|---|\n| father (*dad*) | mother (*mom*) | parents |\n| brother | sister | — |\n| son | daughter | children |\n| husband | wife | — |\n| grandfather | grandmother | grandparents |\n| uncle | aunt | — |\n| — | — | cousin |\n\n- *Mom* and *dad* are informal; we use them a lot when we talk to or about our parents.\n- **Parents** means your mother and your father, not all your family.\n- **Cousin** is the same word for a boy or a girl.\n- The plural of *child* is **children**.\n- A **friend** is not family, but a person you like and know well.\n\n## Describing people\n\nUse **be** for height and age, and **have** for hair and eyes:\n\n| *be* | *have* |\n|---|---|\n| *He's **tall**.* / *She's **short**.* | *She **has** long hair.* / *He **has** short hair.* |\n| *She's **young**.* / *He's **old**.* | *He **has** blue eyes.* / *She **has** brown eyes.* |\n\nWith hair, the length comes before the color: *She has **long dark** hair.* *He has **short blond** hair.*\n\nIt's more polite to say *He's **not very tall*** than *He's short*.",
+        "es": "## La familia\n\n| Hombre / niño | Mujer / niña | Los dos |\n|---|---|---|\n| father (padre, *dad* papá) | mother (madre, *mom* mamá) | parents (padres) |\n| brother (hermano) | sister (hermana) | — |\n| son (hijo) | daughter (hija) | children (hijos) |\n| husband (esposo) | wife (esposa) | — |\n| grandfather (abuelo) | grandmother (abuela) | grandparents (abuelos) |\n| uncle (tío) | aunt (tía) | — |\n| — | — | cousin (primo, prima) |\n\n- *Mom* y *dad* son informales; los usamos mucho para hablar con o sobre nuestros padres.\n- **Parents** significa tu madre y tu padre, no toda tu familia (falso amigo: *parientes* es *relatives*).\n- **Cousin** es la misma palabra para primo y prima.\n- El plural de *child* (niño, hijo) es **children**.\n- Un **friend** (amigo, amiga) no es familia, sino una persona que te cae bien y conoces.\n\n## Describir a una persona\n\nUsa **be** para la estatura y la edad, y **have** para el pelo y los ojos:\n\n| *be* | *have* |\n|---|---|\n| *He's **tall**.* (Es alto.) / *She's **short**.* (Es baja.) | *She **has** long hair.* (Tiene el pelo largo.) / *He **has** short hair.* (Tiene el pelo corto.) |\n| *She's **young**.* (Es joven.) / *He's **old**.* (Es mayor.) | *He **has** blue eyes.* (Tiene los ojos azules.) / *She **has** brown eyes.* (Tiene los ojos cafés.) |\n\nCon el pelo, el largo va antes del color y los dos van antes de *hair*: *She has **long dark** hair.* (Tiene el pelo largo y oscuro.) *He has **short blond** hair.* (Tiene el pelo corto y rubio.)\n\nEs más amable decir *He's **not very tall*** (no es muy alto) que *He's short*."
+      },
+      "vocabulary": [
+        {
+          "key": "a1.u02.l02.v01",
+          "term": "mother",
+          "kind": "word",
+          "meaning": {
+            "en": "your female parent; informal: *mom*",
+            "es": "madre (informal: *mom*, mamá)"
+          },
+          "example": "My mother is a teacher."
+        },
+        {
+          "key": "a1.u02.l02.v02",
+          "term": "father",
+          "kind": "word",
+          "meaning": {
+            "en": "your male parent; informal: *dad*",
+            "es": "padre (informal: *dad*, papá)"
+          },
+          "example": "My father is from Chile."
+        },
+        {
+          "key": "a1.u02.l02.v03",
+          "term": "parents",
+          "kind": "word",
+          "meaning": {
+            "en": "your mother and your father",
+            "es": "padres (madre y padre)"
+          },
+          "example": "My parents have a small house."
+        },
+        {
+          "key": "a1.u02.l02.v04",
+          "term": "brother",
+          "kind": "word",
+          "meaning": {
+            "en": "a boy or man with the same parents as you",
+            "es": "hermano"
+          },
+          "example": "I have one brother."
+        },
+        {
+          "key": "a1.u02.l02.v05",
+          "term": "sister",
+          "kind": "word",
+          "meaning": {
+            "en": "a girl or woman with the same parents as you",
+            "es": "hermana"
+          },
+          "example": "My sister is fifteen."
+        },
+        {
+          "key": "a1.u02.l02.v06",
+          "term": "son",
+          "kind": "word",
+          "meaning": { "en": "a person's male child", "es": "hijo" },
+          "example": "Max is Tom's son."
+        },
+        {
+          "key": "a1.u02.l02.v07",
+          "term": "daughter",
+          "kind": "word",
+          "meaning": { "en": "a person's female child", "es": "hija" },
+          "example": "They have two daughters."
+        },
+        {
+          "key": "a1.u02.l02.v08",
+          "term": "children",
+          "kind": "word",
+          "meaning": {
+            "en": "sons and daughters; also young people (one *child*)",
+            "es": "hijos; niños (singular: *child*)"
+          },
+          "example": "Anna and Ben have three children."
+        },
+        {
+          "key": "a1.u02.l02.v09",
+          "term": "husband",
+          "kind": "word",
+          "meaning": {
+            "en": "the man a person is married to",
+            "es": "esposo"
+          },
+          "example": "Her husband is a doctor."
+        },
+        {
+          "key": "a1.u02.l02.v10",
+          "term": "wife",
+          "kind": "word",
+          "meaning": {
+            "en": "the woman a person is married to",
+            "es": "esposa"
+          },
+          "example": "This is Paul and his wife, Rosa."
+        },
+        {
+          "key": "a1.u02.l02.v11",
+          "term": "grandparents",
+          "kind": "word",
+          "meaning": {
+            "en": "the parents of your mother or father: your *grandmother* and *grandfather*",
+            "es": "abuelos (*grandmother* abuela, *grandfather* abuelo)"
+          },
+          "example": "My grandparents live in Mexico."
+        },
+        {
+          "key": "a1.u02.l02.v12",
+          "term": "aunt",
+          "kind": "word",
+          "meaning": {
+            "en": "the sister of your mother or father",
+            "es": "tía"
+          },
+          "example": "My aunt has a cat."
+        },
+        {
+          "key": "a1.u02.l02.v13",
+          "term": "uncle",
+          "kind": "word",
+          "meaning": {
+            "en": "the brother of your mother or father",
+            "es": "tío"
+          },
+          "example": "My uncle Tom is a photographer."
+        },
+        {
+          "key": "a1.u02.l02.v14",
+          "term": "cousin",
+          "kind": "word",
+          "meaning": {
+            "en": "the child of your aunt or uncle",
+            "es": "primo, prima"
+          },
+          "example": "My cousin Lily is ten."
+        },
+        {
+          "key": "a1.u02.l02.v15",
+          "term": "friend",
+          "kind": "word",
+          "meaning": {
+            "en": "a person you know well and like",
+            "es": "amigo, amiga"
+          },
+          "example": "Ken is my best friend."
+        },
+        {
+          "key": "a1.u02.l02.v16",
+          "term": "tall",
+          "kind": "word",
+          "meaning": {
+            "en": "high from head to feet; the opposite of *short*",
+            "es": "alto"
+          },
+          "example": "My brother is very tall."
+        },
+        {
+          "key": "a1.u02.l02.v17",
+          "term": "short",
+          "kind": "word",
+          "meaning": {
+            "en": "not tall; for hair, not long",
+            "es": "bajo; corto (pelo)"
+          },
+          "example": "She's short and she has short hair."
+        },
+        {
+          "key": "a1.u02.l02.v18",
+          "term": "young",
+          "kind": "word",
+          "meaning": {
+            "en": "not old; with few years",
+            "es": "joven"
+          },
+          "example": "My aunt is young. She's twenty-four."
+        },
+        {
+          "key": "a1.u02.l02.v19",
+          "term": "old",
+          "kind": "word",
+          "meaning": {
+            "en": "with many years; also in *How old are you?*",
+            "es": "viejo, mayor"
+          },
+          "example": "My grandfather is old, but he's very active."
+        },
+        {
+          "key": "a1.u02.l02.v20",
+          "term": "hair",
+          "kind": "word",
+          "meaning": {
+            "en": "what grows on your head: long, short, blond, dark…",
+            "es": "pelo, cabello"
+          },
+          "example": "She has long dark hair."
+        },
+        {
+          "key": "a1.u02.l02.v21",
+          "term": "eyes",
+          "kind": "word",
+          "meaning": {
+            "en": "what you see with: blue, green, brown… (one *eye*)",
+            "es": "ojos (singular: *eye*)"
+          },
+          "example": "He has green eyes."
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u02.l02.ex01",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each man with the woman in the same position.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "father" },
+              { "id": "l2", "text": "brother" },
+              { "id": "l3", "text": "son" },
+              { "id": "l4", "text": "husband" },
+              { "id": "l5", "text": "uncle" },
+              { "id": "l6", "text": "grandfather" }
+            ],
+            "right": [
+              { "id": "r1", "text": "aunt" },
+              { "id": "r2", "text": "wife" },
+              { "id": "r3", "text": "mother" },
+              { "id": "r4", "text": "grandmother" },
+              { "id": "r5", "text": "sister" },
+              { "id": "r6", "text": "daughter" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r6"],
+              ["l4", "r2"],
+              ["l5", "r1"],
+              ["l6", "r4"]
+            ]
+          },
+          "explanation": {
+            "en": "father – mother, brother – sister, son – daughter, husband – wife, uncle – aunt, grandfather – grandmother.",
+            "es": "father – mother (padre – madre), brother – sister (hermano – hermana), son – daughter (hijo – hija), husband – wife (esposo – esposa), uncle – aunt (tío – tía), grandfather – grandmother (abuelo – abuela)."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex02",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Your mother's sister is your ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "cousin" },
+              { "id": "b", "text": "aunt" },
+              { "id": "c", "text": "grandmother" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The sister of your mother or father is your **aunt**.",
+            "es": "La hermana de tu madre o de tu padre es tu **aunt** (tía)."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex03",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Your uncle's son is your ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "brother" },
+              { "id": "b", "text": "nephew" },
+              { "id": "c", "text": "cousin" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "The child of your aunt or uncle is your **cousin**, for a boy or a girl.",
+            "es": "El hijo o la hija de tu tío o tu tía es tu **cousin** (primo o prima)."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex04",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each word with its Spanish meaning.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "parents" },
+              { "id": "l2", "text": "cousin" },
+              { "id": "l3", "text": "wife" },
+              { "id": "l4", "text": "children" },
+              { "id": "l5", "text": "grandparents" }
+            ],
+            "right": [
+              { "id": "r1", "text": "abuelos" },
+              { "id": "r2", "text": "padres" },
+              { "id": "r3", "text": "hijos" },
+              { "id": "r4", "text": "primo, prima" },
+              { "id": "r5", "text": "esposa" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r2"],
+              ["l2", "r4"],
+              ["l3", "r5"],
+              ["l4", "r3"],
+              ["l5", "r1"]
+            ]
+          },
+          "explanation": {
+            "en": "Careful with **parents**: it means your mother and father only, not all your relatives.",
+            "es": "Cuidado con **parents**: significa solo tu madre y tu padre, no todos tus parientes."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex05",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with a family word.",
+          "content": {
+            "text": "Your mother's mother is your {{g1}}. Your aunt's son and daughter are your {{g2}}. Your mother and father are your {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["grandmother", "grandma"],
+              "g2": ["cousins"],
+              "g3": ["parents"]
+            }
+          },
+          "explanation": {
+            "en": "Your mother's mother is your **grandmother**; your aunt's children are your **cousins** (plural); your mother and father are your **parents**.",
+            "es": "La madre de tu madre es tu **grandmother** (abuela); los hijos de tu tía son tus **cousins** (primos, en plural); tu madre y tu padre son tus **parents** (padres)."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex06",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Which word is the opposite of \"tall\"?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "short" },
+              { "id": "b", "text": "old" },
+              { "id": "c", "text": "young" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "The opposite of *tall* is **short**. The opposite of *young* is *old*.",
+            "es": "Lo contrario de *tall* (alto) es **short** (bajo). Lo contrario de *young* (joven) es *old* (mayor)."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex07",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with young or old.",
+          "content": {
+            "text": "My grandfather is eighty-five. He's {{g1}}. My baby cousin is one. She's very {{g2}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["old"],
+              "g2": ["young"]
+            }
+          },
+          "explanation": {
+            "en": "A person with many years is **old**; a person with few years is **young**.",
+            "es": "Una persona con muchos años es **old** (mayor); una persona con pocos años es **young** (joven)."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex08",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Choose the correct order: \"She has ___.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "long dark hair" },
+              { "id": "b", "text": "hair long dark" },
+              { "id": "c", "text": "long hair dark" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Adjectives go before the noun, and length comes before color: *long dark hair*.",
+            "es": "Los adjetivos van antes del sustantivo, y el largo va antes del color: *long dark hair*."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex09",
+          "type": "reorder",
+          "skill": "vocabulary",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "short" },
+              { "id": "t1", "text": "He" },
+              { "id": "t5", "text": "hair." },
+              { "id": "t2", "text": "has" },
+              { "id": "t4", "text": "blond" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*Have* for hair, then length + color + *hair*: *He has short blond hair.*",
+            "es": "*Have* para el pelo, luego largo + color + *hair*: *He has short blond hair.*"
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex10",
+          "type": "transformation",
+          "skill": "vocabulary",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "Ana is the daughter of my uncle.",
+            "keyword": "COUSIN",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["Ana is my cousin.", "Ana's my cousin."] },
+          "explanation": {
+            "en": "The daughter of your uncle is your **cousin**: *Ana is my cousin.*",
+            "es": "La hija de tu tío es tu **cousin** (prima): *Ana is my cousin.*"
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex11",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Lisa and Paul are married. Paul is Lisa's ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "wife" },
+              { "id": "b", "text": "husband" },
+              { "id": "c", "text": "brother" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "Paul is a man married to Lisa, so he is her **husband**. Lisa is Paul's *wife*.",
+            "es": "Paul es un hombre casado con Lisa, así que es su **husband** (esposo). Lisa es la *wife* (esposa) de Paul."
+          }
+        },
+        {
+          "key": "a1.u02.l02.ex12",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete the description.",
+          "content": {
+            "text": "My friend Leo has green {{g1}} and long dark {{g2}}. He isn't short. He's very {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["eyes"],
+              "g2": ["hair"],
+              "g3": ["tall"]
+            }
+          },
+          "explanation": {
+            "en": "Green goes with **eyes**, long dark with **hair**, and the opposite of *short* is **tall**.",
+            "es": "Green (verdes) va con **eyes** (ojos), long dark (largo y oscuro) con **hair** (pelo), y lo contrario de *short* es **tall** (alto)."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u02.l03",
+      "type": "listening",
+      "title": "A family photo",
+      "theory": {
+        "en": "## Listening: talking about a photo\n\nWhen people show a photo, they use a few phrases again and again:\n\n| To ask | To answer |\n|---|---|\n| *Who's that?* / *Who's the tall man?* | *That's my dad.* |\n| *Who are they?* | *These are my sisters.* |\n| *Is your uncle in the photo?* | *No, he isn't.* |\n| *Where are you?* | *I'm here, with my grandfather.* |\n\n- **This / these** point at people or things near you; **that** points at something farther away.\n- *The man **with** the beard* / *the boy **with** the dog*: **with** helps you know which person.\n\n### Tips\n\n- Before you listen, read the questions: they tell you what to listen for (a name, an age, a color).\n- The first time, listen for **who** the people are. The second time, listen for details.\n- Don't worry if you don't understand every word.\n\n### Dictation\n\nIn a dictation you hear a sentence and write it. Listen once for the meaning, then again to write each word. Check capital letters, apostrophes (*Max's*) and the final period.",
+        "es": "## Comprensión auditiva: hablar de una foto\n\nCuando alguien muestra una foto, usa algunas frases una y otra vez:\n\n| Para preguntar | Para responder |\n|---|---|\n| *Who's that?* (¿Quién es?) / *Who's the tall man?* (¿Quién es el hombre alto?) | *That's my dad.* (Es mi papá.) |\n| *Who are they?* (¿Quiénes son?) | *These are my sisters.* (Estas son mis hermanas.) |\n| *Is your uncle in the photo?* (¿Tu tío está en la foto?) | *No, he isn't.* |\n| *Where are you?* (¿Dónde estás tú?) | *I'm here, with my grandfather.* (Aquí, con mi abuelo.) |\n\n- **This / these** señalan personas o cosas cerca de ti; **that** señala algo más lejos.\n- *The man **with** the beard* (el hombre de barba) / *the boy **with** the dog* (el niño con el perro): **with** te ayuda a saber de qué persona se habla.\n\n### Consejos\n\n- Antes de escuchar, lee las preguntas: te dicen qué tienes que buscar (un nombre, una edad, un color).\n- La primera vez, escucha **quiénes** son las personas. La segunda vez, escucha los detalles.\n- No te preocupes si no entiendes todas las palabras.\n\n### Dictado\n\nEn un dictado escuchas una oración y la escribes. Escucha una vez para entender el significado y otra vez para escribir cada palabra. Revisa las mayúsculas, los apóstrofos (*Max's*) y el punto final."
+      },
+      "exercises": [
+        {
+          "key": "a1.u02.l03.ex01",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Listen. The photo is from whose birthday?",
+          "passage": "a1.u02.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Daniel's birthday" },
+              { "id": "b", "text": "his grandmother's birthday" },
+              { "id": "c", "text": "his mom's birthday" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "Daniel says: *It's from my grandmother's birthday. She's eighty in the photo!*",
+            "es": "Daniel dice: *It's from my grandmother's birthday. She's eighty in the photo!* (Es del cumpleaños de mi abuela. ¡Tiene ochenta en la foto!)"
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex02",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Who is Robert?",
+          "passage": "a1.u02.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Daniel's uncle" },
+              { "id": "b", "text": "Daniel's grandfather" },
+              { "id": "c", "text": "Daniel's dad" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "*That's my dad. His name is Robert.* He's the tall man with the beard.",
+            "es": "*That's my dad. His name is Robert.* (Es mi papá. Se llama Robert.) Es el hombre alto de barba."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex03",
+          "type": "matching",
+          "skill": "listening",
+          "prompt": "Match each person with the description.",
+          "passage": "a1.u02.listening",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Robert" },
+              { "id": "l2", "text": "Carmen" },
+              { "id": "l3", "text": "Lily" },
+              { "id": "l4", "text": "Max" }
+            ],
+            "right": [
+              { "id": "r1", "text": "short blond hair and blue eyes" },
+              { "id": "r2", "text": "a little boy with a dog" },
+              { "id": "r3", "text": "tall, with a beard" },
+              { "id": "r4", "text": "long hair, from Chile" },
+              { "id": "r5", "text": "short, with dark hair" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r4"],
+              ["l3", "r1"],
+              ["l4", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Robert is *the tall man with the beard*, Carmen *has beautiful long hair* and is from Chile, Lily *has short blond hair and blue eyes*, and Max is *the little boy with the dog*. Nobody is described as short with dark hair.",
+            "es": "Robert es *the tall man with the beard*, Carmen *has beautiful long hair* y es de Chile, Lily *has short blond hair and blue eyes*, y Max es *the little boy with the dog*. Nadie se describe como bajo y de pelo oscuro."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex04",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Which two sentences are true? Choose two.",
+          "passage": "a1.u02.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Daniel's dad is a doctor." },
+              { "id": "b", "text": "Daniel has two brothers." },
+              { "id": "c", "text": "Uncle Tom takes the photo." },
+              { "id": "d", "text": "Lily is twenty-two." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "c"] },
+          "explanation": {
+            "en": "*He's a doctor* (Robert) and Uncle Tom is *the photographer*. Daniel has two **sisters**, and Lily is fifteen; Sofia is twenty-two.",
+            "es": "*He's a doctor* (Robert) y el tío Tom es *the photographer* (el fotógrafo). Daniel tiene dos **hermanas**, y Lily tiene quince; Sofia tiene veintidós."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex05",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u02/l03/ex05.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "My mom is from Chile.",
+            "accepted": ["My mom's from Chile."]
+          },
+          "explanation": {
+            "en": "*My mom is from Chile.* *Mom* is informal for *mother*, and countries start with a capital letter.",
+            "es": "*My mom is from Chile.* *Mom* es la forma informal de *mother*, y los países empiezan con mayúscula."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex06",
+          "type": "fill_gap",
+          "skill": "listening",
+          "prompt": "Complete with the sisters' ages.",
+          "passage": "a1.u02.listening",
+          "content": {
+            "text": "Sofia is {{g1}} and Lily is {{g2}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["twenty-two", "twenty two", "22"],
+              "g2": ["fifteen", "15"]
+            }
+          },
+          "explanation": {
+            "en": "Daniel says: *Sofia is twenty-two and Lily is fifteen.*",
+            "es": "Daniel dice: *Sofia is twenty-two and Lily is fifteen.* (Sofia tiene veintidós y Lily quince.)"
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex07",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u02/l03/ex07.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "Lily has short blond hair and blue eyes."
+          },
+          "explanation": {
+            "en": "*Lily has short blond hair and blue eyes.* *She* takes **has**, and the adjectives go before *hair* and *eyes*.",
+            "es": "*Lily has short blond hair and blue eyes.* *She* lleva **has**, y los adjetivos van antes de *hair* y *eyes*."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex08",
+          "type": "matching",
+          "skill": "listening",
+          "prompt": "Match each person with who they are.",
+          "passage": "a1.u02.listening",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Max" },
+              { "id": "l2", "text": "Tom" },
+              { "id": "l3", "text": "Carmen" },
+              { "id": "l4", "text": "Sofia" },
+              { "id": "l5", "text": "Toby" }
+            ],
+            "right": [
+              { "id": "r1", "text": "Daniel's sister" },
+              { "id": "r2", "text": "Max's dog" },
+              { "id": "r3", "text": "Daniel's cousin" },
+              { "id": "r4", "text": "Daniel's mom" },
+              { "id": "r5", "text": "Max's dad" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*That's my cousin Max. He's my uncle Tom's son*, so Tom is Max's dad. Carmen is Daniel's mom, Sofia is his sister and Toby is Max's dog.",
+            "es": "*That's my cousin Max. He's my uncle Tom's son* (Es mi primo Max. Es el hijo de mi tío Tom), así que Tom es el papá de Max. Carmen es la mamá de Daniel, Sofia es su hermana y Toby es el perro de Max."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex09",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with a possessive adjective.",
+          "passage": "a1.u02.listening",
+          "content": {
+            "text": "Daniel's dad is a doctor, and {{g1}} name is Robert. Max has a dog, and {{g2}} name is Toby. Daniel and his grandfather have the same eyes: {{g3}} eyes are green."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["his"],
+              "g2": ["its"],
+              "g3": ["their"]
+            }
+          },
+          "explanation": {
+            "en": "The dad is a man → **his**; the dog is an animal → **its**; Daniel and his grandfather are two people (*they*) → **their**.",
+            "es": "El papá es un hombre → **his**; el perro es un animal → **its**; Daniel y su abuelo son dos personas (*they*) → **their**."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex10",
+          "type": "reorder",
+          "skill": "listening",
+          "prompt": "Put the words in order to make a true sentence about the conversation.",
+          "passage": "a1.u02.listening",
+          "content": {
+            "tokens": [
+              { "id": "t4", "text": "the photographer." },
+              { "id": "t2", "text": "uncle" },
+              { "id": "t1", "text": "Daniel's" },
+              { "id": "t3", "text": "is" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*Daniel's uncle is the photographer.* That's why he isn't in the photo.",
+            "es": "*Daniel's uncle is the photographer.* (El tío de Daniel es el fotógrafo.) Por eso no está en la foto."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex11",
+          "type": "dictation",
+          "skill": "listening",
+          "prompt": "Listen and write the sentence.",
+          "audio_path": "a1/u02/l03/ex11.mp3",
+          "content": { "max_plays": 3 },
+          "solution": {
+            "transcript": "We have the same green eyes."
+          },
+          "explanation": {
+            "en": "*We have the same green eyes.* *We* takes **have**, not *has*.",
+            "es": "*We have the same green eyes.* (Tenemos los mismos ojos verdes.) *We* lleva **have**, no *has*."
+          }
+        },
+        {
+          "key": "a1.u02.l03.ex12",
+          "type": "multiple_choice",
+          "skill": "listening",
+          "prompt": "Where is Daniel in the photo?",
+          "passage": "a1.u02.listening",
+          "content": {
+            "options": [
+              { "id": "a", "text": "with his grandfather" },
+              { "id": "b", "text": "with his sisters" },
+              { "id": "c", "text": "He isn't in the photo." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Daniel says: *I'm here, with my grandfather.* The person who isn't in the photo is Uncle Tom.",
+            "es": "Daniel dice: *I'm here, with my grandfather.* (Estoy aquí, con mi abuelo.) El que no está en la foto es el tío Tom."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u02.l04",
+      "type": "writing",
+      "title": "Describe your family",
+      "theory": {
+        "en": "## Writing about your family\n\nA short description of your family has three parts:\n\n1. **Start:** say how big your family is. *I have a small family.* / *There are five people in my family.*\n2. **Middle:** one or two sentences about each person: name, age, job, how they look.\n3. **End:** a short final sentence. *I love my family!*\n\n### Useful sentences\n\n| To say | Example |\n|---|---|\n| who | *My mom's name is Carmen.* / *I have two sisters.* |\n| age | *She's forty-eight.* (with *be*, not *have*) |\n| job | *He's a doctor.* |\n| looks | *He's tall. He has short dark hair.* |\n\n### Joining ideas\n\n- **and** adds information: *I have one brother **and** two sisters.*\n- **but** shows a difference: *My sister is tall, **but** I'm short.*\n\n### Check your writing\n\n- Names start with a capital letter, and so does **I**.\n- *he/she* + **has**; *I/we/they* + **have**.\n- *his* for a man, *her* for a woman.\n- Every sentence ends with a period (.).\n\n### Model\n\n*I have a small family. My dad's name is Luis. He's fifty and he's a taxi driver. He's tall and he has short gray hair. My mom, Rosa, is a nurse. She has long dark hair and brown eyes. I have one sister, Paula. She's twelve. I love my family!*",
+        "es": "## Escribir sobre tu familia\n\nUna descripción corta de tu familia tiene tres partes:\n\n1. **Inicio:** di cómo es tu familia. *I have a small family.* (Tengo una familia pequeña.) / *There are five people in my family.* (En mi familia somos cinco.)\n2. **Desarrollo:** una o dos oraciones sobre cada persona: nombre, edad, trabajo, cómo es.\n3. **Final:** una oración corta para cerrar. *I love my family!* (¡Quiero a mi familia!)\n\n### Oraciones útiles\n\n| Para decir | Ejemplo |\n|---|---|\n| quién | *My mom's name is Carmen.* (Mi mamá se llama Carmen.) / *I have two sisters.* |\n| edad | *She's forty-eight.* (con *be*, no con *have*) |\n| trabajo | *He's a doctor.* (Es médico; en inglés lleva *a*.) |\n| aspecto | *He's tall. He has short dark hair.* |\n\n### Unir ideas\n\n- **and** (y) agrega información: *I have one brother **and** two sisters.*\n- **but** (pero) muestra una diferencia: *My sister is tall, **but** I'm short.*\n\n### Revisa tu texto\n\n- Los nombres empiezan con mayúscula, y también **I** (yo).\n- *he/she* + **has**; *I/we/they* + **have**.\n- *his* si es un hombre, *her* si es una mujer.\n- Cada oración termina con punto (.).\n\n### Modelo\n\n*I have a small family. My dad's name is Luis. He's fifty and he's a taxi driver. He's tall and he has short gray hair. My mom, Rosa, is a nurse. She has long dark hair and brown eyes. I have one sister, Paula. She's twelve. I love my family!*"
+      },
+      "exercises": [
+        {
+          "key": "a1.u02.l04.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"This is Sofia. ___ my sister.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Her" },
+              { "id": "b", "text": "She's" },
+              { "id": "c", "text": "His" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The sentence needs a subject and a verb: *She's* = *she is*. *Her* and *his* must go before a noun.",
+            "es": "La oración necesita sujeto y verbo: *She's* = *she is*. *Her* y *his* tienen que ir antes de un sustantivo."
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct sentence.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "My brother has twenty years." },
+              { "id": "b", "text": "My brother is twenty years old." },
+              { "id": "c", "text": "My brother have twenty years." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "In English, age uses **be**: *My brother is twenty (years old).*",
+            "es": "En inglés la edad se dice con **be**, no con *have*: *My brother is twenty (years old).*"
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex03",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each question with its answer.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Do you have any brothers or sisters?" },
+              { "id": "l2", "text": "What's your mom's name?" },
+              { "id": "l3", "text": "How old is your dad?" },
+              { "id": "l4", "text": "Who's that?" },
+              { "id": "l5", "text": "What color are her eyes?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "He's fifty." },
+              { "id": "r2", "text": "They're brown." },
+              { "id": "r3", "text": "Yes, I have one sister." },
+              { "id": "r4", "text": "That's my cousin." },
+              { "id": "r5", "text": "Her name is Carmen." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*Brothers or sisters* → *I have one sister*; *mom's name* → *her name*; *how old* → an age with *be*; *who* → a person; *what color* → a color.",
+            "es": "*Brothers or sisters* → *I have one sister*; *mom's name* → *her name*; *how old* → una edad con *be*; *who* → una persona; *what color* → un color."
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete the text.",
+          "content": {
+            "text": "My name {{g1}} Ana. I {{g2}} two brothers, and {{g3}} names are Leo and Max."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["is"],
+              "g2": ["have"],
+              "g3": ["their"]
+            }
+          },
+          "explanation": {
+            "en": "*My name **is***; *I **have*** for family; the names belong to the brothers (*they*) → **their**.",
+            "es": "*My name **is***; *I **have*** para la familia; los nombres son de los hermanos (*they*) → **their**."
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex05",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with one word.",
+          "content": {
+            "text": "Lily is my {{g1}}: she's my uncle's daughter. My grandparents {{g2}} a house in Chile."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["cousin"],
+              "g2": ["have"]
+            }
+          },
+          "explanation": {
+            "en": "Your uncle's daughter is your **cousin**. *My grandparents* (*they*) takes **have**.",
+            "es": "La hija de tu tío es tu **cousin** (prima). *My grandparents* (*they*) lleva **have**."
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex06",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "name" },
+              { "id": "t1", "text": "My" },
+              { "id": "t5", "text": "Carmen." },
+              { "id": "t2", "text": "mother's" },
+              { "id": "t4", "text": "is" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*My mother's name* is the subject (the name of my mother), then *is*: *My mother's name is Carmen.*",
+            "es": "*My mother's name* (el nombre de mi madre) es el sujeto, luego *is*: *My mother's name is Carmen.*"
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex07",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t2", "text": "your" },
+              { "id": "t4", "text": "tall?" },
+              { "id": "t1", "text": "Is" },
+              { "id": "t3", "text": "brother" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "In questions with *be*, the verb comes first: *Is your brother tall?*",
+            "es": "En las preguntas con *be*, el verbo va primero: *Is your brother tall?*"
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex08",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make one sentence. Use the word in capitals.",
+          "content": {
+            "sentence": "I have a brother. He is Leo.",
+            "keyword": "MY",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": [
+              "My brother is Leo.",
+              "My brother's name is Leo.",
+              "My brother's Leo."
+            ]
+          },
+          "explanation": {
+            "en": "The brother is yours (*I*), so say **my** brother: *My brother is Leo.*",
+            "es": "El hermano es tuyo (*I*), así que di **my** brother: *My brother is Leo.*"
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex09",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "Max is the son of Tom.",
+            "keyword": "TOM'S",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["Max is Tom's son."] },
+          "explanation": {
+            "en": "Use the possessive **'s**: *the son of Tom* → *Tom's son*.",
+            "es": "Usa el posesivo **'s**: *the son of Tom* → *Tom's son*."
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex10",
+          "type": "multiple_choice",
+          "skill": "writing",
+          "prompt": "Choose the best word: \"My sister is tall, ___ I'm short.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "and" },
+              { "id": "b", "text": "but" },
+              { "id": "c", "text": "too" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Tall* and *short* are different, so we join them with **but**. **And** adds similar information.",
+            "es": "*Tall* y *short* son diferentes, así que los unimos con **but** (pero). **And** (y) agrega información parecida."
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex11",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Describe your family.",
+          "content": {
+            "task": "Write about your family (or an imaginary family) for a class website. Say how many people there are, and for two or three people write their name, age, job and what they look like. End with a short final sentence.",
+            "min_words": 40,
+            "max_words": 80,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I wrote about two or three people, with their name, age, job and what they look like.",
+                  "es": "Escribí sobre dos o tres personas, con su nombre, edad, trabajo y cómo son."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used have/has, possessives (my, his, her, 's) and be for age correctly.",
+                  "es": "Usé bien have/has, los posesivos (my, his, her, 's) y be para la edad."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "organization",
+                "description": {
+                  "en": "My text has a start, a middle and an end, and I joined ideas with and or but.",
+                  "es": "Mi texto tiene inicio, desarrollo y final, y uní ideas con and o but."
+                },
+                "max_points": 2
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "Names and I have capital letters, and every sentence ends with a period.",
+                  "es": "Los nombres y la palabra I llevan mayúscula, y cada oración termina con punto."
+                },
+                "max_points": 1
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "There are four people in my family. My dad's name is Luis. He's fifty and he's a taxi driver. He's tall and he has short gray hair. My mom, Rosa, is forty-seven. She's a nurse, and she has long dark hair and brown eyes. I have one sister. Her name is Paula and she's twelve. She's short, but she's very funny. I love my family!"
+          }
+        },
+        {
+          "key": "a1.u02.l04.ex12",
+          "type": "writing",
+          "skill": "writing",
+          "prompt": "Describe a friend.",
+          "content": {
+            "task": "Write a short message to a new classmate about your best friend (real or imaginary). Say who they are, how old they are, where they are from and what they look like.",
+            "min_words": 25,
+            "max_words": 60,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I said my friend's name, age, country and what they look like.",
+                  "es": "Dije el nombre, la edad, el país y cómo es mi amigo o amiga."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "description",
+                "description": {
+                  "en": "I used be for height and age, and have for hair and eyes, with adjectives before the noun.",
+                  "es": "Usé be para la estatura y la edad, y have para el pelo y los ojos, con los adjetivos antes del sustantivo."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "I used capital letters and periods correctly.",
+                  "es": "Usé bien las mayúsculas y los puntos."
+                },
+                "max_points": 2
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi! My best friend is Nadia. She's nineteen and she's from Egypt. She's tall and she has long dark hair and big brown eyes. Her brother Omar is in our class too. He's my friend, but Nadia is my best friend!"
+          }
+        }
+      ]
+    }
+  ]
+}
