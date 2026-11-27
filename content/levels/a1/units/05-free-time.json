@@ -1,0 +1,1335 @@
+{
+  "$schema": "../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u05",
+  "title": "Free time",
+  "lessons": [
+    {
+      "key": "a1.u05.l01",
+      "type": "grammar",
+      "title": "Do you…? I don't: negatives, questions and like + -ing",
+      "theory": {
+        "en": "## Present simple: negatives\n\nUse **don't** (*do not*) or **doesn't** (*does not*) + the **base verb**.\n\n| Subject | Negative |\n|---|---|\n| I / you / we / they | **don't** play |\n| he / she / it | **doesn't** play |\n\n- *I **don't** watch TV in the morning.*\n- *My brother **doesn't like** sports.* (not *doesn't likes*)\n\nWith *doesn't*, the verb has **no -s**: the *-s* is already in *does*.\n\n## Present simple: questions\n\n| Question | Short answers |\n|---|---|\n| ***Do** you play tennis?* | *Yes, I **do**.* / *No, I **don't**.* |\n| ***Does** she like jazz?* | *Yes, she **does**.* / *No, she **doesn't**.* |\n\nWith question words, put the question word first:\n\n- ***What** do you do on weekends?*\n- ***Where** does your sister live?*\n- ***When** do you play soccer?*\n\nDon't mix *be* and *do*: *Are you tired?* (be + adjective) but *Do you like coffee?* (do + verb).\n\n## *Like, love, enjoy, hate* + *-ing*\n\nAfter these verbs, use the **-ing** form to talk about activities:\n\n- *I **love dancing**.* / *She **enjoys reading**.* / *We **hate getting up** early.*\n\n| Rule | Examples |\n|---|---|\n| most verbs: + **-ing** | *read → reading, play → playing* |\n| -e: drop the *e* + **-ing** | *dance → dancing, ride → riding* |\n| one vowel + one consonant: double + **-ing** | *swim → swimming, run → running, get → getting* |",
+        "es": "## Presente simple: negación\n\nUsa **don't** (*do not*) o **doesn't** (*does not*) + el **verbo base**.\n\n| Sujeto | Negación |\n|---|---|\n| I / you / we / they | **don't** play |\n| he / she / it | **doesn't** play |\n\n- *I **don't** watch TV in the morning.* (No veo televisión por la mañana.)\n- *My brother **doesn't like** sports.* (A mi hermano no le gustan los deportes; no *doesn't likes*.)\n\nCon *doesn't*, el verbo va **sin -s**: la *-s* ya está en *does*.\n\n## Presente simple: preguntas\n\n| Pregunta | Respuestas cortas |\n|---|---|\n| ***Do** you play tennis?* (¿Juegas tenis?) | *Yes, I **do**.* / *No, I **don't**.* |\n| ***Does** she like jazz?* (¿Le gusta el jazz?) | *Yes, she **does**.* / *No, she **doesn't**.* |\n\nCon palabras interrogativas, pon primero la palabra:\n\n- ***What** do you do on weekends?* (¿Qué haces los fines de semana?)\n- ***Where** does your sister live?* (¿Dónde vive tu hermana?)\n- ***When** do you play soccer?* (¿Cuándo juegas fútbol?)\n\nNo mezcles *be* y *do*: *Are you tired?* (be + adjetivo) pero *Do you like coffee?* (do + verbo).\n\n## *Like, love, enjoy, hate* + *-ing*\n\nDespués de estos verbos (gustar, encantar, disfrutar, odiar) usa la forma **-ing** para hablar de actividades:\n\n- *I **love dancing**.* (Me encanta bailar.) / *She **enjoys reading**.* (Disfruta leer.) / *We **hate getting up** early.* (Odiamos levantarnos temprano.)\n\nOjo: en español decimos *me gusta bailar* (con infinitivo); en inglés es *I like dancing*, con *I* como sujeto.\n\n| Regla | Ejemplos |\n|---|---|\n| la mayoría: + **-ing** | *read → reading, play → playing* |\n| terminan en -e: quita la *e* + **-ing** | *dance → dancing, ride → riding* |\n| una vocal + una consonante: duplica + **-ing** | *swim → swimming, run → running, get → getting* |"
+      },
+      "exercises": [
+        {
+          "key": "a1.u05.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"She ___ like coffee.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "don't" },
+              { "id": "b", "text": "doesn't" },
+              { "id": "c", "text": "isn't" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "With *she*, the negative is **doesn't** + base verb. *Isn't* is for *be*, not for other verbs.",
+            "es": "Con *she*, la negación es **doesn't** + verbo base. *Isn't* es para *be*, no para otros verbos."
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"___ you play tennis?\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Do" },
+              { "id": "b", "text": "Does" },
+              { "id": "c", "text": "Are" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Questions with *you* and a normal verb start with **Do**: *Do you play tennis?*",
+            "es": "Las preguntas con *you* y un verbo normal empiezan con **Do**: *Do you play tennis?*"
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each question with its short answer.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Do you like jazz?" },
+              { "id": "l2", "text": "Does she play the guitar?" },
+              { "id": "l3", "text": "Do they live here?" },
+              { "id": "l4", "text": "Does your dad cook?" },
+              { "id": "l5", "text": "Is he tired?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "Yes, he does." },
+              { "id": "r2", "text": "No, he isn't." },
+              { "id": "r3", "text": "Yes, I do." },
+              { "id": "r4", "text": "Yes, they do." },
+              { "id": "r5", "text": "No, she doesn't." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Answer with the same verb as the question: *Do…? — I do. Does…? — she/he does / doesn't. Is…? — he isn't.*",
+            "es": "Responde con el mismo verbo de la pregunta: *Do…? — I do. Does…? — she/he does / doesn't. Is…? — he isn't.*"
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Make the verbs in brackets negative.",
+          "content": {
+            "text": "I {{g1}} (watch) TV in the morning. My brother {{g2}} (like) sports. We {{g3}} (work) on Sundays."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["don't watch", "do not watch"],
+              "g2": ["doesn't like", "does not like"],
+              "g3": ["don't work", "do not work"]
+            }
+          },
+          "explanation": {
+            "en": "*I* and *we* → **don't** + verb; *my brother* (he) → **doesn't** + verb with no *-s*: *doesn't like*.",
+            "es": "*I* y *we* → **don't** + verbo; *my brother* (he) → **doesn't** + verbo sin *-s*: *doesn't like*."
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex05",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"He doesn't ___ soccer on weekends.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "plays" },
+              { "id": "b", "text": "play" },
+              { "id": "c", "text": "playing" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "After **doesn't**, use the base verb with no *-s*: *He doesn't play.*",
+            "es": "Después de **doesn't**, usa el verbo base sin *-s*: *He doesn't play.*"
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex06",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete the questions with do or does.",
+          "content": {
+            "text": "Where {{g1}} you live? What time {{g2}} the class start? What {{g3}} your parents do on weekends?"
+          },
+          "solution": {
+            "answers": {
+              "g1": ["do"],
+              "g2": ["does"],
+              "g3": ["do"]
+            }
+          },
+          "explanation": {
+            "en": "*You* and *your parents* (they) → **do**; *the class* (it) → **does**.",
+            "es": "*You* y *your parents* (they) → **do**; *the class* (it) → **does**."
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex07",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each verb with its -ing form.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "swim" },
+              { "id": "l2", "text": "dance" },
+              { "id": "l3", "text": "read" },
+              { "id": "l4", "text": "run" },
+              { "id": "l5", "text": "ride" },
+              { "id": "l6", "text": "play" }
+            ],
+            "right": [
+              { "id": "r1", "text": "running" },
+              { "id": "r2", "text": "playing" },
+              { "id": "r3", "text": "dancing" },
+              { "id": "r4", "text": "riding" },
+              { "id": "r5", "text": "swimming" },
+              { "id": "r6", "text": "reading" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r5"],
+              ["l2", "r3"],
+              ["l3", "r6"],
+              ["l4", "r1"],
+              ["l5", "r4"],
+              ["l6", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*swim → swimming*, *run → running* (double the consonant); *dance → dancing*, *ride → riding* (drop the *e*); *read → reading*, *play → playing* (just + -ing).",
+            "es": "*swim → swimming*, *run → running* (se duplica la consonante); *dance → dancing*, *ride → riding* (se quita la *e*); *read → reading*, *play → playing* (solo + -ing)."
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex08",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the -ing form of the verb in brackets.",
+          "content": {
+            "text": "I love {{g1}} (cook). My kids enjoy {{g2}} (swim), but they hate {{g3}} (get) up early."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["cooking"],
+              "g2": ["swimming"],
+              "g3": ["getting"]
+            }
+          },
+          "explanation": {
+            "en": "After *love, enjoy, hate* use **-ing**: *cooking*; *swim* and *get* double the last letter: *swimming*, *getting*.",
+            "es": "Después de *love, enjoy, hate* usa **-ing**: *cooking*; *swim* y *get* duplican la última letra: *swimming*, *getting*."
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex09",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "brother" },
+              { "id": "t1", "text": "Does" },
+              { "id": "t5", "text": "dancing?" },
+              { "id": "t2", "text": "your" },
+              { "id": "t4", "text": "like" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*Does* + subject + base verb + the rest: *Does your brother like dancing?*",
+            "es": "*Does* + sujeto + verbo base + el resto: *Does your brother like dancing?* (¿A tu hermano le gusta bailar?)"
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex10",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "play" },
+              { "id": "t1", "text": "We" },
+              { "id": "t4", "text": "tennis" },
+              { "id": "t2", "text": "don't" },
+              { "id": "t5", "text": "on Mondays." }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "Subject + *don't* + verb + the rest: *We don't play tennis on Mondays.*",
+            "es": "Sujeto + *don't* + verbo + el resto: *We don't play tennis on Mondays.* (No jugamos tenis los lunes.)"
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex11",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make the sentence negative. Use the word in capitals.",
+          "content": {
+            "sentence": "Ana plays the piano.",
+            "keyword": "DOESN'T",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": [
+              "Ana doesn't play the piano.",
+              "Ana does not play the piano."
+            ]
+          },
+          "explanation": {
+            "en": "*doesn't* + base verb: *plays* → *doesn't play*.",
+            "es": "*doesn't* + verbo base: *plays* → *doesn't play*."
+          }
+        },
+        {
+          "key": "a1.u05.l01.ex12",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make a question. Use the word in capitals.",
+          "content": {
+            "sentence": "You like reading.",
+            "keyword": "DO",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["Do you like reading?"] },
+          "explanation": {
+            "en": "Put *Do* at the start and keep the verb: *Do you like reading?*",
+            "es": "Pon *Do* al principio y mantén el verbo: *Do you like reading?*"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u05.l02",
+      "type": "vocabulary",
+      "title": "Hobbies, sports and days of the week",
+      "theory": {
+        "en": "## Free time and hobbies\n\nYour **free time** is the time when you don't work or study. A **hobby** is an activity you do for fun: *My hobby is painting.*\n\n### *Play, go* or *do*?\n\n| **play** + ball games and instruments | **go** + *-ing* activities | **do** + other activities |\n|---|---|---|\n| *play soccer, play basketball, play tennis* | *go swimming, go running, go shopping* | *do yoga, do karate, do homework* |\n| *play **the** guitar, play **the** piano* | | |\n| *play video games* | | |\n\nOther free-time activities: *read, paint, dance, cook, listen **to** music, go **to the** movies*.\n\n## Days of the week\n\n**Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday**\n\n- Days always start with a **capital letter**.\n- Use **on** with days: *on Monday*, *on Fridays* (= every Friday).\n- **The weekend** is Saturday and Sunday. In American English, say *on the weekend* or *on weekends*.\n- Short forms on calendars: *Mon, Tue, Wed, Thu, Fri, Sat, Sun*.\n\nWatch the spelling and pronunciation of ***Wed**nesday* (/ˈwɛnzdeɪ/: the first *d* is silent) and ***Thur**sday*.",
+        "es": "## Tiempo libre y pasatiempos\n\nTu **free time** (tiempo libre) es el tiempo en que no trabajas ni estudias. Un **hobby** (pasatiempo) es una actividad que haces por diversión: *My hobby is painting.* (Mi pasatiempo es pintar.)\n\n### ¿*Play, go* o *do*?\n\n| **play** + juegos de pelota e instrumentos | **go** + actividades con *-ing* | **do** + otras actividades |\n|---|---|---|\n| *play soccer* (jugar fútbol), *play basketball*, *play tennis* | *go swimming* (ir a nadar), *go running* (ir a correr), *go shopping* (ir de compras) | *do yoga, do karate, do homework* |\n| *play **the** guitar* (tocar la guitarra), *play **the** piano* | | |\n| *play video games* (jugar videojuegos) | | |\n\nOjo: con instrumentos, *play* significa *tocar* y lleva *the*.\n\nOtras actividades de tiempo libre: *read* (leer), *paint* (pintar), *dance* (bailar), *cook* (cocinar), *listen **to** music* (escuchar música), *go **to the** movies* (ir al cine).\n\n## Días de la semana\n\n**Monday** (lunes), **Tuesday** (martes), **Wednesday** (miércoles), **Thursday** (jueves), **Friday** (viernes), **Saturday** (sábado), **Sunday** (domingo)\n\n- En inglés los días siempre empiezan con **mayúscula**.\n- Con los días usa **on**: *on Monday* (el lunes), *on Fridays* (los viernes, todos los viernes).\n- **The weekend** (el fin de semana) es sábado y domingo. En inglés americano se dice *on the weekend* o *on weekends*.\n- Abreviaturas en los calendarios: *Mon, Tue, Wed, Thu, Fri, Sat, Sun*.\n\nCuidado con la ortografía y la pronunciación de ***Wed**nesday* (se pronuncia *uénsdei*: la primera *d* no suena) y ***Thur**sday*."
+      },
+      "vocabulary": [
+        {
+          "key": "a1.u05.l02.v01",
+          "term": "free time",
+          "kind": "expression",
+          "meaning": {
+            "en": "time when you don't work or study",
+            "es": "tiempo libre"
+          },
+          "example": "What do you do in your free time?"
+        },
+        {
+          "key": "a1.u05.l02.v02",
+          "term": "hobby",
+          "kind": "word",
+          "meaning": {
+            "en": "an activity you do for fun (plural: *hobbies*)",
+            "es": "pasatiempo"
+          },
+          "example": "My hobby is photography."
+        },
+        {
+          "key": "a1.u05.l02.v03",
+          "term": "play soccer",
+          "kind": "expression",
+          "meaning": {
+            "en": "to play the ball game with two teams and two goals",
+            "es": "jugar fútbol"
+          },
+          "example": "We play soccer on Saturdays."
+        },
+        {
+          "key": "a1.u05.l02.v04",
+          "term": "play basketball",
+          "kind": "expression",
+          "meaning": {
+            "en": "to play the ball game where you throw the ball into a high net",
+            "es": "jugar básquetbol"
+          },
+          "example": "My cousins play basketball after school."
+        },
+        {
+          "key": "a1.u05.l02.v05",
+          "term": "go swimming",
+          "kind": "expression",
+          "meaning": {
+            "en": "to go and swim, for example at a pool",
+            "es": "ir a nadar"
+          },
+          "example": "I go swimming on Mondays."
+        },
+        {
+          "key": "a1.u05.l02.v06",
+          "term": "go running",
+          "kind": "expression",
+          "meaning": {
+            "en": "to go and run for exercise",
+            "es": "ir a correr"
+          },
+          "example": "She goes running in the park."
+        },
+        {
+          "key": "a1.u05.l02.v07",
+          "term": "do yoga",
+          "kind": "expression",
+          "meaning": {
+            "en": "to do exercises for the body and mind",
+            "es": "hacer yoga"
+          },
+          "example": "My mom does yoga every morning."
+        },
+        {
+          "key": "a1.u05.l02.v08",
+          "term": "play the guitar",
+          "kind": "expression",
+          "meaning": {
+            "en": "to make music with a guitar",
+            "es": "tocar la guitarra"
+          },
+          "example": "Ken plays the guitar in a band."
+        },
+        {
+          "key": "a1.u05.l02.v09",
+          "term": "listen to music",
+          "kind": "expression",
+          "meaning": {
+            "en": "to hear music because you like it",
+            "es": "escuchar música"
+          },
+          "example": "I listen to music on the bus."
+        },
+        {
+          "key": "a1.u05.l02.v10",
+          "term": "play video games",
+          "kind": "expression",
+          "meaning": {
+            "en": "to play games on a computer, phone or console",
+            "es": "jugar videojuegos"
+          },
+          "example": "My brother plays video games on the weekend."
+        },
+        {
+          "key": "a1.u05.l02.v11",
+          "term": "go to the movies",
+          "kind": "expression",
+          "meaning": {
+            "en": "to go and watch a film at a theater",
+            "es": "ir al cine"
+          },
+          "example": "We go to the movies on Friday nights."
+        },
+        {
+          "key": "a1.u05.l02.v12",
+          "term": "paint",
+          "kind": "word",
+          "meaning": {
+            "en": "to make pictures with colors",
+            "es": "pintar"
+          },
+          "example": "She paints in her free time."
+        },
+        {
+          "key": "a1.u05.l02.v13",
+          "term": "dance",
+          "kind": "word",
+          "meaning": { "en": "to move your body to music", "es": "bailar" },
+          "example": "Do you like dancing?"
+        },
+        {
+          "key": "a1.u05.l02.v14",
+          "term": "Monday",
+          "kind": "word",
+          "meaning": { "en": "the day after Sunday", "es": "lunes" },
+          "example": "I don't go out on Monday."
+        },
+        {
+          "key": "a1.u05.l02.v15",
+          "term": "Tuesday",
+          "kind": "word",
+          "meaning": { "en": "the day after Monday", "es": "martes" },
+          "example": "The soccer club is on Tuesday."
+        },
+        {
+          "key": "a1.u05.l02.v16",
+          "term": "Wednesday",
+          "kind": "word",
+          "meaning": { "en": "the day after Tuesday", "es": "miércoles" },
+          "example": "We have a test on Wednesday."
+        },
+        {
+          "key": "a1.u05.l02.v17",
+          "term": "Thursday",
+          "kind": "word",
+          "meaning": { "en": "the day after Wednesday", "es": "jueves" },
+          "example": "I do yoga on Thursdays."
+        },
+        {
+          "key": "a1.u05.l02.v18",
+          "term": "Friday",
+          "kind": "word",
+          "meaning": { "en": "the day after Thursday", "es": "viernes" },
+          "example": "See you on Friday!"
+        },
+        {
+          "key": "a1.u05.l02.v19",
+          "term": "Saturday",
+          "kind": "word",
+          "meaning": { "en": "the day after Friday", "es": "sábado" },
+          "example": "On Saturday I get up late."
+        },
+        {
+          "key": "a1.u05.l02.v20",
+          "term": "Sunday",
+          "kind": "word",
+          "meaning": { "en": "the day after Saturday", "es": "domingo" },
+          "example": "We visit my grandparents on Sundays."
+        },
+        {
+          "key": "a1.u05.l02.v21",
+          "term": "weekend",
+          "kind": "word",
+          "meaning": {
+            "en": "Saturday and Sunday",
+            "es": "fin de semana"
+          },
+          "example": "What do you do on the weekend?"
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u05.l02.ex01",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each short form with its day.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Mon" },
+              { "id": "l2", "text": "Tue" },
+              { "id": "l3", "text": "Wed" },
+              { "id": "l4", "text": "Thu" },
+              { "id": "l5", "text": "Fri" },
+              { "id": "l6", "text": "Sat" },
+              { "id": "l7", "text": "Sun" }
+            ],
+            "right": [
+              { "id": "r1", "text": "Thursday" },
+              { "id": "r2", "text": "Sunday" },
+              { "id": "r3", "text": "Monday" },
+              { "id": "r4", "text": "Saturday" },
+              { "id": "r5", "text": "Wednesday" },
+              { "id": "r6", "text": "Friday" },
+              { "id": "r7", "text": "Tuesday" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r7"],
+              ["l3", "r5"],
+              ["l4", "r1"],
+              ["l5", "r6"],
+              ["l6", "r4"],
+              ["l7", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "The short forms are the first three letters. Be careful with *Tue* (Tuesday) and *Thu* (Thursday).",
+            "es": "Las abreviaturas son las tres primeras letras. Cuidado con *Tue* (Tuesday, martes) y *Thu* (Thursday, jueves)."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex02",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "The day after Tuesday is ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Monday" },
+              { "id": "b", "text": "Thursday" },
+              { "id": "c", "text": "Wednesday" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "Monday → Tuesday → **Wednesday** → Thursday.",
+            "es": "Monday → Tuesday → **Wednesday** (miércoles) → Thursday."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex03",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with play, go or do.",
+          "content": {
+            "text": "I {{g1}} swimming on Mondays, {{g2}} basketball on Wednesdays and {{g3}} yoga on Fridays."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["go"],
+              "g2": ["play"],
+              "g3": ["do"]
+            }
+          },
+          "explanation": {
+            "en": "**go** + -ing activity (*go swimming*), **play** + ball game (*play basketball*), **do** + yoga.",
+            "es": "**go** + actividad con -ing (*go swimming*), **play** + juego de pelota (*play basketball*), **do** + yoga."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex04",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Saturday and Sunday are the ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "weekend" },
+              { "id": "b", "text": "week" },
+              { "id": "c", "text": "free time" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Saturday and Sunday are the **weekend**. A *week* has seven days.",
+            "es": "Sábado y domingo son el **weekend** (fin de semana). Una *week* (semana) tiene siete días."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex05",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each expression with its Spanish meaning.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "go to the movies" },
+              { "id": "l2", "text": "listen to music" },
+              { "id": "l3", "text": "play the guitar" },
+              { "id": "l4", "text": "free time" },
+              { "id": "l5", "text": "hobby" }
+            ],
+            "right": [
+              { "id": "r1", "text": "tocar la guitarra" },
+              { "id": "r2", "text": "pasatiempo" },
+              { "id": "r3", "text": "ir al cine" },
+              { "id": "r4", "text": "tiempo libre" },
+              { "id": "r5", "text": "escuchar música" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Remember the small words: *listen **to** music*, *go **to the** movies*, *play **the** guitar*.",
+            "es": "Recuerda las palabras pequeñas: *listen **to** music*, *go **to the** movies*, *play **the** guitar*."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex06",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Which expression is correct?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "play swimming" },
+              { "id": "b", "text": "play the guitar" },
+              { "id": "c", "text": "play yoga" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "We **play** instruments and ball games. We *go swimming* and *do yoga*.",
+            "es": "Con *play* van los instrumentos y los juegos de pelota. Se dice *go swimming* y *do yoga*."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex07",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Write the day. Start with a capital letter.",
+          "content": {
+            "text": "The day before Friday is {{g1}}. The day after Sunday is {{g2}}. The day after Friday is {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["Thursday"],
+              "g2": ["Monday"],
+              "g3": ["Saturday"]
+            }
+          },
+          "explanation": {
+            "en": "Thursday → Friday → Saturday → Sunday → Monday. Days always have a capital letter.",
+            "es": "Thursday → Friday → Saturday → Sunday → Monday. Los días siempre llevan mayúscula en inglés."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex08",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Choose the correct word: \"I play tennis ___ Saturdays.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "in" },
+              { "id": "b", "text": "at" },
+              { "id": "c", "text": "on" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "Use **on** with days: *on Saturdays* (every Saturday).",
+            "es": "Con los días se usa **on**: *on Saturdays* (los sábados)."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex09",
+          "type": "reorder",
+          "skill": "vocabulary",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "to music" },
+              { "id": "t1", "text": "I" },
+              { "id": "t4", "text": "on the weekend." },
+              { "id": "t2", "text": "listen" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*listen to* + thing, then the time: *I listen to music on the weekend.*",
+            "es": "*listen to* + cosa, luego el momento: *I listen to music on the weekend.* (Escucho música el fin de semana.)"
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex10",
+          "type": "transformation",
+          "skill": "vocabulary",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "My hobby is painting.",
+            "keyword": "LIKE",
+            "max_words": 3
+          },
+          "solution": { "accepted": ["I like painting.", "I like to paint."] },
+          "explanation": {
+            "en": "If painting is your hobby, you *like painting*.",
+            "es": "Si pintar es tu pasatiempo, *you like painting* (te gusta pintar)."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex11",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Which word is NOT a sport?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "tennis" },
+              { "id": "b", "text": "soccer" },
+              { "id": "c", "text": "guitar" },
+              { "id": "d", "text": "basketball" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "A **guitar** is a musical instrument. Tennis, soccer and basketball are sports.",
+            "es": "Una **guitar** es un instrumento musical. Tennis, soccer y basketball son deportes."
+          }
+        },
+        {
+          "key": "a1.u05.l02.ex12",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with one word.",
+          "content": {
+            "text": "My favorite {{g1}} is reading. In my free {{g2}}, I read books and comics."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["hobby"],
+              "g2": ["time"]
+            }
+          },
+          "explanation": {
+            "en": "A **hobby** is an activity for fun. *Free time* is time with no work or study.",
+            "es": "Un **hobby** es una actividad por diversión. *Free time* es el tiempo libre."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u05.l03",
+      "type": "reading",
+      "title": "Free-time clubs",
+      "theory": {
+        "en": "## Reading a notice\n\nNotices give a lot of information in a small space. Each part often has the same pattern:\n\n| Information | Example |\n|---|---|\n| name | ***Soccer Club*** |\n| day(s) | *Tuesdays and Thursdays* |\n| time | *6:00–7:30 p.m.* (from six to seven thirty) |\n| place | *In the city park.* / *Room 3* |\n| who it's for | *For adults only.* / *For children from 6 to 12.* |\n| what to bring | *Bring sports shoes and water!* |\n\n### Tips\n\n- You don't need to read every word. Look for the **name** of the club you want, then find the details.\n- Notices often use **short sentences without a verb**: *Room 3.* = *It's in room 3.*\n- **Imperatives** tell you what to do: *Come to our clubs! Bring water!*\n- *Free* has two meanings: *free time* (no work) and *free clubs* (no money to pay).",
+        "es": "## Leer un anuncio\n\nLos anuncios dan mucha información en poco espacio. Cada parte suele seguir el mismo patrón:\n\n| Información | Ejemplo |\n|---|---|\n| nombre | ***Soccer Club*** |\n| día(s) | *Tuesdays and Thursdays* (martes y jueves) |\n| hora | *6:00–7:30 p.m.* (de seis a siete y media) |\n| lugar | *In the city park.* / *Room 3* (salón 3) |\n| para quién | *For adults only.* (Solo para adultos.) / *For children from 6 to 12.* |\n| qué llevar | *Bring sports shoes and water!* (¡Trae zapatos deportivos y agua!) |\n\n### Consejos\n\n- No necesitas leer todas las palabras. Busca el **nombre** del club que te interesa y luego los detalles.\n- Los anuncios usan **oraciones cortas sin verbo**: *Room 3.* = *It's in room 3.*\n- Los **imperativos** te dicen qué hacer: *Come to our clubs! Bring water!* (¡Ven a nuestros clubes! ¡Trae agua!)\n- *Free* tiene dos significados: *free time* (tiempo libre) y *free clubs* (clubes gratis)."
+      },
+      "exercises": [
+        {
+          "key": "a1.u05.l03.ex01",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Read the notice. What is it about?",
+          "passage": "a1.u05.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "jobs at a community center" },
+              { "id": "b", "text": "clubs at a community center" },
+              { "id": "c", "text": "a new sports store" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The title is *Riverside Community Center — Free-time clubs*, and the notice describes five clubs.",
+            "es": "El título es *Riverside Community Center — Free-time clubs* (clubes de tiempo libre), y el anuncio describe cinco clubes."
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex02",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "When is the Painting Club?",
+          "passage": "a1.u05.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "on Tuesdays" },
+              { "id": "b", "text": "on Wednesdays" },
+              { "id": "c", "text": "on Fridays" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Painting Club — Wednesdays, 4:00–5:30 p.m.*",
+            "es": "*Painting Club — Wednesdays, 4:00–5:30 p.m.* (los miércoles)."
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex03",
+          "type": "matching",
+          "skill": "reading",
+          "prompt": "Match each club with its day.",
+          "passage": "a1.u05.reading",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Soccer Club" },
+              { "id": "l2", "text": "Dance Club" },
+              { "id": "l3", "text": "Kids' Swimming" },
+              { "id": "l4", "text": "Book Club" }
+            ],
+            "right": [
+              { "id": "r1", "text": "Sundays" },
+              { "id": "r2", "text": "Tuesdays and Thursdays" },
+              { "id": "r3", "text": "Saturdays" },
+              { "id": "r4", "text": "Mondays" },
+              { "id": "r5", "text": "Fridays" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r2"],
+              ["l2", "r5"],
+              ["l3", "r3"],
+              ["l4", "r1"]
+            ]
+          },
+          "explanation": {
+            "en": "Soccer: Tuesdays and Thursdays; Dance: Fridays; Kids' Swimming: Saturdays; Book Club: Sundays. The center doesn't open on Mondays.",
+            "es": "Fútbol: martes y jueves; baile: viernes; natación para niños: sábados; club de lectura: domingos. El centro no abre los lunes."
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex04",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Which two sentences are true? Choose two.",
+          "passage": "a1.u05.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "The center doesn't open on Mondays." },
+              { "id": "b", "text": "The Soccer Club is for children." },
+              {
+                "id": "c",
+                "text": "You don't need a partner for the Dance Club."
+              },
+              {
+                "id": "d",
+                "text": "You need your own paints for the Painting Club."
+              }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "c"] },
+          "explanation": {
+            "en": "*The center doesn't open on Mondays* and *You don't need a partner.* The Soccer Club is *for adults only*, and the Painting Club *has everything for you*.",
+            "es": "*The center doesn't open on Mondays* y *You don't need a partner.* El club de fútbol es *for adults only* (solo adultos) y el de pintura *has everything for you* (tiene todo)."
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex05",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Who can go to Kids' Swimming?",
+          "passage": "a1.u05.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "children from 6 to 12, with a parent" },
+              { "id": "b", "text": "all children, alone" },
+              { "id": "c", "text": "adults only" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*For children from 6 to 12. Parents stay with their children.*",
+            "es": "*For children from 6 to 12. Parents stay with their children.* (Los padres se quedan con sus hijos.)"
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex06",
+          "type": "fill_gap",
+          "skill": "reading",
+          "prompt": "Complete with words from the notice.",
+          "passage": "a1.u05.reading",
+          "content": {
+            "text": "The Soccer Club meets in the city {{g1}}. The Book Club meets in the {{g2}}, and they read one {{g3}} a month."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["park"],
+              "g2": ["café", "cafe"],
+              "g3": ["book"]
+            }
+          },
+          "explanation": {
+            "en": "Soccer: *In the city park.* Book Club: *The café. We read one book a month.*",
+            "es": "Fútbol: *In the city park.* Club de lectura: *The café. We read one book a month.* (Leemos un libro al mes.)"
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex07",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with don't or doesn't.",
+          "passage": "a1.u05.reading",
+          "content": {
+            "text": "The center {{g1}} open on Mondays. In the Dance Club, you {{g2}} need a partner. Kids {{g3}} swim alone: their parents stay with them."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["doesn't", "does not"],
+              "g2": ["don't", "do not"],
+              "g3": ["don't", "do not"]
+            }
+          },
+          "explanation": {
+            "en": "*The center* (it) → **doesn't**; *you* and *kids* (they) → **don't**.",
+            "es": "*The center* (it) → **doesn't**; *you* y *kids* (they) → **don't**."
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex08",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "What do you bring to the Soccer Club?",
+          "passage": "a1.u05.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a ball and a partner" },
+              { "id": "b", "text": "sports shoes and water" },
+              { "id": "c", "text": "paints" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Bring sports shoes and water!*",
+            "es": "*Bring sports shoes and water!* (¡Trae zapatos deportivos y agua!)"
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex09",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Mia loves salsa and she is free on Friday evenings. Which club is good for her?",
+          "passage": "a1.u05.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "the Book Club" },
+              { "id": "b", "text": "the Painting Club" },
+              { "id": "c", "text": "the Dance Club" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "The Dance Club is on *Fridays, 7:00–9:00 p.m.*, with *salsa, hip-hop and more*.",
+            "es": "El club de baile es los *Fridays, 7:00–9:00 p.m.*, con *salsa, hip-hop and more*."
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex10",
+          "type": "reorder",
+          "skill": "reading",
+          "prompt": "Put the words in order to make a true sentence about the notice.",
+          "passage": "a1.u05.reading",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "meets" },
+              { "id": "t1", "text": "The Book" },
+              { "id": "t4", "text": "on Sundays." },
+              { "id": "t2", "text": "Club" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*The Book Club* is *it*, so *meet* takes **-s**: *The Book Club meets on Sundays.*",
+            "es": "*The Book Club* es *it*, así que *meet* lleva **-s**: *The Book Club meets on Sundays.* (El club de lectura se reúne los domingos.)"
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex11",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make a question. Use the word in capitals.",
+          "passage": "a1.u05.reading",
+          "content": {
+            "sentence": "The Painting Club meets on Wednesdays.",
+            "keyword": "DOES",
+            "max_words": 7
+          },
+          "solution": {
+            "accepted": ["Does the Painting Club meet on Wednesdays?"]
+          },
+          "explanation": {
+            "en": "*Does* + subject + base verb: *meets* → *Does … meet…?*",
+            "es": "*Does* + sujeto + verbo base: *meets* → *Does … meet…?*"
+          }
+        },
+        {
+          "key": "a1.u05.l03.ex12",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Does the Book Club read four books every month?",
+          "passage": "a1.u05.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Yes, it does." },
+              {
+                "id": "b",
+                "text": "No, it doesn't. It reads one book a month."
+              },
+              { "id": "c", "text": "No, it isn't." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*We read one book a month.* The short answer uses *does*: *No, it doesn't.* (*No, it isn't* answers a question with *is*.)",
+            "es": "*We read one book a month.* La respuesta corta usa *does*: *No, it doesn't.* (*No, it isn't* responde a una pregunta con *is*.)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u05.l04",
+      "type": "speaking",
+      "title": "What you do on weekends",
+      "theory": {
+        "en": "## Talking about your free time\n\nWhen someone asks *What do you do on weekends?*, give an answer with **details**: what, when, where and who with.\n\n- *On Saturdays I usually go running in the park. Then I play video games with my brother.*\n- *On Sundays I don't get up early. I love reading in bed!*\n\n### Useful phrases\n\n| To say | Example |\n|---|---|\n| what you like | *I love dancing. I really like cooking.* |\n| what you don't like | *I don't like running. I hate getting up early.* |\n| when | *on Saturdays, on the weekend, in the evening* |\n| how often | *always, usually, sometimes, never* |\n\n### Asking and reacting\n\n- Ask back: *And you? What about you?*\n- Show interest: *Really? Me too! That's cool!*\n- Ask for more: *Where do you play? Who do you go with?*\n\n### Sounding natural\n\nIn questions, *do you* often sounds like one short word: *d'you* (*What d'you do?*). Stress the important words: *I **love** dancing.*",
+        "es": "## Hablar de tu tiempo libre\n\nCuando alguien pregunta *What do you do on weekends?* (¿Qué haces los fines de semana?), responde con **detalles**: qué, cuándo, dónde y con quién.\n\n- *On Saturdays I usually go running in the park. Then I play video games with my brother.* (Los sábados normalmente voy a correr al parque. Luego juego videojuegos con mi hermano.)\n- *On Sundays I don't get up early. I love reading in bed!* (Los domingos no me levanto temprano. ¡Me encanta leer en la cama!)\n\n### Frases útiles\n\n| Para decir | Ejemplo |\n|---|---|\n| lo que te gusta | *I love dancing. I really like cooking.* |\n| lo que no te gusta | *I don't like running. I hate getting up early.* |\n| cuándo | *on Saturdays, on the weekend, in the evening* |\n| con qué frecuencia | *always, usually, sometimes, never* |\n\n### Preguntar y reaccionar\n\n- Devuelve la pregunta: *And you? What about you?* (¿Y tú?)\n- Muestra interés: *Really? Me too! That's cool!* (¿En serio? ¡Yo también! ¡Qué bien!)\n- Pide más información: *Where do you play? Who do you go with?* (¿Dónde juegas? ¿Con quién vas?)\n\n### Sonar natural\n\nEn las preguntas, *do you* suele sonar como una palabra corta: *d'you* (*What d'you do?*). Acentúa las palabras importantes: *I **love** dancing.*"
+      },
+      "exercises": [
+        {
+          "key": "a1.u05.l04.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"___ your sister like tennis?\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Do" },
+              { "id": "b", "text": "Does" },
+              { "id": "c", "text": "Is" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Your sister* is *she*, and *like* is a normal verb → **Does** your sister like…?",
+            "es": "*Your sister* es *she*, y *like* es un verbo normal → **Does** your sister like…?"
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"I enjoy ___ to music in the car.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "listen" },
+              { "id": "b", "text": "listening" },
+              { "id": "c", "text": "listens" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "After *enjoy*, use the **-ing** form: *I enjoy listening to music.*",
+            "es": "Después de *enjoy*, usa la forma **-ing**: *I enjoy listening to music.*"
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each question with its answer.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "What do you do on weekends?" },
+              { "id": "l2", "text": "Do you like soccer?" },
+              { "id": "l3", "text": "When do you play tennis?" },
+              { "id": "l4", "text": "Where do you go running?" },
+              { "id": "l5", "text": "Who do you play with?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "In the park." },
+              { "id": "r2", "text": "On Saturdays." },
+              { "id": "r3", "text": "I usually go swimming." },
+              { "id": "r4", "text": "With my friends." },
+              { "id": "r5", "text": "Yes, I love it!" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r2"],
+              ["l4", "r1"],
+              ["l5", "r4"]
+            ]
+          },
+          "explanation": {
+            "en": "*What* → an activity; *Do you…?* → yes/no; *when* → a day or time; *where* → a place; *who* → people.",
+            "es": "*What* → una actividad; *Do you…?* → sí/no; *when* → un día u hora; *where* → un lugar; *who* → personas."
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with the verb in brackets. Use the negative where you see (not).",
+          "content": {
+            "text": "On Saturdays I {{g1}} (not get) up early. Then I {{g2}} (go) running, and my sister {{g3}} (play) tennis."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["don't get", "do not get"],
+              "g2": ["go"],
+              "g3": ["plays"]
+            }
+          },
+          "explanation": {
+            "en": "Negative with *I*: **don't get**; *I go*; *my sister* (she) → **plays**.",
+            "es": "Negación con *I*: **don't get**; *I go*; *my sister* (she) → **plays**."
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex05",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete the short answers.",
+          "content": {
+            "text": "A: Do you like cooking? B: Yes, I {{g1}}. A: Does your brother cook too? B: No, he {{g2}}. He only eats!"
+          },
+          "solution": {
+            "answers": {
+              "g1": ["do"],
+              "g2": ["doesn't", "does not"]
+            }
+          },
+          "explanation": {
+            "en": "*Do you…?* — *Yes, I **do**.* / *Does he…?* — *No, he **doesn't**.*",
+            "es": "*Do you…?* — *Yes, I **do**.* / *Does he…?* — *No, he **doesn't**.*"
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex06",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "you" },
+              { "id": "t1", "text": "What" },
+              { "id": "t5", "text": "on weekends?" },
+              { "id": "t2", "text": "do" },
+              { "id": "t4", "text": "do" }
+            ]
+          },
+          "solution": {
+            "orders": [
+              ["t1", "t2", "t3", "t4", "t5"],
+              ["t1", "t4", "t3", "t2", "t5"]
+            ]
+          },
+          "explanation": {
+            "en": "Question word + *do* + subject + verb: *What do you do on weekends?* The first *do* makes the question; the second is the verb.",
+            "es": "Palabra interrogativa + *do* + sujeto + verbo: *What do you do on weekends?* El primer *do* forma la pregunta; el segundo es el verbo (hacer)."
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex07",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "like" },
+              { "id": "t1", "text": "She" },
+              { "id": "t4", "text": "getting up" },
+              { "id": "t2", "text": "doesn't" },
+              { "id": "t5", "text": "early." }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*doesn't like* + -ing: *She doesn't like getting up early.*",
+            "es": "*doesn't like* + -ing: *She doesn't like getting up early.* (No le gusta levantarse temprano.)"
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex08",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "My brother's hobby is playing video games.",
+            "keyword": "LIKES",
+            "max_words": 6
+          },
+          "solution": {
+            "accepted": [
+              "My brother likes playing video games.",
+              "My brother likes to play video games."
+            ]
+          },
+          "explanation": {
+            "en": "*My brother* (he) → *likes* + -ing: *My brother likes playing video games.*",
+            "es": "*My brother* (he) → *likes* + -ing: *My brother likes playing video games.*"
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex09",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make the sentence negative. Use the word in capitals.",
+          "content": {
+            "sentence": "They go to the movies on Fridays.",
+            "keyword": "DON'T",
+            "max_words": 8
+          },
+          "solution": {
+            "accepted": [
+              "They don't go to the movies on Fridays.",
+              "They do not go to the movies on Fridays."
+            ]
+          },
+          "explanation": {
+            "en": "*They* → **don't** + base verb: *They don't go to the movies on Fridays.*",
+            "es": "*They* → **don't** + verbo base: *They don't go to the movies on Fridays.*"
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex10",
+          "type": "multiple_choice",
+          "skill": "speaking",
+          "prompt": "Your friend says: \"I love dancing!\" You love dancing too. What do you say?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Really? Me too!" },
+              { "id": "b", "text": "Yes, I am." },
+              { "id": "c", "text": "No, it isn't." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*Me too!* shows you feel the same. *Yes, I am* and *No, it isn't* answer questions with *be*.",
+            "es": "*Me too!* (¡Yo también!) muestra que sientes lo mismo. *Yes, I am* y *No, it isn't* responden preguntas con *be*."
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex11",
+          "type": "speaking",
+          "skill": "speaking",
+          "prompt": "Talk about your weekends.",
+          "content": {
+            "task": "Record yourself (about 45 seconds) answering the question \"What do you do on weekends?\" Say what you usually do on Saturday and on Sunday, where and with who. Say one thing you love doing and one thing you don't like doing.",
+            "prep_seconds": 45,
+            "max_seconds": 90,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I talked about Saturday and Sunday, with places and people, and said what I love and don't like doing.",
+                  "es": "Hablé del sábado y del domingo, con lugares y personas, y dije lo que me encanta y lo que no me gusta hacer."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used the present simple (with don't) and like/love + -ing correctly.",
+                  "es": "Usé bien el presente simple (con don't) y like/love + -ing."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "vocabulary",
+                "description": {
+                  "en": "I used free-time activities with play, go and do, and days with on.",
+                  "es": "Usé actividades de tiempo libre con play, go y do, y los días con on."
+                },
+                "max_points": 3
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "On Saturdays I don't get up early. I usually have a big breakfast with my family. Then I go running in the park with my friend Leo. In the afternoon I play video games or go to the movies. On Sundays I visit my grandparents. I love cooking with my grandmother! But I don't like doing homework on Sunday evenings."
+          }
+        },
+        {
+          "key": "a1.u05.l04.ex12",
+          "type": "speaking",
+          "skill": "speaking",
+          "prompt": "Ask a friend about their free time.",
+          "content": {
+            "task": "Imagine you meet a new friend at the community center. Record what you say: ask at least four questions about their free time. Use two yes/no questions (Do you…?) and two questions with question words (What…? When…? Where…? Who…?). React to the imaginary answers with phrases like \"Really?\" or \"Me too!\"",
+            "prep_seconds": 45,
+            "max_seconds": 90,
+            "rubric": [
+              {
+                "key": "questions",
+                "description": {
+                  "en": "I asked four or more questions: two with Do you…? and two with question words.",
+                  "es": "Hice cuatro o más preguntas: dos con Do you…? y dos con palabras interrogativas."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "word-order",
+                "description": {
+                  "en": "My questions had the right word order: (question word) + do/does + subject + verb.",
+                  "es": "Mis preguntas tenían el orden correcto: (palabra interrogativa) + do/does + sujeto + verbo."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "interaction",
+                "description": {
+                  "en": "I reacted to the answers and showed interest.",
+                  "es": "Reaccioné a las respuestas y mostré interés."
+                },
+                "max_points": 3
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi! What do you do in your free time? ... Oh, really? Do you like soccer? ... Me too! When do you play? ... Cool. And where do you play? ... Do you play with friends from the center? ... That's great!"
+          }
+        }
+      ]
+    }
+  ]
+}
