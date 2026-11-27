@@ -1,0 +1,1350 @@
+{
+  "$schema": "../../../../resources/schemas/content/unit.schema.json",
+  "key": "a1.u03",
+  "title": "My home",
+  "lessons": [
+    {
+      "key": "a1.u03.l01",
+      "type": "grammar",
+      "title": "A, an, this, these and there is",
+      "theory": {
+        "en": "## *A* and *an*\n\nUse **a** or **an** before one person or thing (a singular noun):\n\n- **a** + consonant sound: *a bed, a kitchen, a university*\n- **an** + vowel sound (a, e, i, o, u): *an apple, an armchair, an old house*\n\nIt's the **sound** that matters: *a **u**niversity* starts with a *y* sound, so it takes *a*.\n\nUse *a/an* with jobs too: *She's **a** nurse. He's **an** engineer.*\n\n## Plurals\n\n| Rule | Singular → plural |\n|---|---|\n| most nouns: + **-s** | *bed → beds, chair → chairs* |\n| -s, -sh, -ch, -x: + **-es** | *dish → dishes, watch → watches, box → boxes* |\n| consonant + -y: **-y → -ies** | *city → cities, family → families* |\n| -f / -fe: **→ -ves** | *shelf → shelves, knife → knives* |\n| irregular | *man → men, woman → women, child → children, person → people* |\n\nNo *a/an* with plurals: *There are **two chairs**.* (not *a chairs*)\n\n## *This, that, these, those*\n\n| | near | far |\n|---|---|---|\n| one | **this** lamp | **that** lamp |\n| two or more | **these** lamps | **those** lamps |\n\n- *This is my room.* — *Those are my keys, over there.*\n\n## *There is* / *there are*\n\nUse **there is** (*there's*) and **there are** to say that something exists in a place.\n\n| | Singular | Plural |\n|---|---|---|\n| + | *There**'s** a sofa.* | *There **are** two windows.* |\n| − | *There **isn't** a yard.* | *There **aren't** two bathrooms.* |\n| ? | ***Is there** a TV?* — *Yes, there is.* / *No, there isn't.* | ***Are there** two bedrooms?* — *Yes, there are.* / *No, there aren't.* |\n\nThe place usually goes at the end: *There's a big closet **in my bedroom**.*",
+        "es": "## *A* y *an*\n\nUsa **a** o **an** (un, una) antes de una sola persona o cosa (un sustantivo en singular):\n\n- **a** + sonido de consonante: *a bed, a kitchen, a university*\n- **an** + sonido de vocal (a, e, i, o, u): *an apple, an armchair, an old house*\n\nLo que importa es el **sonido**: *a **u**niversity* empieza con sonido *y* (*iu*), así que lleva *a*.\n\nEn inglés los trabajos también llevan *a/an*: *She's **a** nurse.* (Es enfermera.) *He's **an** engineer.* (Es ingeniero.)\n\n## Plurales\n\n| Regla | Singular → plural |\n|---|---|\n| la mayoría: + **-s** | *bed → beds, chair → chairs* |\n| -s, -sh, -ch, -x: + **-es** | *dish → dishes, watch → watches, box → boxes* |\n| consonante + -y: **-y → -ies** | *city → cities, family → families* |\n| -f / -fe: **→ -ves** | *shelf → shelves, knife → knives* |\n| irregulares | *man → men, woman → women, child → children, person → people* |\n\nSin *a/an* en plural: *There are **two chairs**.* (no *a chairs*)\n\n## *This, that, these, those*\n\n| | cerca | lejos |\n|---|---|---|\n| uno | **this** lamp (esta lámpara) | **that** lamp (esa/aquella lámpara) |\n| dos o más | **these** lamps (estas lámparas) | **those** lamps (esas/aquellas lámparas) |\n\n- *This is my room.* (Este es mi cuarto.) — *Those are my keys, over there.* (Esas son mis llaves, allá.)\n\n## *There is* / *there are*\n\nUsa **there is** (*there's*) y **there are** para decir que algo existe en un lugar. Equivale a *hay*.\n\n| | Singular | Plural |\n|---|---|---|\n| + | *There**'s** a sofa.* (Hay un sofá.) | *There **are** two windows.* (Hay dos ventanas.) |\n| − | *There **isn't** a yard.* (No hay patio.) | *There **aren't** two bathrooms.* (No hay dos baños.) |\n| ? | ***Is there** a TV?* — *Yes, there is.* / *No, there isn't.* | ***Are there** two bedrooms?* — *Yes, there are.* / *No, there aren't.* |\n\nEn español *hay* no cambia; en inglés tienes que elegir *is* o *are* según lo que viene después. El lugar normalmente va al final: *There's a big closet **in my bedroom**.* (Hay un clóset grande en mi cuarto.)"
+      },
+      "exercises": [
+        {
+          "key": "a1.u03.l01.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"There's ___ armchair in my room.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a" },
+              { "id": "b", "text": "an" },
+              { "id": "c", "text": "two" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Armchair* starts with a vowel sound, so we use **an**: *an armchair*. *Two* needs a plural noun.",
+            "es": "*Armchair* empieza con sonido de vocal, así que usamos **an**: *an armchair*. *Two* necesita un sustantivo en plural."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"There ___ two windows in the kitchen.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "is" },
+              { "id": "b", "text": "are" },
+              { "id": "c", "text": "am" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Two windows* is plural, so we use **there are**.",
+            "es": "*Two windows* está en plural, así que usamos **there are**."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each singular noun with its plural.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "box" },
+              { "id": "l2", "text": "city" },
+              { "id": "l3", "text": "shelf" },
+              { "id": "l4", "text": "woman" },
+              { "id": "l5", "text": "child" },
+              { "id": "l6", "text": "person" }
+            ],
+            "right": [
+              { "id": "r1", "text": "children" },
+              { "id": "r2", "text": "shelves" },
+              { "id": "r3", "text": "people" },
+              { "id": "r4", "text": "boxes" },
+              { "id": "r5", "text": "women" },
+              { "id": "r6", "text": "cities" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r4"],
+              ["l2", "r6"],
+              ["l3", "r2"],
+              ["l4", "r5"],
+              ["l5", "r1"],
+              ["l6", "r3"]
+            ]
+          },
+          "explanation": {
+            "en": "*box → boxes* (-x + es), *city → cities* (-y → -ies), *shelf → shelves* (-f → -ves); *women*, *children* and *people* are irregular.",
+            "es": "*box → boxes* (-x + es), *city → cities* (-y → -ies), *shelf → shelves* (-f → -ves); *women*, *children* y *people* son irregulares."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with a or an.",
+          "content": {
+            "text": "In my room there's {{g1}} bed, {{g2}} old desk and {{g3}} umbrella."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["a"],
+              "g2": ["an"],
+              "g3": ["an"]
+            }
+          },
+          "explanation": {
+            "en": "*Bed* starts with a consonant sound → **a**; *old* and *umbrella* start with a vowel sound → **an**.",
+            "es": "*Bed* empieza con sonido de consonante → **a**; *old* y *umbrella* empiezan con sonido de vocal → **an**."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex05",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Write the plural of the word in brackets.",
+          "content": {
+            "text": "There are ten {{g1}} (dish) in the kitchen. Two {{g2}} (family) live in the house, and there are seven {{g3}} (person) at the party."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["dishes"],
+              "g2": ["families"],
+              "g3": ["people"]
+            }
+          },
+          "explanation": {
+            "en": "*dish* ends in -sh → *dishes*; *family* ends in consonant + y → *families*; the plural of *person* is *people*.",
+            "es": "*dish* termina en -sh → *dishes*; *family* termina en consonante + y → *families*; el plural de *person* es *people*."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex06",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "You have two books in your hands. \"___ are my books.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "This" },
+              { "id": "b", "text": "These" },
+              { "id": "c", "text": "That" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The books are near you and there are two, so we use **these**.",
+            "es": "Los libros están cerca de ti y son dos, así que usamos **these**."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex07",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each word with its use.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "this" },
+              { "id": "l2", "text": "that" },
+              { "id": "l3", "text": "these" },
+              { "id": "l4", "text": "those" }
+            ],
+            "right": [
+              { "id": "r1", "text": "many things, far from you" },
+              { "id": "r2", "text": "one thing, near you" },
+              { "id": "r3", "text": "many things, near you" },
+              { "id": "r4", "text": "one thing, far from you" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r2"],
+              ["l2", "r4"],
+              ["l3", "r3"],
+              ["l4", "r1"]
+            ]
+          },
+          "explanation": {
+            "en": "Near: *this* (one), *these* (many). Far: *that* (one), *those* (many).",
+            "es": "Cerca: *this* (uno), *these* (varios). Lejos: *that* (uno), *those* (varios)."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex08",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with is, are or isn't.",
+          "content": {
+            "text": "In my bedroom there {{g1}} a bed, and there {{g2}} two lamps. There {{g3}} a TV in my bedroom. It's in the living room."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["is"],
+              "g2": ["are"],
+              "g3": ["isn't", "is not"]
+            }
+          },
+          "explanation": {
+            "en": "*A bed* → **there is**; *two lamps* → **there are**; the TV is in another room, so **there isn't** a TV in the bedroom.",
+            "es": "*A bed* → **there is**; *two lamps* → **there are**; la TV está en otra habitación, así que **there isn't** (no hay) TV en el cuarto."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex09",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "a desk" },
+              { "id": "t5", "text": "your room?" },
+              { "id": "t1", "text": "Is" },
+              { "id": "t4", "text": "in" },
+              { "id": "t2", "text": "there" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "In questions, *is* comes before *there*: *Is there a desk in your room?*",
+            "es": "En las preguntas, *is* va antes de *there*: *Is there a desk in your room?* (¿Hay un escritorio en tu cuarto?)"
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex10",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "are" },
+              { "id": "t1", "text": "Those" },
+              { "id": "t4", "text": "new." },
+              { "id": "t2", "text": "chairs" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*Those* goes before a plural noun, and plural subjects take *are*: *Those chairs are new.*",
+            "es": "*Those* va antes de un sustantivo en plural, y los sujetos en plural llevan *are*: *Those chairs are new.*"
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex11",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "The kitchen has a big window.",
+            "keyword": "THERE",
+            "max_words": 8
+          },
+          "solution": {
+            "accepted": [
+              "There is a big window in the kitchen.",
+              "There's a big window in the kitchen."
+            ]
+          },
+          "explanation": {
+            "en": "*A big window* is singular → *There is (There's) a big window*, and the place goes at the end: *in the kitchen*.",
+            "es": "*A big window* está en singular → *There is (There's) a big window*, y el lugar va al final: *in the kitchen*."
+          }
+        },
+        {
+          "key": "a1.u03.l01.ex12",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make the sentence plural. Use the word in capitals.",
+          "content": {
+            "sentence": "This is my key.",
+            "keyword": "THESE",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["These are my keys."] },
+          "explanation": {
+            "en": "In the plural, everything changes: *this → these*, *is → are*, *key → keys*.",
+            "es": "En plural cambia todo: *this → these*, *is → are*, *key → keys*."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u03.l02",
+      "type": "vocabulary",
+      "title": "Rooms, furniture and colors",
+      "theory": {
+        "en": "## Rooms\n\n| Room | What you do there | What's there |\n|---|---|---|\n| **living room** | relax, watch TV | sofa, armchair, TV |\n| **bedroom** | sleep | bed, closet, desk |\n| **kitchen** | cook, eat | fridge, stove, table |\n| **bathroom** | wash, take a shower | shower, sink, mirror |\n\nOutside many houses there's a **yard** (grass, plants, flowers).\n\nIn American English, an **apartment** is a home in a big building; a **house** is a building for one family.\n\n## Furniture and things\n\n- You sit on a **chair**, a **sofa** or an **armchair**.\n- You work at a **desk** and eat at a **table**.\n- You keep clothes in a **closet** and books on a **shelf**.\n- A **lamp** gives light; a **window** lets in the sun.\n- You open the door with a **key**.\n\n## Colors\n\n**red, blue, green, yellow, white, black, gray, brown, orange, pink**\n\nThe color goes **before** the noun and never takes *-s*: *a **gray** sofa*, *two **red** chairs* (not *reds chairs*).\n\nTo ask: *What color is your sofa?* — *It's gray.*",
+        "es": "## Habitaciones\n\n| Habitación | Qué haces allí | Qué hay |\n|---|---|---|\n| **living room** (sala) | descansar, ver TV | sofa, armchair, TV |\n| **bedroom** (cuarto, dormitorio) | dormir | bed, closet, desk |\n| **kitchen** (cocina) | cocinar, comer | fridge, stove (estufa), table |\n| **bathroom** (baño) | lavarte, bañarte | shower (ducha), sink (lavamanos), mirror (espejo) |\n\nAfuera de muchas casas hay un **yard** (patio o jardín, con césped, plantas, flores).\n\nEn inglés americano, un **apartment** es una vivienda en un edificio grande; una **house** es una casa para una familia.\n\n## Muebles y objetos\n\n- Te sientas en una **chair** (silla), un **sofa** o un **armchair** (sillón).\n- Trabajas en un **desk** (escritorio) y comes en una **table** (mesa).\n- Guardas la ropa en un **closet** (clóset, armario) y los libros en un **shelf** (repisa, estante).\n- Una **lamp** (lámpara) da luz; una **window** (ventana) deja entrar el sol.\n- Abres la puerta con una **key** (llave).\n\n## Colores\n\n**red** (rojo), **blue** (azul), **green** (verde), **yellow** (amarillo), **white** (blanco), **black** (negro), **gray** (gris), **brown** (café, marrón), **orange** (naranja), **pink** (rosado)\n\nEl color va **antes** del sustantivo y nunca lleva *-s*: *a **gray** sofa* (un sofá gris), *two **red** chairs* (dos sillas rojas; no *reds chairs*).\n\nPara preguntar: *What color is your sofa?* (¿De qué color es tu sofá?) — *It's gray.*"
+      },
+      "vocabulary": [
+        {
+          "key": "a1.u03.l02.v01",
+          "term": "living room",
+          "kind": "word",
+          "meaning": {
+            "en": "the room where you relax and watch TV",
+            "es": "sala"
+          },
+          "example": "There's a big sofa in the living room."
+        },
+        {
+          "key": "a1.u03.l02.v02",
+          "term": "bedroom",
+          "kind": "word",
+          "meaning": {
+            "en": "the room where you sleep",
+            "es": "cuarto, dormitorio"
+          },
+          "example": "My bedroom is small but nice."
+        },
+        {
+          "key": "a1.u03.l02.v03",
+          "term": "kitchen",
+          "kind": "word",
+          "meaning": { "en": "the room where you cook", "es": "cocina" },
+          "example": "The kitchen is new."
+        },
+        {
+          "key": "a1.u03.l02.v04",
+          "term": "bathroom",
+          "kind": "word",
+          "meaning": {
+            "en": "the room with a shower or bath and a toilet",
+            "es": "baño"
+          },
+          "example": "There are two bathrooms in the house."
+        },
+        {
+          "key": "a1.u03.l02.v05",
+          "term": "yard",
+          "kind": "word",
+          "meaning": {
+            "en": "the area with grass or plants next to a house",
+            "es": "patio, jardín"
+          },
+          "example": "The children are in the yard."
+        },
+        {
+          "key": "a1.u03.l02.v06",
+          "term": "apartment",
+          "kind": "word",
+          "meaning": {
+            "en": "a home with some rooms in a big building",
+            "es": "apartamento, departamento"
+          },
+          "example": "I live in a small apartment."
+        },
+        {
+          "key": "a1.u03.l02.v07",
+          "term": "bed",
+          "kind": "word",
+          "meaning": { "en": "the thing you sleep on", "es": "cama" },
+          "example": "My bed is next to the window."
+        },
+        {
+          "key": "a1.u03.l02.v08",
+          "term": "sofa",
+          "kind": "word",
+          "meaning": {
+            "en": "a long, soft seat for two or more people",
+            "es": "sofá"
+          },
+          "example": "We have a gray sofa."
+        },
+        {
+          "key": "a1.u03.l02.v09",
+          "term": "armchair",
+          "kind": "word",
+          "meaning": {
+            "en": "a soft chair for one person, with arms",
+            "es": "sillón"
+          },
+          "example": "My grandfather's armchair is old."
+        },
+        {
+          "key": "a1.u03.l02.v10",
+          "term": "table",
+          "kind": "word",
+          "meaning": {
+            "en": "furniture with legs and a flat top, where you eat",
+            "es": "mesa"
+          },
+          "example": "There are four chairs at the table."
+        },
+        {
+          "key": "a1.u03.l02.v11",
+          "term": "chair",
+          "kind": "word",
+          "meaning": { "en": "a seat for one person", "es": "silla" },
+          "example": "This chair is very comfortable."
+        },
+        {
+          "key": "a1.u03.l02.v12",
+          "term": "desk",
+          "kind": "word",
+          "meaning": {
+            "en": "a table where you work or study",
+            "es": "escritorio"
+          },
+          "example": "My computer is on my desk."
+        },
+        {
+          "key": "a1.u03.l02.v13",
+          "term": "closet",
+          "kind": "word",
+          "meaning": {
+            "en": "a small room or cupboard where you keep clothes",
+            "es": "clóset, armario"
+          },
+          "example": "My clothes are in the closet."
+        },
+        {
+          "key": "a1.u03.l02.v14",
+          "term": "shelf",
+          "kind": "word",
+          "meaning": {
+            "en": "a flat board on a wall for books or things (plural: *shelves*)",
+            "es": "repisa, estante"
+          },
+          "example": "There are ten books on the shelf."
+        },
+        {
+          "key": "a1.u03.l02.v15",
+          "term": "lamp",
+          "kind": "word",
+          "meaning": { "en": "a thing that gives light", "es": "lámpara" },
+          "example": "There's a lamp on my desk."
+        },
+        {
+          "key": "a1.u03.l02.v16",
+          "term": "fridge",
+          "kind": "word",
+          "meaning": {
+            "en": "a machine that keeps food cold",
+            "es": "refrigerador"
+          },
+          "example": "The milk is in the fridge."
+        },
+        {
+          "key": "a1.u03.l02.v17",
+          "term": "window",
+          "kind": "word",
+          "meaning": {
+            "en": "an opening in a wall, with glass, for light and air",
+            "es": "ventana"
+          },
+          "example": "Open the window, please."
+        },
+        {
+          "key": "a1.u03.l02.v18",
+          "term": "key",
+          "kind": "word",
+          "meaning": {
+            "en": "a small piece of metal that opens a door",
+            "es": "llave"
+          },
+          "example": "Where are my keys?"
+        },
+        {
+          "key": "a1.u03.l02.v19",
+          "term": "red",
+          "kind": "word",
+          "meaning": { "en": "the color of tomatoes", "es": "rojo" },
+          "example": "She has a red armchair."
+        },
+        {
+          "key": "a1.u03.l02.v20",
+          "term": "yellow",
+          "kind": "word",
+          "meaning": { "en": "the color of bananas", "es": "amarillo" },
+          "example": "The kitchen is yellow."
+        },
+        {
+          "key": "a1.u03.l02.v21",
+          "term": "white",
+          "kind": "word",
+          "meaning": { "en": "the color of snow", "es": "blanco" },
+          "example": "The walls are white."
+        },
+        {
+          "key": "a1.u03.l02.v22",
+          "term": "black",
+          "kind": "word",
+          "meaning": { "en": "the color of the night sky", "es": "negro" },
+          "example": "I have a black desk."
+        },
+        {
+          "key": "a1.u03.l02.v23",
+          "term": "gray",
+          "kind": "word",
+          "meaning": {
+            "en": "between black and white",
+            "es": "gris"
+          },
+          "example": "The sofa is gray."
+        },
+        {
+          "key": "a1.u03.l02.v24",
+          "term": "What color is…?",
+          "kind": "expression",
+          "meaning": {
+            "en": "a question to ask about the color of a thing",
+            "es": "¿De qué color es…?"
+          },
+          "example": "What color is your bedroom?"
+        }
+      ],
+      "exercises": [
+        {
+          "key": "a1.u03.l02.ex01",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each thing with the room or place where it usually is.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "bed" },
+              { "id": "l2", "text": "fridge" },
+              { "id": "l3", "text": "sofa" },
+              { "id": "l4", "text": "shower" },
+              { "id": "l5", "text": "flowers and grass" }
+            ],
+            "right": [
+              { "id": "r1", "text": "living room" },
+              { "id": "r2", "text": "yard" },
+              { "id": "r3", "text": "bedroom" },
+              { "id": "r4", "text": "bathroom" },
+              { "id": "r5", "text": "kitchen" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "You sleep in the *bedroom*, keep food cold in the *kitchen*, relax on the sofa in the *living room*, take a shower in the *bathroom*, and grass grows in the *yard*.",
+            "es": "Duermes en el *bedroom*, guardas la comida fría en la *kitchen*, descansas en el sofá de la *living room*, te bañas en el *bathroom* y el césped crece en el *yard*."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex02",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Where do you cook?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "in the bedroom" },
+              { "id": "b", "text": "in the kitchen" },
+              { "id": "c", "text": "in the yard" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "You cook in the **kitchen**.",
+            "es": "Se cocina en la **kitchen** (cocina)."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex03",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Your clothes are in the ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "fridge" },
+              { "id": "b", "text": "lamp" },
+              { "id": "c", "text": "closet" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "You keep clothes in a **closet**. Food goes in the *fridge*, and a *lamp* gives light.",
+            "es": "La ropa se guarda en el **closet** (clóset, armario). La comida va en el *fridge* y una *lamp* da luz."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex04",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each word with its Spanish meaning.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "armchair" },
+              { "id": "l2", "text": "shelf" },
+              { "id": "l3", "text": "key" },
+              { "id": "l4", "text": "desk" },
+              { "id": "l5", "text": "yard" }
+            ],
+            "right": [
+              { "id": "r1", "text": "escritorio" },
+              { "id": "r2", "text": "llave" },
+              { "id": "r3", "text": "patio, jardín" },
+              { "id": "r4", "text": "sillón" },
+              { "id": "r5", "text": "repisa, estante" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r4"],
+              ["l2", "r5"],
+              ["l3", "r2"],
+              ["l4", "r1"],
+              ["l5", "r3"]
+            ]
+          },
+          "explanation": {
+            "en": "Careful: a **desk** is for work or study; a **table** is for eating.",
+            "es": "Cuidado: un **desk** es para trabajar o estudiar (escritorio); una **table** es para comer (mesa)."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex05",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with a color.",
+          "content": {
+            "text": "Snow is {{g1}}. Bananas are {{g2}}. The night sky is {{g3}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["white"],
+              "g2": ["yellow"],
+              "g3": ["black"]
+            }
+          },
+          "explanation": {
+            "en": "Snow is *white*, bananas are *yellow* and the night sky is *black*.",
+            "es": "La nieve es *white* (blanca), los plátanos son *yellow* (amarillos) y el cielo de noche es *black* (negro)."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex06",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Black and white make ___.",
+          "content": {
+            "options": [
+              { "id": "a", "text": "gray" },
+              { "id": "b", "text": "brown" },
+              { "id": "c", "text": "pink" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "Black + white = **gray**. In American English it's spelled *gray*.",
+            "es": "Negro + blanco = **gray** (gris). En inglés americano se escribe *gray*."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex07",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with a word for furniture or things.",
+          "content": {
+            "text": "I sit on a {{g1}} and study at my {{g2}}. At night I read with the {{g3}} on my desk."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["chair"],
+              "g2": ["desk"],
+              "g3": ["lamp"]
+            }
+          },
+          "explanation": {
+            "en": "You sit on a **chair**, study at a **desk** and read with the light of a **lamp**.",
+            "es": "Te sientas en una **chair** (silla), estudias en un **desk** (escritorio) y lees con la luz de una **lamp** (lámpara)."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex08",
+          "type": "reorder",
+          "skill": "vocabulary",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "gray" },
+              { "id": "t1", "text": "There's" },
+              { "id": "t5", "text": "in the living room." },
+              { "id": "t2", "text": "a" },
+              { "id": "t4", "text": "sofa" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "The color goes before the noun: *a gray sofa*. The place goes at the end.",
+            "es": "El color va antes del sustantivo: *a gray sofa* (un sofá gris). El lugar va al final."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex09",
+          "type": "multiple_choice",
+          "skill": "vocabulary",
+          "prompt": "Which word is NOT a room?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "kitchen" },
+              { "id": "b", "text": "bedroom" },
+              { "id": "c", "text": "sofa" },
+              { "id": "d", "text": "bathroom" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "A **sofa** is furniture. *Kitchen*, *bedroom* and *bathroom* are rooms.",
+            "es": "Un **sofa** es un mueble. *Kitchen*, *bedroom* y *bathroom* son habitaciones."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex10",
+          "type": "transformation",
+          "skill": "vocabulary",
+          "prompt": "Answer the question. Use the word in capitals.",
+          "content": {
+            "sentence": "What color is your bed? (white)",
+            "keyword": "IT'S",
+            "max_words": 2
+          },
+          "solution": { "accepted": ["It's white."] },
+          "explanation": {
+            "en": "Answer *What color is…?* with *It's* + color: *It's white.*",
+            "es": "Responde *What color is…?* con *It's* + color: *It's white.* (Es blanca.)"
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex11",
+          "type": "matching",
+          "skill": "vocabulary",
+          "prompt": "Match each color with its Spanish meaning.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "red" },
+              { "id": "l2", "text": "yellow" },
+              { "id": "l3", "text": "gray" },
+              { "id": "l4", "text": "black" },
+              { "id": "l5", "text": "white" }
+            ],
+            "right": [
+              { "id": "r1", "text": "negro" },
+              { "id": "r2", "text": "blanco" },
+              { "id": "r3", "text": "rojo" },
+              { "id": "r4", "text": "gris" },
+              { "id": "r5", "text": "amarillo" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "red – rojo, yellow – amarillo, gray – gris, black – negro, white – blanco.",
+            "es": "red – rojo, yellow – amarillo, gray – gris, black – negro, white – blanco."
+          }
+        },
+        {
+          "key": "a1.u03.l02.ex12",
+          "type": "fill_gap",
+          "skill": "vocabulary",
+          "prompt": "Complete with one word.",
+          "content": {
+            "text": "It's hot in here. Please open the {{g1}}. And where's my {{g2}}? I need it for the front door."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["window"],
+              "g2": ["key"]
+            }
+          },
+          "explanation": {
+            "en": "When it's hot, you open the **window**. You open a door with a **key**.",
+            "es": "Cuando hace calor, abres la **window** (ventana). Una puerta se abre con una **key** (llave)."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u03.l03",
+      "type": "reading",
+      "title": "Apartment for rent",
+      "theory": {
+        "en": "## Reading a home ad\n\nAds for homes are short and full of information. Look for:\n\n| Information | Example |\n|---|---|\n| where it is | *near the university*, *on Maple Street* |\n| the rooms | *There are two bedrooms.* |\n| what's in each room | *The living room has a sofa and a TV.* |\n| what's **not** there | *There isn't a yard.* |\n| the price | *$850 a month* (eight hundred and fifty dollars) |\n| rules and contact | *No pets.* / *Call Mr. Ortiz.* |\n\n### Tips\n\n- Read the title first: it tells you what the ad is about.\n- Look for **there is / there are** and **has**: they tell you what's in the home.\n- Watch for **but** and **isn't / aren't**: they tell you what the home does **not** have.\n- *Rent* is the money you pay every month to live in a home. *A month* means *every month*.\n- *Bright* and *sunny* mean there's a lot of light.",
+        "es": "## Leer un anuncio de vivienda\n\nLos anuncios de viviendas son cortos y tienen mucha información. Busca:\n\n| Información | Ejemplo |\n|---|---|\n| dónde está | *near the university* (cerca de la universidad), *on Maple Street* |\n| las habitaciones | *There are two bedrooms.* |\n| qué hay en cada habitación | *The living room has a sofa and a TV.* |\n| qué **no** hay | *There isn't a yard.* |\n| el precio | *$850 a month* (ochocientos cincuenta dólares al mes) |\n| reglas y contacto | *No pets.* (No se admiten mascotas.) / *Call Mr. Ortiz.* (Llame al Sr. Ortiz.) |\n\n### Consejos\n\n- Lee primero el título: te dice de qué trata el anuncio.\n- Busca **there is / there are** y **has**: te dicen qué hay en la vivienda.\n- Fíjate en **but** y **isn't / aren't**: te dicen lo que la vivienda **no** tiene.\n- *Rent* es el dinero que pagas cada mes para vivir en una casa (el alquiler o arriendo). *A month* significa *al mes*.\n- *Bright* (luminoso) y *sunny* (soleado) significan que entra mucha luz."
+      },
+      "exercises": [
+        {
+          "key": "a1.u03.l03.ex01",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Read the ad. Who is the apartment good for?",
+          "passage": "a1.u03.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a big family" },
+              { "id": "b", "text": "students" },
+              { "id": "c", "text": "people with pets" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The ad starts: *Are you a student? This is the apartment for you!* It's near the university.",
+            "es": "El anuncio empieza: *Are you a student? This is the apartment for you!* (¿Eres estudiante? ¡Este es el apartamento para ti!) Está cerca de la universidad."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex02",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "How many bedrooms are there?",
+          "passage": "a1.u03.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "one" },
+              { "id": "b", "text": "two" },
+              { "id": "c", "text": "three" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*There are two bedrooms.* There's one bathroom.",
+            "es": "*There are two bedrooms.* (Hay dos cuartos.) Hay un solo baño."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex03",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Which two things are in the kitchen? Choose two.",
+          "passage": "a1.u03.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a fridge" },
+              { "id": "b", "text": "a dishwasher" },
+              { "id": "c", "text": "a microwave" },
+              { "id": "d", "text": "a sofa" }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "c"] },
+          "explanation": {
+            "en": "*There's a fridge, a stove and a microwave, but there isn't a dishwasher.* The sofa is in the living room.",
+            "es": "*There's a fridge, a stove and a microwave, but there isn't a dishwasher.* (Hay refrigerador, estufa y microondas, pero no hay lavaplatos.) El sofá está en la sala."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex04",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Is there a yard?",
+          "passage": "a1.u03.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Yes, there is." },
+              { "id": "b", "text": "No, there isn't." },
+              { "id": "c", "text": "The ad doesn't say." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*There isn't a yard, but there's a small balcony with plants.*",
+            "es": "*There isn't a yard, but there's a small balcony with plants.* (No hay patio, pero hay un balcón pequeño con plantas.)"
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex05",
+          "type": "matching",
+          "skill": "reading",
+          "prompt": "Match each place in the apartment with what's there.",
+          "passage": "a1.u03.reading",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "each bedroom" },
+              { "id": "l2", "text": "the bathroom" },
+              { "id": "l3", "text": "the living room" },
+              { "id": "l4", "text": "the balcony" }
+            ],
+            "right": [
+              { "id": "r1", "text": "a shower" },
+              { "id": "r2", "text": "plants" },
+              { "id": "r3", "text": "a bed, a desk and a closet" },
+              { "id": "r4", "text": "a gray sofa and a TV" },
+              { "id": "r5", "text": "a dishwasher" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r1"],
+              ["l3", "r4"],
+              ["l4", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Each bedroom *has a bed, a desk and a big closet*; the bathroom has *a shower*; the living room *has a gray sofa, an armchair and a TV*; the balcony has *plants*. There isn't a dishwasher.",
+            "es": "Cada cuarto *has a bed, a desk and a big closet*; el baño tiene *a shower*; la sala *has a gray sofa, an armchair and a TV*; el balcón tiene *plants*. No hay lavaplatos."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex06",
+          "type": "fill_gap",
+          "skill": "reading",
+          "prompt": "Complete with words from the ad.",
+          "passage": "a1.u03.reading",
+          "content": {
+            "text": "There are two big {{g1}}, so the apartment is very sunny. The sofa in the living room is {{g2}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["windows"],
+              "g2": ["gray", "grey"]
+            }
+          },
+          "explanation": {
+            "en": "*There are two big windows, so the apartment is very sunny.* The living room *has a gray sofa*.",
+            "es": "*There are two big windows, so the apartment is very sunny.* (Hay dos ventanas grandes, así que es muy soleado.) La sala *has a gray sofa*."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex07",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with is, are or isn't.",
+          "passage": "a1.u03.reading",
+          "content": {
+            "text": "There {{g1}} two bedrooms. There {{g2}} a dishwasher. There {{g3}} a small balcony."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["are"],
+              "g2": ["isn't", "is not"],
+              "g3": ["is"]
+            }
+          },
+          "explanation": {
+            "en": "*Two bedrooms* → **are**; the ad says there is no dishwasher → **isn't**; *a small balcony* → **is**.",
+            "es": "*Two bedrooms* → **are**; el anuncio dice que no hay lavaplatos → **isn't**; *a small balcony* → **is**."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex08",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "How much is the rent?",
+          "passage": "a1.u03.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "$850 a week" },
+              { "id": "b", "text": "$850 a month" },
+              { "id": "c", "text": "$580 a month" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*The rent is $850 a month.* Read numbers carefully: 850, not 580.",
+            "es": "*The rent is $850 a month.* (El alquiler es de 850 dólares al mes.) Lee los números con cuidado: 850, no 580."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex09",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "When can you call Mr. Ortiz?",
+          "passage": "a1.u03.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "in the morning" },
+              { "id": "b", "text": "in the afternoon" },
+              { "id": "c", "text": "at night" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The ad says *afternoons only*: only in the afternoon.",
+            "es": "El anuncio dice *afternoons only*: solo por la tarde."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex10",
+          "type": "reorder",
+          "skill": "reading",
+          "prompt": "Put the words in order to make a true sentence about the ad.",
+          "passage": "a1.u03.reading",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "a TV" },
+              { "id": "t1", "text": "There" },
+              { "id": "t4", "text": "in the living room." },
+              { "id": "t2", "text": "is" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*There is* + thing + place: *There is a TV in the living room.*",
+            "es": "*There is* + cosa + lugar: *There is a TV in the living room.* (Hay una TV en la sala.)"
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex11",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "passage": "a1.u03.reading",
+          "content": {
+            "sentence": "The living room has an armchair.",
+            "keyword": "THERE",
+            "max_words": 8
+          },
+          "solution": {
+            "accepted": [
+              "There is an armchair in the living room.",
+              "There's an armchair in the living room."
+            ]
+          },
+          "explanation": {
+            "en": "*Has* and *there is* can say the same thing: *There's an armchair in the living room.* Keep *an* before *armchair*.",
+            "es": "*Has* y *there is* pueden decir lo mismo: *There's an armchair in the living room.* Mantén *an* antes de *armchair*."
+          }
+        },
+        {
+          "key": "a1.u03.l03.ex12",
+          "type": "multiple_choice",
+          "skill": "reading",
+          "prompt": "Is a dog OK in the apartment?",
+          "passage": "a1.u03.reading",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Yes. There's a balcony for it." },
+              { "id": "b", "text": "No. The ad says \"No pets.\"" },
+              { "id": "c", "text": "The ad doesn't say." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "A dog is a pet, and the ad says *No pets, please.*",
+            "es": "Un perro es una mascota (*pet*), y el anuncio dice *No pets, please.* (No se admiten mascotas.)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.u03.l04",
+      "type": "speaking",
+      "title": "Describe your home",
+      "theory": {
+        "en": "## Describing your home\n\nA short description goes from general to detail:\n\n1. **What and where:** *I live in an apartment in Lima.* / *My house is small.*\n2. **The rooms:** *There are three bedrooms and one bathroom.*\n3. **One room in detail:** *In my bedroom there's a bed, a desk and a big closet. The walls are blue.*\n4. **Your opinion:** *My favorite room is the kitchen. It's very bright.*\n\n### Useful phrases\n\n| To say | Example |\n|---|---|\n| what there is | *There's a sofa. There are two windows.* |\n| what there isn't | *There isn't a yard.* |\n| colors | *The sofa is gray.* / *a gray sofa* |\n| showing photos | *This is my living room. These are my plants.* |\n\n### Asking about a home\n\n- *Is there a balcony?* — *Yes, there is.* / *No, there isn't.*\n- *Are there two bathrooms?* — *Yes, there are.* / *No, there aren't.*\n- *What color is the kitchen?* — *It's white.*\n\n### Sounding natural\n\nUse *there's* in speech and stress the important words: *There's a **big** closet.*",
+        "es": "## Describir tu casa\n\nUna descripción corta va de lo general al detalle:\n\n1. **Qué y dónde:** *I live in an apartment in Lima.* (Vivo en un apartamento en Lima.) / *My house is small.*\n2. **Las habitaciones:** *There are three bedrooms and one bathroom.*\n3. **Una habitación en detalle:** *In my bedroom there's a bed, a desk and a big closet. The walls are blue.* (Las paredes son azules.)\n4. **Tu opinión:** *My favorite room is the kitchen. It's very bright.* (Mi habitación favorita es la cocina. Es muy luminosa.)\n\n### Frases útiles\n\n| Para decir | Ejemplo |\n|---|---|\n| lo que hay | *There's a sofa. There are two windows.* |\n| lo que no hay | *There isn't a yard.* |\n| colores | *The sofa is gray.* / *a gray sofa* |\n| mostrar fotos | *This is my living room. These are my plants.* |\n\n### Preguntar por una vivienda\n\n- *Is there a balcony?* (¿Hay balcón?) — *Yes, there is.* / *No, there isn't.*\n- *Are there two bathrooms?* (¿Hay dos baños?) — *Yes, there are.* / *No, there aren't.*\n- *What color is the kitchen?* (¿De qué color es la cocina?) — *It's white.*\n\n### Sonar natural\n\nAl hablar usa *there's* y acentúa las palabras importantes: *There's a **big** closet.*"
+      },
+      "exercises": [
+        {
+          "key": "a1.u03.l04.ex01",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"There ___ three bedrooms in my house.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "is" },
+              { "id": "b", "text": "are" },
+              { "id": "c", "text": "have" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Three bedrooms* is plural → **there are**. Don't say *there have*.",
+            "es": "*Three bedrooms* está en plural → **there are**. No se dice *there have*."
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex02",
+          "type": "multiple_choice",
+          "skill": "grammar",
+          "prompt": "Choose the correct word: \"It's ___ old house, but it's very nice.\"",
+          "content": {
+            "options": [
+              { "id": "a", "text": "a" },
+              { "id": "b", "text": "an" },
+              { "id": "c", "text": "the" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The word after the article is *old*, which starts with a vowel sound → **an** old house.",
+            "es": "La palabra después del artículo es *old*, que empieza con sonido de vocal → **an** old house."
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex03",
+          "type": "matching",
+          "skill": "grammar",
+          "prompt": "Match each question with its answer.",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Is there a yard?" },
+              { "id": "l2", "text": "What color is your sofa?" },
+              { "id": "l3", "text": "Are those your keys?" },
+              { "id": "l4", "text": "Are there two bathrooms?" },
+              { "id": "l5", "text": "Is your apartment big?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "Yes, they are." },
+              { "id": "r2", "text": "No, it's small." },
+              { "id": "r3", "text": "No, there isn't." },
+              { "id": "r4", "text": "Yes, there are." },
+              { "id": "r5", "text": "It's gray." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"],
+              ["l5", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "Short answers repeat the start of the question: *Is there…? — No, there isn't. Are there…? — Yes, there are. Are those…? — Yes, they are.*",
+            "es": "Las respuestas cortas repiten el inicio de la pregunta: *Is there…? — No, there isn't. Are there…? — Yes, there are. Are those…? — Yes, they are.*"
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex04",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete the description.",
+          "content": {
+            "text": "My house is small. There {{g1}} two bedrooms and {{g2}} kitchen, but there {{g3}} a yard."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["are"],
+              "g2": ["a", "one"],
+              "g3": ["isn't", "is not"]
+            }
+          },
+          "explanation": {
+            "en": "*Two bedrooms* → **are**; one kitchen → **a** (or *one*) kitchen; *but* shows something is missing → **isn't**.",
+            "es": "*Two bedrooms* → **are**; una cocina → **a** (o *one*) kitchen; *but* muestra que falta algo → **isn't**."
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex05",
+          "type": "fill_gap",
+          "skill": "grammar",
+          "prompt": "Complete with this, that, these or those.",
+          "content": {
+            "text": "Look at {{g1}} photos of my new home in my hand! And {{g2}} lamp over there, on the shelf, is from my grandmother."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["these"],
+              "g2": ["that"]
+            }
+          },
+          "explanation": {
+            "en": "The photos are near (*in my hand*) and plural → **these**; the lamp is far (*over there*) and singular → **that**.",
+            "es": "Las fotos están cerca (*in my hand*) y son varias → **these**; la lámpara está lejos (*over there*) y es una → **that**."
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex06",
+          "type": "reorder",
+          "skill": "vocabulary",
+          "prompt": "Put the words in order to make a question.",
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "is" },
+              { "id": "t1", "text": "What" },
+              { "id": "t4", "text": "your kitchen?" },
+              { "id": "t2", "text": "color" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*What color* goes together at the start: *What color is your kitchen?*",
+            "es": "*What color* va junto al principio: *What color is your kitchen?* (¿De qué color es tu cocina?)"
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex07",
+          "type": "reorder",
+          "skill": "grammar",
+          "prompt": "Put the words in order to make a sentence.",
+          "content": {
+            "tokens": [
+              { "id": "t4", "text": "in my room." },
+              { "id": "t2", "text": "are" },
+              { "id": "t3", "text": "two windows" },
+              { "id": "t1", "text": "There" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*There are* + plural thing + place: *There are two windows in my room.*",
+            "es": "*There are* + cosas en plural + lugar: *There are two windows in my room.*"
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex08",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Say the same thing. Use the word in capitals.",
+          "content": {
+            "sentence": "My apartment has two bathrooms.",
+            "keyword": "THERE",
+            "max_words": 7
+          },
+          "solution": {
+            "accepted": ["There are two bathrooms in my apartment."]
+          },
+          "explanation": {
+            "en": "*Two bathrooms* is plural → *There are two bathrooms*, then the place: *in my apartment*.",
+            "es": "*Two bathrooms* está en plural → *There are two bathrooms*, luego el lugar: *in my apartment*."
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex09",
+          "type": "transformation",
+          "skill": "grammar",
+          "prompt": "Make the sentence plural. Use the word in capitals.",
+          "content": {
+            "sentence": "That is my chair.",
+            "keyword": "THOSE",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["Those are my chairs."] },
+          "explanation": {
+            "en": "Plural of *that* is *those*; *is → are*; *chair → chairs*.",
+            "es": "El plural de *that* es *those*; *is → are*; *chair → chairs*."
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex10",
+          "type": "multiple_choice",
+          "skill": "speaking",
+          "prompt": "A friend visits and says: \"Your home is beautiful!\" What do you say?",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Thank you! Come in." },
+              { "id": "b", "text": "Yes, there is." },
+              { "id": "c", "text": "Nice to meet you, too." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "A compliment gets a *thank you*. *Yes, there is* answers *Is there…?*, and *Nice to meet you, too* is for meeting someone new.",
+            "es": "Un cumplido se responde con *thank you*. *Yes, there is* responde a *Is there…?*, y *Nice to meet you, too* es para cuando conoces a alguien."
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex11",
+          "type": "speaking",
+          "skill": "speaking",
+          "prompt": "Describe your home.",
+          "content": {
+            "task": "Record a short description of your home (real or imaginary), about 45 seconds. Say what type of home it is and where it is, what rooms there are, and describe one room in detail: the furniture and the colors. End with your favorite room and why.",
+            "prep_seconds": 45,
+            "max_seconds": 90,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I said what type of home it is, the rooms, one room in detail with colors, and my favorite room.",
+                  "es": "Dije qué tipo de vivienda es, las habitaciones, una habitación en detalle con colores y mi habitación favorita."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used there is / there are, a/an and plurals correctly.",
+                  "es": "Usé bien there is / there are, a/an y los plurales."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "vocabulary",
+                "description": {
+                  "en": "I used words for rooms, furniture and colors, with the color before the noun.",
+                  "es": "Usé palabras de habitaciones, muebles y colores, con el color antes del sustantivo."
+                },
+                "max_points": 3
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "I live in an apartment in Bogotá. It's small, but it's very bright. There are two bedrooms, a bathroom, a kitchen and a living room. There isn't a yard. In my bedroom there's a bed, a desk and a big white closet. The walls are blue and there are two windows. My favorite room is the living room. There's a gray sofa and there are a lot of plants. It's very relaxing."
+          }
+        },
+        {
+          "key": "a1.u03.l04.ex12",
+          "type": "speaking",
+          "skill": "speaking",
+          "prompt": "Ask about an apartment.",
+          "content": {
+            "task": "You want to rent an apartment. Imagine you call the owner. Record what you say: greet the owner, say your name, and ask at least four questions about the apartment with \"Is there…?\" and \"Are there…?\" (for example, bedrooms, a balcony, a washing machine, furniture). End with \"Thank you. Goodbye!\"",
+            "prep_seconds": 45,
+            "max_seconds": 90,
+            "rubric": [
+              {
+                "key": "questions",
+                "description": {
+                  "en": "I asked four or more questions about the apartment.",
+                  "es": "Hice cuatro o más preguntas sobre el apartamento."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used Is there + singular and Are there + plural, with the right word order.",
+                  "es": "Usé Is there + singular y Are there + plural, con el orden correcto."
+                },
+                "max_points": 3
+              },
+              {
+                "key": "politeness",
+                "description": {
+                  "en": "I greeted the owner, said my name and ended politely.",
+                  "es": "Saludé al dueño, dije mi nombre y terminé de forma amable."
+                },
+                "max_points": 3
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Good afternoon, Mr. Ortiz. My name is Ana Ruiz. It's about the apartment on Maple Street. Are there two bedrooms? ... Is there a desk in the bedrooms? ... Is there a balcony? ... And is there a washing machine? ... OK, thank you. Goodbye!"
+          }
+        }
+      ]
+    }
+  ]
+}
