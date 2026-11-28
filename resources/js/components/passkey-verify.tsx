@@ -1,5 +1,4 @@
 import type { UrlMethodPair } from '@inertiajs/core';
-import { router } from '@inertiajs/react';
 import { usePasskeyVerify } from '@laravel/passkeys/react';
 import { KeyRound } from 'lucide-react';
 import InputError from '@/components/input-error';
@@ -34,7 +33,10 @@ export default function PasskeyVerify({
             },
         }),
         onSuccess: (response) => {
-            router.visit(response.redirect ?? home().url);
+            // A full page load: the destination may not be an Inertia page
+            // (the admin panel, Horizon), which a router visit would show in
+            // Inertia's error modal.
+            window.location.assign(response.redirect ?? home().url);
         },
     });
 
