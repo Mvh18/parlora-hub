@@ -244,3 +244,93 @@ test('a unit that drops its spiral grammar point names the unit file', function 
     expect(A1CourseRules::course($course))
         ->toBe(['levels/a1/units/07-unit.json /lessons: unit 7 should bring back there is/are (grammar spiral)']);
 });
+
+/** An A1 exam that meets every rule. */
+function rulesExam(): array
+{
+    $auto = fn (string $key, ?string $passage = null) => array_filter([
+        'key' => $key,
+        'type' => 'fill_gap',
+        'points' => 1,
+        'passage' => $passage,
+        'content' => ['text' => 'I {{g1}} here.'],
+        'solution' => ['answers' => ['g1' => ['am']]],
+        'explanation' => bilingual(),
+    ]);
+    $task = fn (string $key, string $type) => [
+        'key' => $key,
+        'type' => $type,
+        'points' => 20,
+        'content' => ['task' => 'Do it.', 'rubric' => [['key' => 'task', 'description' => bilingual('Did it'), 'max_points' => 20]]],
+        'solution' => ['model_answer' => 'Done.'],
+    ];
+
+    $uoe = [];
+    foreach (range(1, 8) as $unit) {
+        foreach (range(1, 4) as $q) {
+            $uoe[] = $auto(sprintf('a1.exam.uoe.u%02d.q%02d', $unit, $q));
+        }
+    }
+
+    $sections = [];
+    foreach (A1CourseRules::EXAM_SECTIONS as $key => $section) {
+        $questions = match ($section['skill']) {
+            'use_of_english' => $uoe,
+            'reading', 'listening' => array_map(fn (int $q) => $auto("{$key}.q{$q}", "{$key}-1"), range(1, 10)),
+            default => array_map(fn (int $q) => $task("{$key}.q{$q}", $section['skill']), range(1, 4)),
+        };
+        $perAttempt = match ($section['skill']) {
+            'use_of_english' => 15,
+            'reading', 'listening' => 5,
+            default => 1,
+        };
+        $sections[] = ['key' => $key, ...$section, 'questions_per_attempt' => $perAttempt, 'questions' => $questions];
+    }
+
+    return [...A1CourseRules::EXAM, 'title' => 'A1 exam', 'sections' => $sections];
+}
+
+const EXAM_FILE = 'levels/a1/exam.json';
+
+test('an exam that follows the rules has no violations', function () {
+    expect(A1CourseRules::exam(EXAM_FILE, rulesExam()))->toBe([]);
+});
+
+test('exam settings and section points are checked', function () {
+    $exam = rulesExam();
+    $exam['pass_score'] = 70;
+    $exam['max_attempts'] = 3;
+    $exam['sections'][4]['points'] = 20;
+    $exam['sections'][3]['grading_mode'] = 'ai';
+
+    expect(A1CourseRules::exam(EXAM_FILE, $exam))
+        ->toContain(EXAM_FILE.' /pass_score: expected 60, found 70')
+        ->toContain(EXAM_FILE.' /max_attempts: expected null, found 3')
+        ->toContain(EXAM_FILE.' /sections: section points total 105, expected 100')
+        ->toContain(EXAM_FILE.' /sections/4/points: a1.exam.speaking: expected 15, found 20')
+        ->toContain(EXAM_FILE.' /sections/3/grading_mode: a1.exam.writing: expected "self_assessment", found "ai"');
+});
+
+test('a bank smaller than twice the attempt names the section key', function () {
+    $exam = rulesExam();
+    $exam['sections'][1]['questions'] = array_slice($exam['sections'][1]['questions'], 0, 8);
+
+    expect(A1CourseRules::exam(EXAM_FILE, $exam))
+        ->toBe([EXAM_FILE.' /sections/1/questions: a1.exam.reading has 8 questions for 5 per attempt; the bank must hold at least twice the attempt']);
+});
+
+test('missing solutions, explanations, passages and unit coverage are reported', function () {
+    $exam = rulesExam();
+    unset($exam['sections'][2]['questions'][0]['solution'], $exam['sections'][2]['questions'][0]['passage']);
+    $exam['sections'][0]['questions'][0]['explanation'] = ['en' => 'Only English'];
+    $exam['sections'][0]['questions'] = array_values(array_filter(
+        $exam['sections'][0]['questions'],
+        fn (array $q) => ! str_starts_with($q['key'], 'a1.exam.uoe.u05.') || $q['key'] === 'a1.exam.uoe.u05.q01',
+    ));
+
+    expect(A1CourseRules::exam(EXAM_FILE, $exam))
+        ->toContain(EXAM_FILE.' /sections/2/questions/0/solution: a1.exam.listening.q1 needs a solution')
+        ->toContain(EXAM_FILE.' /sections/2/questions/0/passage: a1.exam.listening.q1 needs a passage')
+        ->toContain(EXAM_FILE.' /sections/0/questions/0/explanation: a1.exam.uoe.u01.q01 is missing es')
+        ->toContain(EXAM_FILE.' /sections/0/questions: unit 5 has 1 Use of English questions, at least 2 needed');
+});
