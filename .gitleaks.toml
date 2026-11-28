@@ -1,0 +1,16 @@
+# Gitleaks configuration, read by the pre-commit hook and the security
+# workflow. It keeps every default rule and adds one narrow exception.
+title = "Parlora Hub"
+
+[extend]
+useDefault = true
+
+# Course content keys such as "a1.exam.speaking.q01" are stable identifiers,
+# not secrets, but generic-api-key matches them. Only a line that is nothing
+# but a content key, in a content file, is skipped.
+[[allowlists]]
+description = "Course content keys in content/*.json"
+condition = "AND"
+paths = ['''^content/.+\.json$''']
+regexTarget = "line"
+regexes = ['''^\s*"key": "[a-z0-9]+(?:[.-][a-z0-9]+)*",?\s*$''']
