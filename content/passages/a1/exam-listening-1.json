@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.exam.listening-1",
+  "title": "A voice message",
+  "transcript": "Hi Jenny, it's Mark. It's Friday, about four o'clock. Are you free tomorrow evening? My cousin Emma is here from Toronto this weekend. We want to have dinner at the new Italian restaurant on Oak Street. It's next to the movie theater. Can you come? We can meet there at seven thirty. Oh, and Emma doesn't eat meat, but that's OK: the restaurant has great pasta and salads. Right now I'm at work, so please don't call. Send me a text! My number is 555-0139. See you!",
+  "audio_path": "a1/exam/listening-1.mp3"
+}
