@@ -59,6 +59,16 @@ test('the A1 course has eight units of four lessons and its grammar spiral', fun
     expect(A1CourseRules::course(a1Files('levels/a1/units/*.json')))->toBe([]);
 });
 
+test('the A1 exam follows its rules', function () {
+    $exams = a1Files('levels/a1/exam.json');
+
+    expect($exams)->toHaveCount(1);
+
+    foreach ($exams as $file => $exam) {
+        expect(A1CourseRules::exam($file, $exam))->toBe([]);
+    }
+});
+
 test('every shipped A1 passage has its transcript and audio path', function () {
     $violations = [];
 

@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.exam.listening-2",
+  "title": "At a clothes store",
+  "transcript": "**Assistant:** Hi! Can I help you?\n\n**Leo:** Yes, please. I want a warm jacket. It's very cold this week!\n\n**Assistant:** OK. These jackets are new. We have them in black, blue and green.\n\n**Leo:** I like the blue one. How much is it?\n\n**Assistant:** It's eighty-five dollars. But today all the jackets are twenty dollars cheaper, so it's sixty-five.\n\n**Leo:** Great! Do you have it in large?\n\n**Assistant:** Let me look… Sorry, we don't have any large blue jackets. We have large in black.\n\n**Leo:** Hmm, OK. Black is fine. Can I try it on?\n\n**Assistant:** Sure. The fitting rooms are behind the shoes, on the left.\n\n**Leo:** Thanks!",
+  "audio_path": "a1/exam/listening-2.mp3"
+}

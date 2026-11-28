@@ -1,0 +1,1340 @@
+{
+  "$schema": "../../../resources/schemas/content/exam.schema.json",
+  "key": "a1.exam",
+  "title": "A1 level exam",
+  "time_limit_minutes": 60,
+  "pass_score": 60,
+  "max_attempts": null,
+  "cooldown_hours": 24,
+  "sections": [
+    {
+      "key": "a1.exam.uoe",
+      "skill": "use_of_english",
+      "points": 25,
+      "grading_mode": "auto",
+      "questions_per_attempt": 15,
+      "questions": [
+        {
+          "key": "a1.exam.uoe.u01.q01",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "I {{g1}} from Peru, and my friends {{g2}} from Chile. (be)"
+          },
+          "solution": {
+            "answers": { "g1": ["am", "'m"], "g2": ["are", "'re"] }
+          },
+          "explanation": {
+            "en": "*I* takes **am**; *my friends* (they) takes **are**.",
+            "es": "*I* lleva **am**; *my friends* (they) lleva **are**."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u01.q02",
+          "type": "multiple_choice",
+          "points": 1,
+          "content": {
+            "options": [
+              { "id": "a", "text": "She is a teacher." },
+              { "id": "b", "text": "She are a teacher." },
+              { "id": "c", "text": "Is she a teacher she." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*She* takes **is**: *She is a teacher.*",
+            "es": "*She* lleva **is**: *She is a teacher.*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u01.q03",
+          "type": "reorder",
+          "points": 1,
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "you" },
+              { "id": "t1", "text": "Where" },
+              { "id": "t4", "text": "from?" },
+              { "id": "t2", "text": "are" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "Question word + *be* + subject + *from*: *Where are you from?*",
+            "es": "Palabra interrogativa + *be* + sujeto + *from*: *Where are you from?*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u01.q04",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "A: Nice to meet you. B: Nice to meet you, {{g1}}. (also)"
+          },
+          "solution": { "answers": { "g1": ["too"] } },
+          "explanation": {
+            "en": "The answer to *Nice to meet you* is *Nice to meet you, **too**.*",
+            "es": "La respuesta a *Nice to meet you* es *Nice to meet you, **too**.* (Igualmente.)"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u02.q01",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "This is Tom and {{g1}} sister, Ana. (possessive of he)"
+          },
+          "solution": { "answers": { "g1": ["his"] } },
+          "explanation": {
+            "en": "The sister belongs to Tom (*he*), so we use **his**.",
+            "es": "La hermana es de Tom (*he*), así que usamos **his**."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u02.q02",
+          "type": "multiple_choice",
+          "points": 1,
+          "content": {
+            "options": [
+              { "id": "a", "text": "My brother have two children." },
+              { "id": "b", "text": "My brother has two children." },
+              { "id": "c", "text": "My brother's have two children." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*My brother* (he) takes **has**.",
+            "es": "*My brother* (he) lleva **has**."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u02.q03",
+          "type": "transformation",
+          "points": 1,
+          "content": {
+            "sentence": "This is the car of my father.",
+            "keyword": "FATHER'S",
+            "max_words": 5
+          },
+          "solution": { "accepted": ["This is my father's car."] },
+          "explanation": {
+            "en": "Use the possessive *'s*: *the car of my father* → *my father's car*.",
+            "es": "Usa el posesivo *'s*: *the car of my father* → *my father's car*."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u02.q04",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "We love {{g1}} grandparents. They live with {{g2}} dog in Lima. (possessives of we, they)"
+          },
+          "solution": { "answers": { "g1": ["our"], "g2": ["their"] } },
+          "explanation": {
+            "en": "*We* → **our**; *they* → **their**.",
+            "es": "*We* → **our**; *they* → **their**."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u03.q01",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "In my apartment there {{g1}} two bedrooms, and there {{g2}} a big kitchen. (be)"
+          },
+          "solution": { "answers": { "g1": ["are"], "g2": ["is", "'s"] } },
+          "explanation": {
+            "en": "*Two bedrooms* → **there are**; *a big kitchen* → **there is**.",
+            "es": "*Two bedrooms* → **there are**; *a big kitchen* → **there is**."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u03.q02",
+          "type": "multiple_choice",
+          "points": 1,
+          "content": {
+            "options": [
+              { "id": "a", "text": "There is a armchair in the room." },
+              { "id": "b", "text": "There are an armchair in the room." },
+              { "id": "c", "text": "There is an armchair in the room." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "One armchair → *there is*; *armchair* starts with a vowel sound → *an*.",
+            "es": "Un sillón → *there is*; *armchair* empieza con sonido de vocal → *an*."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u03.q03",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "I have three {{g1}} (box) and two {{g2}} (child)."
+          },
+          "solution": { "answers": { "g1": ["boxes"], "g2": ["children"] } },
+          "explanation": {
+            "en": "*box* + **-es** → *boxes*; *child* is irregular → *children*.",
+            "es": "*box* + **-es** → *boxes*; *child* es irregular → *children*."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u03.q04",
+          "type": "transformation",
+          "points": 1,
+          "content": {
+            "sentence": "This is my key.",
+            "keyword": "THESE",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["These are my keys."] },
+          "explanation": {
+            "en": "Plural: *this → these*, *is → are*, *key → keys*.",
+            "es": "Plural: *this → these*, *is → are*, *key → keys*."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u04.q01",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "My sister {{g1}} (work) in a bank, and she {{g2}} (go) to work by bus."
+          },
+          "solution": { "answers": { "g1": ["works"], "g2": ["goes"] } },
+          "explanation": {
+            "en": "*She* takes **-s**: *works*; *go* → *goes*.",
+            "es": "*She* lleva **-s**: *works*; *go* → *goes*."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u04.q02",
+          "type": "multiple_choice",
+          "points": 1,
+          "content": {
+            "options": [
+              { "id": "a", "text": "He gets always up at seven." },
+              { "id": "b", "text": "He always gets up at seven." },
+              { "id": "c", "text": "Always he get up at seven." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "The adverb goes before the main verb, and *he* needs *-s*: *He always gets up at seven.*",
+            "es": "El adverbio va antes del verbo principal, y *he* necesita *-s*: *He always gets up at seven.*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u04.q03",
+          "type": "reorder",
+          "points": 1,
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "never" },
+              { "id": "t1", "text": "I" },
+              { "id": "t4", "text": "late for work." },
+              { "id": "t2", "text": "am" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "With *be*, the adverb goes after the verb: *I am never late for work.*",
+            "es": "Con *be*, el adverbio va después del verbo: *I am never late for work.*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u04.q04",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "7:30 — It's seven {{g1}}. 9:00 — It's nine {{g2}}."
+          },
+          "solution": { "answers": { "g1": ["thirty"], "g2": ["o'clock"] } },
+          "explanation": {
+            "en": "7:30 = *seven thirty*; an exact hour takes *o'clock*: *nine o'clock*.",
+            "es": "7:30 = *seven thirty*; una hora en punto lleva *o'clock*: *nine o'clock*."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u05.q01",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "My dad {{g1}} (not like) coffee, and we {{g2}} (not watch) TV in the morning."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["doesn't like", "does not like"],
+              "g2": ["don't watch", "do not watch"]
+            }
+          },
+          "explanation": {
+            "en": "*He* → **doesn't** + base verb; *we* → **don't** + base verb.",
+            "es": "*He* → **doesn't** + verbo base; *we* → **don't** + verbo base."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u05.q02",
+          "type": "reorder",
+          "points": 1,
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "sister" },
+              { "id": "t1", "text": "Does" },
+              { "id": "t5", "text": "tennis?" },
+              { "id": "t2", "text": "your" },
+              { "id": "t4", "text": "play" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4", "t5"]] },
+          "explanation": {
+            "en": "*Does* + subject + base verb: *Does your sister play tennis?*",
+            "es": "*Does* + sujeto + verbo base: *Does your sister play tennis?*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u05.q03",
+          "type": "transformation",
+          "points": 1,
+          "content": {
+            "sentence": "You like swimming.",
+            "keyword": "DO",
+            "max_words": 4
+          },
+          "solution": { "accepted": ["Do you like swimming?"] },
+          "explanation": {
+            "en": "Questions in the present simple start with *Do*: *Do you like swimming?*",
+            "es": "Las preguntas en presente simple empiezan con *Do*: *Do you like swimming?*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u05.q04",
+          "type": "multiple_choice",
+          "points": 1,
+          "content": {
+            "options": [
+              { "id": "a", "text": "We play swimming on Saturdays." },
+              { "id": "b", "text": "We go swimming in Saturdays." },
+              { "id": "c", "text": "We go swimming on Saturdays." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["c"] },
+          "explanation": {
+            "en": "*go* + -ing activity (*go swimming*), and *on* with days (*on Saturdays*).",
+            "es": "*go* + actividad con -ing (*go swimming*), y *on* con los días (*on Saturdays*)."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u06.q01",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "There's {{g1}} milk in the fridge, but there isn't {{g2}} bread. (some / any)"
+          },
+          "solution": { "answers": { "g1": ["some"], "g2": ["any"] } },
+          "explanation": {
+            "en": "Affirmative → **some**; negative → **any**.",
+            "es": "Afirmativa → **some**; negativa → **any**."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u06.q02",
+          "type": "multiple_choice",
+          "points": 1,
+          "content": {
+            "options": [
+              { "id": "a", "text": "How many eggs do we need?" },
+              { "id": "b", "text": "How much eggs do we need?" },
+              { "id": "c", "text": "How many egg do we need?" }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*Eggs* is countable plural → *How many eggs…?*",
+            "es": "*Eggs* es contable en plural → *How many eggs…?*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u06.q03",
+          "type": "transformation",
+          "points": 1,
+          "content": {
+            "sentence": "We have no sugar.",
+            "keyword": "ANY",
+            "max_words": 5
+          },
+          "solution": {
+            "accepted": [
+              "We don't have any sugar.",
+              "We do not have any sugar."
+            ]
+          },
+          "explanation": {
+            "en": "*No* = *not any*: *We don't have any sugar.*",
+            "es": "*No* = *not any*: *We don't have any sugar.*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u07.q01",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "Fish {{g1}} swim, but they {{g2}} fly. (can / can't)"
+          },
+          "solution": {
+            "answers": { "g1": ["can"], "g2": ["can't", "cannot"] }
+          },
+          "explanation": {
+            "en": "Fish **can** swim but **can't** fly.",
+            "es": "Los peces **can** swim (pueden nadar) pero **can't** fly (no pueden volar)."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u07.q02",
+          "type": "multiple_choice",
+          "points": 1,
+          "content": {
+            "options": [
+              { "id": "a", "text": "The bank is next the café." },
+              { "id": "b", "text": "The bank is next to the café." },
+              { "id": "c", "text": "The bank is between the café." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Next to* always has *to*; *between* needs two places (*between A and B*).",
+            "es": "*Next to* siempre lleva *to*; *between* necesita dos lugares (*between A and B*)."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u07.q03",
+          "type": "transformation",
+          "points": 1,
+          "content": {
+            "sentence": "Taking photos in the museum isn't OK.",
+            "keyword": "DON'T",
+            "max_words": 6
+          },
+          "solution": { "accepted": ["Don't take photos in the museum."] },
+          "explanation": {
+            "en": "Negative imperative: *Don't* + base verb: *Don't take photos in the museum.*",
+            "es": "Imperativo negativo: *Don't* + verbo base: *Don't take photos in the museum.*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u07.q04",
+          "type": "reorder",
+          "points": 1,
+          "content": {
+            "tokens": [
+              { "id": "t3", "text": "ride" },
+              { "id": "t1", "text": "Can" },
+              { "id": "t4", "text": "a bike?" },
+              { "id": "t2", "text": "you" }
+            ]
+          },
+          "solution": { "orders": [["t1", "t2", "t3", "t4"]] },
+          "explanation": {
+            "en": "*Can* + subject + base verb: *Can you ride a bike?*",
+            "es": "*Can* + sujeto + verbo base: *Can you ride a bike?*"
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u08.q01",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "Look! The children {{g1}} (play) in the yard right now."
+          },
+          "solution": { "answers": { "g1": ["are playing", "'re playing"] } },
+          "explanation": {
+            "en": "*Look!* and *right now* → present continuous: *are playing*.",
+            "es": "*Look!* y *right now* → presente continuo: *are playing*."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u08.q02",
+          "type": "fill_gap",
+          "points": 1,
+          "content": {
+            "text": "Yesterday I {{g1}} at home, and my parents {{g2}} at work. (be)"
+          },
+          "solution": { "answers": { "g1": ["was"], "g2": ["were"] } },
+          "explanation": {
+            "en": "Past of *be*: *I* → **was**; *my parents* (they) → **were**.",
+            "es": "Pasado de *be*: *I* → **was**; *my parents* (they) → **were**."
+          }
+        },
+        {
+          "key": "a1.exam.uoe.u08.q03",
+          "type": "transformation",
+          "points": 1,
+          "content": {
+            "sentence": "It is cold today.",
+            "keyword": "YESTERDAY",
+            "max_words": 4
+          },
+          "solution": {
+            "accepted": [
+              "It was cold yesterday.",
+              "Yesterday it was cold.",
+              "Yesterday, it was cold."
+            ]
+          },
+          "explanation": {
+            "en": "Past of *it is* → *it was*: *It was cold yesterday.*",
+            "es": "Pasado de *it is* → *it was*: *It was cold yesterday.*"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.exam.reading",
+      "skill": "reading",
+      "points": 20,
+      "grading_mode": "auto",
+      "questions_per_attempt": 5,
+      "questions": [
+        {
+          "key": "a1.exam.reading.q01",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.reading-1",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Sofía's apartment is very big." },
+              { "id": "b", "text": "Sofía lives with a nurse from Korea." },
+              { "id": "c", "text": "Jun works in the morning." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*My roommate, Jun, is from Korea. He's a nurse, so he works at night.* The apartment is small.",
+            "es": "*My roommate, Jun, is from Korea. He's a nurse, so he works at night.* El apartamento es pequeño."
+          }
+        },
+        {
+          "key": "a1.exam.reading.q02",
+          "type": "matching",
+          "points": 1,
+          "passage": "a1.exam.reading-1",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Where does Sofía live now?" },
+              { "id": "l2", "text": "When does she finish work?" },
+              { "id": "l3", "text": "Where does she go running?" },
+              { "id": "l4", "text": "What can you buy at the market?" }
+            ],
+            "right": [
+              { "id": "r1", "text": "at five" },
+              { "id": "r2", "text": "fresh fish and fruit" },
+              { "id": "r3", "text": "in Seattle" },
+              { "id": "r4", "text": "at night" },
+              { "id": "r5", "text": "in the park across from her building" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r1"],
+              ["l3", "r5"],
+              ["l4", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*I'm in Seattle now*, *I finish at five*, *the park across from our building*, *fresh fish and fruit*. *At night* is when Jun works.",
+            "es": "*I'm in Seattle now*, *I finish at five*, *the park across from our building*, *fresh fish and fruit*. *At night* es cuando trabaja Jun."
+          }
+        },
+        {
+          "key": "a1.exam.reading.q03",
+          "type": "fill_gap",
+          "points": 1,
+          "passage": "a1.exam.reading-1",
+          "content": {
+            "text": "Sofía's apartment has two {{g1}} and a little balcony. On {{g2}}, she goes to the market with Jun."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["bedrooms"],
+              "g2": ["Saturdays", "saturdays", "Saturday", "saturday"]
+            }
+          },
+          "explanation": {
+            "en": "*There are two bedrooms… On Saturdays I don't work, so I go to the market with Jun.*",
+            "es": "*There are two bedrooms… On Saturdays I don't work, so I go to the market with Jun.*"
+          }
+        },
+        {
+          "key": "a1.exam.reading.q04",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.reading-1",
+          "content": {
+            "options": [
+              { "id": "a", "text": "The weather was bad yesterday." },
+              { "id": "b", "text": "Sofía wants Lena to visit her." },
+              { "id": "c", "text": "Sofía doesn't work on Mondays." },
+              { "id": "d", "text": "Sofía is writing in a café." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "b"] },
+          "explanation": {
+            "en": "*Yesterday was rainy and cold* and *Can you visit me in July?* She doesn't work on Saturdays, and she's writing on the balcony.",
+            "es": "*Yesterday was rainy and cold* y *Can you visit me in July?* No trabaja los sábados, y está escribiendo en el balcón."
+          }
+        },
+        {
+          "key": "a1.exam.reading.q05",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.reading-1",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Right now Sofía is running in the park." },
+              {
+                "id": "b",
+                "text": "Right now Sofía is sitting on the balcony."
+              },
+              { "id": "c", "text": "Right now Sofía is at work." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Right now I'm sitting on the balcony and I'm writing to you!*",
+            "es": "*Right now I'm sitting on the balcony and I'm writing to you!*"
+          }
+        },
+        {
+          "key": "a1.exam.reading.q06",
+          "type": "matching",
+          "points": 1,
+          "passage": "a1.exam.reading-2",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Story Time" },
+              { "id": "l2", "text": "English Conversation Club" },
+              { "id": "l3", "text": "Movie Night" },
+              { "id": "l4", "text": "Computer Help" }
+            ],
+            "right": [
+              { "id": "r1", "text": "Friday" },
+              { "id": "r2", "text": "Sunday" },
+              { "id": "r3", "text": "Monday" },
+              { "id": "r4", "text": "Saturday" },
+              { "id": "r5", "text": "Wednesday" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r4"]
+            ]
+          },
+          "explanation": {
+            "en": "Story Time: Monday; Conversation Club: Wednesday; Movie Night: Friday; Computer Help: Saturday. The library is closed on Sundays.",
+            "es": "Story Time: lunes; Conversation Club: miércoles; Movie Night: viernes; Computer Help: sábado. La biblioteca cierra los domingos."
+          }
+        },
+        {
+          "key": "a1.exam.reading.q07",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.reading-2",
+          "content": {
+            "options": [
+              {
+                "id": "a",
+                "text": "The library is between the post office and the bank."
+              },
+              { "id": "b", "text": "The library is next to the park." },
+              { "id": "c", "text": "The library is across from the bank." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*The library is on Green Street, between the post office and the bank.*",
+            "es": "*The library is on Green Street, between the post office and the bank.*"
+          }
+        },
+        {
+          "key": "a1.exam.reading.q08",
+          "type": "fill_gap",
+          "points": 1,
+          "passage": "a1.exam.reading-2",
+          "content": {
+            "text": "At the Conversation Club, there's free {{g1}} and tea. The library is closed on {{g2}}."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["coffee"],
+              "g2": ["Sundays", "sundays", "Sunday", "sunday"]
+            }
+          },
+          "explanation": {
+            "en": "*There's free coffee and tea!* … *It's closed on Sundays.*",
+            "es": "*There's free coffee and tea!* … *It's closed on Sundays.*"
+          }
+        },
+        {
+          "key": "a1.exam.reading.q09",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.reading-2",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Story Time is for young children." },
+              { "id": "b", "text": "You can't eat in the Movie Night room." },
+              { "id": "c", "text": "The library opens at 10 a.m." },
+              { "id": "d", "text": "Computer Help costs ten dollars." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "b"] },
+          "explanation": {
+            "en": "Story Time is *for children from 3 to 6*, and *don't bring food or drinks into the room*. The library opens at 9 a.m., and all the events are free.",
+            "es": "Story Time es *for children from 3 to 6*, y *don't bring food or drinks into the room*. La biblioteca abre a las 9 a.m., y todos los eventos son gratis."
+          }
+        },
+        {
+          "key": "a1.exam.reading.q10",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.reading-2",
+          "content": {
+            "options": [
+              {
+                "id": "a",
+                "text": "Volunteers help people with email and apps on Mondays."
+              },
+              {
+                "id": "b",
+                "text": "Volunteers help people with email and apps on Saturdays."
+              },
+              {
+                "id": "c",
+                "text": "Volunteers help people with email and apps on Fridays."
+              }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["b"] },
+          "explanation": {
+            "en": "*Saturday, 10:00 a.m. — Computer Help… Our volunteers can help you with email and apps.*",
+            "es": "*Saturday, 10:00 a.m. — Computer Help… Our volunteers can help you with email and apps.*"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.exam.listening",
+      "skill": "listening",
+      "points": 20,
+      "grading_mode": "auto",
+      "questions_per_attempt": 5,
+      "questions": [
+        {
+          "key": "a1.exam.listening.q01",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.listening-1",
+          "content": {
+            "options": [
+              {
+                "id": "a",
+                "text": "Mark wants to have dinner with Jenny on Saturday."
+              },
+              {
+                "id": "b",
+                "text": "Mark wants to have lunch with Jenny on Friday."
+              },
+              {
+                "id": "c",
+                "text": "Mark wants to go to the movies with Jenny on Sunday."
+              }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "It's Friday, and Mark asks *Are you free tomorrow evening?* for dinner: tomorrow is Saturday.",
+            "es": "Es viernes, y Mark pregunta *Are you free tomorrow evening?* para cenar: mañana es sábado."
+          }
+        },
+        {
+          "key": "a1.exam.listening.q02",
+          "type": "matching",
+          "points": 1,
+          "passage": "a1.exam.listening-1",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "Emma" },
+              { "id": "l2", "text": "Oak Street" },
+              { "id": "l3", "text": "7:30" },
+              { "id": "l4", "text": "555-0139" }
+            ],
+            "right": [
+              { "id": "r1", "text": "the time to meet" },
+              { "id": "r2", "text": "Mark's phone number" },
+              { "id": "r3", "text": "Mark's cousin" },
+              { "id": "r4", "text": "Jenny's sister" },
+              { "id": "r5", "text": "where the restaurant is" }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r1"],
+              ["l4", "r2"]
+            ]
+          },
+          "explanation": {
+            "en": "*My cousin Emma*, *the new Italian restaurant on Oak Street*, *meet there at seven thirty*, *My number is 555-0139*.",
+            "es": "*My cousin Emma*, *the new Italian restaurant on Oak Street*, *meet there at seven thirty*, *My number is 555-0139*."
+          }
+        },
+        {
+          "key": "a1.exam.listening.q03",
+          "type": "fill_gap",
+          "points": 1,
+          "passage": "a1.exam.listening-1",
+          "content": {
+            "text": "The restaurant is next to the {{g1}} theater. Emma doesn't eat {{g2}}."
+          },
+          "solution": { "answers": { "g1": ["movie"], "g2": ["meat"] } },
+          "explanation": {
+            "en": "*It's next to the movie theater.* … *Emma doesn't eat meat.*",
+            "es": "*It's next to the movie theater.* … *Emma doesn't eat meat.* (Emma no come carne.)"
+          }
+        },
+        {
+          "key": "a1.exam.listening.q04",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.listening-1",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Mark is at work right now." },
+              { "id": "b", "text": "Jenny should send Mark a text." },
+              { "id": "c", "text": "Emma lives in the same city as Mark." },
+              { "id": "d", "text": "The restaurant only has meat dishes." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "b"] },
+          "explanation": {
+            "en": "*Right now I'm at work, so please don't call. Send me a text!* Emma is from Toronto, and the restaurant has pasta and salads.",
+            "es": "*Right now I'm at work, so please don't call. Send me a text!* Emma es de Toronto, y el restaurante tiene pasta y ensaladas."
+          }
+        },
+        {
+          "key": "a1.exam.listening.q05",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.listening-1",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Emma is from Toronto." },
+              { "id": "b", "text": "Emma is from Chicago." },
+              { "id": "c", "text": "Emma is from Rome." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*My cousin Emma is here from Toronto this weekend.*",
+            "es": "*My cousin Emma is here from Toronto this weekend.*"
+          }
+        },
+        {
+          "key": "a1.exam.listening.q06",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.listening-2",
+          "content": {
+            "options": [
+              { "id": "a", "text": "Leo wants a warm jacket." },
+              { "id": "b", "text": "Leo wants a T-shirt." },
+              { "id": "c", "text": "Leo wants new shoes." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*I want a warm jacket. It's very cold this week!*",
+            "es": "*I want a warm jacket. It's very cold this week!* (Quiero una chaqueta abrigadora. ¡Hace mucho frío esta semana!)"
+          }
+        },
+        {
+          "key": "a1.exam.listening.q07",
+          "type": "fill_gap",
+          "points": 1,
+          "passage": "a1.exam.listening-2",
+          "content": {
+            "text": "The blue jacket is usually {{g1}} dollars, but today it's {{g2}} dollars."
+          },
+          "solution": {
+            "answers": {
+              "g1": ["eighty-five", "eighty five", "85"],
+              "g2": ["sixty-five", "sixty five", "65"]
+            }
+          },
+          "explanation": {
+            "en": "*It's eighty-five dollars. But today all the jackets are twenty dollars cheaper, so it's sixty-five.*",
+            "es": "*It's eighty-five dollars. But today all the jackets are twenty dollars cheaper, so it's sixty-five.* (85 − 20 = 65)"
+          }
+        },
+        {
+          "key": "a1.exam.listening.q08",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.listening-2",
+          "content": {
+            "options": [
+              {
+                "id": "a",
+                "text": "Leo chooses black because there aren't any large blue jackets."
+              },
+              { "id": "b", "text": "Leo chooses green because it's cheaper." },
+              { "id": "c", "text": "Leo doesn't like the blue jacket." }
+            ],
+            "multiple": false
+          },
+          "solution": { "correct": ["a"] },
+          "explanation": {
+            "en": "*Sorry, we don't have any large blue jackets. We have large in black.* — *Black is fine.*",
+            "es": "*Sorry, we don't have any large blue jackets. We have large in black.* — *Black is fine.*"
+          }
+        },
+        {
+          "key": "a1.exam.listening.q09",
+          "type": "matching",
+          "points": 1,
+          "passage": "a1.exam.listening-2",
+          "content": {
+            "left": [
+              { "id": "l1", "text": "The jackets come in" },
+              { "id": "l2", "text": "The weather this week is" },
+              { "id": "l3", "text": "The fitting rooms are" },
+              { "id": "l4", "text": "Leo's size is" }
+            ],
+            "right": [
+              { "id": "r1", "text": "large." },
+              { "id": "r2", "text": "small." },
+              { "id": "r3", "text": "black, blue and green." },
+              { "id": "r4", "text": "behind the shoes." },
+              { "id": "r5", "text": "very cold." }
+            ]
+          },
+          "solution": {
+            "pairs": [
+              ["l1", "r3"],
+              ["l2", "r5"],
+              ["l3", "r4"],
+              ["l4", "r1"]
+            ]
+          },
+          "explanation": {
+            "en": "*black, blue and green*; *it's very cold this week*; *behind the shoes, on the left*; *Do you have it in large?*",
+            "es": "*black, blue and green*; *it's very cold this week*; *behind the shoes, on the left*; *Do you have it in large?*"
+          }
+        },
+        {
+          "key": "a1.exam.listening.q10",
+          "type": "multiple_choice",
+          "points": 1,
+          "passage": "a1.exam.listening-2",
+          "content": {
+            "options": [
+              { "id": "a", "text": "The jackets are new." },
+              { "id": "b", "text": "The fitting rooms are on the left." },
+              { "id": "c", "text": "Leo wants a green jacket." },
+              { "id": "d", "text": "The store has large blue jackets." }
+            ],
+            "multiple": true
+          },
+          "solution": { "correct": ["a", "b"] },
+          "explanation": {
+            "en": "*These jackets are new* and the fitting rooms are *behind the shoes, on the left*. Leo likes the blue one, and there aren't any large blue jackets.",
+            "es": "*These jackets are new* y los probadores están *behind the shoes, on the left*. A Leo le gusta la azul, y no hay chaquetas azules en talla grande."
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.exam.writing",
+      "skill": "writing",
+      "points": 20,
+      "grading_mode": "self_assessment",
+      "questions_per_attempt": 1,
+      "questions": [
+        {
+          "key": "a1.exam.writing.q01",
+          "type": "writing",
+          "points": 20,
+          "content": {
+            "task": "Write an email to a new online friend. Introduce yourself (name, age, country, job or studies) and describe your family: who they are, how old they are and what they look like.",
+            "min_words": 40,
+            "max_words": 80,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I introduced myself and described at least two family members.",
+                  "es": "Me presenté y describí al menos a dos familiares."
+                },
+                "max_points": 8
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used be, have/has and possessives (my, his, her, 's) correctly.",
+                  "es": "Usé bien be, have/has y los posesivos (my, his, her, 's)."
+                },
+                "max_points": 6
+              },
+              {
+                "key": "vocabulary",
+                "description": {
+                  "en": "I used words for family, jobs and describing people.",
+                  "es": "Usé palabras de familia, trabajos y descripción de personas."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "My email has a greeting and an ending, capital letters and periods.",
+                  "es": "Mi email tiene saludo y despedida, mayúsculas y puntos."
+                },
+                "max_points": 2
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi Sam,\n\nMy name is Carla and I'm twenty-two. I'm from Colombia and I'm a student. I have a small family. My mom's name is Rosa. She's fifty and she's a nurse. She has short dark hair. My brother, Luis, is eighteen. He's very tall and he has brown eyes. We also have a cat. Its name is Coco!\n\nWrite soon,\nCarla"
+          }
+        },
+        {
+          "key": "a1.exam.writing.q02",
+          "type": "writing",
+          "points": 20,
+          "content": {
+            "task": "Describe your home and your neighborhood for a new classmate. Say what rooms and furniture there are in your home, what places there are near it, and what you can do there.",
+            "min_words": 40,
+            "max_words": 80,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I described my home and at least two places in my neighborhood, and what you can do there.",
+                  "es": "Describí mi casa y al menos dos lugares de mi barrio, y qué se puede hacer allí."
+                },
+                "max_points": 8
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used there is/are, a/an, plurals, can and prepositions of place correctly.",
+                  "es": "Usé bien there is/are, a/an, los plurales, can y las preposiciones de lugar."
+                },
+                "max_points": 6
+              },
+              {
+                "key": "vocabulary",
+                "description": {
+                  "en": "I used words for rooms, furniture and places in town.",
+                  "es": "Usé palabras de habitaciones, muebles y lugares de la ciudad."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "I used capital letters and periods correctly.",
+                  "es": "Usé bien las mayúsculas y los puntos."
+                },
+                "max_points": 2
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "I live in an apartment on Elm Street. There are two bedrooms, a living room and a small kitchen. In my bedroom there's a bed, a desk and a big closet. Near my building there's a supermarket and a park. The park is across from a library. You can play soccer in the park, and you can borrow books at the library. There isn't a movie theater, but there are three cafés."
+          }
+        },
+        {
+          "key": "a1.exam.writing.q03",
+          "type": "writing",
+          "points": 20,
+          "content": {
+            "task": "Write a blog post about your week. Describe your daily routine with times, and say what you do and don't do in your free time on the weekend.",
+            "min_words": 40,
+            "max_words": 80,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I described my routine with at least three times and what I do on the weekend.",
+                  "es": "Describí mi rutina con al menos tres horas y lo que hago el fin de semana."
+                },
+                "max_points": 8
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used the present simple (affirmative and negative), adverbs of frequency and like + -ing correctly.",
+                  "es": "Usé bien el presente simple (afirmativo y negativo), los adverbios de frecuencia y like + -ing."
+                },
+                "max_points": 6
+              },
+              {
+                "key": "organization",
+                "description": {
+                  "en": "My text is in time order, with words like first, then and after that.",
+                  "es": "Mi texto sigue el orden del día, con palabras como first, then y after that."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "Days have capital letters, and I used periods and commas correctly.",
+                  "es": "Los días llevan mayúscula, y usé bien los puntos y las comas."
+                },
+                "max_points": 2
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "From Monday to Friday, I get up at seven. First, I take a shower and have breakfast. Then I go to work by bus. I start at nine and I finish at five. After that, I usually go to the gym. On the weekend I don't work. On Saturdays I play tennis with my sister, and on Sundays I love cooking for my family. I never get up early on Sundays!"
+          }
+        },
+        {
+          "key": "a1.exam.writing.q04",
+          "type": "writing",
+          "points": 20,
+          "content": {
+            "task": "You're on vacation. Write a postcard to a friend. Say where you are, what the weather is like today and what it was like yesterday, what you are doing right now, and what food there is that you like.",
+            "min_words": 40,
+            "max_words": 80,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I said where I am, the weather today and yesterday, what I'm doing now and something about the food.",
+                  "es": "Dije dónde estoy, el tiempo hoy y ayer, qué estoy haciendo ahora y algo sobre la comida."
+                },
+                "max_points": 8
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used the present continuous, was/were and some/any correctly.",
+                  "es": "Usé bien el presente continuo, was/were y some/any."
+                },
+                "max_points": 6
+              },
+              {
+                "key": "format",
+                "description": {
+                  "en": "My postcard has a greeting and a friendly ending with my name.",
+                  "es": "Mi postal tiene saludo y una despedida amigable con mi nombre."
+                },
+                "max_points": 4
+              },
+              {
+                "key": "mechanics",
+                "description": {
+                  "en": "Places and names have capital letters, and sentences end with a period.",
+                  "es": "Los lugares y los nombres llevan mayúscula, y las oraciones terminan con punto."
+                },
+                "max_points": 2
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi Pablo,\n\nI'm in San Diego with my family! Yesterday was cloudy and cool, but today it's sunny and warm. Right now I'm sitting on the beach and my brother is swimming. The food here is great. There are some amazing fish tacos, but there aren't any good cafés near our hotel. See you next week!\n\nLove,\nMarta"
+          }
+        }
+      ]
+    },
+    {
+      "key": "a1.exam.speaking",
+      "skill": "speaking",
+      "points": 15,
+      "grading_mode": "self_assessment",
+      "questions_per_attempt": 1,
+      "questions": [
+        {
+          "key": "a1.exam.speaking.q01",
+          "type": "speaking",
+          "points": 15,
+          "content": {
+            "task": "Introduce yourself and your family. Say your name (and spell it), your age, where you are from and what you do. Then talk about two people in your family.",
+            "prep_seconds": 60,
+            "max_seconds": 90,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I gave all the information about me and talked about two family members.",
+                  "es": "Di toda la información sobre mí y hablé de dos familiares."
+                },
+                "max_points": 6
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used be, have/has and possessives correctly.",
+                  "es": "Usé bien be, have/has y los posesivos."
+                },
+                "max_points": 5
+              },
+              {
+                "key": "pronunciation",
+                "description": {
+                  "en": "I spoke clearly; the letters and numbers were easy to understand.",
+                  "es": "Hablé con claridad; las letras y los números se entendían bien."
+                },
+                "max_points": 4
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "Hi! My name is Andrés. That's A-N-D-R-E-S. I'm twenty-six and I'm from Ecuador. I'm a cook in a restaurant. I live with my wife, Paula. She's a teacher and she has long dark hair. My brother, Diego, is twenty. He's a student and he's very tall."
+          }
+        },
+        {
+          "key": "a1.exam.speaking.q02",
+          "type": "speaking",
+          "points": 15,
+          "content": {
+            "task": "Describe a normal day in your life, from morning to night. Say what time you do things and how often you do them.",
+            "prep_seconds": 60,
+            "max_seconds": 90,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I described my day in order, with at least three times.",
+                  "es": "Describí mi día en orden, con al menos tres horas."
+                },
+                "max_points": 6
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used the present simple and adverbs of frequency correctly.",
+                  "es": "Usé bien el presente simple y los adverbios de frecuencia."
+                },
+                "max_points": 5
+              },
+              {
+                "key": "fluency",
+                "description": {
+                  "en": "I spoke without long pauses and used words like first, then and after that.",
+                  "es": "Hablé sin pausas largas y usé palabras como first, then y after that."
+                },
+                "max_points": 4
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "I usually get up at six thirty. First, I take a shower and get dressed. Then I have breakfast with my kids. I take them to school at eight, and I start work at nine. I have lunch at one. I finish work at five and I get home at six. In the evening I make dinner, and I sometimes watch TV. I go to bed at eleven."
+          }
+        },
+        {
+          "key": "a1.exam.speaking.q03",
+          "type": "speaking",
+          "points": 15,
+          "content": {
+            "task": "A visitor asks you how to get from your home to a place in your town (a park, a store, a café…). Give the directions step by step, and say what the visitor can do there.",
+            "prep_seconds": 60,
+            "max_seconds": 90,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I gave clear directions with at least two turns and said what you can do there.",
+                  "es": "Di direcciones claras con al menos dos giros y dije qué se puede hacer allí."
+                },
+                "max_points": 6
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used imperatives, can and prepositions of place correctly.",
+                  "es": "Usé bien los imperativos, can y las preposiciones de lugar."
+                },
+                "max_points": 5
+              },
+              {
+                "key": "clarity",
+                "description": {
+                  "en": "I spoke clearly and used landmarks like the bank or the traffic lights.",
+                  "es": "Hablé con claridad y usé puntos de referencia como el banco o el semáforo."
+                },
+                "max_points": 4
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "OK, from my house, go straight for two blocks. At the traffic lights, turn left. Then turn right at the bank. The park is on your left, across from the library. You can walk around the lake, and you can rent a bike there. Don't feed the ducks!"
+          }
+        },
+        {
+          "key": "a1.exam.speaking.q04",
+          "type": "speaking",
+          "points": 15,
+          "content": {
+            "task": "Talk about food and shopping. Say what you usually eat for breakfast and lunch, what food there is in your kitchen right now and what there isn't, and what you need to buy at the supermarket.",
+            "prep_seconds": 60,
+            "max_seconds": 90,
+            "rubric": [
+              {
+                "key": "content",
+                "description": {
+                  "en": "I talked about my meals, what there is and isn't at home, and what I need to buy.",
+                  "es": "Hablé de mis comidas, de lo que hay y no hay en casa y de lo que necesito comprar."
+                },
+                "max_points": 6
+              },
+              {
+                "key": "grammar",
+                "description": {
+                  "en": "I used some/any, there is/are and countable and uncountable nouns correctly.",
+                  "es": "Usé bien some/any, there is/are y los sustantivos contables e incontables."
+                },
+                "max_points": 5
+              },
+              {
+                "key": "vocabulary",
+                "description": {
+                  "en": "I used food and drink words and quantities like a bottle of or a bag of.",
+                  "es": "Usé palabras de comida y bebida y cantidades como a bottle of o a bag of."
+                },
+                "max_points": 4
+              }
+            ]
+          },
+          "solution": {
+            "model_answer": "For breakfast I usually have coffee with milk and some bread with cheese. For lunch I have rice, chicken and vegetables. Right now there are some eggs and some tomatoes in my kitchen, but there isn't any milk and there aren't any apples. So I need to buy a bottle of milk, some apples and a bag of rice."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -36,6 +36,30 @@ final class A1CourseRules
         'there is/are' => ['units' => [7], 'pattern' => '/\bthere (is|are|isn\'t|aren\'t|\{\{g\d+\}\})|\bthere\'s\b/'],
     ];
 
+    /** The A1 exam settings (D6). */
+    public const EXAM = [
+        'key' => 'a1.exam',
+        'time_limit_minutes' => 60,
+        'pass_score' => 60,
+        'max_attempts' => null,
+        'cooldown_hours' => 24,
+    ];
+
+    /**
+     * The A1 exam sections in order (D6): skill, points and grading mode.
+     *
+     * @var array<string, array{skill: string, points: int, grading_mode: string}>
+     */
+    public const EXAM_SECTIONS = [
+        'a1.exam.uoe' => ['skill' => 'use_of_english', 'points' => 25, 'grading_mode' => 'auto'],
+        'a1.exam.reading' => ['skill' => 'reading', 'points' => 20, 'grading_mode' => 'auto'],
+        'a1.exam.listening' => ['skill' => 'listening', 'points' => 20, 'grading_mode' => 'auto'],
+        'a1.exam.writing' => ['skill' => 'writing', 'points' => 20, 'grading_mode' => 'self_assessment'],
+        'a1.exam.speaking' => ['skill' => 'speaking', 'points' => 15, 'grading_mode' => 'self_assessment'],
+    ];
+
+    public const MIN_UOE_PER_UNIT = 2;
+
     private const PRODUCTION_TYPES = ['writing', 'speaking'];
 
     /**
@@ -142,6 +166,105 @@ final class A1CourseRules
                 if (preg_match($pattern, mb_strtolower($text)) !== 1) {
                     $violations[] = self::issue($file, '/lessons', sprintf('unit %d should bring back %s (grammar spiral)', $number, $point));
                 }
+            }
+        }
+
+        return $violations;
+    }
+
+    /**
+     * The A1 exam (D6): settings, the five sections with their points and
+     * grading modes, banks at least twice the attempt, a solution on every
+     * question, bilingual explanations and rubrics, passages on reading and
+     * listening questions, and Use of English questions for every unit. Use
+     * of English keys carry their unit: `a1.exam.uoe.u03.q01`.
+     *
+     * @param  array<string, mixed>  $exam
+     * @return list<string>
+     */
+    public static function exam(string $file, array $exam): array
+    {
+        $violations = [];
+
+        foreach (self::EXAM as $member => $expected) {
+            if (($exam[$member] ?? null) !== $expected) {
+                $violations[] = self::issue($file, "/{$member}", 'expected '.json_encode($expected).', found '.json_encode($exam[$member] ?? null));
+            }
+        }
+
+        $sections = self::list($exam['sections'] ?? null);
+        $expectedKeys = array_keys(self::EXAM_SECTIONS);
+        $foundKeys = array_map(fn (array $section): string => (string) ($section['key'] ?? ''), $sections);
+
+        if ($foundKeys !== $expectedKeys) {
+            $violations[] = self::issue($file, '/sections', 'expected sections '.implode(', ', $expectedKeys).', found '.implode(', ', $foundKeys));
+        }
+
+        $total = array_sum(array_map(fn (array $section): int => (int) ($section['points'] ?? 0), $sections));
+
+        if ($total !== 100) {
+            $violations[] = self::issue($file, '/sections', "section points total {$total}, expected 100");
+        }
+
+        $uoePerUnit = array_fill(1, self::UNITS, 0);
+
+        foreach ($sections as $index => $section) {
+            $pointer = "/sections/{$index}";
+            $sectionKey = (string) ($section['key'] ?? '');
+
+            foreach (self::EXAM_SECTIONS[$sectionKey] ?? [] as $member => $expected) {
+                if (($section[$member] ?? null) !== $expected) {
+                    $violations[] = self::issue($file, "{$pointer}/{$member}", "{$sectionKey}: expected ".json_encode($expected).', found '.json_encode($section[$member] ?? null));
+                }
+            }
+
+            $questions = self::list($section['questions'] ?? null);
+            $perAttempt = $section['questions_per_attempt'] ?? null;
+
+            if (! is_int($perAttempt) || count($questions) < 2 * $perAttempt) {
+                $violations[] = self::issue($file, "{$pointer}/questions", sprintf('%s has %d questions for %s per attempt; the bank must hold at least twice the attempt', $sectionKey, count($questions), json_encode($perAttempt)));
+            }
+
+            foreach ($questions as $q => $question) {
+                $questionPointer = "{$pointer}/questions/{$q}";
+                $questionKey = (string) ($question['key'] ?? '');
+                $type = $question['type'] ?? null;
+
+                if (! is_array($question['solution'] ?? null) || $question['solution'] === []) {
+                    $violations[] = self::issue($file, "{$questionPointer}/solution", "{$questionKey} needs a solution");
+                }
+
+                if (in_array($type, self::PRODUCTION_TYPES, true)) {
+                    $rubric = self::list($question['content']['rubric'] ?? null);
+
+                    if ($rubric === []) {
+                        $violations[] = self::issue($file, "{$questionPointer}/content/rubric", "{$questionKey} needs a rubric");
+                    }
+
+                    foreach ($rubric as $criterion => $row) {
+                        $violations = [...$violations, ...self::bilingual($file, "{$questionPointer}/content/rubric/{$criterion}/description", $questionKey, $row['description'] ?? null)];
+                    }
+                } else {
+                    $violations = [...$violations, ...self::bilingual($file, "{$questionPointer}/explanation", $questionKey, $question['explanation'] ?? null)];
+                }
+
+                if (in_array($sectionKey, ['a1.exam.reading', 'a1.exam.listening'], true) && ! is_string($question['passage'] ?? null)) {
+                    $violations[] = self::issue($file, "{$questionPointer}/passage", "{$questionKey} needs a passage");
+                }
+
+                if ($sectionKey === 'a1.exam.uoe') {
+                    if (preg_match('/^a1\.exam\.uoe\.u0([1-8])\.q\d{2}$/', $questionKey, $match) === 1) {
+                        $uoePerUnit[(int) $match[1]]++;
+                    } else {
+                        $violations[] = self::issue($file, "{$questionPointer}/key", "{$questionKey}: Use of English keys follow a1.exam.uoe.uNN.qNN");
+                    }
+                }
+            }
+        }
+
+        foreach ($uoePerUnit as $unit => $count) {
+            if ($count < self::MIN_UOE_PER_UNIT) {
+                $violations[] = self::issue($file, '/sections/0/questions', sprintf('unit %d has %d Use of English questions, at least %d needed', $unit, $count, self::MIN_UOE_PER_UNIT));
             }
         }
 

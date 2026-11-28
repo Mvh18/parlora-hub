@@ -1,0 +1,18 @@
+# Gitleaks configuration, read by the pre-commit hook (v8.30) and the
+# security workflow's gitleaks-action (v8.24). It keeps every default rule
+# and adds one narrow exception.
+title = "Parlora Hub"
+
+[extend]
+useDefault = true
+
+# Course content keys such as "a1.exam.speaking.q01" are stable identifiers,
+# not secrets, but generic-api-key matches them. Only a line that is nothing
+# but a "key" member with a dotted lowercase identifier is skipped; any other
+# line (a real token in a content file included) is still scanned. History
+# scans see diff lines, which start with "+". The single [allowlist] table is
+# the form both versions honour.
+[allowlist]
+description = "Lines that are only a content key"
+regexTarget = "line"
+regexes = ['''^\+?\s*"key": "[a-z0-9]+(?:[.-][a-z0-9]+)*",?\s*$''']

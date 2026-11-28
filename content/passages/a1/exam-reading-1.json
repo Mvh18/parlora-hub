@@ -1,0 +1,6 @@
+{
+  "$schema": "../../../resources/schemas/content/passage.schema.json",
+  "key": "a1.exam.reading-1",
+  "title": "An email from Seattle",
+  "body": "Hi Lena,\n\nHow are you? I'm in Seattle now! My new apartment is small, but it's very nice. There are two bedrooms, a kitchen and a little balcony. My roommate, Jun, is from Korea. He's a nurse, so he works at night.\n\nI start work at nine and I finish at five. After work, I usually go running in the park across from our building. On Saturdays I don't work, so I go to the market with Jun. You can buy fresh fish and fruit there.\n\nYesterday was rainy and cold, but today it's sunny. Right now I'm sitting on the balcony and I'm writing to you!\n\nCan you visit me in July?\n\nLove,\nSofía"
+}
